@@ -4,7 +4,7 @@ title: 提交检查清单
 tags: [production, akool, copyright]
 created: 2026-11-06
 updated: 2026-11-06
-related: [20261106-challenge-rules, 20261106-akool-workflow, 20261106-withholding-mystery, 20261106-meta-endings, 20261106-exhibit-47-shot-list]
+related: [20261106-reference-sheet-reverse-prompts, 20261106-challenge-rules, 20261106-akool-workflow, 20261106-withholding-mystery, 20261106-meta-endings, 20261106-exhibit-47-shot-list]
 summary: 发布和提交前逐项勾选：时长、原创性、AKOOL 标志、版权素材、平台发布与话题标签、提交表单说明、评分自查。
 ---
 
@@ -40,7 +40,7 @@ summary: 发布和提交前逐项勾选：时长、原创性、AKOOL 标志、�
 - [ ] 作品链接
 - [ ] 选择 **Coming Never** 赛道
 - [ ] "如何使用 AKOOL"的说明，建议结构：
-  1. 角色设定：AKOOL 图像生成，锁定 3 个角色
+  1. 角色设定：**如实写工具**。目前三张设定图是 LibTV 生成、用 LibTV 视觉模型核对的（见 [学习记录](../prompts/reference-sheet-reverse-prompts.md)）；如果订阅后在 AKOOL 里重做了，就写 AKOOL
   2. 画面：AKOOL 视频生成器，用 [模型名] 完成约 25 个镜头的图生视频
   3. 对白：AKOOL 口型同步 / 配音
   4. 其他工具：剪辑软件、音乐工具（如实列出）

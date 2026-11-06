@@ -9,6 +9,7 @@ AKOOL AI Film Challenge「Coming Never」赛道参赛项目《第 47 号证物 E
 | 看主方案的完整故事 | [《第 47 号证物》完整故事](topics/concept/exhibit-47-story.md) |
 | 5 分钟了解全部决策 | [风格定向](topics/brief/style-decision.md) → [动作悬疑方案](topics/concept/action-mystery-concepts.md) → [《第 47 号证物》](topics/concept/exhibit-47-story.md) |
 | 直接开始生成画面 | [人物与道具设定](topics/concept/exhibit-47-character-bible.md) → [《第 47 号证物》镜头提示词库](topics/prompts/exhibit-47-shot-prompts.md) |
+| 看设定图是怎么核对、锁定细节的 | [设定图的图片转提示词学习记录](topics/prompts/reference-sheet-reverse-prompts.md) |
 | 知道每一秒放什么 | [《第 47 号证物》90 秒档分镜表](topics/production/exhibit-47-shot-list.md)（实际 89 秒） |
 | 安排两周的工作 | [AKOOL 制作流程与 14 天排期](topics/production/akool-workflow.md) |
 | 提交前自查 | [提交检查清单](topics/production/submission-checklist.md) |
@@ -94,6 +95,7 @@ AKOOL AI Film Challenge「Coming Never」赛道参赛项目《第 47 号证物 E
 - `20261106-exhibit-47-shot-prompts` — **《第 47 号证物》镜头提示词库（按证物画面类型分组）** — `topics/prompts/exhibit-47-shot-prompts.md` — 主方案预告的全部提示词：六种"证物画面"风格块（执法记录仪 / 监控 / 无人机 / 审讯室 / 旧录像 / 第 47 号证物视角）、23 个编号镜头、监控墙素材池、后期叠字规范，以及配乐、音效和配音提示词。
 - `20261106-music-sfx-prompts` — **音乐、音效与配音提示词** — `topics/prompts/music-sfx-prompts.md` — 《友谊地久天长》温暖版 / 扭曲版配乐、悬疑垫底音、16 种音效清单，以及每个角色的配音声音设定提示词。
 - `20261106-prompt-formula` — **AI 视频提示词公式与模型选择（AKOOL 上的 Veo / Kling / Seedance / Wan）** — `topics/prompts/prompt-formula.md` — 九段式通用提示词公式、六条硬规则、各模型在 AKOOL 上的长处与分工、镜头和运镜词汇表、多镜头写法，以及常见翻车的修法。
+- `20261106-reference-sheet-reverse-prompts` — **设定图的图片转提示词学习记录（反推、交叉核对与即梦搜图清单）** — `topics/prompts/reference-sheet-reverse-prompts.md` — 用 LibTV 的两个视觉模型（GVLM 3.1、Qwen 3 VL Flash）对已通过的设定图做"图片转提示词"，交叉核对后锁定背景、分隔线、手套、疤等细节；记录反推提问模板、四条经验、第十三人设定图的验收结果、即梦搜图的手动清单，以及比赛规则（原创、AKOOL 参与）的注意事项。
 - `20261106-shot-prompt-library` — **镜头提示词库（按功能分组，编号 A1–G4）** — `topics/prompts/shot-prompt-library.md` — 《明日不来》全部可用镜头的完整英文提示词，分为开场钩子 / 世界 / 悬疑 / 动作 / 时间特效 / 对白 / 结尾按钮七组，每条都有编号（A1–G4）、推荐模型和时长。
 - `20261106-style-anchor` — **风格锚 STYLE-A / 负面词 NEG-A / 场景色彩块** — `topics/prompts/style-anchor.md` — 每条提示词都要原样粘贴的英文 / 中文风格锚、负面词，以及每个场景的固定色彩光线块，保证全片质感统一。
 - `20261106-text-card-copy` — **字卡、标语与台词文案库（中英双语）** — `topics/prompts/text-card-copy.md` — 《明日不来》的句子阶梯字卡、定义句、三词标语、片名卡、日期卡、结尾卡，以及全部台词和画外音（含语气说明），可直接放进剪辑软件。

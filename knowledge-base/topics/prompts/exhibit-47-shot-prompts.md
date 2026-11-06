@@ -4,7 +4,7 @@ title: 《第 47 号证物》镜头提示词库（按证物画面类型分组）
 tags: [prompt, visual, sound, action]
 created: 2026-11-06
 updated: 2026-11-06
-related: [20261106-exhibit-47-character-bible, 20261106-exhibit-47-shot-list, 20261106-exhibit-47-story, 20261106-prompt-formula, 20261106-style-anchor, 20261106-music-sfx-prompts, 20261106-sound-design, 20261106-black-screen-text-cards, 20261106-cloverfield-teaser, 20261106-civil-war]
+related: [20261106-exhibit-47-character-bible, 20261106-reference-sheet-reverse-prompts, 20261106-exhibit-47-shot-list, 20261106-exhibit-47-story, 20261106-prompt-formula, 20261106-style-anchor, 20261106-music-sfx-prompts, 20261106-sound-design, 20261106-black-screen-text-cards, 20261106-cloverfield-teaser, 20261106-civil-war]
 summary: 主方案预告的全部提示词：六种"证物画面"风格块（执法记录仪 / 监控 / 无人机 / 审讯室 / 旧录像 / 第 47 号证物视角）、23 个编号镜头、监控墙素材池、后期叠字规范，以及配乐、音效和配音提示词。
 ---
 
@@ -16,7 +16,7 @@ summary: 主方案预告的全部提示词：六种"证物画面"风格块（执
 
 结尾字卡写着"本片所有画面均为证物"，所以**预告里的每个镜头都必须是"被记录下来的"画面**：执法记录仪、监控、无人机、审讯室摄像头、取证录像。这个形式借鉴了 [科洛弗档案](../trailers/cloverfield-teaser.md) 的伪纪录手法，好处是低清、晃动的画面能掩盖 AI 的瑕疵。
 
-- 占位符 `[NORA-REF]` `[WARD-HAND]` `[THIRTEENTH-REF]` `[BRANDT-REF]` `[UNIT-REF]` `[OLD-HANDS]` 和 `LOC-*`：原文见 [人物与道具设定](../concept/exhibit-47-character-bible.md)。
+- 占位符 `[NORA-REF]` `[WARD-HAND]` `[WARD-GLOVE]` `[THIRTEENTH-REF]` `[BRANDT-REF]` `[UNIT-REF]` `[OLD-HANDS]` 和 `LOC-*`：原文见 [人物与道具设定](../concept/exhibit-47-character-bible.md)。手和手套的细节以已通过的设定图为准，见那里的"已锁定的细节"。
 - 提示词结构沿用 [提示词公式](prompt-formula.md)；风格锚换成下面的证物风格块，**不再使用 STYLE-A**。
 - 所有屏幕文字（时间戳、编号、SIGNAL LOST、证物标签）**一律后期叠加**，见本页"后期叠字规范"。
 - **设定图和镜头各用一套风格，不能混**。设定图统一用 SHEET-STYLE（灰色影棚、柔光、无调色，见 [人物与道具设定](../concept/exhibit-47-character-bible.md)），只负责"人长什么样"。镜头用下面的 S-* 块，负责"画面是什么风格"。所以镜头提示词里不要写 studio、grey backdrop 这类设定图的词；设定图里也不要写 S-* 块里的词。
@@ -137,7 +137,7 @@ cartoon, anime, CGI look, video game graphics, cinematic color grading, clean mo
 
 **C2 拉住诺拉的手**（**第十三人出场 #3**）· Veo · 5 秒
 ```text
-[S-CCTV] LOC-ROOM4, infrared. [NORA-REF], NORA-TAC, stumbles into the small freezer room, half-blind in the gas fog; out of the darkness behind the crates, a gloved right hand — torn open across the back, revealing an old shiny burn scar — grabs her vest and pulls her down behind the crates. The figure attached to the hand stays in shadow. Sound: a whisper very close to her: "You're safe now, Kade." 5 seconds. [NEG-47]
+[S-CCTV] LOC-ROOM4, infrared. [NORA-REF], NORA-TAC, stumbles into the small freezer room, half-blind in the gas fog; out of the darkness behind the crates, a gloved right hand — [WARD-GLOVE] — grabs her vest and pulls her down behind the crates. The figure attached to the hand stays in shadow. Sound: a whisper very close to her: "You're safe now, Kade." 5 seconds. [NEG-47]
 ```
 
 **C3 警车抵达**（报警电话的画面）· Kling · 5 秒
@@ -280,6 +280,7 @@ A 6-second cinematic riser: accelerating taiko and metallic percussion, distorte
 ## 相关笔记
 
 - [人物与道具设定](../concept/exhibit-47-character-bible.md)：所有占位符的原文。
+- [设定图的图片转提示词学习记录](reference-sheet-reverse-prompts.md)：手套和疤的细节是怎么锁定的。
 - [分镜表](../production/exhibit-47-shot-list.md)：每个编号用在哪一秒。
 - [完整故事](../concept/exhibit-47-story.md)：画面背后的真相。
 - [提示词公式](prompt-formula.md)、[风格锚](style-anchor.md)：通用规则。

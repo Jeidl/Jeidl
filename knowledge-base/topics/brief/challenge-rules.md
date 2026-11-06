@@ -31,7 +31,7 @@ AKOOL AI Film Challenge 有三个赛道：
 - **AKOOL 标志必须清晰可见，位置 "at the top of the video"**。这句话有歧义：可以理解为画面顶部，也可以理解为视频开头。**两种都做**：片头放 AKOOL 标志卡，全片在画面顶部（2.39:1 遮幅的上黑边里）放一个小标志。
 - **AKOOL 必须在创作中起"有意义的作用"**，可以同时用其他 AI、剪辑、音频工具。提交时要说明你怎么用了 AKOOL，主办方可能要求补充材料。**从第一天起就截图记录制作过程。**
 - 作品在比赛期间必须在 **YouTube / TikTok / Instagram 公开可见**，带话题 `#AKOOLClash #AKOOLFilmChallenge #AIVideo #AIFilm`，并 @AKOOL。
-- 需要有效的 AKOOL 账号。每个合格作品奖励 $100，但**仅限 Premium 账号**。
+- 需要有效的 AKOOL 账号。每个合格作品奖励 $100，但**仅限 Premium 账号**。2026-11-06 实测，当前账号的 AKOOL 接口返回"仅限订阅用户"，见 [AKOOL 制作流程](../production/akool-workflow.md)。
 - 授权：作品授予 AKOOL 非独占、全球、免版税的展示与推广许可。
 - 素材版权：AKOOL 社区政策要求创作者拥有所提交内容的版权；同期 Creator Clash 比赛明确要求不得使用未经授权的版权素材。**音乐、角色、商标都要自有或可商用。**
 

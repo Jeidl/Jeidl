@@ -4,7 +4,7 @@ title: 《第 47 号证物》人物与道具设定（一致性锚点）
 tags: [concept, prompt, production]
 created: 2026-11-06
 updated: 2026-11-06
-related: [20261106-exhibit-47-story, 20261106-exhibit-47-shot-prompts, 20261106-exhibit-47-shot-list, 20261106-character-bible, 20261106-style-anchor, 20261106-prompt-formula, 20261106-akool-workflow, 20261106-longlegs-teasers]
+related: [20261106-exhibit-47-story, 20261106-exhibit-47-shot-prompts, 20261106-exhibit-47-shot-list, 20261106-character-bible, 20261106-style-anchor, 20261106-prompt-formula, 20261106-akool-workflow, 20261106-longlegs-teasers, 20261106-reference-sheet-reverse-prompts]
 summary: 主方案的人物设定（诺拉、沃德、第十三人、布兰特、特勤组、旧录像里的手）、可直接粘贴的英文角色块（NORA-REF 等）、道具与场景块、颜色规则，以及统一风格的设定图提示词（SHEET-STYLE 等固定块 + 母版参考链）；沃德在预告里只露手和声音。
 ---
 
@@ -135,7 +135,7 @@ v1 两条提示词只共用了 `photorealistic` 和 `neutral grey` 两个词，�
 
 1. 每张设定图都由同一组块拼成：`[SHEET-STYLE] [SHEET-LAYOUT] + 主体段 + [SHEET-END]`。这些块**一字不改**。
 2. 每张图都是 **4 格横排**：3 个角度 + 1 格识别点特写（诺拉的下巴疤、沃德的烧伤疤、第十三人撕开的手套）。
-3. **诺拉四视图是风格母版**，最先生成。手部图和第十三人图生成时，把母版接进来当参考图，并在最前面加 `[SHEET-MATCH]`。
+3. **诺拉四视图是风格母版**，最先生成。手部图和第十三人图生成时，把母版接进来当参考图，并在最前面加 `[SHEET-MATCH]`。如果母版不是 4 格（诺拉 v2 就是这种情况，见下方记录），就改用**已通过的 4 格设定图**（沃德的手 v2）做参考，否则参考图会把版式带偏。
 4. 三张图用**同一个模型、同一画质、同一画幅**（LibTV：`nebula-ultra`、2K、16:9）。
 5. 设定图里**不要把这些词当正面描述**：macro、cinematic、dramatic、moody、film、flashlight、dark background、backlight，以及 table、room 这类环境词。它们属于镜头提示词。设定图只负责"长什么样"，"画面是什么风格"交给镜头的 S-* 风格块。
 
@@ -146,9 +146,9 @@ v1 两条提示词只共用了 `photorealistic` 和 `neutral grey` 两个词，�
 Photorealistic character reference sheet, clean studio photography. Shot on a full-frame digital camera with an 85mm lens at f/8, everything in sharp focus. Plain seamless mid-grey paper backdrop, the same flat grey in every panel. Soft, even, almost shadowless light from a large softbox in front of the subject and slightly above, with gentle fill from both sides; no rim light, no hard shadows, no spotlight, no vignette. Neutral daylight white balance, true-to-life colors, medium contrast, no color grading, no film grain.
 ```
 
-**SHEET-LAYOUT**
+**SHEET-LAYOUT**（v2.1：分隔线从 light-grey 改成 white。已通过的手部图实际出的是白线，见 [图片转提示词学习记录](../prompts/reference-sheet-reverse-prompts.md)）
 ```text
-Layout: four equal vertical panels in one horizontal row, separated by thin straight light-grey gutters; camera height, lighting and backdrop are identical in every panel; the subject is centered and fills each panel.
+Layout: four equal vertical panels in one horizontal row, separated by thin straight white gutters about 1% of the image width; camera height, lighting and backdrop are identical in every panel; the subject is centered and fills each panel.
 ```
 
 **SHEET-END**（每张设定图的结尾）
@@ -184,21 +184,55 @@ Panel 1: the back of the right hand resting flat on a matte grey surface that ma
 
 手放在和背景同色的哑光灰面上，不放金属桌。金属桌在镜头 I3 里由 LOC-INTERVIEW 提供。
 
-**③ 第十三人（接母版，最好再接上沃德的手）**
+**③ 第十三人（明确版，接沃德的手 v2）**
 
-`[SHEET-MATCH] [SHEET-STYLE] [SHEET-LAYOUT]` + 下面这段 + `[SHEET-END]`
+参考图只接**沃德的手 v2**：它是 4 格，背景、光线和母版一致，第 4 格就是要复制的手套和疤。下面是完整提示词，已经把固定块拼好，可以直接粘贴：
+
 ```text
-Panel 1: front view, full body. Panel 2: three-quarter view, full body. Panel 3: side view, full body. Panel 4: close-up of the right hand, the glove torn open across the back revealing the scar. Subject: a thirteenth tactical officer in identical black tactical gear, ballistic helmet with a white stenciled number 7-12, full black balaclava and dark goggles, face never visible; the glove on his right hand is torn open across the back, revealing an old shiny burn scar. He stands perfectly still, arms relaxed at his sides, no weapon.
+Style and detail reference: <沃德的手 v2>. Match it exactly in backdrop, lighting, white balance, contrast, lens look, the thin white gutters and the four-panel layout. From its fourth panel, copy the black fingerless tactical glove with the wide velcro wrist strap, the hole torn open across the back of the hand, and the raised, shiny, pinkish-white burn scar showing through the hole. Take nothing else from it. [SHEET-STYLE] [SHEET-LAYOUT] Panel 1: front view, full body from the top of the helmet to the soles of the boots, standing upright and facing the camera, arms hanging relaxed at his sides, hands empty. Panel 2: three-quarter view, full body, turned halfway toward the right edge of the panel, same pose. Panel 3: right-side profile, full body, facing the right edge of the panel so that his right side and right hand are toward the camera, same pose. Panel 4: close-up of his right hand seen from directly above, back of the hand up, framed like the fourth panel of the reference, with the sleeve of a black combat shirt at the wrist. Subject: [THIRTEENTH-REF]. Gear details: matte black ballistic helmet with the white stenciled number 7-12 on the front; black balaclava covering the whole face and neck; dark tinted goggles over the eyes, so no skin and no eyes are visible; black plate-carrier vest with plain black pouches; plain grey shoulder patches with no insignia; black long-sleeve combat shirt; black cargo trousers; black knee pads; black tactical boots; black fingerless tactical gloves with wide velcro wrist straps on both hands. He stands perfectly still. No weapon, no rifle, no holster. No badges, no police insignia, no red anywhere, no text anywhere except the helmet number 7-12. No footer bar, no border. [SHEET-END]
 ```
 
-- 同时接上沃德的手（v2），第 4 格的疤和手套才会和手部图一致。
-- 头盔编号如果生成乱码，就去掉 `with a white stenciled number 7-12`，生成空白头盔，后期贴上 7-12。
+"明确"体现在这几处，以后写设定图都照这个标准：
+
+| 容易含糊的地方 | 明确写法 |
+|---|---|
+| 景别 | 写清从哪到哪：`full body from the top of the helmet to the soles of the boots` |
+| 朝向 | 不写 left / right profile（模型常弄反），写"朝画面右边"，并说明哪一侧对着镜头 |
+| 姿势 | 每格都写：站直、双手自然下垂、手里没东西 |
+| 装备 | 逐件列出：头盔、面罩、护目镜、背心、口袋、臂章、上衣、裤子、护膝、靴子、手套 |
+| 手套 | 写死成和沃德的手 v2 一样：半指、宽魔术贴腕带、手背破洞 |
+| 文字 | 只允许头盔上的 7-12，其余一律禁止 |
+| 红色 | 写明 `no red anywhere`（红色只属于证物） |
+| 版式瑕疵 | 加 `No footer bar, no border`（反推时有一个模型在手部图底部看到了灰条） |
+
+- 头盔编号如果生成乱码，就去掉 `with the white stenciled number 7-12 on the front`，生成空白头盔，后期贴上 7-12。
+- 第十三人不拿武器，和"他从不举枪"一致。
+
+### 已锁定的细节（以通过的 v2 为准）
+
+这些细节来自对已通过设定图的图片转提示词反推（两个视觉模型交叉核对，见 [学习记录](../prompts/reference-sheet-reverse-prompts.md)）。之后的镜头提示词要和它们一致：
+
+| 项目 | 锁定的样子 | 用在 |
+|---|---|---|
+| 背景 | 平整无缝的哑光中灰（约 130–140 / 255），无渐变、无投影 | 所有设定图 |
+| 分隔线 | 白色细线，约为画面宽度的 1% | 所有设定图 |
+| 烧伤疤 | 不规则长条，隆起、发亮，粉白色；沿手背纵向，从手腕一侧伸向中指，约占手背长度的 1/3 | I3、C2、第十三人 |
+| 手套 | 黑色哑光**半指**战术手套，宽魔术贴腕带；手背中央一个椭圆形破洞，露出疤 | C2、第十三人 |
+| 手表 | 银色金属链表带，白 / 银色表盘 | I3 |
+| 袖口 | 炭灰色西装袖口 | I3 |
+
+WARD-GLOVE（手套块，用在 C2 等镜头）：
+
+```text
+a black matte fingerless tactical glove with a wide velcro wrist strap, an oval hole torn open across the back of the hand revealing a raised, shiny, pinkish-white burn scar
+```
 
 ### 在 AKOOL 里重做时
 
 - 诺拉：文生图。正向提示词按上面拼好，NEG-SHEET 填进 `negative_prompt`。
 - 手部图和第十三人：AKOOL 只能接**一张**源图（`source_image`），所以用诺拉母版做源图，`similar` 先设 **0.3** 左右试。数值太高会把诺拉的脸和衣服带进来，太低又会丢掉风格。这个数值是起点，要先小规模测试。
 - 三张都用同一个分辨率和画幅，例如 1080p、16:9。
+- ⚠️ 2026-11-06 实测：AKOOL 接口对当前账号返回 `1213 Only subscribed users can use the API functions`，连查询模型都不行。**账号订阅前，AKOOL 这一步做不了**，所以三张设定图都先在 LibTV 生成。AKOOL 的参与放在关键帧、图生视频、口型和配音上，分工见 [AKOOL 制作流程](../production/akool-workflow.md)。
 
 ## 已生成的参考图（LibTV）
 
@@ -208,9 +242,10 @@ LibTV 项目"EXHIBIT 47 第47号证物"。模型：General image Pro（`nebula-u
 |---|---|---|
 | 诺拉四视图 v1 | **废弃**：和手部图风格不统一（原因见上表） | `i-kKd0eUq6g4` |
 | 沃德右手 v1 | **废弃**：微距产品照风格，缺袖口和钢表 | `i-AEP7votex7` |
-| 诺拉四视图 v2（风格母版） | 已生成，**待人工验收** | `i-3tleSMYSCV` |
-| 沃德右手 v2 | 以诺拉 v2 为参考图生成，**待人工验收** | `i-ogNrWvlqro` |
-| 第十三人 v2 | 未生成；等前两张通过后再做 | — |
+| 诺拉四视图 v2（风格母版） | **已通过**。⚠️ 两个视觉模型都判断它只有 1 格正面胸像，不是四视图；如果确实只有一格，建议补一张四视图（侧脸和下巴特写对镜头 I2、I4 有用） | `i-3tleSMYSCV` |
+| 沃德右手 v2 | **已通过**。⚠️ 有一个模型说第 1 格是左手，请再确认 | `i-ogNrWvlqro` |
+| 第十三人 v2 | 以沃德的手 v2 为参考图生成。头盔编号出错（01 / 1-12）、有底部条、臂章是黑色，**不用** | `i-5bwnmb06HT` |
+| 第十三人 v2.1（空白头盔） | 在 v2 上局部修改：无文字、臂章浅灰。底部条还在；一个模型说有枪套。**待人工验收** | `i-OM9iRyuQJu` |
 
 v2 的提示词就是本页的固定块拼起来的结果，节点里能看到完整原文。
 
@@ -219,6 +254,7 @@ v2 的提示词就是本页的固定块拼起来的结果，节点里能看到�
 - **风格一致**（先查这一项）：把诺拉 v2 和手部 v2 并排放，检查背景灰度、光的方向和软硬、色温、清晰度，以及 4 格的宽度和分隔线。有任何一项不同，就只重做手部图，**母版不动**。
 - 诺拉：四格是**同一个人**；第 4 格能看清下巴上的伤疤；短发；没有文字或标志。
 - 沃德的手：四格里**烧伤疤的形状和位置一致**；第 1 格有西装袖口和钢表；第 4 格的手套从手背撕开、露出疤；手指数量正常。
+- 第十三人：4 格；完全不露脸和眼睛；手里、身上没有武器；头盔空白（7-12 后期贴）；臂章浅灰、无图案；第 4 格的手套和疤与沃德的手 v2 第 4 格一致；背景、光线、分隔线和另两张一致。
 
 注意：这些图是在 LibTV 生成的。比赛要求 AKOOL 在制作中起"有意义的作用"，所以后面的镜头生成要放在 AKOOL 里做，或者按上面的方法在 AKOOL 里重做设定图，并保留制作记录。
 

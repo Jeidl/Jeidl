@@ -4,7 +4,7 @@ title: AKOOL 制作流程与 14 天排期
 tags: [production, akool]
 created: 2026-11-06
 updated: 2026-11-06
-related: [20261106-challenge-rules, 20261106-character-bible, 20261106-prompt-formula, 20261106-untomorrow-shot-list, 20261106-submission-checklist, 20261106-editing-rhythm, 20261106-black-screen-text-cards, 20261106-music-sfx-prompts, 20261106-sound-design, 20261106-exhibit-47-character-bible, 20261106-exhibit-47-shot-prompts, 20261106-exhibit-47-shot-list]
+related: [20261106-reference-sheet-reverse-prompts, 20261106-challenge-rules, 20261106-character-bible, 20261106-prompt-formula, 20261106-untomorrow-shot-list, 20261106-submission-checklist, 20261106-editing-rhythm, 20261106-black-screen-text-cards, 20261106-music-sfx-prompts, 20261106-sound-design, 20261106-exhibit-47-character-bible, 20261106-exhibit-47-shot-prompts, 20261106-exhibit-47-shot-list]
 summary: 从角色设定图、动态分镜、图生视频、口型与配音，到剪辑、遮幅、AKOOL 标志、混音和导出的十步流程，按 11 月 20 日截止倒排的 14 天日程，以及"AKOOL 使用"的留证方法。
 ---
 
@@ -17,6 +17,24 @@ summary: 从角色设定图、动态分镜、图生视频、口型与配音，�
 ## 背景
 
 评分里 15% 是"Use of AKOOL"，规则也要求 AKOOL 起"有意义的作用"，提交时还要说明用法。所以：**能在 AKOOL 里做的，都在 AKOOL 里做，并且全程留证。** 具体功能和模型名称以账号内实际可用的为准。
+
+## 《第 47 号证物》的 AKOOL 分工（2026-11-06 更新）
+
+下面的十步流程是按备选方案《明日不来》写的，主方案照同样的步骤做。主方案的实际分工：
+
+| 环节 | 工具 | 状态 |
+|---|---|---|
+| 设定图（诺拉、沃德的手、第十三人） | LibTV（`nebula-ultra`） | 已完成，见 [人物与道具设定](../concept/exhibit-47-character-bible.md) |
+| 图片转提示词、设定图核对 | LibTV 视觉模型（GVLM 3.1、Qwen 3 VL Flash） | 已完成，见 [学习记录](../prompts/reference-sheet-reverse-prompts.md) |
+| 关键帧（以设定图为源图的图生图） | **AKOOL** 图像生成 | 待做 |
+| 图生视频（全部镜头） | **AKOOL** 视频生成器 | 待做 |
+| 配音 V1–V12 | **AKOOL** 配音 | 待做 |
+| 口型同步（I2） | **AKOOL** 口型同步 | 待做 |
+| 剪辑、字卡、叠字、混音 | 剪辑软件 | 待做 |
+
+⚠️ **阻塞**：2026-11-06 实测，AKOOL 接口对当前账号返回 `1213 Only subscribed users can use the API functions`，连查询模型都做不了。需要先订阅 AKOOL（$100 参与奖也只限 Premium 账号）。订阅之前，可以在 AKOOL 网页端手动做，并且每一步截图。
+
+AKOOL 的图生图只能接一张源图（`source_image`，相似度 `similar` 0–1）。做关键帧时用**单张设定图**做源图：诺拉的镜头用诺拉 v2，第十三人的镜头用第十三人 v2.1。
 
 ## 十步流程
 

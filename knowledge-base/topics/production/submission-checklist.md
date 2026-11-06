@@ -1,0 +1,62 @@
+---
+id: 20261106-submission-checklist
+title: 提交检查清单
+tags: [production, akool, copyright]
+created: 2026-11-06
+updated: 2026-11-06
+related: [20261106-challenge-rules, 20261106-akool-workflow, 20261106-withholding-mystery]
+summary: 发布和提交前逐项勾选：时长、原创性、AKOOL 标志、版权素材、平台发布与话题标签、提交表单说明、评分自查。
+---
+
+# 提交检查清单
+
+> Summary: 发布和提交前逐项勾选：时长、原创性、AKOOL 标志、版权素材、平台发布与话题标签、提交表单说明、评分自查。
+
+## 硬性要求（任何一项不满足都可能被拒）
+
+- [ ] 已在官网再次确认**截止日期**（11-20 还是 12-20）和规则原文
+- [ ] 时长在 **30–90 秒**之间（主版本 1:15）
+- [ ] 是**完整成片**，没有占位镜头或测试画面
+- [ ] 电影概念是**原创**的：没有现有 IP 的角色、世界观、商标
+- [ ] **AKOOL 标志**：片头标志卡 ✓，全片顶部小标志 ✓，清晰可见
+- [ ] AKOOL 在制作中起了**有意义的作用**，有截图和制作日志为证
+- [ ] 所有**音乐**是自己生成或演奏的，没有使用受版权保护的歌曲或录音
+- [ ] 所有**字体**是可商用许可（如 Google Fonts 的 OFL）
+- [ ] 没有使用**真人肖像**（名人、他人的脸）
+- [ ] 使用的是有效的 AKOOL 账号（想拿 $100 参与奖需要 Premium）
+
+## 发布
+
+- [ ] 发布在 YouTube / TikTok / Instagram 至少一个平台，设为**公开**，并保持公开到比赛结束
+- [ ] 话题标签：`#AKOOLClash #AKOOLFilmChallenge #AIVideo #AIFilm`
+- [ ] @AKOOL
+- [ ] 标题：`UNTOMORROW — Official Trailer (Coming Never) | #AKOOLFilmChallenge`
+- [ ] 简介第一行钩子："Every midnight, the world starts over. Only some of us remember."
+- [ ] 置顶评论提问："Who do you think the Timekeeper is?"
+
+## 提交表单
+
+- [ ] 作品链接
+- [ ] 选择 **Coming Never** 赛道
+- [ ] "如何使用 AKOOL"的说明，建议结构：
+  1. 角色设定：AKOOL 图像生成，锁定 3 个角色
+  2. 画面：AKOOL 视频生成器，用 [模型名] 完成约 25 个镜头的图生视频
+  3. 对白：AKOOL 口型同步 / 配音
+  4. 其他工具：剪辑软件、音乐工具（如实列出）
+- [ ] 准备好补充材料（截图、制作日志），以备主办方索取
+
+## 评分自查（找 3 个没看过剧本的人试看）
+
+| 维度 | 自查问题 | 合格标准 |
+|---|---|---|
+| Story 30% | 看完能复述规则吗？ | 能说出"每晚午夜重来，有人在杀记得的人" |
+| Originality 20% | 有没有一个"没见过"的瞬间？ | 日期卡倒回、新年永远不来 |
+| Creative Execution 20% | 有没有明显的 AI 穿帮？ | 没有人提到"脸变了"或"手指怪" |
+| Use of AKOOL 15% | 说明清楚吗？ | 有截图和制作日志 |
+| I'd watch that 15% | 想看正片吗？ | 至少 2 / 3 的人问"凶手是谁" |
+
+## 相关笔记
+
+- [赛事规则](../brief/challenge-rules.md)：每一条的出处。
+- [AKOOL 制作流程](akool-workflow.md)：留证方法和排期。
+- [留白与悬念营销](../techniques/withholding-mystery.md)：发布文案。

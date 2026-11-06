@@ -4,7 +4,7 @@ title: 故事定向：悬疑 + 动作 + 无限流（时间循环）
 tags: [brief, story, time-loop]
 created: 2026-11-06
 updated: 2026-11-06
-related: [20261106-challenge-rules, 20261106-style-decision, 20261106-untomorrow-concept, 20261106-edge-of-tomorrow, 20261106-trailer-structure, 20261106-black-screen-text-cards, 20261106-longlegs-teasers, 20261106-prisoners, 20261106-tenet, 20261106-action-mystery-concepts]
+related: [20261106-challenge-rules, 20261106-style-decision, 20261106-untomorrow-concept, 20261106-edge-of-tomorrow, 20261106-trailer-structure, 20261106-black-screen-text-cards, 20261106-longlegs-teasers, 20261106-prisoners, 20261106-tenet, 20261106-action-mystery-concepts, 20261106-exhibit-47-story]
 summary: 在打斗 / 武侠 / 无限流中选择"悬疑 + 动作 + 时间循环（无限流）"，以及它为什么同时满足故事分、原创分和 AI 制作的限制。
 ---
 
@@ -16,7 +16,7 @@ summary: 在打斗 / 武侠 / 无限流中选择"悬疑 + 动作 + 时间循环�
 
 **主类型：悬疑惊悚；动作只做调味；结构钩子：无限流里的"时间循环"。**
 
-具体故事见 [《明日不来 UNTOMORROW》核心创意](../concept/untomorrow-concept.md)。
+**更新**：用户最终选定以动作和悬疑为主的 [《第 47 号证物》](../concept/exhibit-47-story.md)。下面的时间循环分析保留给备选方案 [《明日不来》](../concept/untomorrow-concept.md)。
 
 ## 三个方向对比
 

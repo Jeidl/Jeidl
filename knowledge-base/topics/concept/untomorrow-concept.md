@@ -4,13 +4,15 @@ title: 《明日不来 UNTOMORROW》核心创意
 tags: [concept, story, time-loop]
 created: 2026-11-06
 updated: 2026-11-06
-related: [20261106-story-direction, 20261106-character-bible, 20261106-alternative-concepts, 20261106-untomorrow-shot-list, 20261106-text-card-copy, 20261106-music-strategy]
+related: [20261106-story-direction, 20261106-character-bible, 20261106-alternative-concepts, 20261106-untomorrow-shot-list, 20261106-text-card-copy, 20261106-music-strategy, 20261106-exhibit-47-story]
 summary: 预告片主创意：城市被困在 12 月 31 日，每晚午夜重来，一个只露背影的"守时人"在猎杀记得循环的人；包含 logline、世界规则、主题、反转和片名备选。
 ---
 
 # 《明日不来 UNTOMORROW》核心创意
 
 > Summary: 预告片主创意：城市被困在 12 月 31 日，每晚午夜重来，一个只露背影的"守时人"在猎杀记得循环的人；包含 logline、世界规则、主题、反转和片名备选。
+
+> 状态：**备选方案**。主方案已改为 [《第 47 号证物》](exhibit-47-story.md)。
 
 ## 一句话（Logline）
 

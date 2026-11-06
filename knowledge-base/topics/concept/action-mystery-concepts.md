@@ -4,7 +4,7 @@ title: 动作悬疑 × 元结尾：4 个备选故事
 tags: [concept, story, action]
 created: 2026-11-06
 updated: 2026-11-06
-related: [20261106-meta-endings, 20261106-untomorrow-concept, 20261106-alternative-concepts, 20261106-story-direction, 20261106-character-bible, 20261106-style-anchor, 20261106-untomorrow-shot-list, 20261106-civil-war, 20261106-cloverfield-teaser, 20261106-longlegs-teasers, 20261106-mission-impossible-fallout]
+related: [20261106-meta-endings, 20261106-untomorrow-concept, 20261106-alternative-concepts, 20261106-story-direction, 20261106-character-bible, 20261106-style-anchor, 20261106-untomorrow-shot-list, 20261106-civil-war, 20261106-cloverfield-teaser, 20261106-longlegs-teasers, 20261106-mission-impossible-fallout, 20261106-exhibit-47-story]
 summary: 以动作和悬疑为主、结尾字卡解释"这部电影为什么永不上映"的四个写实方案：《第 47 号证物》《████（涂黑）》《第二张脸》《最后一镜》，含谜题、动作戏、反转、元结尾、撞车检查和打分；首推《第 47 号证物》。
 ---
 
@@ -23,16 +23,20 @@ summary: 以动作和悬疑为主、结尾字卡解释"这部电影为什么永�
 
 ---
 
-## ① 《第 47 号证物 EXHIBIT 47》（备选片名《第十三人》）← 首推
+## ① 《第 47 号证物 EXHIBIT 47》 ✅ 已选定为主方案
+
+> 完整故事见 [《第 47 号证物》完整故事](exhibit-47-story.md)。下面是最初的提案，有两处已经在完整故事里修改：
+> - "每台记录仪拍到的多余队员都不一样" → 改为报数时出现两个"十二"：第十三个人用的是死者的旧号码 7-12。
+> - 原来的按钮"她自己的记录仪里有十三个人，却没有她"不成立，因为执法记录仪本来就拍不到佩戴者 → 改为审讯官说出第十三个人在黑暗中对她说过的那句话。
 
 **一句话**：一支 12 人的特警队突袭城郊一座废弃冷库，71 分钟后全员失联。第二天早上，只有入职 3 个月的女警 Nora 走了出来。在审讯室里，她只说了一句话："我们进去的时候，是十三个人。"
 
 - **形式**：整支预告由"证物"剪成：执法记录仪、无人机、监控、行车记录仪画面，穿插审讯室里有正片质感的镜头（Nora，和一个始终看不见脸的审讯者）。
-- **谜题**：第十三个人是谁？12 台执法记录仪里，每一台都拍到了一个"多出来的队员"，而**每一台拍到的都是不同的人**。
+- **谜题**：第十三个人是谁？报数时，新人刚报完"十二"，黑暗里又有一个声音说"十二"。
 - **动作**：破门、闪光弹、走廊交火、楼梯间近身搏斗、只靠枪口火光照明的黑暗枪战（参考 [内战](../trailers/civil-war.md) 的静噪交替）。
 - **黑屏**：执法记录仪一台接一台显示 `SIGNAL LOST`。每断一台，就少一个人，这是天然的黑屏。
 - **引人思考**：如果每个人眼里的"陌生人"都不一样，陌生人到底是谁？
-- **反转（按钮）**：审讯者调出 Nora 自己的执法记录仪。画面里有十三名队员，**没有一个是她**。
+- **反转（按钮）**：审讯官温和地说 "You're safe now, Kade."，正是第十三个人在黑暗中对她说过的话。
 - **元结尾**（证物型 + 重看型）：
   `EVERY SHOT IN THIS FILM IS EVIDENCE.` / `THE CASE IS STILL OPEN.` / `THE THIRTEENTH APPEARS IN 4 SHOTS. WATCH AGAIN.` → `COMING NEVER`
 - **AI 适配（最好做）**：执法记录仪和监控画面低清、晃动、鱼眼畸变，能掩盖 AI 的瑕疵；特警戴头盔和面罩，几乎不需要人脸一致性；只有 Nora 一张脸要锁定。时间戳、`SIGNAL LOST` 等文字全部后期叠加。

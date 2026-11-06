@@ -1,0 +1,1856 @@
+[
+ {
+  "shot": "02",
+  "code": "D1",
+  "rows": [
+   {
+    "target": "D1_nora",
+    "frames_visible": 48,
+    "frames": 48,
+    "first": 2.0,
+    "last": 5.92,
+    "frames_in_frame": 48,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "D1_nora.head",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 48,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "D1_nora.hand_r",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 48,
+    "max_unoccluded": 0.0
+   }
+  ]
+ },
+ {
+  "shot": "04",
+  "code": "C3",
+  "rows": [
+   {
+    "target": "C3_van_1",
+    "frames_visible": 48,
+    "frames": 48,
+    "first": 7.5,
+    "last": 11.42,
+    "frames_in_frame": 48,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "C3_van_2",
+    "frames_visible": 48,
+    "frames": 48,
+    "first": 7.5,
+    "last": 11.42,
+    "frames_in_frame": 48,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "C3_officer_1",
+    "frames_visible": 46,
+    "frames": 48,
+    "first": 7.5,
+    "last": 11.25,
+    "frames_in_frame": 48,
+    "max_unoccluded": 0.39
+   },
+   {
+    "target": "C3_officer_1.head",
+    "frames_visible": 30,
+    "frames": 48,
+    "first": 7.5,
+    "last": 10.75,
+    "frames_in_frame": 48,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "C3_officer_1.hand_r",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 48,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "C3_officer_2",
+    "frames_visible": 37,
+    "frames": 48,
+    "first": 7.5,
+    "last": 11.42,
+    "frames_in_frame": 48,
+    "max_unoccluded": 0.34
+   },
+   {
+    "target": "C3_officer_2.head",
+    "frames_visible": 11,
+    "frames": 48,
+    "first": 10.17,
+    "last": 11.08,
+    "frames_in_frame": 48,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "C3_officer_2.hand_r",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 48,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "C3_officer_3",
+    "frames_visible": 32,
+    "frames": 48,
+    "first": 7.5,
+    "last": 11.42,
+    "frames_in_frame": 48,
+    "max_unoccluded": 0.35
+   },
+   {
+    "target": "C3_officer_3.head",
+    "frames_visible": 11,
+    "frames": 48,
+    "first": 10.5,
+    "last": 11.33,
+    "frames_in_frame": 48,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "C3_officer_3.hand_r",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 48,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "C3_officer_4",
+    "frames_visible": 28,
+    "frames": 48,
+    "first": 7.5,
+    "last": 11.42,
+    "frames_in_frame": 48,
+    "max_unoccluded": 0.37
+   },
+   {
+    "target": "C3_officer_4.head",
+    "frames_visible": 9,
+    "frames": 48,
+    "first": 10.75,
+    "last": 11.42,
+    "frames_in_frame": 48,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "C3_officer_4.hand_r",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 48,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "C3_officer_5",
+    "frames_visible": 26,
+    "frames": 48,
+    "first": 7.5,
+    "last": 11.42,
+    "frames_in_frame": 48,
+    "max_unoccluded": 0.35
+   },
+   {
+    "target": "C3_officer_5.head",
+    "frames_visible": 5,
+    "frames": 48,
+    "first": 11.08,
+    "last": 11.42,
+    "frames_in_frame": 48,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "C3_officer_5.hand_r",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 48,
+    "max_unoccluded": 0.0
+   }
+  ]
+ },
+ {
+  "shot": "05",
+  "code": "B1",
+  "rows": [
+   {
+    "target": "B1_ram_1",
+    "frames_visible": 30,
+    "frames": 30,
+    "first": 11.5,
+    "last": 13.92,
+    "frames_in_frame": 30,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "B1_ram_1.head",
+    "frames_visible": 30,
+    "frames": 30,
+    "first": 11.5,
+    "last": 13.92,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "B1_ram_1.hand_r",
+    "frames_visible": 30,
+    "frames": 30,
+    "first": 11.5,
+    "last": 13.92,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.22
+   },
+   {
+    "target": "B1_ram_2",
+    "frames_visible": 30,
+    "frames": 30,
+    "first": 11.5,
+    "last": 13.92,
+    "frames_in_frame": 30,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "B1_ram_2.head",
+    "frames_visible": 30,
+    "frames": 30,
+    "first": 11.5,
+    "last": 13.92,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.67
+   },
+   {
+    "target": "B1_ram_2.hand_r",
+    "frames_visible": 0,
+    "frames": 30,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.0
+   }
+  ]
+ },
+ {
+  "shot": "07",
+  "code": "I1",
+  "rows": [
+   {
+    "target": "I1_nora",
+    "frames_visible": 36,
+    "frames": 36,
+    "first": 15.5,
+    "last": 18.42,
+    "frames_in_frame": 36,
+    "max_unoccluded": 0.82
+   },
+   {
+    "target": "I1_nora.head",
+    "frames_visible": 36,
+    "frames": 36,
+    "first": 15.5,
+    "last": 18.42,
+    "frames_in_frame": 36,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "I1_nora.hand_r",
+    "frames_visible": 36,
+    "frames": 36,
+    "first": 15.5,
+    "last": 18.42,
+    "frames_in_frame": 36,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "I1_WARD_offscreen",
+    "frames_visible": 0,
+    "frames": 36,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 0,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "I1_WARD_offscreen.head",
+    "frames_visible": 0,
+    "frames": 36,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 0,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "I1_WARD_offscreen.hand_r",
+    "frames_visible": 0,
+    "frames": 36,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 0,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "I1_WARD_offscreen.scar",
+    "frames_visible": 0,
+    "frames": 36,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 0,
+    "max_unoccluded": 0.0
+   }
+  ]
+ },
+ {
+  "shot": "09",
+  "code": "E1",
+  "rows": []
+ },
+ {
+  "shot": "10",
+  "code": "B2",
+  "rows": [
+   {
+    "target": "B2_officer_11",
+    "frames_visible": 27,
+    "frames": 48,
+    "first": 23.0,
+    "last": 25.17,
+    "frames_in_frame": 27,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "B2_officer_11.head",
+    "frames_visible": 27,
+    "frames": 48,
+    "first": 23.0,
+    "last": 25.17,
+    "frames_in_frame": 27,
+    "max_unoccluded": 0.44
+   },
+   {
+    "target": "B2_officer_11.hand_r",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 27,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_10",
+    "frames_visible": 27,
+    "frames": 48,
+    "first": 23.0,
+    "last": 25.17,
+    "frames_in_frame": 27,
+    "max_unoccluded": 0.06
+   },
+   {
+    "target": "B2_officer_10.head",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 27,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_10.hand_r",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 27,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_09",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 27,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_09.head",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 27,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_09.hand_r",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 27,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_08",
+    "frames_visible": 25,
+    "frames": 48,
+    "first": 23.0,
+    "last": 25.17,
+    "frames_in_frame": 27,
+    "max_unoccluded": 0.08
+   },
+   {
+    "target": "B2_officer_08.head",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 27,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_08.hand_r",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 27,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_07",
+    "frames_visible": 26,
+    "frames": 48,
+    "first": 23.0,
+    "last": 25.08,
+    "frames_in_frame": 27,
+    "max_unoccluded": 0.18
+   },
+   {
+    "target": "B2_officer_07.head",
+    "frames_visible": 25,
+    "frames": 48,
+    "first": 23.0,
+    "last": 25.0,
+    "frames_in_frame": 27,
+    "max_unoccluded": 0.22
+   },
+   {
+    "target": "B2_officer_07.hand_r",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 27,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_06",
+    "frames_visible": 26,
+    "frames": 48,
+    "first": 23.0,
+    "last": 25.08,
+    "frames_in_frame": 27,
+    "max_unoccluded": 0.02
+   },
+   {
+    "target": "B2_officer_06.head",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 27,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_06.hand_r",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 27,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_05",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 27,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_05.head",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 27,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_05.hand_r",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 26,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_04",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 26,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_04.head",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 26,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_04.hand_r",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 26,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_03",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 26,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_03.head",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 26,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_03.hand_r",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 26,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_02",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 26,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_02.head",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 26,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_02.hand_r",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 26,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_01",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 26,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_01.head",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 26,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_officer_01.hand_r",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 25,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_THIRTEENTH_7-12",
+    "frames_visible": 19,
+    "frames": 48,
+    "first": 25.42,
+    "last": 26.92,
+    "frames_in_frame": 19,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "B2_THIRTEENTH_7-12.head",
+    "frames_visible": 19,
+    "frames": 48,
+    "first": 25.42,
+    "last": 26.92,
+    "frames_in_frame": 19,
+    "max_unoccluded": 0.86
+   },
+   {
+    "target": "B2_THIRTEENTH_7-12.hand_r",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 18,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B2_THIRTEENTH_7-12.scar",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 4,
+    "max_unoccluded": 0.0
+   }
+  ]
+ },
+ {
+  "shot": "13",
+  "code": "B3",
+  "rows": [
+   {
+    "target": "B3_officer_a",
+    "frames_visible": 28,
+    "frames": 36,
+    "first": 30.5,
+    "last": 33.42,
+    "frames_in_frame": 36,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "B3_officer_a.head",
+    "frames_visible": 18,
+    "frames": 36,
+    "first": 30.5,
+    "last": 33.42,
+    "frames_in_frame": 36,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "B3_officer_a.hand_r",
+    "frames_visible": 9,
+    "frames": 36,
+    "first": 31.58,
+    "last": 33.08,
+    "frames_in_frame": 36,
+    "max_unoccluded": 0.33
+   },
+   {
+    "target": "B3_officer_b",
+    "frames_visible": 28,
+    "frames": 36,
+    "first": 30.5,
+    "last": 33.42,
+    "frames_in_frame": 36,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "B3_officer_b.head",
+    "frames_visible": 17,
+    "frames": 36,
+    "first": 31.5,
+    "last": 33.42,
+    "frames_in_frame": 36,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "B3_officer_b.hand_r",
+    "frames_visible": 3,
+    "frames": 36,
+    "first": 31.92,
+    "last": 32.5,
+    "frames_in_frame": 36,
+    "max_unoccluded": 0.33
+   }
+  ]
+ },
+ {
+  "shot": "15",
+  "code": "B4",
+  "rows": [
+   {
+    "target": "B4_officer_1",
+    "frames_visible": 18,
+    "frames": 30,
+    "first": 35.0,
+    "last": 36.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "B4_officer_1.head",
+    "frames_visible": 0,
+    "frames": 30,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 0,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B4_officer_1.hand_r",
+    "frames_visible": 15,
+    "frames": 30,
+    "first": 35.0,
+    "last": 36.42,
+    "frames_in_frame": 28,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "B4_officer_2",
+    "frames_visible": 22,
+    "frames": 30,
+    "first": 35.0,
+    "last": 37.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.82
+   },
+   {
+    "target": "B4_officer_2.head",
+    "frames_visible": 17,
+    "frames": 30,
+    "first": 35.0,
+    "last": 36.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "B4_officer_2.hand_r",
+    "frames_visible": 17,
+    "frames": 30,
+    "first": 35.0,
+    "last": 36.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.78
+   },
+   {
+    "target": "B4_officer_3",
+    "frames_visible": 18,
+    "frames": 30,
+    "first": 35.0,
+    "last": 36.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.94
+   },
+   {
+    "target": "B4_officer_3.head",
+    "frames_visible": 18,
+    "frames": 30,
+    "first": 35.0,
+    "last": 36.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "B4_officer_3.hand_r",
+    "frames_visible": 7,
+    "frames": 30,
+    "first": 35.58,
+    "last": 36.08,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.78
+   },
+   {
+    "target": "B4_officer_4",
+    "frames_visible": 22,
+    "frames": 30,
+    "first": 35.0,
+    "last": 37.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.84
+   },
+   {
+    "target": "B4_officer_4.head",
+    "frames_visible": 18,
+    "frames": 30,
+    "first": 35.0,
+    "last": 36.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "B4_officer_4.hand_r",
+    "frames_visible": 18,
+    "frames": 30,
+    "first": 35.0,
+    "last": 36.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.78
+   },
+   {
+    "target": "B4_officer_5",
+    "frames_visible": 18,
+    "frames": 30,
+    "first": 35.0,
+    "last": 36.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "B4_officer_5.head",
+    "frames_visible": 0,
+    "frames": 30,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 0,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B4_officer_5.hand_r",
+    "frames_visible": 17,
+    "frames": 30,
+    "first": 35.0,
+    "last": 36.42,
+    "frames_in_frame": 29,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "B4_BRANDT_7-01",
+    "frames_visible": 30,
+    "frames": 30,
+    "first": 35.0,
+    "last": 37.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "B4_BRANDT_7-01.head",
+    "frames_visible": 29,
+    "frames": 30,
+    "first": 35.0,
+    "last": 37.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "B4_BRANDT_7-01.hand_r",
+    "frames_visible": 17,
+    "frames": 30,
+    "first": 35.0,
+    "last": 36.33,
+    "frames_in_frame": 18,
+    "max_unoccluded": 0.78
+   }
+  ]
+ },
+ {
+  "shot": "17",
+  "code": "O2",
+  "rows": [
+   {
+    "target": "O2_past_1",
+    "frames_visible": 30,
+    "frames": 30,
+    "first": 39.0,
+    "last": 41.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "O2_past_1.head",
+    "frames_visible": 30,
+    "frames": 30,
+    "first": 39.0,
+    "last": 41.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "O2_past_1.hand_r",
+    "frames_visible": 28,
+    "frames": 30,
+    "first": 39.0,
+    "last": 41.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "O2_past_2",
+    "frames_visible": 30,
+    "frames": 30,
+    "first": 39.0,
+    "last": 41.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "O2_past_2.head",
+    "frames_visible": 30,
+    "frames": 30,
+    "first": 39.0,
+    "last": 41.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "O2_past_2.hand_r",
+    "frames_visible": 28,
+    "frames": 30,
+    "first": 39.0,
+    "last": 41.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "O2_past_3",
+    "frames_visible": 30,
+    "frames": 30,
+    "first": 39.0,
+    "last": 41.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "O2_past_3.head",
+    "frames_visible": 30,
+    "frames": 30,
+    "first": 39.0,
+    "last": 41.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "O2_past_3.hand_r",
+    "frames_visible": 27,
+    "frames": 30,
+    "first": 39.0,
+    "last": 41.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "O2_past_4",
+    "frames_visible": 30,
+    "frames": 30,
+    "first": 39.0,
+    "last": 41.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "O2_past_4.head",
+    "frames_visible": 30,
+    "frames": 30,
+    "first": 39.0,
+    "last": 41.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "O2_past_4.hand_r",
+    "frames_visible": 18,
+    "frames": 30,
+    "first": 39.0,
+    "last": 40.5,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "O2_past_5",
+    "frames_visible": 30,
+    "frames": 30,
+    "first": 39.0,
+    "last": 41.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "O2_past_5.head",
+    "frames_visible": 30,
+    "frames": 30,
+    "first": 39.0,
+    "last": 41.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "O2_past_5.hand_r",
+    "frames_visible": 23,
+    "frames": 30,
+    "first": 39.0,
+    "last": 40.92,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "O2_past_6",
+    "frames_visible": 30,
+    "frames": 30,
+    "first": 39.0,
+    "last": 41.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "O2_past_6.head",
+    "frames_visible": 30,
+    "frames": 30,
+    "first": 39.0,
+    "last": 41.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "O2_past_6.hand_r",
+    "frames_visible": 3,
+    "frames": 30,
+    "first": 40.92,
+    "last": 41.17,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.33
+   }
+  ]
+ },
+ {
+  "shot": "19a",
+  "code": "B5",
+  "rows": [
+   {
+    "target": "B5_officer_1",
+    "frames_visible": 12,
+    "frames": 12,
+    "first": 43.5,
+    "last": 44.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "B5_officer_1.head",
+    "frames_visible": 12,
+    "frames": 12,
+    "first": 43.5,
+    "last": 44.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "B5_officer_1.hand_r",
+    "frames_visible": 9,
+    "frames": 12,
+    "first": 43.5,
+    "last": 44.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.11
+   },
+   {
+    "target": "B5_officer_2",
+    "frames_visible": 12,
+    "frames": 12,
+    "first": 43.5,
+    "last": 44.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "B5_officer_2.head",
+    "frames_visible": 12,
+    "frames": 12,
+    "first": 43.5,
+    "last": 44.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "B5_officer_2.hand_r",
+    "frames_visible": 0,
+    "frames": 12,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "B5_officer_3",
+    "frames_visible": 12,
+    "frames": 12,
+    "first": 43.5,
+    "last": 44.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "B5_officer_3.head",
+    "frames_visible": 9,
+    "frames": 12,
+    "first": 43.5,
+    "last": 44.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "B5_officer_3.hand_r",
+    "frames_visible": 10,
+    "frames": 12,
+    "first": 43.5,
+    "last": 44.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.33
+   }
+  ]
+ },
+ {
+  "shot": "19b",
+  "code": "B9",
+  "rows": [
+   {
+    "target": "B9_silhouette_own_man",
+    "frames_visible": 12,
+    "frames": 12,
+    "first": 44.5,
+    "last": 45.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.18
+   },
+   {
+    "target": "B9_silhouette_own_man.head",
+    "frames_visible": 6,
+    "frames": 12,
+    "first": 44.58,
+    "last": 45.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.11
+   },
+   {
+    "target": "B9_silhouette_own_man.hand_r",
+    "frames_visible": 3,
+    "frames": 12,
+    "first": 44.75,
+    "last": 44.92,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.33
+   }
+  ]
+ },
+ {
+  "shot": "19c",
+  "code": "C1",
+  "rows": [
+   {
+    "target": "C1_officer_1",
+    "frames_visible": 12,
+    "frames": 12,
+    "first": 45.5,
+    "last": 46.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "C1_officer_1.head",
+    "frames_visible": 12,
+    "frames": 12,
+    "first": 45.5,
+    "last": 46.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "C1_officer_1.hand_r",
+    "frames_visible": 9,
+    "frames": 12,
+    "first": 45.5,
+    "last": 46.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.67
+   },
+   {
+    "target": "C1_officer_2",
+    "frames_visible": 12,
+    "frames": 12,
+    "first": 45.5,
+    "last": 46.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.29
+   },
+   {
+    "target": "C1_officer_2.head",
+    "frames_visible": 12,
+    "frames": 12,
+    "first": 45.5,
+    "last": 46.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.33
+   },
+   {
+    "target": "C1_officer_2.hand_r",
+    "frames_visible": 0,
+    "frames": 12,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "C1_officer_3",
+    "frames_visible": 12,
+    "frames": 12,
+    "first": 45.5,
+    "last": 46.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "C1_officer_3.head",
+    "frames_visible": 9,
+    "frames": 12,
+    "first": 45.5,
+    "last": 46.33,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "C1_officer_3.hand_r",
+    "frames_visible": 9,
+    "frames": 12,
+    "first": 45.5,
+    "last": 46.33,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.67
+   },
+   {
+    "target": "C1_officer_4",
+    "frames_visible": 12,
+    "frames": 12,
+    "first": 45.5,
+    "last": 46.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "C1_officer_4.head",
+    "frames_visible": 12,
+    "frames": 12,
+    "first": 45.5,
+    "last": 46.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "C1_officer_4.hand_r",
+    "frames_visible": 10,
+    "frames": 12,
+    "first": 45.5,
+    "last": 46.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.78
+   },
+   {
+    "target": "C1_officer_5",
+    "frames_visible": 12,
+    "frames": 12,
+    "first": 45.5,
+    "last": 46.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.99
+   },
+   {
+    "target": "C1_officer_5.head",
+    "frames_visible": 10,
+    "frames": 12,
+    "first": 45.5,
+    "last": 46.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "C1_officer_5.hand_r",
+    "frames_visible": 10,
+    "frames": 12,
+    "first": 45.5,
+    "last": 46.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.67
+   },
+   {
+    "target": "C1_officer_6",
+    "frames_visible": 12,
+    "frames": 12,
+    "first": 45.5,
+    "last": 46.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.26
+   },
+   {
+    "target": "C1_officer_6.head",
+    "frames_visible": 0,
+    "frames": 12,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "C1_officer_6.hand_r",
+    "frames_visible": 0,
+    "frames": 12,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.0
+   }
+  ]
+ },
+ {
+  "shot": "19d",
+  "code": "B10",
+  "rows": [
+   {
+    "target": "B10_officer_1",
+    "frames_visible": 12,
+    "frames": 12,
+    "first": 46.5,
+    "last": 47.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "B10_officer_1.head",
+    "frames_visible": 12,
+    "frames": 12,
+    "first": 46.5,
+    "last": 47.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "B10_officer_1.hand_r",
+    "frames_visible": 12,
+    "frames": 12,
+    "first": 46.5,
+    "last": 47.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "B10_officer_2",
+    "frames_visible": 12,
+    "frames": 12,
+    "first": 46.5,
+    "last": 47.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "B10_officer_2.head",
+    "frames_visible": 12,
+    "frames": 12,
+    "first": 46.5,
+    "last": 47.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "B10_officer_2.hand_r",
+    "frames_visible": 12,
+    "frames": 12,
+    "first": 46.5,
+    "last": 47.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.56
+   }
+  ]
+ },
+ {
+  "shot": "19e",
+  "code": "B6",
+  "rows": [
+   {
+    "target": "B6_officer",
+    "frames_visible": 12,
+    "frames": 12,
+    "first": 47.5,
+    "last": 48.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "B6_officer.head",
+    "frames_visible": 12,
+    "frames": 12,
+    "first": 47.5,
+    "last": 48.42,
+    "frames_in_frame": 12,
+    "max_unoccluded": 0.67
+   },
+   {
+    "target": "B6_officer.hand_r",
+    "frames_visible": 11,
+    "frames": 12,
+    "first": 47.5,
+    "last": 48.42,
+    "frames_in_frame": 11,
+    "max_unoccluded": 0.78
+   }
+  ]
+ },
+ {
+  "shot": "19g",
+  "code": "B7",
+  "rows": [
+   {
+    "target": "B7_BRANDT",
+    "frames_visible": 18,
+    "frames": 18,
+    "first": 49.5,
+    "last": 50.92,
+    "frames_in_frame": 18,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "B7_BRANDT.head",
+    "frames_visible": 18,
+    "frames": 18,
+    "first": 49.5,
+    "last": 50.92,
+    "frames_in_frame": 18,
+    "max_unoccluded": 0.67
+   },
+   {
+    "target": "B7_BRANDT.hand_r",
+    "frames_visible": 0,
+    "frames": 18,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 0,
+    "max_unoccluded": 0.0
+   }
+  ]
+ },
+ {
+  "shot": "19h",
+  "code": "X1",
+  "rows": [
+   {
+    "target": "X1_officer_falls",
+    "frames_visible": 12,
+    "frames": 18,
+    "first": 51.0,
+    "last": 51.92,
+    "frames_in_frame": 18,
+    "max_unoccluded": 0.83
+   },
+   {
+    "target": "X1_officer_falls.head",
+    "frames_visible": 12,
+    "frames": 18,
+    "first": 51.0,
+    "last": 51.92,
+    "frames_in_frame": 18,
+    "max_unoccluded": 0.67
+   },
+   {
+    "target": "X1_officer_falls.hand_r",
+    "frames_visible": 9,
+    "frames": 18,
+    "first": 51.0,
+    "last": 51.67,
+    "frames_in_frame": 18,
+    "max_unoccluded": 0.11
+   },
+   {
+    "target": "X1_officer_fires",
+    "frames_visible": 18,
+    "frames": 18,
+    "first": 51.0,
+    "last": 52.42,
+    "frames_in_frame": 18,
+    "max_unoccluded": 0.92
+   },
+   {
+    "target": "X1_officer_fires.head",
+    "frames_visible": 18,
+    "frames": 18,
+    "first": 51.0,
+    "last": 52.42,
+    "frames_in_frame": 18,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "X1_officer_fires.hand_r",
+    "frames_visible": 13,
+    "frames": 18,
+    "first": 51.0,
+    "last": 52.25,
+    "frames_in_frame": 18,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "X1_officer_spins",
+    "frames_visible": 10,
+    "frames": 18,
+    "first": 51.0,
+    "last": 51.75,
+    "frames_in_frame": 10,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "X1_officer_spins.head",
+    "frames_visible": 8,
+    "frames": 18,
+    "first": 51.0,
+    "last": 51.58,
+    "frames_in_frame": 8,
+    "max_unoccluded": 0.6
+   },
+   {
+    "target": "X1_officer_spins.hand_r",
+    "frames_visible": 2,
+    "frames": 18,
+    "first": 51.0,
+    "last": 51.17,
+    "frames_in_frame": 3,
+    "max_unoccluded": 0.5
+   }
+  ]
+ },
+ {
+  "shot": "19i",
+  "code": "B8",
+  "rows": []
+ },
+ {
+  "shot": "21",
+  "code": "C2",
+  "rows": [
+   {
+    "target": "C2_nora",
+    "frames_visible": 45,
+    "frames": 54,
+    "first": 58.75,
+    "last": 62.42,
+    "frames_in_frame": 54,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "C2_nora.head",
+    "frames_visible": 30,
+    "frames": 54,
+    "first": 58.83,
+    "last": 61.25,
+    "frames_in_frame": 54,
+    "max_unoccluded": 0.56
+   },
+   {
+    "target": "C2_nora.hand_r",
+    "frames_visible": 7,
+    "frames": 54,
+    "first": 58.75,
+    "last": 59.25,
+    "frames_in_frame": 54,
+    "max_unoccluded": 0.22
+   },
+   {
+    "target": "C2_THIRTEENTH_hidden",
+    "frames_visible": 6,
+    "frames": 54,
+    "first": 60.08,
+    "last": 60.67,
+    "frames_in_frame": 54,
+    "max_unoccluded": 0.06
+   },
+   {
+    "target": "C2_THIRTEENTH_hidden.head",
+    "frames_visible": 0,
+    "frames": 54,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 54,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "C2_THIRTEENTH_hidden.hand_r",
+    "frames_visible": 4,
+    "frames": 54,
+    "first": 60.08,
+    "last": 60.67,
+    "frames_in_frame": 54,
+    "max_unoccluded": 0.44
+   },
+   {
+    "target": "C2_THIRTEENTH_hidden.scar",
+    "frames_visible": 0,
+    "frames": 54,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 54,
+    "max_unoccluded": 0.0
+   }
+  ]
+ },
+ {
+  "shot": "24",
+  "code": "E2",
+  "rows": []
+ },
+ {
+  "shot": "25a",
+  "code": "I3",
+  "rows": [
+   {
+    "target": "I3_WARD",
+    "frames_visible": 30,
+    "frames": 30,
+    "first": 74.0,
+    "last": 76.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.77
+   },
+   {
+    "target": "I3_WARD.head",
+    "frames_visible": 0,
+    "frames": 30,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 0,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "I3_WARD.hand_r",
+    "frames_visible": 30,
+    "frames": 30,
+    "first": 74.0,
+    "last": 76.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.33
+   },
+   {
+    "target": "I3_WARD.scar",
+    "frames_visible": 30,
+    "frames": 30,
+    "first": 74.0,
+    "last": 76.42,
+    "frames_in_frame": 30,
+    "max_unoccluded": 0.56
+   }
+  ]
+ },
+ {
+  "shot": "25b",
+  "code": "I4",
+  "rows": [
+   {
+    "target": "I4_nora",
+    "frames_visible": 30,
+    "frames": 30,
+    "first": 76.5,
+    "last": 78.92,
+    "frames_in_frame": 30,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "I4_nora.head",
+    "frames_visible": 30,
+    "frames": 30,
+    "first": 76.5,
+    "last": 78.92,
+    "frames_in_frame": 30,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "I4_nora.hand_r",
+    "frames_visible": 0,
+    "frames": 30,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 0,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "I4_WARD_offscreen",
+    "frames_visible": 0,
+    "frames": 30,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 0,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "I4_WARD_offscreen.head",
+    "frames_visible": 0,
+    "frames": 30,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 0,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "I4_WARD_offscreen.hand_r",
+    "frames_visible": 0,
+    "frames": 30,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 0,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "I4_WARD_offscreen.scar",
+    "frames_visible": 0,
+    "frames": 30,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 0,
+    "max_unoccluded": 0.0
+   }
+  ]
+ },
+ {
+  "shot": "S1",
+  "code": "I2",
+  "rows": [
+   {
+    "target": "I2_nora",
+    "frames_visible": 48,
+    "frames": 48,
+    "first": 90.0,
+    "last": 93.92,
+    "frames_in_frame": 48,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "I2_nora.head",
+    "frames_visible": 48,
+    "frames": 48,
+    "first": 90.0,
+    "last": 93.92,
+    "frames_in_frame": 48,
+    "max_unoccluded": 1.0
+   },
+   {
+    "target": "I2_nora.hand_r",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 0,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "I2_WARD_offscreen",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 0,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "I2_WARD_offscreen.head",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 0,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "I2_WARD_offscreen.hand_r",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 0,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "I2_WARD_offscreen.scar",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 0,
+    "max_unoccluded": 0.0
+   }
+  ]
+ },
+ {
+  "shot": "S2",
+  "code": "O1",
+  "rows": [
+   {
+    "target": "O1_LEO_hands",
+    "frames_visible": 48,
+    "frames": 48,
+    "first": 94.0,
+    "last": 97.92,
+    "frames_in_frame": 48,
+    "max_unoccluded": 0.5
+   },
+   {
+    "target": "O1_LEO_hands.head",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 0,
+    "max_unoccluded": 0.0
+   },
+   {
+    "target": "O1_LEO_hands.hand_r",
+    "frames_visible": 0,
+    "frames": 48,
+    "first": null,
+    "last": null,
+    "frames_in_frame": 48,
+    "max_unoccluded": 0.0
+   }
+  ]
+ }
+]

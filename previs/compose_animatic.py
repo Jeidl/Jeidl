@@ -64,10 +64,12 @@ ORDER = list(TILE_SRC)
 
 def grid(t, rel, lost, thirteenth=None):
     im = Image.new("RGB", (W, H), "black")
-    tw, th = (W - 10) // 4, (H - BAR - 60) // 3
+    th = (H - BAR - 36 - 10) // 4             # 3 rows of the wall + 1 row for the 13th feed
+    tw = th * 16 // 9
+    x0 = (W - (4 * tw + 6)) // 2
     d = ImageDraw.Draw(im)
     for i, cam in enumerate(ORDER):
-        x, y = 2 + (i % 4) * (tw + 2), BAR + 2 + (i // 4) * (th + 2)
+        x, y = x0 + (i % 4) * (tw + 2), BAR + 2 + (i // 4) * (th + 2)
         if cam in lost:
             d.rectangle((x, y, x + tw, y + th), fill=(8, 8, 8))
             d.text((x + tw / 2 - 30, y + th / 2 - 5), "SIGNAL LOST", fill=(200, 200, 200), font=f_tile)
@@ -81,7 +83,7 @@ def grid(t, rel, lost, thirteenth=None):
     if thirteenth is not None:
         alpha, blink = thirteenth
         x, y = (W - tw) // 2, BAR + 2 + 3 * (th + 2) + 2
-        src = shot_frame("19h", 51.0 + rel % 1.4).convert("L").convert("RGB").resize((tw, min(th, H - y - 2)))
+        src = shot_frame("19h", 51.0 + rel % 1.4).convert("L").convert("RGB").resize((tw, th))
         black = Image.new("RGB", src.size, "black")
         im.paste(Image.blend(black, src, alpha), (x, y))
         d.text((x + 3, y + 2), "7-12", fill=(255, 255, 255), font=f_tile)

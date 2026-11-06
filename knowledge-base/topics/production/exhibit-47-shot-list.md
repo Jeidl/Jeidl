@@ -4,7 +4,7 @@ title: 《第 47 号证物》90 秒档分镜表（逐镜头时间码）
 tags: [production, editing, prompt]
 created: 2026-11-06
 updated: 2026-11-06
-related: [20261106-exhibit-47-whitebox-previs, 20261106-submission-checklist, 20261106-exhibit-47-story, 20261106-exhibit-47-character-bible, 20261106-exhibit-47-shot-prompts, 20261106-meta-endings, 20261106-trailer-structure, 20261106-black-screen-text-cards, 20261106-sound-design, 20261106-editing-rhythm, 20261106-withholding-mystery, 20261106-akool-workflow, 20261106-untomorrow-shot-list, 20261106-inception, 20261106-the-dark-knight, 20261106-a-quiet-place, 20261106-longlegs-teasers, 20261106-got-crypts-of-winterfell]
+related: [20261106-shutter-island, 20261106-exhibit-47-whitebox-previs, 20261106-submission-checklist, 20261106-exhibit-47-story, 20261106-exhibit-47-character-bible, 20261106-exhibit-47-shot-prompts, 20261106-meta-endings, 20261106-trailer-structure, 20261106-black-screen-text-cards, 20261106-sound-design, 20261106-editing-rhythm, 20261106-withholding-mystery, 20261106-akool-workflow, 20261106-untomorrow-shot-list, 20261106-inception, 20261106-the-dark-knight, 20261106-a-quiet-place, 20261106-longlegs-teasers, 20261106-got-crypts-of-winterfell]
 summary: 主方案参赛版分镜（v2，审片后修订），总长 88 秒：时间码、提示词编号、字卡、台词和声音；"只配发 12 台 + 第 47 号证物遗失"的不可能证据链；两只手同一道疤的线索；第十三人 4 次出场（第 4 次是身份线索）；预告刻意不交代的内容；以及 30 秒前导版和 9:16 竖屏版的改法。
 ---
 
@@ -49,7 +49,7 @@ summary: 主方案参赛版分镜（v2，审片后修订），总长 88 秒：�
 | 15 | 0:35.5–0:38.0 | 2.5 | **B4** 摘面罩 | — | **V5** "Masks off! Now!" | |
 | 16 | 0:38.0–0:40.0 | 2.0 | 黑 | **ONE CAMERA BELONGED TO A DEAD MAN.** | 末尾插 3 帧 **O1** 闪帧 | **合法误导**：像鬼故事（[临冬城墓穴](../trailers/got-crypts-of-winterfell.md)）。**v2**：不用代词，单独一张卡也看得懂 |
 | 17 | 0:40.0–0:42.5 | 2.5 | **O2** 三年前的旧录像：前面的组员一个个伸手关掉胸前的记录仪，红灯熄灭 | — | **V10** "No. Mine stays on." | 三年前他们自己关掉了摄像机，今晚摄像机一台台"信号中断"，形成呼应 |
-| 18 | 0:42.5–0:45.5 | 3.0 | 黑底**证物登记表**：`NORTHGATE SHOOTING · 3 YEARS AGO` / `EVIDENCE REGISTER` / `45  9 MM SHELL CASINGS (9)` / `46  HANDGUN, RECOVERED AT SCENE` / `47  BODY CAMERA · UNIT 7-12` | 1.2 秒后第 47 行盖上红框 **LOST** | FX12 | **v2**：用同一个编号（47 / 7-12）把旧案和今晚接起来：这台机器三年前登记为证物，后来丢了 |
+| 18 | 0:42.5–0:45.5 | 3.0 | **E3** 证物室：桌上摊开的旧证物登记簿，停 2 秒：左页 `NORTHGATE SHOOTING · 3 YEARS AGO / EVIDENCE REGISTER`，右页 `45 SHELL CASINGS (9)` / `46 HANDGUN, AT SCENE` / `47 BODY CAMERA 7-12`，0.6 秒后第 47 行盖上红框 **LOST**；然后快速甩向旁边那只贴着红标签的证物袋 | 登记簿上的字后期叠加 | FX12；甩镜头配一声快速的"嗖" | **v3**：不再用纯文字卡。线索变成房间里的一个物件（参考 [长腿](../trailers/longlegs-teasers.md) 的证据板），并且直接接到那台多出来的摄像机上 |
 | 19a | 0:45.5–0:46.5 | 1.0 | **B5** 枪口火光 | — | FX7，每个剪辑点一记打击乐 | 动作段开始 |
 | 19b | 0:46.5–0:47.5 | 1.0 | **B9** 隔着塑料门帘开枪，手电筒掉在地上 | — | FX7 + 手电落地声 | 打中的是自己人 |
 | 19c | 0:47.5–0:48.5 | 1.0 | **C1** 俯拍互射 | — | FX7（远） | |
@@ -66,7 +66,7 @@ summary: 主方案参赛版分镜（v2，审片后修订），总长 88 秒：�
 
 | # | 时间码 | 时长 | 画面 | 字卡 | 声音 / 台词 | 备注 |
 |---|---|---|---|---|---|---|
-| 22 | 1:04.5–1:10.5 | 6.0 | **证物复查蒙太奇**：像调查员在逐帧放大证据，每个重复的画面都放大一个第一次容易漏掉的细节。**I2** 1.1 → **E1 放大标签**，读出 EXHIBIT 47 1.0 → **C2 放大手背的疤** 0.9 → **B8 放大倒影胸前的红灯** 0.8 → **O1** 0.7 → B2（**只用甩镜头之前的片段**）0.6 → 第 13 格 UNKNOWN 的红点 0.5 → B5 0.4 → 硬切 | — | **I2 口型** "There were thirteen of us." → V10 "Mine stays on." 的回声 → V7 / V8 "Twelve." 的回声 → **SC2** 升调到顶 | 高潮。**v2**：重复镜头有了新信息，观众在这里第二次看到那道疤 |
+| 22 | 1:04.5–1:10.5 | 6.0 | **闪切蒙太奇**（不推镜头、不放大）：**I2** 1.5 秒 → 白闪 2 帧 → **O1** 举起的双手 → 黑 2 帧 + **手背的疤**插入 4 帧 + 黑 2 帧 → B2（**只用甩镜头之前的片段**）→ 白闪 → **标签 EXHIBIT 47** 插入 4 帧 → **O2** 红灯熄灭 → **倒影胸前的红灯** 插入 3 帧 → B7 → 白闪 → **第 13 格 UNKNOWN** 插入 3 帧 → B5 → 疤、标签、红灯各 2 帧连闪 → 黑 → 硬切 | — | **I2 口型** "There were thirteen of us." → V10 "Mine stays on." 的回声 → V7 / V8 "Twelve." 的回声 → **SC2** 升调到顶；每个白闪配一记重音 | 高潮。**v3**：插入画面都是静止的近景，只靠快速闪动出现（[长腿](../trailers/longlegs-teasers.md) 的闪帧 + [禁闭岛](../trailers/shutter-island.md) 的白闪 + [黑暗骑士](../trailers/the-dark-knight.md) 的镜头时长递减） |
 | 23 | 1:10.5–1:12.0 | 1.5 | **黑** | — | **完全无声** | **静默 #2** |
 | 25a | 1:12.0–1:15.0 | 3.0 | **I3** 沃德的手转笔，手背的疤一直朝着镜头 | — | FX11 + **V4** "You're safe now, Kade." | **第十三人出场 #4**（身份线索：和 C2 同一道疤）；按钮。V4 和 C2 的耳语 V3 是同一句话、同一个声音 |
 | 25b | 1:15.0–1:19.0 | 4.0 | **I4** 诺拉先看他的手（1:15.0–1:16.3），再慢慢抬眼看他的脸（–1:17.6），停住，认出来了（–1:19.0） | — | 寂静，日光灯嗡鸣 | 只到"她认出来了"为止，不点破 |
@@ -87,11 +87,11 @@ v2 删掉了原来的 26–28 三张说明卡（"本片所有画面均为证物"
 | 08 | 13 CAMERAS WERE RECOVERED. | 现场找到了十三台记录仪。 |
 | 14 | ONLY 12 CAMERAS WERE ISSUED. | 行动只配发了十二台记录仪。 |
 | 16 | ONE CAMERA BELONGED TO A DEAD MAN. | 其中一台属于一个死人。 |
-| 18 | NORTHGATE SHOOTING · 3 YEARS AGO / EVIDENCE REGISTER / 47 BODY CAMERA · UNIT 7-12 — LOST | 北门枪击案 · 三年前 / 证物登记 / 第 47 号 执法记录仪 · 7-12 号 —— 遗失 |
+| 18（登记簿上的字，不是字卡） | NORTHGATE SHOOTING · 3 YEARS AGO / EVIDENCE REGISTER / 47 BODY CAMERA 7-12 — LOST | 北门枪击案 · 三年前 / 证物登记 / 第 47 号 执法记录仪 7-12 —— 遗失 |
 | 24 | EXHIBIT 47 | 第 47 号证物 |
 | 29 | COMING NEVER | 永不上映 |
 
-登记表（18）是一张"文件"卡：等宽字体，第 47 行的 LOST 用红框，1.2 秒后出现。红色仍只属于证物。
+登记簿（18）上的字在后期叠到纸面上：等宽字体，深灰墨色，第 47 行的 LOST 用红框，0.6 秒后出现。红色仍只属于证物。
 
 排版：Oswald 或 Share Tech Mono，暖白 `#EDE8E0`，参数见 [黑屏与字卡](../techniques/black-screen-text-cards.md)。数字阶梯（12 → 1 → 13）是全片的节奏骨架。
 

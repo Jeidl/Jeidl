@@ -828,8 +828,12 @@ def set_evidence():
     wall_x("wall_back", o[0] - hw, o[0] + hw, o[1] + D, o[1] + D + 0.2, 0.0, H, [(o[0] - 1.5, 0.9, 0.0, 2.1), (o[0] - 0.15, 0.9, 0.0, 2.1)], MATS["clay"], C)
     for k in range(3):
         bl(S, f"led_{k}", -0.6 + k * 1.2 - 0.4, -0.6 + k * 1.2 + 0.4, 1.5 + k * 2.6, 2.7 + k * 2.6, H - 0.04, H, MATS["panel_light"], C)
-    bl(S, "table", 0.2, 1.2, 0.8, 7.6, 0.86, 0.90, MATS["steel"], C)
-    for y in (1.0, 7.4):
+    bl(S, "table", 0.2, 1.2, 0.1, 7.6, 0.86, 0.90, MATS["steel"], C)
+    # the old evidence register, open beside bag 13 (E3): its text is added in the edit
+    bl(S, "register_binder", 0.33, 1.07, 0.24, 0.80, 0.90, 0.915, MATS["helmet"], C)
+    bl(S, "register_page_L", 0.36, 0.69, 0.27, 0.77, 0.915, 0.92, MATS["tag_white"], C)
+    bl(S, "register_page_R", 0.71, 1.04, 0.27, 0.77, 0.915, 0.92, MATS["tag_white"], C)
+    for y in (0.3, 7.4):
         bl(S, f"table_leg_{y}", 0.3, 1.1, y - 0.05, y + 0.05, 0.0, 0.86, MATS["steel"], C)
     bl(S, "counter_left", -hw + 0.05, -1.75, 0.4, 5.0, 0.0, 0.95, MATS["steel"], C)
     bl(S, "shelving_back", 0.4, hw - 0.05, D - 0.55, D - 0.05, 0.0, 2.2, MATS["clay_dark"], C)
@@ -1030,6 +1034,21 @@ def build_shots():
     cam_keys(cam, 39.0, 41.5, lambda u, t: (H_(0.0, 26.5, CH), H_(0.0, 31.0, 1.2), 0.0), shake_amp=0.006, seed=17)
     shot("17", "O2", 39.0, 2.5, cam, "LOC-FREEZER (3 years ago)", "S-OLD", "O2", line,
          "Reyes's camera, the one that stays on: almost no shake. Ward is not in this line.")
+
+    # ---- 18 E3 the evidence register: line 47 is LOST, then pan to the red tag (old 41.5-43.5 -> 42.5-45.5)
+    C = coll("SHOT_18_E3")
+    cam = camera("CAM_18_E3_register", 35, C)
+    page = V(0.7, 0.52, 0.92)
+    tag13 = V(0.905, 1.2, 0.905)
+    def e3(u, t):
+        k = ease(max(0.0, min(1.0, (t - 42.85) / 0.35)))   # a fast whip off the page
+        loc = lerp(V(0.7, 0.28, 2.05), V(0.6, 0.5, 1.3), k)
+        return loc, lerp(page, tag13, k), 0.0
+    cam_keys(cam, 41.5, 43.5, e3)
+    ev("18", 41.5, "the register page holds still: line 47, BODY CAMERA - UNIT 7-12, stamped LOST")
+    ev("18", 42.85, "a fast whip off the page to the bag beside it: the same camera, with the red tag")
+    shot("18", "E3", 41.5, 2.0, cam, "LOC-EVIDENCE", "S-ROOM", "E3", [],
+         "Replaces the text-only register card: the clue is an object in the room. Page text is added in the edit.")
 
     # ---- 19a B5 muzzle flashes down the aisle (43.5-44.5)
     C = coll("SHOT_19a_B5")
@@ -1280,7 +1299,7 @@ EDIT = [
     ("15", 35.5, 2.5, "shot", "15"),
     ("16", 38.0, 2.0, "card", "ONE CAMERA BELONGED TO A DEAD MAN.|flash:S2"),
     ("17", 40.0, 2.5, "shot", "17"),
-    ("18", 42.5, 3.0, "register", "NORTHGATE"),
+    ("18", 42.5, 3.0, "shot", "18"),
     ("19a", 45.5, 1.0, "shot", "19a"),
     ("19b", 46.5, 1.0, "shot", "19b"),
     ("19c", 47.5, 1.0, "shot", "19c"),
@@ -1292,7 +1311,7 @@ EDIT = [
     ("19i", 54.5, 1.5, "shot", "19i"),
     ("20", 56.0, 4.0, "grid", "final"),
     ("21", 60.0, 4.5, "shot", "21"),
-    ("22", 64.5, 6.0, "montage", "S1:1.1,09z:1.0,21z:0.9,19iz:0.8,S2:0.7,10pre:0.6,grid13:0.5,19a:0.4"),
+    ("22", 64.5, 6.0, "flashcut", "v3"),
     ("23", 70.5, 1.5, "card", ""),
     ("25a", 72.0, 3.0, "shot", "25a"),
     ("25b", 75.0, 4.0, "shot", "25b"),
@@ -1533,6 +1552,8 @@ def enhance_points():
         return Vector((2 * xm - c.x, c.y, c.z))
     targets = {
         "09z": ("09", 22.8, lambda: bpy.data.objects["tag_13"].matrix_world.translation.copy(), "EXHIBIT 47"),
+        "page_tl": ("18", 41.9, lambda: L("EV", 0.36, 0.77, 0.92), "page"),
+        "page_br": ("18", 41.9, lambda: L("EV", 1.04, 0.27, 0.92), "page"),
         "21z": ("21", 60.6, lambda: bpy.data.objects["C2_THIRTEENTH_hidden_scar"].matrix_world.translation.copy(), "SCAR"),
         "19iz": ("19i", 53.9, wearer_rec, "REC 7-12"),
     }

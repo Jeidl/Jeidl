@@ -4,7 +4,7 @@ title: 黑屏与字卡：用"黑"讲故事
 tags: [text-card, editing]
 created: 2026-11-06
 updated: 2026-11-06
-related: [20261106-text-card-copy, 20261106-trailer-structure, 20261106-sound-design, 20261106-inception, 20261106-sicario, 20261106-cloverfield-teaser, 20261106-oppenheimer-teaser, 20261106-fincher-cover-song-teasers, 20261106-longlegs-teasers]
+related: [20261106-exhibit-47-shot-list, 20261106-text-card-copy, 20261106-trailer-structure, 20261106-sound-design, 20261106-inception, 20261106-sicario, 20261106-cloverfield-teaser, 20261106-oppenheimer-teaser, 20261106-fincher-cover-song-teasers, 20261106-longlegs-teasers]
 summary: 黑屏的六种功能、字卡的七种类型、排版参数（字体 / 字号 / 字距 / 停留帧数）、免费可商用字体，以及为什么字卡绝不能让 AI 生成。
 ---
 
@@ -76,6 +76,15 @@ AI 视频模型生成文字时，极易出现乱码、错字和闪烁。**所有
 | 句子阶梯之间的黑 | 6–12 帧 |
 | 带字卡的黑屏 | 1–1.5 秒 |
 | **片名前的"大黑"**（倒数到 1 之后） | **1.5–2 秒，完全静音** |
+
+## 字卡太多时：把信息放进画面里的物件
+
+一段信息量大的字卡（例如一张证物清单）放在黑底上，读起来像说明书，会打断预告的节奏。更好的做法是把同样的信息变成**场景里的一个物件**，让镜头去"看"它：
+
+- 证据板、档案、登记簿、屏幕上的记录：参考 [长腿](../trailers/longlegs-teasers.md) 里女主盯着的证据板。
+- 物件上的字照样后期叠加（AI 写不好字），但观众看到的是一个镜头，不是一张字卡。
+- 最好让这个物件**直接接到下一个线索**上：《第 47 号证物》的 E3 先停在登记簿第 47 行的红框 LOST 上，再甩到旁边那只贴着红标签的证物袋（见 [分镜表](../production/exhibit-47-shot-list.md)）。
+- 只剩一句话的短字卡（"ONLY 12 CAMERAS WERE ISSUED."）仍然适合黑底，它们是节奏骨架。
 
 ## 来源
 

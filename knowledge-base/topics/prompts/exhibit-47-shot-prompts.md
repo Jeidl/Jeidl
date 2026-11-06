@@ -187,6 +187,12 @@ cartoon, anime, CGI look, video game graphics, cinematic color grading, clean mo
 [S-ROOM] LOC-EVIDENCE, forensic documentation camera, slow push-in along the table from its far end towards the nearest bag. BAGS: twelve body cameras in a neat row with white tags, and at the near end a thirteenth, frost still melting on it, with a faded red tag. The push-in stops on the thirteenth. Sound: LED hum, a single electronic beep. 6 seconds. [NEG-47]
 ```
 
+**E3 旧证物登记簿**（v3 新增，替换纯文字的登记表字卡）· Veo / Kling · 4 秒
+```text
+[S-ROOM] LOC-EVIDENCE, forensic documentation camera looking down at the near end of the steel table: an old evidence register lies open in a black binder, two pages of plain typed lines, one line near the bottom of the right page circled and stamped in red; the camera holds still for two seconds, then whips quickly to the right onto the clear evidence bag beside the binder, holding a scuffed black body camera with a faded red cardboard tag. Harsh white LED light. All writing on the pages is blank or unreadable; the text is added later. Sound: LED hum, a page settling, a fast whoosh on the whip. 4 seconds. [NEG-47]
+```
+页面上的字（`NORTHGATE SHOOTING · 3 YEARS AGO / EVIDENCE REGISTER / 45 … / 46 … / 47 BODY CAMERA 7-12` 和红框 `LOST`）全部后期叠加，见"后期叠字规范"。
+
 **E2 证物标签特写**（片名卡底图）· 任意 · 5 秒
 ```text
 [S-ROOM] LOC-EVIDENCE, extreme macro close-up, harsh white LED light. EX47: frost melting on the scuffed black body camera, its small red recording light glowing steadily, the faded red cardboard evidence tag tied with white string fills the right side of frame, blank where text will be added. Shallow depth of field, black background. Sound: one soft electronic beep. 5 seconds. [NEG-47]
@@ -216,7 +222,7 @@ cartoon, anime, CGI look, video game graphics, cinematic color grading, clean mo
 | 执法记录仪 | `BODY CAM 7-04` + `FEB 09  04:03:12` + 红色 `● REC` | 左上 / 右下 / 右上 |
 | 第 47 号证物 | 与诺拉相同的 `BODY CAM 7-12`（**两台都写 7-12**） | 同上 |
 | 监控墙第 13 格 | `UNKNOWN` + 红点（不写 7-12，避免被看成第 12 路重新连上） | 格子左上 |
-| 证物登记表（字卡 18） | `47  BODY CAMERA · UNIT 7-12` + 红框 `LOST` | 文件卡 |
+| 证物登记簿（E3） | `47  BODY CAMERA 7-12` + 红框 `LOST`，叠在纸面上，跟着透视走 | 右页下方 |
 | 监控 | `CAM FRZ-03` + 时间戳 | 左上 |
 | 无人机 | `DRONE 02` + `ALT 38M` + `FEB 09  07:40:16` | 底部 |
 | 审讯室 | `INTERVIEW RM 3 · REC` + `FEB 10  09:14:55` | 左上 |

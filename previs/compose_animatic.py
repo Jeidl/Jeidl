@@ -147,6 +147,86 @@ def montage(t, data, s0):
             return shot_frame(name, SHOTS[name]["t0"] + r), SHOTS[name]["code"]
         acc += dur
 
+# v3 montage: Longlegs-style flash frames and Shutter Island white flashes, no zooms.
+# Each beat is (source, frames). Sources: a shot id, "10pre", "white", "black",
+# or "crop:<key>" = a static tight insert of an enhance point (held, never pushed in).
+FLASHCUT = [
+    ("S1", 36),                                  # Nora: "There were thirteen of us."
+    ("white", 2), ("S2", 14),                    # three years ago: the raised hands
+    ("black", 2), ("crop:21z", 4), ("black", 2), # the scar
+    ("10pre", 12),                               # the stack, before the swing
+    ("white", 2), ("crop:09z", 4), ("black", 2), # the tag: EXHIBIT 47
+    ("17", 10),                                  # their cameras going dark
+    ("crop:19iz", 3), ("black", 2),              # the red light on the reflection's chest
+    ("19g", 10),                                 # "We buried you!"
+    ("white", 2), ("crop:grid13", 3), ("black", 2),
+    ("19a", 6),
+    ("crop:21z", 2), ("crop:09z", 2), ("crop:19iz", 2),
+    ("black", 1), ("19a", 6), ("black", None),   # hard cut; black fills to the end
+]
+
+def crop_insert(key):
+    if key == "grid13":
+        im = grid(0, 3.0, set(ORDER), thirteenth=(1.0, True))
+        th = (H - BAR - 36 - 10) // 4
+        tw = th * 16 // 9
+        x, y = (W - tw) // 2, BAR + 2 + 3 * (th + 2) + 2
+        return im.crop((x - 6, y - 4, x + tw + 6, y + th + 4)).resize((W, H))
+    e = ENH[key]
+    src = shot_frame(e["shot"], e["t"])
+    f = 3.0
+    cw, ch = W / f, H / f
+    cx = min(max(e["x"] * W, cw / 2), W - cw / 2)
+    cy = min(max(e["y"] * H, ch / 2), H - ch / 2)
+    out = src.crop((int(cx - cw / 2), int(cy - ch / 2), int(cx + cw / 2), int(cy + ch / 2))).resize((W, H))
+    if key == "09z":
+        d = ImageDraw.Draw(out)
+        px, py = (e["x"] * W - (cx - cw / 2)) * f, (e["y"] * H - (cy - ch / 2)) * f
+        w = d.textlength("EXHIBIT 47", font=f_card)
+        d.text((px - w / 2, py - 14), "EXHIBIT 47", fill=(245, 240, 230), font=f_card)
+    return out
+
+def flashcut(t, s0, dur):
+    i = int(round((t - s0) * FPS))
+    acc = 0
+    for src, n in FLASHCUT:
+        n = n if n is not None else int(round(dur * FPS)) - acc
+        if i < acc + n:
+            r = (i - acc) / FPS
+            if src == "white":
+                return Image.new("RGB", (W, H), (245, 245, 245)), "white flash"
+            if src == "black":
+                return Image.new("RGB", (W, H), "black"), "black"
+            if src.startswith("crop:"):
+                return crop_insert(src[5:]), f"insert {src[5:]} ({n} fr)"
+            if src == "10pre":
+                return shot_frame("10", 23.0 + r), f"B2 before the swing ({n} fr)"
+            return shot_frame(src, SHOTS[src]["t0"] + r), f"{SHOTS[src]['code']} ({n} fr)"
+        acc += n
+    return Image.new("RGB", (W, H), "black"), "black"
+
+def ledger_text(im, rel):
+    """The register page of E3: text is added in the edit, on the still part of the shot."""
+    if rel > 2.24 or "page_tl" not in ENH:   # until the whip starts (42.85 in shot-list time)
+        return im
+    a, b = ENH["page_tl"], ENH["page_br"]
+    x0, y0, x1, y1 = a["x"] * W, a["y"] * H, b["x"] * W, b["y"] * H
+    mid = (x0 + x1) / 2
+    d = ImageDraw.Draw(im)
+    ink, red = (35, 35, 38), (200, 25, 18)
+    lx, rx, ty = x0 + 16, mid + 10, y0 + 22
+    for k, ln in enumerate(("NORTHGATE SHOOTING", "3 YEARS AGO", "", "EVIDENCE REGISTER")):
+        d.text((lx, ty + k * 15), ln, fill=ink, font=f_tile)
+    for k, (no, item) in enumerate((("45", "SHELL CASINGS (9)"), ("46", "HANDGUN, AT SCENE"), ("47", "BODY CAMERA 7-12"))):
+        yy = ty + k * 22
+        d.text((rx, yy), no, fill=ink, font=f_tile)
+        d.text((rx + 16, yy), item, fill=ink, font=f_tile)
+    if rel >= 0.6:
+        yy = ty + 2 * 22 + 13
+        d.rectangle((rx + 30, yy, rx + 78, yy + 15), outline=red, width=2)
+        d.text((rx + 38, yy + 2), "LOST", fill=red, font=f_tile)
+    return im
+
 def register_card(rel):
     im = Image.new("RGB", (W, H), "black")
     d = ImageDraw.Draw(im)
@@ -199,6 +279,8 @@ def frame_at(t):
         s = SHOTS[data]
         im = shot_frame(data, t)
         sub = event_at(data, t)
+        if data == "18":
+            im = ledger_text(im, t - s0)
         if data == "24" and t >= s0 + 0.4:      # title card: the text goes on the evidence tag in the edit
             d = ImageDraw.Draw(im)
             w = d.textlength("EXHIBIT 47", font=f_card)
@@ -210,6 +292,9 @@ def frame_at(t):
     if kind == "montage":
         im, what = montage(t, data, s0)
         return overlay(im, t, f"#22 MONTAGE  {what}"), n
+    if kind == "flashcut":
+        im, what = flashcut(t, s0, dur)
+        return overlay(im, t, f"#22 FLASH MONTAGE  {what}"), n
     if kind == "register":
         return overlay(register_card(t - s0), t, f"#{n} CARD  evidence register"), n
     parts = data.split("|")

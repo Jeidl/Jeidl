@@ -70,6 +70,6 @@ summary: 预告片主创意：城市被困在 12 月 31 日，每晚午夜重来
 - [角色与道具圣经](character-bible.md)：所有人物和道具的固定描述。
 - [分镜表](../production/untomorrow-shot-list.md)：逐镜头提示词。
 - [字卡文案库](../prompts/text-card-copy.md)：黑屏字卡的中英文文案。
-- [备选创意](alternative-concepts.md)：换风格时可以直接套用的同结构故事。
+- [备选创意](alternative-concepts.md)：七个同结构的备选故事（同风格 4 个、换风格 3 个）和打分对比。
 - [故事定向](../brief/story-direction.md)：为什么选时间循环。
 - [音乐策略](../techniques/music-strategy.md)：《友谊地久天长》变奏方案。

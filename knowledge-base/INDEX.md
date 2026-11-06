@@ -42,7 +42,7 @@ AKOOL AI Film Challenge「Coming Never」赛道参赛项目《明日不来 UNTOM
 - `20261106-style-decision` — **风格定向：选「电影级冷峻写实」** — `topics/brief/style-decision.md` — 对比写实 / 猫和老鼠 / 西幻写实 / 玄幻四种风格后，选定"诺兰-维伦纽瓦式冷峻写实"，并说明为什么不用猫和老鼠。
 
 ### 核心创意 concept
-- `20261106-alternative-concepts` — **备选创意（西幻写实 / 玄幻 / 航班悬疑 / 卡通）** — `topics/concept/alternative-concepts.md` — 四个同样贴合「Coming Never」反讽的备选故事，可在不改三幕结构的前提下替换风格。
+- `20261106-alternative-concepts` — **备选创意（同风格换故事 4 个 + 换风格 3 个）** — `topics/concept/alternative-concepts.md` — 除《明日不来》外的七个备选：同为写实悬疑动作的《末日悬停》《永不降落》《禁映》《黑暗七分钟》，以及换风格的西幻、玄幻、卡通方案；附打分对比、撞车风险和选择建议。
 - `20261106-character-bible` — **角色与道具圣经（一致性锚点）** — `topics/concept/character-bible.md` — 女主 Ada、守时人、搭档 Sam 和关键道具 / 场景的固定英文描述块（ADA-REF 等），以及角色设定图的生成提示词，保证跨镜头一致。
 - `20261106-untomorrow-concept` — **《明日不来 UNTOMORROW》核心创意** — `topics/concept/untomorrow-concept.md` — 预告片主创意：城市被困在 12 月 31 日，每晚午夜重来，一个只露背影的"守时人"在猎杀记得循环的人；包含 logline、世界规则、主题、反转和片名备选。
 

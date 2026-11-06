@@ -31,8 +31,47 @@ def arg(name, default=None, flag=False):
 
 FPS = 24
 TINY = (1e-3, 1e-3, 1e-3)   # "hidden" scale: exactly 0 makes Cycles render black frames
+# v2 re-cut (after the first review). Shot builders below keep the original
+# v1 shot-list times; REMAP moves every key onto the v2 edit:
+# longer act-2 cards, the action block +2 s, the title moved after I3/I4,
+# three explanation cards removed. (old0, old1, new0, new1)
+REMAP = [
+    (0.0, 33.5, 0.0, 33.5),
+    (33.5, 35.0, 33.5, 35.5),     # card 14
+    (35.0, 37.5, 35.5, 38.0),     # B4
+    (37.5, 39.0, 38.0, 40.0),     # card 16
+    (39.0, 41.5, 40.0, 42.5),     # O2
+    (41.5, 43.5, 42.5, 45.5),     # card 18 -> evidence register
+    (43.5, 62.5, 45.5, 64.5),     # action block, grid, C2
+    (62.5, 68.5, 64.5, 70.5),     # montage
+    (68.5, 70.5, 70.5, 72.0),     # silence
+    (70.5, 74.0, 79.0, 82.0),     # E2 title, now after I4
+    (74.0, 76.5, 72.0, 75.0),     # I3, 2.5 s -> 3.0 s
+    (76.5, 79.0, 75.0, 79.0),     # I4, 2.5 s -> 4.0 s
+    (79.0, 90.0, 88.0, 90.0),     # old end cards (nothing 3D is keyed here)
+]
+
+def remap(t, end=False):
+    for o0, o1, n0, n1 in REMAP:
+        if (o0 <= t < o1) or (end and o0 < t <= o1):
+            return n0 + (t - o0) * (n1 - n0) / (o1 - o0)
+    return t
+
+def unmap(tn):
+    for o0, o1, n0, n1 in REMAP:
+        if n0 <= tn < n1:
+            return o0 + (tn - n0) * (o1 - o0) / (n1 - n0)
+    return tn
+
 def fr(t):
-    """Master timeline seconds -> frame number (frame 1 = 0.0 s)."""
+    """Original shot-list seconds -> frame of the v2 edit (frame 1 = 0.0 s)."""
+    return int(round(remap(t) * FPS)) + 1
+
+def fr_end(t):
+    return int(round(remap(t, end=True) * FPS)) + 1
+
+def frn(t):
+    """v2 edit seconds -> frame."""
     return int(round(t * FPS)) + 1
 
 # --------------------------------------------------------------------------
@@ -45,7 +84,10 @@ SHOTS = []           # shot dicts, filled by shot builders
 LABELS = []          # viewport-only text labels
 
 def ev(shot, t, desc):
-    EVENTS.append((shot, round(t, 2), desc))
+    """Event notes are written in original shot-list seconds; every two-digit time in the text is remapped too."""
+    import re
+    desc = re.sub(r"\b(\d{2}\.\d{1,2})\b", lambda m: f"{remap(float(m.group(1)), end=True):.2f}".rstrip("0").rstrip("."), desc)
+    EVENTS.append((shot, round(remap(t), 2), desc))
 
 def coll(name, parent=None):
     if name in COLL:
@@ -206,7 +248,7 @@ def window(obj, t0, t1):
     s = tuple(obj.scale)
     obj.scale = TINY; ins(obj, "scale", 1)
     obj.scale = s;         ins(obj, "scale", fr(t0))
-    obj.scale = TINY; ins(obj, "scale", fr(t1))
+    obj.scale = TINY; ins(obj, "scale", fr_end(t1))
     obj.scale = s
 
 def heading(dx, dy):
@@ -335,6 +377,7 @@ def person(name, role, pos, face, col, pose="stand", tag=None, wearer=False, z=0
     if pose == "rifle":
         parts["rifle"] = box(f"{name}_rifle", (0.12, 0.42, top - 0.2), (0.07, 0.85, 0.09), MATS["helmet"], col, parent=root)
         parts["muzzle"] = box(f"{name}_muzzle", (0.12, 0.88, top - 0.2), (0.16, 0.16, 0.16), MATS["flash"], col, parent=root)
+        parts["muzzle"]["size"] = (0.16, 0.16, 0.16)
         parts["muzzle"].scale = TINY
     label(tag or name, root, top + 0.55, col)
     root["parts"] = [o.name for o in parts.values() if o.type == "MESH"]
@@ -365,11 +408,12 @@ def turn(root, t, face, kind="LINEAR", tilt=0.0):
     key(root, "rotation_euler", t, (tilt, 0, face), kind)
 
 def flash(obj, times):
-    """Muzzle / flash boxes: 2-frame pops at the given master times."""
+    """Muzzle / flash boxes: 2-frame pops at the given times."""
+    size = tuple(obj.get("size", tuple(obj.scale)))
     interp("CONSTANT")
     obj.scale = TINY; ins(obj, "scale", 1)
     for t in times:
-        obj.scale = (1, 1, 1); ins(obj, "scale", fr(t))
+        obj.scale = size; ins(obj, "scale", fr(t))
         obj.scale = TINY; ins(obj, "scale", fr(t) + 2)
 
 # --------------------------------------------------------------------------
@@ -398,9 +442,9 @@ def cam_keys(cam, t0, t1, pose, shake_amp=0.0, seed=1, step=1):
     """pose(u, t) -> (loc, target, roll). Keys every `step` frames."""
     interp("LINEAR")
     prev = None
-    f0, f1 = fr(t0), fr(t1)
+    f0, f1 = fr(t0), fr_end(t1)
     for f in list(range(f0, f1, step)) + [f1 - 1]:
-        t = (f - 1) / FPS
+        t = unmap((f - 1) / FPS)
         u = 0.0 if f1 - 1 == f0 else (f - f0) / (f1 - 1 - f0)
         loc, tgt, roll = pose(u, t)
         e = look(loc, tgt, roll)
@@ -422,9 +466,10 @@ def ease(u):
 def lerp(a, b, u):
     return Vector(a).lerp(Vector(b), u)
 
-def shot(n, code, t0, dur, cam, loc, style, prompt, actors, notes="", source=False):
-    s = dict(n=n, code=code, t0=t0, t1=t0 + dur, dur=dur, cam=cam.name, lens=cam.data.lens,
-             loc=loc, style=style, prompt=prompt, actors=[a.name for a in actors], notes=notes, source=source)
+def shot(n, code, t0, dur, cam, loc, style, prompt, actors, notes="", source=False, **extra):
+    a0, a1 = remap(t0), remap(t0 + dur, end=True)
+    s = dict(n=n, code=code, t0=round(a0, 3), t1=round(a1, 3), dur=round(a1 - a0, 3), cam=cam.name, lens=cam.data.lens,
+             loc=loc, style=style, prompt=prompt, actors=[a.name for a in actors], notes=notes, source=source, **extra)
     SHOTS.append(s)
     for a in actors:
         window(a, t0, t0 + dur)
@@ -681,6 +726,11 @@ def set_hall():
         if k == P["room4_door"]:
             d4 = bl(S, "ROOM4_door_MIRROR", hw - 0.14, hw - 0.04, yc - 1.1, yc + 1.1, 0.0, 2.9, MATS["mirror"], C)
             key(d4, "location", 0.0, d4.location.copy(), "CONSTANT")
+            # a dark steel frame and a handle, so the panel reads as a door with a mirror face, not an opening
+            for nm, r in (("L", (yc - 1.25, yc - 1.1, 0.0, 3.05)), ("R", (yc + 1.1, yc + 1.25, 0.0, 3.05)), ("T", (yc - 1.25, yc + 1.25, 2.9, 3.05))):
+                bl(S, f"ROOM4_door_frame_{nm}", hw - 0.2, hw - 0.02, r[0], r[1], r[2], r[3], MATS["helmet"], C)
+            bl(S, "ROOM4_door_handle", hw - 0.2, hw - 0.14, yc - 0.85, yc - 0.75, 0.95, 1.35, MATS["helmet"], C)
+            P["mirror_x"], P["mirror_rect"] = hw - 0.14, (yc - 1.1, yc + 1.1, 0.0, 2.9)
         else:
             bl(S, f"freezer_door_{k + 1}", hw - 0.1, hw + 0.05, yc - 1.1, yc + 1.1, 0.0, 2.9, MATS["steel"], C)
         bl(S, f"door_back_void_{k}", hw + 0.3, hw + 0.4, yc - 1.1, yc + 1.1, 0.0, 2.9, MATS["void"], C)
@@ -1089,7 +1139,7 @@ def build_shots():
     yd = hall_doors()[P["room4_door"]]
     me, mpp = person("B8_wearer_THIRTEENTH_7-12", "thirteenth", H_(4.4, yd - 2.4), heading(0, 1), C, wearer=True, tag="13TH (seen only in the mirror)")
     move(me, 52.5, H_(4.4, yd - 2.4)); move(me, 54.0, H_(4.4, yd - 0.4))
-    key(mpp["head"], "rotation_euler", 53.3, (0, 0, 0)); key(mpp["head"], "rotation_euler", 53.6, (0, 0, -0.35), "BEZIER")
+    key(mpp["head"], "rotation_euler", 53.55, (0, 0, 0)); key(mpp["head"], "rotation_euler", 53.85, (0, 0, -0.35), "BEZIER")
     cam = camera("CAM_19i_B8_ex47", 14, C)
     def b8(u, t):
         loc = H_(4.4, yd - 2.4 + 2.0 * u + 0.18, CH)
@@ -1097,9 +1147,16 @@ def build_shots():
         return loc, loc + Vector((math.sin(yaw), math.cos(yaw), -0.08)), 0.0
     turn(me, 52.8, heading(0, 1)); turn(me, 53.4, heading(0, 1) - 0.85, "BEZIER")
     cam_keys(cam, 52.5, 54.0, b8)
-    ev("19i", 52.8, "the wearer turns ~70 deg towards the mirror door (52.8-53.4); his reflection enters frame ~53.6 and turns its head")
+    rec = mpp["rec"]
+    rec.scale = (0.05, 0.012, 0.05)
+    rec.location.z += 0.02
+    ev("19i", 52.8, "the wearer turns ~70 deg towards the mirror door (52.8-53.4)")
+    ev("19i", 53.33, "REVEAL: the reflection enters the mirror (red record light from 53.38, fully in at 53.42)")
+    ev("19i", 53.55, "only after it has settled, the reflection turns its head (to 53.85)")
     shot("19i", "B8", 52.5, 1.5, cam, "LOC-FREEZER (room 4 door)", "S-BCAM steady", "B8", [me],
-         "13TH APPEARANCE #2: only as a reflection. The wearer is invisible to the camera but visible in the mirror.")
+         "13TH APPEARANCE #2: only as a reflection. The red record light on the reflection's chest sits exactly where the viewpoint is.",
+         mirror=dict(obj="ROOM4_door_MIRROR", x=P["hall_origin"][0] + P["mirror_x"],
+                     rect=[P["hall_origin"][1] + P["mirror_rect"][0], P["hall_origin"][1] + P["mirror_rect"][1], P["mirror_rect"][2], P["mirror_rect"][3]]))
 
     # ---- 21 C2 room 4 CCTV: the scarred hand pulls Nora behind the crates (58.0-62.5)
     C = coll("SHOT_21_C2")
@@ -1107,15 +1164,28 @@ def build_shots():
     dy4 = P["room4_door_y"]
     nora_c2, _ = person("C2_nora", "nora", R4(hw4 + 0.9, dy4), heading(-1, 0), C, tag="NORA")
     move(nora_c2, 58.0, R4(hw4 + 0.9, dy4)); move(nora_c2, 58.3, R4(hw4 + 0.9, dy4))
-    move(nora_c2, 59.4, R4(0.9, 3.4), "BEZIER"); move(nora_c2, 60.2, R4(-0.3, 3.3))
-    move(nora_c2, 60.5, R4(-0.6, 3.35)); move(nora_c2, 61.5, R4(-1.55, 3.5, -1.0), "BEZIER")
-    turn(nora_c2, 59.4, heading(-1, 0)); turn(nora_c2, 60.2, heading(-1, 0.3)); turn(nora_c2, 61.5, heading(-1, 0.3), tilt=0.5)
-    th2, thp2 = person("C2_THIRTEENTH_hidden", "thirteenth", R4(-1.3, 3.55), heading(0, 1), C, pose="crouch", tag="13TH (hand only)")
-    # facing the back wall with the right arm tucked in; only that arm swings sideways out into the gap
+    move(nora_c2, 59.4, R4(0.9, 3.35), "BEZIER"); move(nora_c2, 60.15, R4(0.1, 3.2))
+    move(nora_c2, 60.95, R4(0.02, 3.24)); move(nora_c2, 61.8, R4(-1.6, 3.45, -1.05), "BEZIER")
+    turn(nora_c2, 59.4, heading(-1, 0)); turn(nora_c2, 60.15, heading(-1, 0.4)); turn(nora_c2, 60.95, heading(-1, 0.4))
+    turn(nora_c2, 61.8, heading(-1, 0.4), tilt=0.5)
+    th2, thp2 = person("C2_THIRTEENTH_hidden", "thirteenth", R4(-1.2, 3.6), heading(0, 1), C, pose="crouch", tag="13TH (hand only)")
+    # the scar sits on the side of the hand that faces up once the arm swings out, i.e. towards the high CCTV
+    sc_ = thp2["scar"]
+    sc_.location = (0.056, 0.0, -0.66)
+    sc_.scale = (0.01, 0.05, 0.11)
     arm(thp2, "r", 58.0, (0.0, 0.3, 0.0)); arm(thp2, "r", 60.0, (0.0, 0.3, 0.0))
-    arm(thp2, "r", 60.25, (0.0, -1.5, 0.0), "BEZIER"); arm(thp2, "r", 61.2, (0.0, 0.2, 0.0))
-    ev("21", 58.3, "Nora stumbles in through the doorway on the right"); ev("21", 60.2, "the gloved, scarred right hand comes out from behind the tall crate stack and grabs her vest")
-    ev("21", 60.5, "she is pulled into the gap behind the stack; gone by 61.5; hold the empty room to 62.5")
+    arm(thp2, "r", 60.2, (0.0, -1.5, 0.0), "BEZIER"); arm(thp2, "r", 60.95, (0.0, -1.45, 0.0))
+    arm(thp2, "r", 61.8, (0.0, 0.3, 0.0), "BEZIER")
+    # gunfire from the hall: sparks on the door frame and a muzzle glow, right where she was standing
+    for k, (y, z, t) in enumerate(((dy4 - 0.45, 1.5, 60.32), (dy4 + 0.5, 1.1, 60.45), (dy4 - 0.2, 1.9, 60.58))):
+        sp = box(f"C2_spark_{k}", R4(hw4 + 0.02, y, z), (0.12, 0.12, 0.12), MATS["flash"], C)
+        flash(sp, [t])
+    glow = box("C2_muzzle_glow_hall", R4(hw4 + 1.3, dy4, 1.3), (0.3, 0.3, 0.3), MATS["flash"], C)
+    flash(glow, [60.3, 60.43, 60.56])
+    ev("21", 58.3, "Nora stumbles in through the doorway on the right, half-blind")
+    ev("21", 60.2, "the gloved right hand swings out of the gap between the crates and the pallets and takes her vest; the scar faces the camera; hold to 60.95")
+    ev("21", 60.3, "gunfire from the hall: sparks on the door frame where she was standing (60.3-60.6). Attack or rescue: both readings stay open")
+    ev("21", 60.95, "she is pulled into the gap behind the stack; her head is gone by ~61.7; hold the empty room to 62.5")
     cam = camera("CAM_21_C2_cctv_room4", 16, C)
     cam_keys(cam, 58.0, 62.5, lambda u, t: (R4(0.4, -0.05, 2.45), R4(-0.4, 4.5, 0.9), 0.0))
     shot("21", "C2", 58.0, 4.5, cam, "LOC-ROOM4", "S-CCTV", "C2", [nora_c2, th2],
@@ -1126,7 +1196,7 @@ def build_shots():
     cam = camera("CAM_24_E2_macro", 100, C, clip=0.01)
     tag = V(0.905, 1.2, 0.905)
     cam_keys(cam, 70.5, 74.0, lambda u, t: (lerp(V(1.35, 0.85, 1.06), V(1.3, 0.9, 1.03), u), tag, 0.0))
-    shot("24", "E2", 70.5, 3.5, cam, "LOC-EVIDENCE", "S-ROOM macro", "E2", [], "Title plate: EXHIBIT 47 is added on the tag in the edit.")
+    shot("24", "E2", 70.5, 3.5, cam, "LOC-EVIDENCE", "S-ROOM macro", "E2", [], "Title plate after I4: EXHIBIT 47 is added on the tag in the edit.")
 
     # ---- 25a I3 Ward's hand turns the pen (74.0-76.5)
     C = coll("SHOT_25a_I3")
@@ -1139,9 +1209,9 @@ def build_shots():
     nora3, _ = person("I3_nora_offscreen", "nora_room", I(-0.75, 2.95), heading(1, 0), C, pose="sit", wearer=True)
     cam = camera("CAM_25a_I3_table", 50, C)
     cam_keys(cam, 74.0, 76.5, lambda u, t: (I(-0.3, 3.25, 1.14), I(0.28, 3.5, 0.76), 0.0))
-    ev("25a", 74.0, "pen turns end over end, a half turn every 0.5 s; the scar catches the light")
+    ev("25a", 74.0, "the pen turns end over end; the back of the hand and the same scar face the lens for the whole shot")
     shot("25a", "I3", 74.0, 2.5, cam, "LOC-INTERVIEW", "S-ROOM", "I3", [ward3, nora3],
-         "13TH APPEARANCE #4. Frame top must stay below Ward's chest.")
+         "13TH APPEARANCE #4 (identity clue, not a body appearance): the same scar as C2. Frame top stays below Ward's chest.")
 
     # ---- 25b I4 Nora looks up (76.5-79.0)
     C = coll("SHOT_25b_I4")
@@ -1151,7 +1221,9 @@ def build_shots():
     ward4, _ = person("I4_WARD_offscreen", "ward", I(0.75, 3.25), heading(-1, 0), C, pose="sit", tag="WARD (must stay out of frame)")
     cam = camera("CAM_25b_I4_close", 50, C)
     cam_keys(cam, 76.5, 79.0, lambda u, t: (I(0.42, 3.05, 1.2), I(-0.75, 2.95, 1.24), 0.0))
-    ev("25b", 77.3, "eyes start to rise; 78.1 she is looking at him; hold to 79.0")
+    ev("25b", 76.5, "she looks at his hand first")
+    ev("25b", 77.3, "her eyes rise to his face")
+    ev("25b", 78.1, "she holds his look: the beat of recognition, no words")
     shot("25b", "I4", 76.5, 2.5, cam, "LOC-INTERVIEW", "S-ROOM", "I4", [nora4, ward4],
          "Camera sits in front of Ward's shoulder. The one-way mirror is directly behind Nora and reflects Ward at the right edge.")
 
@@ -1204,43 +1276,40 @@ EDIT = [
     ("11", 27.0, 0.5, "card", ""),
     ("12", 27.5, 3.0, "grid", "lost:7-03@0.7,7-09@1.5"),
     ("13", 30.5, 3.0, "shot", "13"),
-    ("14", 33.5, 1.5, "card", "ONE OF THEM"),
-    ("15", 35.0, 2.5, "shot", "15"),
-    ("16", 37.5, 1.5, "card", "BELONGED TO A DEAD MAN.|flash:S2"),
-    ("17", 39.0, 2.5, "shot", "17"),
-    ("18", 41.5, 2.0, "card", "IT HAD BEEN EVIDENCE ONCE BEFORE."),
-    ("19a", 43.5, 1.0, "shot", "19a"),
-    ("19b", 44.5, 1.0, "shot", "19b"),
-    ("19c", 45.5, 1.0, "shot", "19c"),
-    ("19d", 46.5, 1.0, "shot", "19d"),
-    ("19e", 47.5, 1.0, "shot", "19e"),
-    ("19f", 48.5, 1.0, "grid", "lost:7-01@0.1,7-05@0.1,7-10@0.1"),
-    ("19g", 49.5, 1.5, "shot", "19g"),
-    ("19h", 51.0, 1.5, "shot", "19h"),
-    ("19i", 52.5, 1.5, "shot", "19i"),
-    ("20", 54.0, 4.0, "grid", "final"),
-    ("21", 58.0, 4.5, "shot", "21"),
-    ("22", 62.5, 6.0, "montage", "S1:1.1,S2:1.0,19a:0.9,dot:0.8,10pre:0.7,17:0.6,19g:0.5,19a:0.4"),
-    ("23", 68.5, 2.0, "card", ""),
-    ("24", 70.5, 3.5, "shot", "24"),
-    ("25a", 74.0, 2.5, "shot", "25a"),
-    ("25b", 76.5, 2.5, "shot", "25b"),
-    ("26", 79.0, 2.0, "card", "EVERY SHOT IN THIS FILM IS EVIDENCE."),
-    ("27", 81.0, 1.5, "card", "THE CASE IS STILL OPEN."),
-    ("28", 82.5, 2.5, "card", "THE THIRTEENTH APPEARS IN 4 SHOTS.|WATCH AGAIN."),
-    ("29", 85.0, 2.0, "card", "COMING NEVER"),
-    ("30", 87.0, 2.0, "card", "|dot"),
+    ("14", 33.5, 2.0, "card", "ONLY 12 CAMERAS WERE ISSUED."),
+    ("15", 35.5, 2.5, "shot", "15"),
+    ("16", 38.0, 2.0, "card", "ONE CAMERA BELONGED TO A DEAD MAN.|flash:S2"),
+    ("17", 40.0, 2.5, "shot", "17"),
+    ("18", 42.5, 3.0, "register", "NORTHGATE"),
+    ("19a", 45.5, 1.0, "shot", "19a"),
+    ("19b", 46.5, 1.0, "shot", "19b"),
+    ("19c", 47.5, 1.0, "shot", "19c"),
+    ("19d", 48.5, 1.0, "shot", "19d"),
+    ("19e", 49.5, 1.0, "shot", "19e"),
+    ("19f", 50.5, 1.0, "grid", "lost:7-01@0.1,7-05@0.1,7-10@0.1"),
+    ("19g", 51.5, 1.5, "shot", "19g"),
+    ("19h", 53.0, 1.5, "shot", "19h"),
+    ("19i", 54.5, 1.5, "shot", "19i"),
+    ("20", 56.0, 4.0, "grid", "final"),
+    ("21", 60.0, 4.5, "shot", "21"),
+    ("22", 64.5, 6.0, "montage", "S1:1.1,09z:1.0,21z:0.9,19iz:0.8,S2:0.7,10pre:0.6,grid13:0.5,19a:0.4"),
+    ("23", 70.5, 1.5, "card", ""),
+    ("25a", 72.0, 3.0, "shot", "25a"),
+    ("25b", 75.0, 4.0, "shot", "25b"),
+    ("24", 79.0, 3.0, "shot", "24"),
+    ("29", 82.0, 2.5, "card", "COMING NEVER"),
+    ("30", 84.5, 3.5, "card", "|dotlong"),
 ]
 
 def bind_markers(camb):
     sc = bpy.context.scene
     by_n = {s["n"]: s for s in SHOTS}
     for n, t0, dur, kind, data in EDIT:
-        m = sc.timeline_markers.new(f"{n} {by_n[data]['code'] if kind == 'shot' else kind.upper()}", frame=fr(t0))
+        m = sc.timeline_markers.new(f"{n} {by_n[data]['code'] if kind == 'shot' else kind.upper()}", frame=frn(t0))
         m.camera = bpy.data.objects[by_n[data]["cam"]] if kind == "shot" else camb
     for s in SHOTS:
         if s["source"]:
-            m = sc.timeline_markers.new(f"SRC {s['code']}", frame=fr(s["t0"]))
+            m = sc.timeline_markers.new(f"SRC {s['code']}", frame=frn(s["t0"]))
             m.camera = bpy.data.objects[s["cam"]]
 
 # --------------------------------------------------------------------------
@@ -1250,7 +1319,7 @@ def setup_scene():
     sc = bpy.context.scene
     sc.render.fps = FPS
     sc.frame_start = 1
-    sc.frame_end = fr(98.0)
+    sc.frame_end = frn(98.0)
     sc.render.engine = "CYCLES"
     sc.cycles.device = "CPU"
     sc.cycles.samples = 12
@@ -1283,15 +1352,67 @@ def world_to_cam(sc, cam, p):
     from bpy_extras.object_utils import world_to_camera_view
     return world_to_camera_view(sc, cam, p)
 
-def analyze(outdir):
+def mirror_check(s, cam, frames):
+    """Is the camera wearer's reflection in frame? Reflect his parts across the mirror plane and
+    check that the camera sees the mirror at the crossing point."""
+    from bpy_extras.object_utils import world_to_camera_view
+    sc = bpy.context.scene
+    mi = s["mirror"]
+    xm, (y0, y1, z0, z1) = mi["x"], mi["rect"]
+    wearer = [bpy.data.objects[a] for a in s["actors"] if bpy.data.objects[a].get("pov_wearer")]
+    out = []
+    parts = [bpy.data.objects[n] for a in wearer for n in a["parts"]]
+    for f in frames:
+        sc.frame_set(f)
+        cl = cam.matrix_world.translation.copy()
+        pts = []
+        for o in parts:
+            mw = o.matrix_world
+            c = mw.translation.copy()
+            pts += [(o.name, p.copy()) for p in [c] + [c.lerp(mw @ Vector(b), 0.85) for b in o.bound_box]]
+        for o in parts:          # the wearer is invisible to the camera in the render: ignore him as a blocker
+            o.hide_viewport = True
+        dg = bpy.context.evaluated_depsgraph_get()
+        tot = vis = rec_vis = 0
+        for n, p in pts:
+            q = Vector((2 * xm - p.x, p.y, p.z))
+            co = world_to_camera_view(sc, cam, q)
+            tot += 1
+            if not (0 <= co.x <= 1 and 0 <= co.y <= 1 and co.z > 0) or abs(q.x - cl.x) < 1e-6:
+                continue
+            k = (xm - cl.x) / (q.x - cl.x)
+            hitp = cl + (q - cl) * k
+            if not (y0 <= hitp.y <= y1 and z0 <= hitp.z <= z1):
+                continue
+            d = hitp - cl
+            hit, _, _, _, ho, _ = sc.ray_cast(dg, cl, d.normalized(), distance=d.length + 0.05)
+            if hit and ho.original.name == mi["obj"]:
+                vis += 1
+                if n.endswith("_rec"):
+                    rec_vis += 1
+        for o in parts:
+            o.hide_viewport = False
+        out.append(((f - 1) / FPS, vis / max(tot, 1), rec_vis))
+    seen = [t for t, v, r in out if v > 0]
+    half = [t for t, v, r in out if v >= 0.5]
+    rec = [t for t, v, r in out if r > 0]
+    return dict(target="REFLECTION of the wearer", first=round(seen[0], 2) if seen else None,
+                full=round(half[0], 2) if half else None, rec_light_first=round(rec[0], 2) if rec else None,
+                last=round(seen[-1], 2) if seen else None, frames_visible=len(seen), frames=len(out))
+
+def analyze(outdir, only=None):
     """Ray-cast visibility per shot: who is in frame and who is occluded."""
     sc = bpy.context.scene
     for o in LABELS:
         o.hide_viewport = True
     report = []
+    keep = set(only.split(",")) if only else None
     for s in SHOTS:
+        if keep and s["n"] not in keep:
+            continue
         cam = bpy.data.objects[s["cam"]]
         sc.camera = cam
+        mirror_row = mirror_check(s, cam, list(range(frn(s["t0"]), frn(s["t1"]), 1))) if s.get("mirror") else None
         actors = [bpy.data.objects[a] for a in s["actors"] if bpy.data.objects[a].type == "EMPTY"]
         hidden = [a for a in actors if a.get("pov_wearer")]
         for a in hidden:
@@ -1309,7 +1430,7 @@ def analyze(outdir):
                 if sel:
                     tracked[f"{a.name}.{key_}"] = sel
         stats = {k: [] for k in tracked}
-        frames = list(range(fr(s["t0"]), fr(s["t1"]), 2))
+        frames = list(range(frn(s["t0"]), frn(s["t1"]), 2))
         for f in frames:
             sc.frame_set(f)
             dg = bpy.context.evaluated_depsgraph_get()
@@ -1342,6 +1463,8 @@ def analyze(outdir):
                              first=round((seen[0] - 1) / FPS, 2) if seen else None,
                              last=round((seen[-1] - 1) / FPS, 2) if seen else None,
                              frames_in_frame=len(inframe), max_unoccluded=round(frac, 2)))
+        if mirror_row:
+            rows.append(mirror_row)
         report.append(dict(shot=s["n"], code=s["code"], rows=rows))
         for a in hidden:
             for c in a.children_recursive:
@@ -1375,7 +1498,7 @@ def render(outdir, sample_only=False, step=1, res=None, samples=None, only=None)
         sc.camera = cam
         d = os.path.join(outdir, s["n"])
         os.makedirs(d, exist_ok=True)
-        f0, f1 = fr(s["t0"]), fr(s["t1"]) - 1
+        f0, f1 = frn(s["t0"]), frn(s["t1"]) - 1
         frames = [f0 + 4, (f0 + f1) // 2, f1 - 4] if sample_only else list(range(f0, f1 + 1, step))
         for f in frames:
             out = os.path.join(d, f"f_{f:05d}.png")
@@ -1391,12 +1514,36 @@ def render_refs(outdir):
     unbind_markers()
     for o in LABELS:
         o.hide_render = True
-    sc.frame_set(fr(88.5))  # no shot is live here, so every actor is hidden
+    sc.frame_set(frn(89.5))  # no shot is live here, so every actor is hidden
     os.makedirs(outdir, exist_ok=True)
     for set_, cam_name in REFS.items():
         sc.camera = bpy.data.objects[cam_name]
         sc.render.filepath = os.path.join(outdir, f"ref_{set_}.png")
         bpy.ops.render.render(write_still=True)
+
+def enhance_points():
+    """Screen positions of the details the montage zooms into (x, y from the top-left, 0..1)."""
+    from bpy_extras.object_utils import world_to_camera_view
+    sc = bpy.context.scene
+    by_n = {s["n"]: s for s in SHOTS}
+    xm = P["hall_origin"][0] + P["mirror_x"]
+    def wearer_rec():
+        o = bpy.data.objects["B8_wearer_THIRTEENTH_7-12_rec"]
+        c = o.matrix_world.translation
+        return Vector((2 * xm - c.x, c.y, c.z))
+    targets = {
+        "09z": ("09", 22.8, lambda: bpy.data.objects["tag_13"].matrix_world.translation.copy(), "EXHIBIT 47"),
+        "21z": ("21", 60.6, lambda: bpy.data.objects["C2_THIRTEENTH_hidden_scar"].matrix_world.translation.copy(), "SCAR"),
+        "19iz": ("19i", 53.9, wearer_rec, "REC 7-12"),
+    }
+    out = {}
+    for key_, (n, t_old, getp, lab) in targets.items():
+        t = remap(t_old)
+        sc.frame_set(frn(t))
+        cam = bpy.data.objects[by_n[n]["cam"]]
+        co = world_to_camera_view(sc, cam, getp())
+        out[key_] = dict(shot=n, t=round(t, 3), x=round(co.x, 4), y=round(1 - co.y, 4), label=lab)
+    return out
 
 def main():
     bpy.ops.wm.read_factory_settings(use_empty=True)
@@ -1412,13 +1559,14 @@ def main():
     sc["previs_events"] = json.dumps(EVENTS)
     sc.frame_set(fr(23.0))
     sc.camera = bpy.data.objects["CAM_10_B2_bodycam_nora"]
+    enh = enhance_points()
     out = arg("--meta")
     if out:
         os.makedirs(os.path.dirname(out) or ".", exist_ok=True)
         with open(out, "w") as fh:
-            json.dump(dict(shots=SHOTS, edit=EDIT, events=EVENTS, params=P, refs=REFS, fps=FPS), fh, indent=1, ensure_ascii=False)
+            json.dump(dict(shots=SHOTS, edit=EDIT, events=EVENTS, params=P, refs=REFS, fps=FPS, enhance=enh), fh, indent=1, ensure_ascii=False)
     if arg("--analyze"):
-        analyze(arg("--analyze"))
+        analyze(arg("--analyze"), only=arg("--only"))
     save = arg("--save")
     if save:
         bpy.ops.wm.save_as_mainfile(filepath=os.path.abspath(save), compress=True)

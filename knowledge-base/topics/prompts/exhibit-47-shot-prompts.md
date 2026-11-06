@@ -108,7 +108,7 @@ cartoon, anime, CGI look, video game graphics, cinematic color grading, clean mo
 
 **B8 冷冻门镜面倒影**（**第十三人出场 #2**）· Veo · 4 秒
 ```text
-[S-BCAM] LOC-FREEZER, along the row of freezer-room doors. The camera wearer walks past the polished steel door of room 4 and turns his body toward it as he passes; in the dim mirror-like surface we see the reflection of the wearer — a tactical officer whose helmet bears the white stenciled number 7-12, full black balaclava and goggles, face invisible. The reflection turns its head slightly toward the camera. Sound: footsteps on ice, a slow breath. 4 seconds. [NEG-47]
+[S-BCAM] LOC-FREEZER, along the row of freezer-room doors. The camera wearer walks past the door of room 4, a mirror-polished steel panel in a dark steel frame with a heavy handle, and turns his body toward it as he passes; the panel clearly reflects the hook rails and columns behind the camera, and in it we see the reflection of the wearer, with a small glowing red recording light on his chest at exactly the height of this camera — a tactical officer whose helmet bears the white stenciled number 7-12, full black balaclava and goggles, face invisible. The reflection turns its head slightly toward the camera. Sound: footsteps on ice, a slow breath. 4 seconds. [NEG-47]
 ```
 注意：这台是第 47 号证物的视角，后期叠字用 7-12。
 
@@ -138,7 +138,7 @@ cartoon, anime, CGI look, video game graphics, cinematic color grading, clean mo
 
 **C2 拉住诺拉的手**（**第十三人出场 #3**）· Veo · 5 秒
 ```text
-[S-CCTV] LOC-ROOM4, infrared. [NORA-REF], NORA-TAC, stumbles into the small freezer room, half-blind in the gas fog; out of the narrow gap between a tall stack of frosted crates and a pallet stack, a gloved right hand — [WARD-GLOVE] — reaches out sideways, grabs her vest and pulls her down behind the crates. The figure attached to the hand stays in shadow. Sound: a whisper very close to her: "You're safe now, Kade." 5 seconds. [NEG-47]
+[S-CCTV] LOC-ROOM4, infrared. [NORA-REF], NORA-TAC, stumbles into the small freezer room, half-blind in the gas fog, and crosses the open doorway; out of the narrow gap between a tall stack of frosted crates and a pallet stack, a gloved right hand — [WARD-GLOVE] — reaches out sideways and grabs her vest, the back of the hand and its scar turned up toward the camera, and holds her for a moment; at that instant gunfire from the hall sparks off the steel door frame exactly where she was standing; then the hand pulls her down into cover behind the crates. No struggle, no choking: it could be an attack or a rescue. The figure attached to the hand stays in shadow. Sound: a whisper very close to her: "You're safe now, Kade." 5 seconds. [NEG-47]
 ```
 
 **C3 警车抵达**（报警电话的画面）· Kling · 5 秒
@@ -172,12 +172,12 @@ cartoon, anime, CGI look, video game graphics, cinematic color grading, clean mo
 
 **I3 沃德的手**（**第十三人出场 #4**，按钮）· Veo · 5 秒
 ```text
-[S-ROOM] LOC-INTERVIEW, close camera on the table surface. [WARD-HAND] slowly turns a cheap black ballpoint pen (PEN) end over end; the burn scar catches the fluorescent light. The man's face is never in frame. Sound: a calm, kind male voice says: "You're safe now, Kade." 5 seconds. [NEG-47]
+[S-ROOM] LOC-INTERVIEW, close camera on the table surface. [WARD-HAND] slowly turns a cheap black ballpoint pen (PEN) end over end; the back of the hand faces the lens the whole time, and the burn scar, the same as the one on the gloved hand in the freezer, catches the fluorescent light. The man's face is never in frame. Sound: a calm, kind male voice says: "You're safe now, Kade." 5 seconds. [NEG-47]
 ```
 
-**I4 诺拉抬眼** · Veo · 4 秒
+**I4 诺拉抬眼**（先看手，再看脸，停住）· Veo · 5 秒
 ```text
-[S-ROOM] LOC-INTERVIEW, close camera on her face; the dark one-way mirror behind her reflects only darkness. [NORA-REF], NORA-ROOM, is looking down at the table; slowly her eyes rise to the man sitting across from her, and her expression shifts from exhaustion to cold recognition. She does not speak. Sound: silence, a faint fluorescent buzz. 4 seconds. [NEG-47]
+[S-ROOM] LOC-INTERVIEW, close camera on her face; the dark one-way mirror behind her reflects only darkness. [NORA-REF], NORA-ROOM, is looking down at the man's hand on the table; she stares at it for a long moment, then slowly her eyes rise to his face, and she holds his look as her expression shifts from exhaustion to cold recognition. She does not speak. Sound: silence, a faint fluorescent buzz. 4 seconds. [NEG-47]
 ```
 
 ## 取证录像（E）
@@ -215,6 +215,8 @@ cartoon, anime, CGI look, video game graphics, cinematic color grading, clean mo
 |---|---|---|
 | 执法记录仪 | `BODY CAM 7-04` + `FEB 09  04:03:12` + 红色 `● REC` | 左上 / 右下 / 右上 |
 | 第 47 号证物 | 与诺拉相同的 `BODY CAM 7-12`（**两台都写 7-12**） | 同上 |
+| 监控墙第 13 格 | `UNKNOWN` + 红点（不写 7-12，避免被看成第 12 路重新连上） | 格子左上 |
+| 证物登记表（字卡 18） | `47  BODY CAMERA · UNIT 7-12` + 红框 `LOST` | 文件卡 |
 | 监控 | `CAM FRZ-03` + 时间戳 | 左上 |
 | 无人机 | `DRONE 02` + `ALT 38M` + `FEB 09  07:40:16` | 底部 |
 | 审讯室 | `INTERVIEW RM 3 · REC` + `FEB 10  09:14:55` | 左上 |

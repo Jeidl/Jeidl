@@ -32,7 +32,8 @@ summary: 发布和提交前逐项勾选：时长、原创性、AKOOL 标志、�
 - [ ] @AKOOL
 - [ ] 标题：`EXHIBIT 47 — Official Trailer (Coming Never) | #AKOOLFilmChallenge`
 - [ ] 简介第一行钩子："12 officers went in. 1 came out. 13 cameras were recovered."
-- [ ] 置顶评论提问："Did you find all 4 shots?"
+- [ ] 简介第二段放片里删掉的三张说明卡（v2 起不在成片里，见 [分镜表](exhibit-47-shot-list.md)）："Every shot in this film is evidence. The case is still open. The thirteenth appears in 4 shots. Watch again."
+- [ ] 置顶评论提问："Did you find all 4 shots?"（第 4 次是一道疤，不是一个人）
 - [ ] 简介注明虚构作品："A fictional trailer for the AKOOL AI Film Challenge. All characters, agencies and events are fictional."（证物型结尾必须有，见 [元结尾字卡库](../techniques/meta-endings.md)）
 
 ## 提交表单

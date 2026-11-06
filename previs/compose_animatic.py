@@ -57,9 +57,12 @@ def card(lines, red_dot=False):
         d.ellipse((W / 2 - 5, H / 2 - 5, W / 2 + 5, H / 2 + 5), fill=(230, 20, 10))
     return im
 
-TILE_SRC = {"7-01": ("05", 11.5), "7-02": ("13", 30.5), "7-03": ("15", 35.0), "7-04": ("19a", 43.5),
-            "7-05": ("19b", 44.5), "7-06": ("13", 32.5), "7-07": ("19e", 47.5), "7-08": ("19g", 49.5),
-            "7-09": ("17", 39.0), "7-10": ("13", 31.5), "7-11": ("15", 36.0), "7-12": ("10", 23.0)}
+# feed -> (source shot, offset into it, loop length or None for the whole shot)
+TILE_SRC = {"7-01": ("05", 0.0, None), "7-02": ("13", 0.0, None), "7-03": ("15", 0.0, None), "7-04": ("19a", 0.0, None),
+            "7-05": ("19b", 0.0, None), "7-06": ("13", 2.0, None), "7-07": ("19e", 0.0, None), "7-08": ("19g", 0.0, None),
+            "7-09": ("17", 0.0, None), "7-10": ("13", 1.0, None), "7-11": ("15", 1.0, None),
+            "7-12": ("10", 0.0, 1.9)}   # Nora's feed: only before the swing, so the 13th never shows on the wall
+THIRTEENTH_SHOTS = {"10": "13TH #1", "19i": "13TH #2 mirror", "21": "13TH #3 hand", "25a": "13TH #4 identity: same scar"}
 ORDER = list(TILE_SRC)
 
 def grid(t, rel, lost, thirteenth=None):
@@ -74,19 +77,19 @@ def grid(t, rel, lost, thirteenth=None):
             d.rectangle((x, y, x + tw, y + th), fill=(8, 8, 8))
             d.text((x + tw / 2 - 30, y + th / 2 - 5), "SIGNAL LOST", fill=(200, 200, 200), font=f_tile)
         else:
-            n, t0 = TILE_SRC[cam]
+            n, off, loop = TILE_SRC[cam]
             s = SHOTS[n]
-            span = s["t1"] - s["t0"]
-            src = shot_frame(n, s["t0"] + ((t0 - s["t0"]) + rel) % span).convert("L").convert("RGB").resize((tw, th))
+            span = loop or (s["t1"] - s["t0"])
+            src = shot_frame(n, s["t0"] + (off + rel) % span).convert("L").convert("RGB").resize((tw, th))
             im.paste(src, (x, y))
         d.text((x + 3, y + 2), cam, fill=(255, 255, 255), font=f_tile)
     if thirteenth is not None:
         alpha, blink = thirteenth
         x, y = (W - tw) // 2, BAR + 2 + 3 * (th + 2) + 2
-        src = shot_frame("19h", 51.0 + rel % 1.4).convert("L").convert("RGB").resize((tw, th))
+        src = shot_frame("19h", SHOTS["19h"]["t0"] + rel % 1.4).convert("L").convert("RGB").resize((tw, th))
         black = Image.new("RGB", src.size, "black")
         im.paste(Image.blend(black, src, alpha), (x, y))
-        d.text((x + 3, y + 2), "7-12", fill=(255, 255, 255), font=f_tile)
+        d.text((x + 3, y + 2), "UNKNOWN", fill=(255, 255, 255), font=f_tile)
         if blink:
             d.ellipse((x + tw - 10, y + 3, x + tw - 4, y + 9), fill=(230, 20, 10))
     return im
@@ -106,18 +109,61 @@ def grid_state(n, t):
     a = min(1.0, (rel - 2.1) / 0.8)
     return grid(t, rel, lost, thirteenth=(a, int(rel * 3) % 2 == 0))
 
+ENH = meta.get("enhance", {})
+
+def zoom(im, x, y, f, label, tag_text=None):
+    """Freeze-frame 'enhance': crop around (x, y) (0..1 from the top-left) and scale up."""
+    cw, ch = W / f, H / f
+    cx = min(max(x * W, cw / 2), W - cw / 2)
+    cy = min(max(y * H, ch / 2), H - ch / 2)
+    out = im.crop((int(cx - cw / 2), int(cy - ch / 2), int(cx + cw / 2), int(cy + ch / 2))).resize((W, H))
+    d = ImageDraw.Draw(out)
+    px, py = (x * W - (cx - cw / 2)) * f, (y * H - (cy - ch / 2)) * f
+    d.rectangle((px - 40, py - 28, px + 40, py + 28), outline=(255, 255, 255), width=2)
+    if tag_text:
+        w = d.textlength(tag_text, font=f_card)
+        d.text((px - w / 2, py - 14), tag_text, fill=(245, 240, 230), font=f_card)
+    d.rectangle((0, BAR, 230, BAR + 18), fill=(0, 0, 0))
+    d.text((6, BAR + 3), f"ENHANCE x{f:.1f} · {label}", fill=(255, 255, 255), font=f_mono)
+    return out
+
 def montage(t, data, s0):
     segs = [(p.split(":")[0], float(p.split(":")[1])) for p in data.split(",")]
     rel, acc = t - s0, 0.0
     for name, dur in segs:
         if rel < acc + dur or (name, dur) == segs[-1]:
             r = rel - acc
-            if name == "dot":
-                return card([""], red_dot=True), "red dot"
+            u = min(1.0, r / dur)
             if name == "10pre":
-                return shot_frame("10", 23.0 + r), "B2 (before the swing)"
+                return shot_frame("10", 23.0 + r), "B2 before the swing"
+            if name == "grid13":
+                im = grid(t, 3.0, set(ORDER), thirteenth=(1.0, int(r * 6) % 2 == 0))
+                return im, "the 13th feed: UNKNOWN"
+            if name.endswith("z") and name in ENH:
+                e = ENH[name]
+                src = shot_frame(e["shot"], e["t"])
+                tag = "EXHIBIT 47" if name == "09z" else None
+                return zoom(src, e["x"], e["y"], 2.2 + 1.6 * u, e["label"], tag), f"{SHOTS[e['shot']]['code']} enhance: {e['label']}"
             return shot_frame(name, SHOTS[name]["t0"] + r), SHOTS[name]["code"]
         acc += dur
+
+def register_card(rel):
+    im = Image.new("RGB", (W, H), "black")
+    d = ImageDraw.Draw(im)
+    ink, dim, red = (237, 232, 224), (150, 150, 150), (225, 30, 20)
+    x, y = 70, 92
+    d.text((x, y), "NORTHGATE SHOOTING · 3 YEARS AGO", fill=dim, font=f_mono)
+    d.text((x, y + 20), "EVIDENCE REGISTER", fill=ink, font=f_mono)
+    d.line((x, y + 40, W - 70, y + 40), fill=dim)
+    rows = [("45", "9 MM SHELL CASINGS (9)", ""), ("46", "HANDGUN, RECOVERED AT SCENE", ""), ("47", "BODY CAMERA · UNIT 7-12", "LOST")]
+    for i, (no, item, st) in enumerate(rows):
+        yy = y + 54 + i * 26
+        d.text((x, yy), no, fill=ink, font=f_mono)
+        d.text((x + 40, yy), item, fill=ink, font=f_mono)
+        if st and rel >= 1.2:
+            d.rectangle((W - 150, yy - 4, W - 72, yy + 16), outline=red, width=2)
+            d.text((W - 136, yy), st, fill=red, font=f_mono)
+    return im
 
 def overlay(im, t, label, sub=""):
     d = ImageDraw.Draw(im)
@@ -153,12 +199,19 @@ def frame_at(t):
         s = SHOTS[data]
         im = shot_frame(data, t)
         sub = event_at(data, t)
-        return overlay(im, t, f"#{n} {s['code']}  {s['style']} {s['lens']:.0f}mm  {s['loc']}  (clip {t - s0:.1f}s)", sub), n
+        if data == "24" and t >= s0 + 0.4:      # title card: the text goes on the evidence tag in the edit
+            d = ImageDraw.Draw(im)
+            w = d.textlength("EXHIBIT 47", font=f_card)
+            d.text(((W - w) / 2, H / 2 - 30), "EXHIBIT 47", fill=(245, 240, 230), font=f_card)
+        tag = f"  [{THIRTEENTH_SHOTS[data]}]" if data in THIRTEENTH_SHOTS else ""
+        return overlay(im, t, f"#{n} {s['code']}  {s['style']} {s['lens']:.0f}mm  (clip {t - s0:.1f}s){tag}", sub), n
     if kind == "grid":
         return overlay(grid_state(n, t), t, f"#{n} GRID 4x3"), n
     if kind == "montage":
         im, what = montage(t, data, s0)
         return overlay(im, t, f"#22 MONTAGE  {what}"), n
+    if kind == "register":
+        return overlay(register_card(t - s0), t, f"#{n} CARD  evidence register"), n
     parts = data.split("|")
     lines = [p for p in parts if p and not p.startswith(("flash:", "dot"))]
     if n == "01":
@@ -166,7 +219,9 @@ def frame_at(t):
     elif "flash:S2" in parts and t >= s0 + dur - 3 / FPS:
         im = shot_frame("S2", 95.0)
     else:
-        im = card(lines or [""], red_dot=("dot" in parts and 87.4 <= t <= 87.6))
+        rel = t - s0
+        blink = "dotlong" in parts and (0.5 <= rel < 0.9 or 1.3 <= rel < 1.7 or 2.1 <= rel < 3.3)
+        im = card(lines or [""], red_dot=blink)
     return overlay(im, t, f"#{n} CARD"), n
 
 def main():

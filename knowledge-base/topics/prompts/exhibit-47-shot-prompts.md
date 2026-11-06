@@ -5,12 +5,12 @@ tags: [prompt, visual, sound, action]
 created: 2026-11-06
 updated: 2026-11-06
 related: [20261106-exhibit-47-character-bible, 20261106-exhibit-47-shot-list, 20261106-exhibit-47-story, 20261106-prompt-formula, 20261106-style-anchor, 20261106-music-sfx-prompts, 20261106-sound-design, 20261106-black-screen-text-cards, 20261106-cloverfield-teaser, 20261106-civil-war]
-summary: 主方案预告的全部提示词：六种"证物画面"风格块（执法记录仪 / 监控 / 无人机 / 审讯室 / 旧录像 / 第 47 号证物视角）、19 个编号镜头、监控墙素材池、后期叠字规范，以及配乐、音效和配音提示词。
+summary: 主方案预告的全部提示词：六种"证物画面"风格块（执法记录仪 / 监控 / 无人机 / 审讯室 / 旧录像 / 第 47 号证物视角）、23 个编号镜头、监控墙素材池、后期叠字规范，以及配乐、音效和配音提示词。
 ---
 
 # 《第 47 号证物》镜头提示词库（按证物画面类型分组）
 
-> Summary: 主方案预告的全部提示词：六种"证物画面"风格块（执法记录仪 / 监控 / 无人机 / 审讯室 / 旧录像 / 第 47 号证物视角）、19 个编号镜头、监控墙素材池、后期叠字规范，以及配乐、音效和配音提示词。
+> Summary: 主方案预告的全部提示词：六种"证物画面"风格块（执法记录仪 / 监控 / 无人机 / 审讯室 / 旧录像 / 第 47 号证物视角）、23 个编号镜头、监控墙素材池、后期叠字规范，以及配乐、音效和配音提示词。
 
 ## 背景
 
@@ -110,6 +110,16 @@ cartoon, anime, CGI look, video game graphics, cinematic color grading, clean mo
 ```
 注意：这台是第 47 号证物的视角，后期叠字用 7-12。
 
+**B9 隔着门帘误伤** · Kling · 4 秒
+```text
+[S-BCAM] LOC-FREEZER, near darkness. Through a hanging plastic strip curtain, the blurred silhouette of a figure with a flashlight moves on the other side; the camera wearer's rifle fires twice through the curtain; the silhouette drops and its flashlight clatters to the floor, rolling and shining back at the camera — it is a rifle-mounted light, one of their own. No blood. Sound: two gunshots, plastic snapping, a flashlight rolling on ice. 4 seconds. [NEG-47]
+```
+
+**B10 闪光弹** · Kling · 3 秒
+```text
+[S-BCAM] LOC-FREEZER. A flashbang detonates a few meters ahead; the image blows out to pure white, the sensor struggles, the exposure slowly crawls back revealing silhouettes of officers staggering in the fog. Sound: a deafening bang collapsing into a high-pitched ringing. 3 seconds. [NEG-47]
+```
+
 ## 第 47 号证物视角（X）
 
 **X1 平静穿过毒雾**（不能出现他的手）· Kling · 5 秒
@@ -129,11 +139,21 @@ cartoon, anime, CGI look, video game graphics, cinematic color grading, clean mo
 [S-CCTV] LOC-ROOM4, infrared. [NORA-REF], NORA-TAC, stumbles into the small freezer room, half-blind in the gas fog; out of the darkness behind the crates, a gloved right hand — torn open across the back, revealing an old shiny burn scar — grabs her vest and pulls her down behind the crates. The figure attached to the hand stays in shadow. Sound: a whisper very close to her: "You're safe now, Kade." 5 seconds. [NEG-47]
 ```
 
+**C3 警车抵达**（报警电话的画面）· Kling · 5 秒
+```text
+[S-CCTV] LOC-GATE at night, a camera mounted high on the loading dock. Snow falls through the beam of a single dead floodlight; two dark unmarked police vans pull up at the rusted gate and stop; doors open and a stack of officers ([UNIT-REF]) climbs out silently. Low frame rate, grainy. Sound: tires on snow, the hum of the camera, faint radio chatter. 5 seconds. [NEG-47]
+```
+
 ## 旧录像（O）
 
 **O1 举起的双手**（闪帧和蒙太奇用）· Veo · 4 秒
 ```text
 [S-OLD] LOC-FREEZER three years earlier, flashlight beam. [OLD-HANDS]. The hands tremble. The camera is steady on them. Then the image glitches. Sound: muffled shouting, a calm male voice off-camera says: "No. Mine stays on." 4 seconds. [NEG-47]
+```
+
+**O2 关掉的摄像机**（三年前）· Kling / Veo · 5 秒
+```text
+[S-OLD] LOC-FREEZER three years earlier, flashlight light. The camera faces a line of officers ([UNIT-REF]) standing with their backs half-turned; one after another, each reaches up to the small body camera on his own chest and switches it off — each tiny red recording light goes dark. The camera recording all this stays on. Sound: a series of small clicks, heavy breathing, a calm male voice off-camera: "No. Mine stays on." 5 seconds. [NEG-47]
 ```
 
 ## 审讯室（I）
@@ -251,8 +271,10 @@ A 6-second cinematic riser: accelerating taiko and metallic percussion, distorte
 | V8 | 第十三人 | "Twelve." | **与 V2 同一个声音**，压低、平静 |
 | V9 | 雷耶斯（旧录音） | "Seven-Twelve. Still recording." | `calm young man`；后期加电话带通滤波、失真、断续 |
 | V10 | 雷耶斯（旧录像） | "No. Mine stays on." | 与 V9 同一个声音，较清晰 |
+| V11 | 报警人 | "Northgate. Same as last time." / "Seven-Twelve." | **与 V2 同一个声音**，压低，后期加电话带通滤波 |
+| V12 | 报警中心接线员 | "911, what's your emergency?" / "Sir, who is this?" | `professional female dispatcher, calm, slightly tired`；电话音质 |
 
-**关键**：V3、V4、V8 必须用同一个声音模型生成。这是给仔细的观众留的听觉线索。
+**关键**：V2、V3、V4、V8、V11 必须用同一个声音模型生成。这是给仔细的观众留的听觉线索。
 
 ## 相关笔记
 

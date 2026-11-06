@@ -9,7 +9,7 @@ AKOOL AI Film Challenge「Coming Never」赛道参赛项目《第 47 号证物 E
 | 看主方案的完整故事 | [《第 47 号证物》完整故事](topics/concept/exhibit-47-story.md) |
 | 5 分钟了解全部决策 | [风格定向](topics/brief/style-decision.md) → [动作悬疑方案](topics/concept/action-mystery-concepts.md) → [《第 47 号证物》](topics/concept/exhibit-47-story.md) |
 | 直接开始生成画面 | [人物与道具设定](topics/concept/exhibit-47-character-bible.md) → [《第 47 号证物》镜头提示词库](topics/prompts/exhibit-47-shot-prompts.md) |
-| 知道每一秒放什么 | [《第 47 号证物》75 秒分镜表](topics/production/exhibit-47-shot-list.md) |
+| 知道每一秒放什么 | [《第 47 号证物》90 秒档分镜表](topics/production/exhibit-47-shot-list.md)（实际 89 秒） |
 | 安排两周的工作 | [AKOOL 制作流程与 14 天排期](topics/production/akool-workflow.md) |
 | 提交前自查 | [提交检查清单](topics/production/submission-checklist.md) |
 
@@ -91,7 +91,7 @@ AKOOL AI Film Challenge「Coming Never」赛道参赛项目《第 47 号证物 E
 - `20261106-withholding-mystery` — **留白与悬念营销：少给，让观众自己去找** — `topics/techniques/withholding-mystery.md` — 八种"少给信息"的手法（只给日期、密码彩蛋、ARG、倒计时、突袭发布、藏起怪物、合法误导、线下装置），以及如何用它们拉高评分里的"想看度"。
 
 ### 提示词库 prompts
-- `20261106-exhibit-47-shot-prompts` — **《第 47 号证物》镜头提示词库（按证物画面类型分组）** — `topics/prompts/exhibit-47-shot-prompts.md` — 主方案预告的全部提示词：六种"证物画面"风格块（执法记录仪 / 监控 / 无人机 / 审讯室 / 旧录像 / 第 47 号证物视角）、19 个编号镜头、监控墙素材池、后期叠字规范，以及配乐、音效和配音提示词。
+- `20261106-exhibit-47-shot-prompts` — **《第 47 号证物》镜头提示词库（按证物画面类型分组）** — `topics/prompts/exhibit-47-shot-prompts.md` — 主方案预告的全部提示词：六种"证物画面"风格块（执法记录仪 / 监控 / 无人机 / 审讯室 / 旧录像 / 第 47 号证物视角）、23 个编号镜头、监控墙素材池、后期叠字规范，以及配乐、音效和配音提示词。
 - `20261106-music-sfx-prompts` — **音乐、音效与配音提示词** — `topics/prompts/music-sfx-prompts.md` — 《友谊地久天长》温暖版 / 扭曲版配乐、悬疑垫底音、16 种音效清单，以及每个角色的配音声音设定提示词。
 - `20261106-prompt-formula` — **AI 视频提示词公式与模型选择（AKOOL 上的 Veo / Kling / Seedance / Wan）** — `topics/prompts/prompt-formula.md` — 九段式通用提示词公式、六条硬规则、各模型在 AKOOL 上的长处与分工、镜头和运镜词汇表、多镜头写法，以及常见翻车的修法。
 - `20261106-shot-prompt-library` — **镜头提示词库（按功能分组，编号 A1–G4）** — `topics/prompts/shot-prompt-library.md` — 《明日不来》全部可用镜头的完整英文提示词，分为开场钩子 / 世界 / 悬疑 / 动作 / 时间特效 / 对白 / 结尾按钮七组，每条都有编号（A1–G4）、推荐模型和时长。
@@ -100,6 +100,6 @@ AKOOL AI Film Challenge「Coming Never」赛道参赛项目《第 47 号证物 E
 
 ### 制作方案 production
 - `20261106-akool-workflow` — **AKOOL 制作流程与 14 天排期** — `topics/production/akool-workflow.md` — 从角色设定图、动态分镜、图生视频、口型与配音，到剪辑、遮幅、AKOOL 标志、混音和导出的十步流程，按 11 月 20 日截止倒排的 14 天日程，以及"AKOOL 使用"的留证方法。
-- `20261106-exhibit-47-shot-list` — **《第 47 号证物》75 秒分镜表（逐镜头时间码）** — `topics/production/exhibit-47-shot-list.md` — 主方案参赛版的 33 行分镜：时间码、提示词编号、字卡、台词和声音；第十三人恰好 4 次出场的位置表；预告刻意不交代的内容；以及 30 秒前导版和 9:16 竖屏版的改法。
+- `20261106-exhibit-47-shot-list` — **《第 47 号证物》90 秒档分镜表（逐镜头时间码）** — `topics/production/exhibit-47-shot-list.md` — 主方案参赛版 39 行分镜，总长 89 秒（为 90 秒上限留 1 秒余量）：时间码、提示词编号、字卡、台词和声音；第十三人恰好 4 次出场的位置表；预告刻意不交代的内容；以及 30 秒前导版和 9:16 竖屏版的改法。
 - `20261106-submission-checklist` — **提交检查清单** — `topics/production/submission-checklist.md` — 发布和提交前逐项勾选：时长、原创性、AKOOL 标志、版权素材、平台发布与话题标签、提交表单说明、评分自查。
 - `20261106-untomorrow-shot-list` — **《明日不来》75 秒分镜表（逐镜头时间码）** — `topics/production/untomorrow-shot-list.md` — 参赛主版本的 27 个镜头，每个镜头都有时间码、时长、提示词编号、字卡、声音和台词，以及 30 秒社交前导版和 9:16 竖屏版的改法。

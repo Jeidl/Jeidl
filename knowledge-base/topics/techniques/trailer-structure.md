@@ -4,7 +4,7 @@ title: 预告片结构：三幕 + 按钮 + 能量曲线
 tags: [editing, story]
 created: 2026-11-06
 updated: 2026-11-06
-related: [20261106-editing-rhythm, 20261106-black-screen-text-cards, 20261106-untomorrow-shot-list, 20261106-the-dark-knight, 20261106-shutter-island, 20261106-prisoners, 20261106-interstellar-teaser, 20261106-inception]
+related: [20261106-editing-rhythm, 20261106-black-screen-text-cards, 20261106-untomorrow-shot-list, 20261106-the-dark-knight, 20261106-shutter-island, 20261106-prisoners, 20261106-interstellar-teaser, 20261106-inception, 20261106-exhibit-47-shot-list]
 summary: 预告的三幕微缩结构（提问 → 升级 → 转折 + 片名 + 按钮）、"永不解决"原则、能量曲线，以及 30 / 60 / 90 秒三种时长的时间分配表。
 ---
 
@@ -55,6 +55,8 @@ summary: 预告的三幕微缩结构（提问 → 升级 → 转折 + 片名 + �
 | 30 秒 | 0–8 秒 | 8–20 秒 | 20–30 秒 | 社交媒体前导（最低时长） |
 | **75 秒（推荐）** | 0–22 秒 | 22–52 秒 | 52–75 秒 | **参赛主版本** |
 | 90 秒 | 0–25 秒 | 25–65 秒 | 65–90 秒 | 时长上限，不建议用满 |
+
+主方案《第 47 号证物》最终用的是 90 秒档（实际 89 秒，留 1 秒余量），见 [分镜表](../production/exhibit-47-shot-list.md)。
 
 为什么推荐 75 秒：有足够的空间放两次静默，又不会在第二幕拖沓；离 90 秒上限留有余量，避免导出时超时。
 

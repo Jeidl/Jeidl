@@ -232,7 +232,7 @@ a black matte fingerless tactical glove with a wide velcro wrist strap, an oval 
 - 诺拉：文生图。正向提示词按上面拼好，NEG-SHEET 填进 `negative_prompt`。
 - 手部图和第十三人：AKOOL 只能接**一张**源图（`source_image`），所以用诺拉母版做源图，`similar` 先设 **0.3** 左右试。数值太高会把诺拉的脸和衣服带进来，太低又会丢掉风格。这个数值是起点，要先小规模测试。
 - 三张都用同一个分辨率和画幅，例如 1080p、16:9。
-- ⚠️ 2026-11-06 实测：AKOOL 接口对当前账号返回 `1213 Only subscribed users can use the API functions`，连查询模型都不行。**账号订阅前，AKOOL 这一步做不了**，所以三张设定图都先在 LibTV 生成。AKOOL 的参与放在关键帧、图生视频、口型和配音上，分工见 [AKOOL 制作流程](../production/akool-workflow.md)。
+- ⚠️ 2026-11-06 实测：AKOOL 接口对当前账号返回 `1213 Only subscribed users can use the API functions`，连查询模型都不行。**账号订阅前，AKOOL 这一步做不了**，所以三张设定图都先在 LibTV 生成。AKOOL 的参与放在关键帧、图生视频、口型和配音上，分工见 [AKOOL 制作流程](../production/akool-workflow.md)。（同日更新：账号已订阅，图像生成接口可用。）
 
 ## 已生成的参考图（LibTV）
 

@@ -4,7 +4,7 @@ title: 设定图的图片转提示词学习记录（反推、交叉核对与即�
 tags: [prompt, visual, akool, copyright]
 created: 2026-11-06
 updated: 2026-11-06
-related: [20261106-exhibit-47-character-bible, 20261106-exhibit-47-shot-prompts, 20261106-prompt-formula, 20261106-akool-workflow, 20261106-challenge-rules, 20261106-submission-checklist]
+related: [20261106-exhibit-47-scene-images, 20261106-exhibit-47-character-bible, 20261106-exhibit-47-shot-prompts, 20261106-prompt-formula, 20261106-akool-workflow, 20261106-challenge-rules, 20261106-submission-checklist]
 summary: 用 LibTV 的两个视觉模型（GVLM 3.1、Qwen 3 VL Flash）对已通过的设定图做"图片转提示词"，交叉核对后锁定背景、分隔线、手套、疤等细节；记录反推提问模板、四条经验、第十三人设定图的验收结果、即梦搜图的手动清单，以及比赛规则（原创、AKOOL 参与）的注意事项。
 ---
 
@@ -127,7 +127,7 @@ summary: 用 LibTV 的两个视觉模型（GVLM 3.1、Qwen 3 VL Flash）对已�
 ## 比赛规则注意
 
 - **原创**：即梦上的图是别人的作品。**只学措辞，不要下载它们当参考图、首帧或成片素材**。我们的参考图只用自己生成的设定图。
-- **AKOOL 必须起"有意义的作用"**：2026-11-06 实测，AKOOL 接口对当前账号返回 `1213 Only subscribed users can use the API functions`，所以三张设定图都在 LibTV 生成。规则允许同时用其他 AI 工具，但 AKOOL 要承担主要的制作环节。订阅之后，关键帧、图生视频、口型和配音都放到 AKOOL 里做，分工见 [AKOOL 制作流程](../production/akool-workflow.md)。$100 参与奖也只限 Premium 账号。
+- **AKOOL 必须起"有意义的作用"**：2026-11-06 实测，AKOOL 接口对当前账号返回 `1213 Only subscribed users can use the API functions`，所以三张设定图都在 LibTV 生成。规则允许同时用其他 AI 工具，但 AKOOL 要承担主要的制作环节。订阅之后，关键帧、图生视频、口型和配音都放到 AKOOL 里做，分工见 [AKOOL 制作流程](../production/akool-workflow.md)。$100 参与奖也只限 Premium 账号。（同日更新：账号已订阅，图像生成接口可用，6 张场景图已在 AKOOL 生成，见 [场景图](exhibit-47-scene-images.md)。）
 - **留证**：提交时如实写明设定图用 LibTV 生成、图片转提示词用 LibTV 的视觉模型，见 [提交检查清单](../production/submission-checklist.md)。
 
 ## 相关笔记

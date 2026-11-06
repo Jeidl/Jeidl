@@ -4,7 +4,7 @@ title: 《第 47 号证物》镜头提示词库（按证物画面类型分组）
 tags: [prompt, visual, sound, action]
 created: 2026-11-06
 updated: 2026-11-06
-related: [20261106-exhibit-47-character-bible, 20261106-reference-sheet-reverse-prompts, 20261106-exhibit-47-shot-list, 20261106-exhibit-47-story, 20261106-prompt-formula, 20261106-style-anchor, 20261106-music-sfx-prompts, 20261106-sound-design, 20261106-black-screen-text-cards, 20261106-cloverfield-teaser, 20261106-civil-war]
+related: [20261106-exhibit-47-character-bible, 20261106-reference-sheet-reverse-prompts, 20261106-exhibit-47-scene-images, 20261106-exhibit-47-whitebox-previs, 20261106-exhibit-47-shot-list, 20261106-exhibit-47-story, 20261106-prompt-formula, 20261106-style-anchor, 20261106-music-sfx-prompts, 20261106-sound-design, 20261106-black-screen-text-cards, 20261106-cloverfield-teaser, 20261106-civil-war]
 summary: 主方案预告的全部提示词：六种"证物画面"风格块（执法记录仪 / 监控 / 无人机 / 审讯室 / 旧录像 / 第 47 号证物视角）、23 个编号镜头、监控墙素材池、后期叠字规范，以及配乐、音效和配音提示词。
 ---
 
@@ -18,6 +18,7 @@ summary: 主方案预告的全部提示词：六种"证物画面"风格块（执
 
 - 占位符 `[NORA-REF]` `[WARD-HAND]` `[WARD-GLOVE]` `[THIRTEENTH-REF]` `[BRANDT-REF]` `[UNIT-REF]` `[OLD-HANDS]` 和 `LOC-*`：原文见 [人物与道具设定](../concept/exhibit-47-character-bible.md)。手和手套的细节以已通过的设定图为准，见那里的"已锁定的细节"。
 - 提示词结构沿用 [提示词公式](prompt-formula.md)；风格锚换成下面的证物风格块，**不再使用 STYLE-A**。
+- **做关键帧时的参考图**：[场景图](exhibit-47-scene-images.md)（空间）+ 设定图（人）+ [白模](../production/exhibit-47-whitebox-previs.md)里同一时间点的画面（构图和遮挡）。D1、C3、B8、C2、O1、I2、I4、E1 的提示词已按白模的发现改过，原因见白模笔记的"发现"一节。
 - 所有屏幕文字（时间戳、编号、SIGNAL LOST、证物标签）**一律后期叠加**，见本页"后期叠字规范"。
 - **设定图和镜头各用一套风格，不能混**。设定图统一用 SHEET-STYLE（灰色影棚、柔光、无调色，见 [人物与道具设定](../concept/exhibit-47-character-bible.md)），只负责"人长什么样"。镜头用下面的 S-* 块，负责"画面是什么风格"。所以镜头提示词里不要写 studio、grey backdrop 这类设定图的词；设定图里也不要写 S-* 块里的词。
 - **台词建议后期配**：用 AKOOL 配音生成，再叠到画面上。只有 I2 需要口型同步。
@@ -64,7 +65,7 @@ cartoon, anime, CGI look, video game graphics, cinematic color grading, clean mo
 
 **D1 独自走出冷库**（全片第一个画面）· Veo / Kling · 6 秒
 ```text
-[S-DRONE] LOC-GATE. Directly overhead, a single small figure — [NORA-REF], NORA-DAWN — walks slowly away from the open shutter of the cold-storage plant across a vast field of untouched snow, leaving one long line of footprints behind her. No other people, no vehicles. Sound: wind, the faint hum of drone rotors. 6 seconds. [NEG-47]
+[S-DRONE] LOC-GATE. Directly overhead, a single small figure — [NORA-REF], NORA-DAWN — walks slowly away from the open shutter of the cold-storage plant across a vast field of perfectly untouched snow with no tyre tracks, leaving one long line of footprints behind her. No other people, no vehicles. Sound: wind, the faint hum of drone rotors. 6 seconds. [NEG-47]
 ```
 
 ## 执法记录仪（B）
@@ -107,7 +108,7 @@ cartoon, anime, CGI look, video game graphics, cinematic color grading, clean mo
 
 **B8 冷冻门镜面倒影**（**第十三人出场 #2**）· Veo · 4 秒
 ```text
-[S-BCAM] LOC-ROOM4. The camera wearer walks past a polished steel freezer door; in the dim mirror-like surface we glimpse the reflection of the wearer — a tactical officer whose helmet bears the white stenciled number 7-12, full black balaclava and goggles, face invisible. The reflection turns its head slightly toward the camera. Sound: footsteps on ice, a slow breath. 4 seconds. [NEG-47]
+[S-BCAM] LOC-FREEZER, along the row of freezer-room doors. The camera wearer walks past the polished steel door of room 4 and turns his body toward it as he passes; in the dim mirror-like surface we see the reflection of the wearer — a tactical officer whose helmet bears the white stenciled number 7-12, full black balaclava and goggles, face invisible. The reflection turns its head slightly toward the camera. Sound: footsteps on ice, a slow breath. 4 seconds. [NEG-47]
 ```
 注意：这台是第 47 号证物的视角，后期叠字用 7-12。
 
@@ -137,19 +138,19 @@ cartoon, anime, CGI look, video game graphics, cinematic color grading, clean mo
 
 **C2 拉住诺拉的手**（**第十三人出场 #3**）· Veo · 5 秒
 ```text
-[S-CCTV] LOC-ROOM4, infrared. [NORA-REF], NORA-TAC, stumbles into the small freezer room, half-blind in the gas fog; out of the darkness behind the crates, a gloved right hand — [WARD-GLOVE] — grabs her vest and pulls her down behind the crates. The figure attached to the hand stays in shadow. Sound: a whisper very close to her: "You're safe now, Kade." 5 seconds. [NEG-47]
+[S-CCTV] LOC-ROOM4, infrared. [NORA-REF], NORA-TAC, stumbles into the small freezer room, half-blind in the gas fog; out of the narrow gap between a tall stack of frosted crates and a pallet stack, a gloved right hand — [WARD-GLOVE] — reaches out sideways, grabs her vest and pulls her down behind the crates. The figure attached to the hand stays in shadow. Sound: a whisper very close to her: "You're safe now, Kade." 5 seconds. [NEG-47]
 ```
 
 **C3 警车抵达**（报警电话的画面）· Kling · 5 秒
 ```text
-[S-CCTV] LOC-GATE at night, a camera mounted high on the loading dock. Snow falls through the beam of a single dead floodlight; two dark unmarked police vans pull up at the rusted gate and stop; doors open and a stack of officers ([UNIT-REF]) climbs out silently. Low frame rate, grainy. Sound: tires on snow, the hum of the camera, faint radio chatter. 5 seconds. [NEG-47]
+[S-CCTV] LOC-GATE at night, a camera mounted high on the facade beside the loading bay, looking across the empty snow yard to the gate about 20 meters away. Snow falls through the beam of a single dead floodlight; two dark unmarked police vans pull up at the rusted gate and stop; doors open and a stack of officers ([UNIT-REF]) climbs out silently. Low frame rate, grainy. Sound: tires on snow, the hum of the camera, faint radio chatter. 5 seconds. [NEG-47]
 ```
 
 ## 旧录像（O）
 
 **O1 举起的双手**（闪帧和蒙太奇用）· Veo · 4 秒
 ```text
-[S-OLD] LOC-FREEZER three years earlier, flashlight beam. [OLD-HANDS]. The hands tremble. The camera is steady on them. Then the image glitches. Sound: muffled shouting, a calm male voice off-camera says: "No. Mine stays on." 4 seconds. [NEG-47]
+[S-OLD] LOC-FREEZER three years earlier, flashlight beam. [OLD-HANDS]. The older camera has a narrower view and is tilted up at the raised hands from about one meter away, so only the hands and sleeves are in frame; the face stays below the frame edge, in darkness. The hands tremble. The camera is steady on them. Then the image glitches. Sound: muffled shouting, a calm male voice off-camera says: "No. Mine stays on." 4 seconds. [NEG-47]
 ```
 
 **O2 关掉的摄像机**（三年前）· Kling / Veo · 5 秒
@@ -166,7 +167,7 @@ cartoon, anime, CGI look, video game graphics, cinematic color grading, clean mo
 
 **I2 "我们进去的时候，是十三个人"**（口型同步）· Veo · 5 秒
 ```text
-[S-ROOM] LOC-INTERVIEW, close camera framing on her face, 85mm equivalent. [NORA-REF], NORA-ROOM, looks straight past the lens, exhausted but certain, and says quietly: "There were thirteen of us." Sound: her voice, fluorescent buzz. 5 seconds. [NEG-47]
+[S-ROOM] LOC-INTERVIEW, close camera framing on her head and shoulders, 50mm equivalent; the dark one-way mirror behind her reflects only darkness. [NORA-REF], NORA-ROOM, looks straight past the lens, exhausted but certain, and says quietly: "There were thirteen of us." Sound: her voice, fluorescent buzz. 5 seconds. [NEG-47]
 ```
 
 **I3 沃德的手**（**第十三人出场 #4**，按钮）· Veo · 5 秒
@@ -176,14 +177,14 @@ cartoon, anime, CGI look, video game graphics, cinematic color grading, clean mo
 
 **I4 诺拉抬眼** · Veo · 4 秒
 ```text
-[S-ROOM] LOC-INTERVIEW, close camera on her face. [NORA-REF], NORA-ROOM, is looking down at the table; slowly her eyes rise to the man sitting across from her, and her expression shifts from exhaustion to cold recognition. She does not speak. Sound: silence, a faint fluorescent buzz. 4 seconds. [NEG-47]
+[S-ROOM] LOC-INTERVIEW, close camera on her face; the dark one-way mirror behind her reflects only darkness. [NORA-REF], NORA-ROOM, is looking down at the table; slowly her eyes rise to the man sitting across from her, and her expression shifts from exhaustion to cold recognition. She does not speak. Sound: silence, a faint fluorescent buzz. 4 seconds. [NEG-47]
 ```
 
 ## 取证录像（E）
 
 **E1 13 台记录仪** · Veo · 6 秒
 ```text
-[S-ROOM] LOC-EVIDENCE, forensic documentation camera, slow push-in along the table. BAGS: twelve body cameras in a neat row with white tags, and at the far end a thirteenth, frost still melting on it, with a faded red tag. The push-in stops on the thirteenth. Sound: LED hum, a single electronic beep. 6 seconds. [NEG-47]
+[S-ROOM] LOC-EVIDENCE, forensic documentation camera, slow push-in along the table from its far end towards the nearest bag. BAGS: twelve body cameras in a neat row with white tags, and at the near end a thirteenth, frost still melting on it, with a faded red tag. The push-in stops on the thirteenth. Sound: LED hum, a single electronic beep. 6 seconds. [NEG-47]
 ```
 
 **E2 证物标签特写**（片名卡底图）· 任意 · 5 秒

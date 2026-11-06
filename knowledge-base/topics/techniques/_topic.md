@@ -9,3 +9,4 @@
 - [剪辑节奏](editing-rhythm.md)：镜头时长、十种剪辑手法、AI 素材剪法。
 - [视觉母题库](visual-motifs.md)：12 种让人记住的画面。
 - [留白与悬念营销](withholding-mystery.md)：八种少给信息的手法与发布建议。
+- [元结尾字卡库](meta-endings.md)：12 种"这部电影为什么永不上映"的结尾字卡。

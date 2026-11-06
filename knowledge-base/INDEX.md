@@ -42,7 +42,8 @@ AKOOL AI Film Challenge「Coming Never」赛道参赛项目《明日不来 UNTOM
 - `20261106-style-decision` — **风格定向：选「电影级冷峻写实」** — `topics/brief/style-decision.md` — 对比写实 / 猫和老鼠 / 西幻写实 / 玄幻四种风格后，选定"诺兰-维伦纽瓦式冷峻写实"，并说明为什么不用猫和老鼠。
 
 ### 核心创意 concept
-- `20261106-alternative-concepts` — **备选创意（同风格换故事 4 个 + 换风格 3 个）** — `topics/concept/alternative-concepts.md` — 除《明日不来》外的七个备选：同为写实悬疑动作的《末日悬停》《永不降落》《禁映》《黑暗七分钟》，以及换风格的西幻、玄幻、卡通方案；附打分对比、撞车风险和选择建议。
+- `20261106-action-mystery-concepts` — **动作悬疑 × 元结尾：4 个备选故事** — `topics/concept/action-mystery-concepts.md` — 以动作和悬疑为主、结尾字卡解释"这部电影为什么永不上映"的四个写实方案：《第 47 号证物》《████（涂黑）》《第二张脸》《最后一镜》，含谜题、动作戏、反转、元结尾、撞车检查和打分；首推《第 47 号证物》。
+- `20261106-alternative-concepts` — **备选创意（同风格换故事 4 个 + 换风格 3 个）** — `topics/concept/alternative-concepts.md` — 除《明日不来》外的七个早期备选（动作悬疑新方案另见 action-mystery-concepts）：同为写实悬疑动作的《末日悬停》《永不降落》《禁映》《黑暗七分钟》，以及换风格的西幻、玄幻、卡通方案；附打分对比、撞车风险和选择建议。
 - `20261106-character-bible` — **角色与道具圣经（一致性锚点）** — `topics/concept/character-bible.md` — 女主 Ada、守时人、搭档 Sam 和关键道具 / 场景的固定英文描述块（ADA-REF 等），以及角色设定图的生成提示词，保证跨镜头一致。
 - `20261106-untomorrow-concept` — **《明日不来 UNTOMORROW》核心创意** — `topics/concept/untomorrow-concept.md` — 预告片主创意：城市被困在 12 月 31 日，每晚午夜重来，一个只露背影的"守时人"在猎杀记得循环的人；包含 logline、世界规则、主题、反转和片名备选。
 
@@ -79,6 +80,7 @@ AKOOL AI Film Challenge「Coming Never」赛道参赛项目《明日不来 UNTOM
 ### 技法库 techniques
 - `20261106-black-screen-text-cards` — **黑屏与字卡：用"黑"讲故事** — `topics/techniques/black-screen-text-cards.md` — 黑屏的六种功能、字卡的七种类型、排版参数（字体 / 字号 / 字距 / 停留帧数）、免费可商用字体，以及为什么字卡绝不能让 AI 生成。
 - `20261106-editing-rhythm` — **剪辑节奏：镜头时长、卡点、闪帧与 AI 素材的剪法** — `topics/techniques/editing-rhythm.md` — 各幕的镜头时长参考值、十种剪辑手法（卡点、闪帧、匹配剪辑、J/L 剪辑、变速等），以及"生成 5–10 秒、只用最好的 1–2 秒"的 AI 素材剪辑原则。
+- `20261106-meta-endings` — **元结尾字卡库：让"永不上映"成为最后一个反转** — `topics/techniques/meta-endings.md` — 12 种"这部电影为什么永远不会上映"的元结尾字卡（证物、拒绝授权、重看、泄露、涂黑、寻人、诅咒、未完成、AI、遗忘、日期回滚、审查），附中英文案、故事需要提供什么、适配方案，以及三条设计规则和合规注意。
 - `20261106-music-strategy` — **音乐策略：熟悉旋律的陌生化（以及如何避开版权）** — `topics/techniques/music-strategy.md` — 预告配乐的五种策略，以及为什么比赛里不能用热门翻唱；用公有领域的《友谊地久天长》做双版本变奏，同时满足"熟悉感"和版权安全。
 - `20261106-sound-design` — **声音设计：BRAAAM、静默、滴答与声音押韵** — `topics/techniques/sound-design.md` — 预告常用的八种声音武器（BRAAAM、Ping、升调、抽空、倒放、次低频、声音押韵、有源音乐变调）的用法，以及《明日不来》的声音设计表。
 - `20261106-trailer-structure` — **预告片结构：三幕 + 按钮 + 能量曲线** — `topics/techniques/trailer-structure.md` — 预告的三幕微缩结构（提问 → 升级 → 转折 + 片名 + 按钮）、"永不解决"原则、能量曲线，以及 30 / 60 / 90 秒三种时长的时间分配表。

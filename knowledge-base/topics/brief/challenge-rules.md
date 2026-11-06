@@ -4,7 +4,7 @@ title: AKOOL「Coming Never」赛道规则与评分
 tags: [brief, akool, copyright]
 created: 2026-11-06
 updated: 2026-11-06
-related: [20261106-style-decision, 20261106-story-direction, 20261106-submission-checklist, 20261106-akool-workflow, 20261106-trailer-structure, 20261106-untomorrow-concept]
+related: [20261106-style-decision, 20261106-story-direction, 20261106-submission-checklist, 20261106-akool-workflow, 20261106-trailer-structure, 20261106-untomorrow-concept, 20261106-meta-endings]
 summary: AKOOL AI Film Challenge 的 Coming Never 赛道硬性要求（30–90 秒、原创、顶部 AKOOL 标志）、评分权重、奖金和有冲突的截止日期。
 ---
 
@@ -22,7 +22,7 @@ AKOOL AI Film Challenge 有三个赛道：
 | AI Short Film | AI 短片 |
 | Impossible | AI 出现之前拍不出来的点子 |
 
-「Coming Never」这个名字是对「Coming Soon（即将上映）」的反讽：这部电影永远不会上映。**把这层反讽写进故事本身**，是我们创意的出发点（见 [核心创意](../concept/untomorrow-concept.md)）。
+「Coming Never」这个名字是对「Coming Soon（即将上映）」的反讽：这部电影永远不会上映。规则只要求"不存在的电影"，**并不要求故事贴合这个名字**。把这层反讽写进结尾是可选的加分项，见 [元结尾字卡库](../techniques/meta-endings.md)。
 
 ## 硬性要求（违反会被拒）
 

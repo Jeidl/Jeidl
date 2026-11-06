@@ -5,12 +5,12 @@ tags: [concept, prompt, production]
 created: 2026-11-06
 updated: 2026-11-06
 related: [20261106-exhibit-47-story, 20261106-exhibit-47-shot-prompts, 20261106-exhibit-47-shot-list, 20261106-character-bible, 20261106-style-anchor, 20261106-prompt-formula, 20261106-akool-workflow, 20261106-longlegs-teasers]
-summary: 主方案的人物设定（诺拉、沃德、第十三人、布兰特、特勤组、旧录像里的手）、可直接粘贴的英文角色块（NORA-REF 等）、道具与场景块、颜色规则，以及 AKOOL 设定图提示词；沃德在预告里只露手和声音。
+summary: 主方案的人物设定（诺拉、沃德、第十三人、布兰特、特勤组、旧录像里的手）、可直接粘贴的英文角色块（NORA-REF 等）、道具与场景块、颜色规则，以及统一风格的设定图提示词（SHEET-STYLE 等固定块 + 母版参考链）；沃德在预告里只露手和声音。
 ---
 
 # 《第 47 号证物》人物与道具设定（一致性锚点）
 
-> Summary: 主方案的人物设定（诺拉、沃德、第十三人、布兰特、特勤组、旧录像里的手）、可直接粘贴的英文角色块（NORA-REF 等）、道具与场景块、颜色规则，以及 AKOOL 设定图提示词；沃德在预告里只露手和声音。
+> Summary: 主方案的人物设定（诺拉、沃德、第十三人、布兰特、特勤组、旧录像里的手）、可直接粘贴的英文角色块（NORA-REF 等）、道具与场景块、颜色规则，以及统一风格的设定图提示词（SHEET-STYLE 等固定块 + 母版参考链）；沃德在预告里只露手和声音。
 
 ## 背景
 
@@ -109,42 +109,118 @@ the bare hands of a teenager raised high in surrender, the sleeves of a dark hoo
 - 突袭画面以红外单色（灰绿）和手电冷白光为主；枪口火光是橙白色。
 - 审讯室和证物室：冷蓝灰，日光灯。
 
-## 设定图提示词（AKOOL 图像生成）
+## 设定图提示词（统一风格 v2）
 
-**诺拉 4 视图设定图**
+### 为什么 v1 的四视图和手部图风格不一样
 
+v1 两条提示词只共用了 `photorealistic` 和 `neutral grey` 两个词，光线、镜头、调色、版式要么不一样，要么没写，留给模型自己猜：
+
+| 项目 | 诺拉四视图 v1 | 沃德的手 v1 | 后果 |
+|---|---|---|---|
+| 品类词 | `Character reference sheet, photorealistic` | `Reference sheet, photorealistic macro photography` | "macro" 会让模型改拍**微距产品照**：浅景深、背景虚化、戏剧光 |
+| 光线 | `soft even lighting` | 没写 | 手部图的光由模型自己决定 |
+| 背景 | `neutral grey studio background` | `neutral grey background` + `flat on a table` | 桌子带进了材质和环境，不再是同一个影棚 |
+| 镜头与景深 | 没写 | 没写（macro 暗示浅景深） | 清晰度和虚化程度不同 |
+| 白平衡与调色 | 没写 | 没写 | 色温和反差各自随机 |
+| 版式 | 4 格，side by side | 3 格，没写怎么排 | 版式不同 |
+| 生成方式 | 文生图 | 文生图，互相独立 | 没有共同的参考图，两次都是随机结果 |
+
+另外还有三处问题：
+
+1. 手部图漏了 WARD-HAND 里的**西装袖口和钢表**，和镜头 I3 对不上。
+2. 第十三人图用"黑背景 + 侧面手电光"，是**第三种风格**。
+3. 两个疤都只写在文字里，没有专门的特写格，验收时很难看清。
+
+### 统一规则
+
+1. 每张设定图都由同一组块拼成：`[SHEET-STYLE] [SHEET-LAYOUT] + 主体段 + [SHEET-END]`。这些块**一字不改**。
+2. 每张图都是 **4 格横排**：3 个角度 + 1 格识别点特写（诺拉的下巴疤、沃德的烧伤疤、第十三人撕开的手套）。
+3. **诺拉四视图是风格母版**，最先生成。手部图和第十三人图生成时，把母版接进来当参考图，并在最前面加 `[SHEET-MATCH]`。
+4. 三张图用**同一个模型、同一画质、同一画幅**（LibTV：`nebula-ultra`、2K、16:9）。
+5. 设定图里**不要把这些词当正面描述**：macro、cinematic、dramatic、moody、film、flashlight、dark background、backlight，以及 table、room 这类环境词。它们属于镜头提示词。设定图只负责"长什么样"，"画面是什么风格"交给镜头的 S-* 风格块。
+
+### 固定块
+
+**SHEET-STYLE**（每张设定图的开头）
 ```text
-Character reference sheet, photorealistic, neutral grey studio background, soft even lighting. Four views of the same person side by side: front view, three-quarter view, side profile, and a close-up of the face. Officer Nora Kade, a 26-year-old woman with a short dark undercut, a thin healed scar along her chin, steady grey eyes, pale skin reddened by cold, wearing an oversized grey sweatshirt. Consistent identity across all views, natural skin texture, no text, no logo.
+Photorealistic character reference sheet, clean studio photography. Shot on a full-frame digital camera with an 85mm lens at f/8, everything in sharp focus. Plain seamless mid-grey paper backdrop, the same flat grey in every panel. Soft, even, almost shadowless light from a large softbox in front of the subject and slightly above, with gentle fill from both sides; no rim light, no hard shadows, no spotlight, no vignette. Neutral daylight white balance, true-to-life colors, medium contrast, no color grading, no film grain.
 ```
 
-**沃德的手（参考图，保证两个镜头里的疤一致）**
-
+**SHEET-LAYOUT**
 ```text
-Reference sheet, photorealistic macro photography, neutral grey background. Three views of the same right hand of a man in his fifties: back of the hand flat on a table, the hand turning a ballpoint pen, and the same hand in a black tactical glove torn open across the back. An old shiny burn scar across the back of the hand from the knuckles to the wrist, identical in all three views. No text, no logo.
+Layout: four equal vertical panels in one horizontal row, separated by thin straight light-grey gutters; camera height, lighting and backdrop are identical in every panel; the subject is centered and fills each panel.
 ```
 
-**第十三人剪影**
-
+**SHEET-END**（每张设定图的结尾）
 ```text
-Character reference sheet, photorealistic, dark background with a cold flashlight beam from the side. A tactical officer in black gear, ballistic helmet with a white stenciled number 7-12, full black balaclava and dark goggles, face never visible. Three views: front, side, back. The right glove is torn open across the back of the hand, revealing a burn scar. No text other than the helmet number, no logo.
+The same subject in all four panels, with consistent identity and details. Natural skin and material texture, fine detail. No captions, no labels, no panel numbers, no watermark, no logo.
 ```
 
-（头盔编号如果生成乱码，就生成空白头盔，后期贴上 7-12。）
+**SHEET-MATCH**（接了母版参考图时，放在最前面；`<母版>` 换成参考图的引用，LibTV 里写 `{{Node 节点ID}}`）
+```text
+Style reference: <母版>. Match it exactly in backdrop, lighting, white balance, contrast, lens look and four-panel layout. Take only the photographic style from it, not the person or the clothing.
+```
+
+**NEG-SHEET**（AKOOL 的 negative_prompt 框；没有负面词框的模型不用）
+```text
+macro photography, shallow depth of field, bokeh, dramatic lighting, rim light, spotlight, hard shadows, vignette, dark background, black background, cinematic color grading, color cast, film grain, table, room, environment, captions, labels, watermark, logo, extra fingers, distorted hands, different person in each panel
+```
+
+### 三张设定图
+
+**① 诺拉四视图（风格母版，最先生成）**
+
+`[SHEET-STYLE] [SHEET-LAYOUT]` + 下面这段 + `[SHEET-END]`
+```text
+Panel 1: front view, head and shoulders. Panel 2: three-quarter view, head and shoulders. Panel 3: side profile facing left, head and shoulders. Panel 4: close-up of the lower face and chin, showing the scar clearly. Subject: Officer Nora Kade, a 26-year-old woman with a short dark undercut, a thin healed scar along her chin, steady grey eyes, pale skin reddened by cold, wearing an oversized grey sweatshirt. Neutral expression, mouth closed.
+```
+
+**② 沃德的右手（接母版）**
+
+`[SHEET-MATCH] [SHEET-STYLE] [SHEET-LAYOUT]` + 下面这段 + `[SHEET-END]`
+```text
+Panel 1: the back of the right hand resting flat on a matte grey surface that matches the backdrop, with the cuff of a charcoal suit jacket and a plain steel wristwatch at the wrist. Panel 2: close-up of the back of the same hand, showing the scar in detail. Panel 3: the same hand turning a cheap black ballpoint pen between its fingers. Panel 4: the same hand in a black tactical glove torn open across the back, revealing the same scar, with the sleeve of black tactical gear. Subject: the right hand of a man in his fifties, with an old shiny burn scar across the back of the hand from the knuckles to the wrist, the same shape, size and position in every panel. Normal anatomy with five fingers.
+```
+
+手放在和背景同色的哑光灰面上，不放金属桌。金属桌在镜头 I3 里由 LOC-INTERVIEW 提供。
+
+**③ 第十三人（接母版，最好再接上沃德的手）**
+
+`[SHEET-MATCH] [SHEET-STYLE] [SHEET-LAYOUT]` + 下面这段 + `[SHEET-END]`
+```text
+Panel 1: front view, full body. Panel 2: three-quarter view, full body. Panel 3: side view, full body. Panel 4: close-up of the right hand, the glove torn open across the back revealing the scar. Subject: a thirteenth tactical officer in identical black tactical gear, ballistic helmet with a white stenciled number 7-12, full black balaclava and dark goggles, face never visible; the glove on his right hand is torn open across the back, revealing an old shiny burn scar. He stands perfectly still, arms relaxed at his sides, no weapon.
+```
+
+- 同时接上沃德的手（v2），第 4 格的疤和手套才会和手部图一致。
+- 头盔编号如果生成乱码，就去掉 `with a white stenciled number 7-12`，生成空白头盔，后期贴上 7-12。
+
+### 在 AKOOL 里重做时
+
+- 诺拉：文生图。正向提示词按上面拼好，NEG-SHEET 填进 `negative_prompt`。
+- 手部图和第十三人：AKOOL 只能接**一张**源图（`source_image`），所以用诺拉母版做源图，`similar` 先设 **0.3** 左右试。数值太高会把诺拉的脸和衣服带进来，太低又会丢掉风格。这个数值是起点，要先小规模测试。
+- 三张都用同一个分辨率和画幅，例如 1080p、16:9。
 
 ## 已生成的参考图（LibTV）
 
-| 参考图 | 状态 | 位置 |
-|---|---|---|
-| 诺拉四视图设定图 v1 | 已生成，2752×1536，**待人工验收** | LibTV 项目"EXHIBIT 47 第47号证物"，节点 `i-kKd0eUq6g4` |
-| 沃德右手参考图 v1 | 已生成，2752×1536，**待人工验收** | 同一项目，节点 `i-AEP7votex7` |
+LibTV 项目"EXHIBIT 47 第47号证物"。模型：General image Pro（`nebula-ultra`），2K，16:9，每次 1 张。
 
-模型：General image Pro（`nebula-ultra`），2K，16:9，各 1 张。提示词与本页"设定图提示词"一字不差。
+| 参考图 | 状态 | 节点 |
+|---|---|---|
+| 诺拉四视图 v1 | **废弃**：和手部图风格不统一（原因见上表） | `i-kKd0eUq6g4` |
+| 沃德右手 v1 | **废弃**：微距产品照风格，缺袖口和钢表 | `i-AEP7votex7` |
+| 诺拉四视图 v2（风格母版） | 已生成，**待人工验收** | `i-3tleSMYSCV` |
+| 沃德右手 v2 | 以诺拉 v2 为参考图生成，**待人工验收** | `i-ogNrWvlqro` |
+| 第十三人 v2 | 未生成；等前两张通过后再做 | — |
+
+v2 的提示词就是本页的固定块拼起来的结果，节点里能看到完整原文。
 
 **验收标准**（不合格就重新生成，不要将就）：
-- 诺拉：四个视图是**同一个人**；下巴上能看到伤疤；短发；画面里没有文字或标志。
-- 沃德的手：三个视图里的**烧伤疤形状和位置一致**；手套从手背撕开、露出疤；手指数量正常。
 
-注意：这两张是在 LibTV 生成的。比赛要求 AKOOL 在制作中起"有意义的作用"，所以后面的镜头生成要放在 AKOOL 里做，或者在 AKOOL 里重做设定图，并保留制作记录。
+- **风格一致**（先查这一项）：把诺拉 v2 和手部 v2 并排放，检查背景灰度、光的方向和软硬、色温、清晰度，以及 4 格的宽度和分隔线。有任何一项不同，就只重做手部图，**母版不动**。
+- 诺拉：四格是**同一个人**；第 4 格能看清下巴上的伤疤；短发；没有文字或标志。
+- 沃德的手：四格里**烧伤疤的形状和位置一致**；第 1 格有西装袖口和钢表；第 4 格的手套从手背撕开、露出疤；手指数量正常。
+
+注意：这些图是在 LibTV 生成的。比赛要求 AKOOL 在制作中起"有意义的作用"，所以后面的镜头生成要放在 AKOOL 里做，或者按上面的方法在 AKOOL 里重做设定图，并保留制作记录。
 
 ## 相关笔记
 

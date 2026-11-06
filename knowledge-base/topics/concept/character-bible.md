@@ -4,7 +4,7 @@ title: 角色与道具圣经（一致性锚点）
 tags: [concept, prompt, production]
 created: 2026-11-06
 updated: 2026-11-06
-related: [20261106-untomorrow-concept, 20261106-style-anchor, 20261106-prompt-formula, 20261106-akool-workflow, 20261106-untomorrow-shot-list, 20261106-longlegs-teasers]
+related: [20261106-untomorrow-concept, 20261106-style-anchor, 20261106-prompt-formula, 20261106-akool-workflow, 20261106-untomorrow-shot-list, 20261106-longlegs-teasers, 20261106-exhibit-47-character-bible]
 summary: 女主 Ada、守时人、搭档 Sam 和关键道具 / 场景的固定英文描述块（ADA-REF 等），以及角色设定图的生成提示词，保证跨镜头一致。
 ---
 
@@ -68,6 +68,8 @@ an elderly woman in a knitted red scarf, a nervous young man in a delivery jacke
 | TOWER | `inside the clock tower: iron spiral stairs, giant turning gears, a huge translucent illuminated clock face` |
 
 ## 设定图生成提示词（AKOOL 图像生成）
+
+> 注意：下面两条的风格不统一（Ada 是灰色影棚柔光，守时人是黑背景逆光），生成出来会像两套图。如果启用本方案，先按 [《第 47 号证物》人物与道具设定](exhibit-47-character-bible.md) 的"统一规则"改写：共用 SHEET-STYLE 等固定块，Ada 做风格母版，守时人图接母版参考。
 
 **Ada 设定图（4 视图）**
 

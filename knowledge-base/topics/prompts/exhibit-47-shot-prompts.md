@@ -19,6 +19,7 @@ summary: 主方案预告的全部提示词：六种"证物画面"风格块（执
 - 占位符 `[NORA-REF]` `[WARD-HAND]` `[THIRTEENTH-REF]` `[BRANDT-REF]` `[UNIT-REF]` `[OLD-HANDS]` 和 `LOC-*`：原文见 [人物与道具设定](../concept/exhibit-47-character-bible.md)。
 - 提示词结构沿用 [提示词公式](prompt-formula.md)；风格锚换成下面的证物风格块，**不再使用 STYLE-A**。
 - 所有屏幕文字（时间戳、编号、SIGNAL LOST、证物标签）**一律后期叠加**，见本页"后期叠字规范"。
+- **设定图和镜头各用一套风格，不能混**。设定图统一用 SHEET-STYLE（灰色影棚、柔光、无调色，见 [人物与道具设定](../concept/exhibit-47-character-bible.md)），只负责"人长什么样"。镜头用下面的 S-* 块，负责"画面是什么风格"。所以镜头提示词里不要写 studio、grey backdrop 这类设定图的词；设定图里也不要写 S-* 块里的词。
 - **台词建议后期配**：用 AKOOL 配音生成，再叠到画面上。只有 I2 需要口型同步。
 
 ## 风格块（每条提示词开头粘贴一个）

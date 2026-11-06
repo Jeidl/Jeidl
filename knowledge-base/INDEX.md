@@ -46,7 +46,7 @@ AKOOL AI Film Challenge「Coming Never」赛道参赛项目《第 47 号证物 E
 - `20261106-action-mystery-concepts` — **动作悬疑 × 元结尾：4 个备选故事** — `topics/concept/action-mystery-concepts.md` — 以动作和悬疑为主、结尾字卡解释"这部电影为什么永不上映"的四个写实方案：《第 47 号证物》《████（涂黑）》《第二张脸》《最后一镜》，含谜题、动作戏、反转、元结尾、撞车检查和打分；首推《第 47 号证物》。
 - `20261106-alternative-concepts` — **备选创意（同风格换故事 4 个 + 换风格 3 个）** — `topics/concept/alternative-concepts.md` — 除《明日不来》外的七个早期备选（动作悬疑新方案另见 action-mystery-concepts）：同为写实悬疑动作的《末日悬停》《永不降落》《禁映》《黑暗七分钟》，以及换风格的西幻、玄幻、卡通方案；附打分对比、撞车风险和选择建议。
 - `20261106-character-bible` — **角色与道具圣经（一致性锚点）** — `topics/concept/character-bible.md` — 女主 Ada、守时人、搭档 Sam 和关键道具 / 场景的固定英文描述块（ADA-REF 等），以及角色设定图的生成提示词，保证跨镜头一致。
-- `20261106-exhibit-47-character-bible` — **《第 47 号证物》人物与道具设定（一致性锚点）** — `topics/concept/exhibit-47-character-bible.md` — 主方案的人物设定（诺拉、沃德、第十三人、布兰特、特勤组、旧录像里的手）、可直接粘贴的英文角色块（NORA-REF 等）、道具与场景块、颜色规则，以及 AKOOL 设定图提示词；沃德在预告里只露手和声音。
+- `20261106-exhibit-47-character-bible` — **《第 47 号证物》人物与道具设定（一致性锚点）** — `topics/concept/exhibit-47-character-bible.md` — 主方案的人物设定（诺拉、沃德、第十三人、布兰特、特勤组、旧录像里的手）、可直接粘贴的英文角色块（NORA-REF 等）、道具与场景块、颜色规则，以及统一风格的设定图提示词（SHEET-STYLE 等固定块 + 母版参考链）；沃德在预告里只露手和声音。
 - `20261106-exhibit-47-story` — **《第 47 号证物 EXHIBIT 47》完整故事** — `topics/concept/exhibit-47-story.md` — 主方案的完整故事：片名的三层含义、世界设定、人物、真相时间线、三幕情节、逻辑问答、公平推理线索表、主题与结局，以及预告片能说什么、不能说什么。
 - `20261106-untomorrow-concept` — **《明日不来 UNTOMORROW》核心创意** — `topics/concept/untomorrow-concept.md` — 预告片主创意：城市被困在 12 月 31 日，每晚午夜重来，一个只露背影的"守时人"在猎杀记得循环的人；包含 logline、世界规则、主题、反转和片名备选。
 

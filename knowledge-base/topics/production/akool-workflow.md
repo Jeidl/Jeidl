@@ -4,13 +4,15 @@ title: AKOOL 制作流程与 14 天排期
 tags: [production, akool]
 created: 2026-11-06
 updated: 2026-11-06
-related: [20261106-challenge-rules, 20261106-character-bible, 20261106-prompt-formula, 20261106-untomorrow-shot-list, 20261106-submission-checklist, 20261106-editing-rhythm, 20261106-black-screen-text-cards, 20261106-music-sfx-prompts, 20261106-sound-design]
+related: [20261106-challenge-rules, 20261106-character-bible, 20261106-prompt-formula, 20261106-untomorrow-shot-list, 20261106-submission-checklist, 20261106-editing-rhythm, 20261106-black-screen-text-cards, 20261106-music-sfx-prompts, 20261106-sound-design, 20261106-exhibit-47-character-bible, 20261106-exhibit-47-shot-prompts, 20261106-exhibit-47-shot-list]
 summary: 从角色设定图、动态分镜、图生视频、口型与配音，到剪辑、遮幅、AKOOL 标志、混音和导出的十步流程，按 11 月 20 日截止倒排的 14 天日程，以及"AKOOL 使用"的留证方法。
 ---
 
 # AKOOL 制作流程与 14 天排期
 
 > Summary: 从角色设定图、动态分镜、图生视频、口型与配音，到剪辑、遮幅、AKOOL 标志、混音和导出的十步流程，按 11 月 20 日截止倒排的 14 天日程，以及"AKOOL 使用"的留证方法。
+
+> **主方案《第 47 号证物》**：人物设定见 [人物与道具设定](../concept/exhibit-47-character-bible.md)，镜头见 [镜头提示词库](../prompts/exhibit-47-shot-prompts.md)，分镜见 [分镜表](exhibit-47-shot-list.md)。和下文的区别：画幅用 16:9 证物画面加顶部标题栏（AKOOL 标志放在标题栏里），不加 2.39:1 遮幅；不用 STYLE-A，改用证物风格块。
 
 ## 背景
 

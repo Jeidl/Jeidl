@@ -4,7 +4,7 @@ title: 《第 47 号证物 EXHIBIT 47》完整故事
 tags: [concept, story, action]
 created: 2026-11-06
 updated: 2026-11-06
-related: [20261106-action-mystery-concepts, 20261106-meta-endings, 20261106-story-direction, 20261106-style-decision, 20261106-style-anchor, 20261106-trailer-structure, 20261106-withholding-mystery, 20261106-untomorrow-concept, 20261106-civil-war, 20261106-longlegs-teasers, 20261106-prisoners, 20261106-the-dark-knight]
+related: [20261106-action-mystery-concepts, 20261106-meta-endings, 20261106-story-direction, 20261106-style-decision, 20261106-style-anchor, 20261106-trailer-structure, 20261106-withholding-mystery, 20261106-untomorrow-concept, 20261106-civil-war, 20261106-longlegs-teasers, 20261106-prisoners, 20261106-the-dark-knight, 20261106-exhibit-47-character-bible, 20261106-exhibit-47-shot-prompts, 20261106-exhibit-47-shot-list]
 summary: 主方案的完整故事：片名的三层含义、世界设定、人物、真相时间线、三幕情节、逻辑问答、公平推理线索表、主题与结局，以及预告片能说什么、不能说什么。
 ---
 
@@ -162,6 +162,8 @@ summary: 主方案的完整故事：片名的三层含义、世界设定、人�
 3. 冷冻门镜面里头盔上的"7-12"
 4. **审讯桌上沃德的右手**。这一个最狠：凶手就坐在她对面
 
+逐镜头的落地版本见 [《第 47 号证物》分镜表](../production/exhibit-47-shot-list.md)。
+
 ## 撞车检查与差异化
 
 | 相似作品 | 相似点 | 我们的不同 |
@@ -176,6 +178,7 @@ summary: 主方案的完整故事：片名的三层含义、世界设定、人�
 
 ## 相关笔记
 
+- [人物与道具设定](exhibit-47-character-bible.md)、[镜头提示词库](../prompts/exhibit-47-shot-prompts.md)、[分镜表](../production/exhibit-47-shot-list.md)：预告片的制作文件。
 - [动作悬疑 × 元结尾](action-mystery-concepts.md)：本方案最初的提案，以及另外三个方案。
 - [元结尾字卡库](../techniques/meta-endings.md)：证物型 + 重看型结尾。
 - [故事定向](../brief/story-direction.md)、[风格定向](../brief/style-decision.md)：选题与风格依据。

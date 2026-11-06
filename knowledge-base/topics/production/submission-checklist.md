@@ -4,7 +4,7 @@ title: 提交检查清单
 tags: [production, akool, copyright]
 created: 2026-11-06
 updated: 2026-11-06
-related: [20261106-challenge-rules, 20261106-akool-workflow, 20261106-withholding-mystery]
+related: [20261106-challenge-rules, 20261106-akool-workflow, 20261106-withholding-mystery, 20261106-meta-endings, 20261106-exhibit-47-shot-list]
 summary: 发布和提交前逐项勾选：时长、原创性、AKOOL 标志、版权素材、平台发布与话题标签、提交表单说明、评分自查。
 ---
 
@@ -30,9 +30,10 @@ summary: 发布和提交前逐项勾选：时长、原创性、AKOOL 标志、�
 - [ ] 发布在 YouTube / TikTok / Instagram 至少一个平台，设为**公开**，并保持公开到比赛结束
 - [ ] 话题标签：`#AKOOLClash #AKOOLFilmChallenge #AIVideo #AIFilm`
 - [ ] @AKOOL
-- [ ] 标题：`UNTOMORROW — Official Trailer (Coming Never) | #AKOOLFilmChallenge`
-- [ ] 简介第一行钩子："Every midnight, the world starts over. Only some of us remember."
-- [ ] 置顶评论提问："Who do you think the Timekeeper is?"
+- [ ] 标题：`EXHIBIT 47 — Official Trailer (Coming Never) | #AKOOLFilmChallenge`
+- [ ] 简介第一行钩子："12 officers went in. 1 came out. 13 cameras were recovered."
+- [ ] 置顶评论提问："Did you find all 4 shots?"
+- [ ] 简介注明虚构作品："A fictional trailer for the AKOOL AI Film Challenge. All characters, agencies and events are fictional."（证物型结尾必须有，见 [元结尾字卡库](../techniques/meta-endings.md)）
 
 ## 提交表单
 
@@ -49,14 +50,15 @@ summary: 发布和提交前逐项勾选：时长、原创性、AKOOL 标志、�
 
 | 维度 | 自查问题 | 合格标准 |
 |---|---|---|
-| Story 30% | 看完能复述规则吗？ | 能说出"每晚午夜重来，有人在杀记得的人" |
-| Originality 20% | 有没有一个"没见过"的瞬间？ | 日期卡倒回、新年永远不来 |
+| Story 30% | 看完能复述规则吗？ | 能说出"12 个人进去、1 个人出来、多了一台死人的记录仪" |
+| Originality 20% | 有没有一个"没见过"的瞬间？ | 两个"十二"、12 格全黑后亮起的第 13 格 |
 | Creative Execution 20% | 有没有明显的 AI 穿帮？ | 没有人提到"脸变了"或"手指怪" |
 | Use of AKOOL 15% | 说明清楚吗？ | 有截图和制作日志 |
-| I'd watch that 15% | 想看正片吗？ | 至少 2 / 3 的人问"凶手是谁" |
+| I'd watch that 15% | 想看正片吗？ | 至少 2 / 3 的人问"第十三个人是谁"，或者主动重看找那 4 个画面 |
 
 ## 相关笔记
 
 - [赛事规则](../brief/challenge-rules.md)：每一条的出处。
 - [AKOOL 制作流程](akool-workflow.md)：留证方法和排期。
+- [《第 47 号证物》分镜表](exhibit-47-shot-list.md)：主方案的时长与重看彩蛋。
 - [留白与悬念营销](../techniques/withholding-mystery.md)：发布文案。

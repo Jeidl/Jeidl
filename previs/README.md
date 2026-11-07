@@ -27,6 +27,24 @@ Headless (Blender 4.2+ or `pip install bpy`):
 Colour code: environment clay, Nora cyan, the thirteenth orange, Brandt yellow,
 Ward purple, Leo green, officers grey, burn scar pink, evidence red.
 
+## Video clips v1 (AKOOL image-to-video)
+
+`clips/` holds the first pass of image-to-video, made in AKOOL from the v2 keyframes:
+29 generations (391 credits). Most shots use Akool Premium (8 credits per 5 s clip);
+I4 uses Kling 3.0 Omni with first and last frames (100 credits). The clips are
+assembled on the shot-list timeline into a silent 88 s rough cut.
+
+| File | What it is |
+|---|---|
+| `clips/clips_v1.json` | Log of all 29 generations: model, resolution, length, credits, first/last frame URLs, prompt, negative prompt, AKOOL id, video URL, verdict, and whether the take is used in the cut. |
+| `clips/strips/` | Six frames from each clip. |
+| `clips/roughcut_v0_540p.mp4` | Silent rough cut v0 (placeholder cards, no grade, no sound). |
+| `clips/tools/fetch_clips.py` | Downloads the clips in the log (`--all` for every take). |
+| `clips/tools/roughcut.py` | Rebuilds the rough cut: `python3 roughcut.py OUT.mp4 CLIP_DIR [W H]`. |
+
+The 1920x1080 originals stay on AKOOL's CDN. Notes and lessons:
+`knowledge-base/topics/production/exhibit-47-video-clips.md`.
+
 ## Keyframes v2 (current)
 
 `keyframes/v2/` is the current set: 30 frames, redone to the live-action

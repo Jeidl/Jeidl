@@ -12,6 +12,7 @@ AKOOL AI Film Challenge「Coming Never」赛道参赛项目《第 47 号证物 E
 | 看设定图是怎么核对、锁定细节的 | [设定图的图片转提示词学习记录](topics/prompts/reference-sheet-reverse-prompts.md) |
 | 看场景长什么样、镜头怎么摆 | [场景图](topics/prompts/exhibit-47-scene-images.md) → [白模预演](topics/production/exhibit-47-whitebox-previs.md)（含 89 秒动态预演） |
 | 看每个镜头的关键帧 | [关键帧 v2](topics/production/exhibit-47-keyframes.md)（30 张：人物在 LibTV，场景在 AKOOL，画面自带证物画质） |
+| 看图生视频片段和粗剪 | [AKOOL 图生视频 v1](topics/production/exhibit-47-video-clips.md)（29 条片段、模型价格、88 秒无声粗剪 v0） |
 | 知道每一秒放什么 | [《第 47 号证物》90 秒档分镜表](topics/production/exhibit-47-shot-list.md)（v2，实际 88 秒） |
 | 安排两周的工作 | [AKOOL 制作流程与 14 天排期](topics/production/akool-workflow.md) |
 | 提交前自查 | [提交检查清单](topics/production/submission-checklist.md) |
@@ -107,6 +108,7 @@ AKOOL AI Film Challenge「Coming Never」赛道参赛项目《第 47 号证物 E
 - `20261106-akool-workflow` — **AKOOL 制作流程与 14 天排期** — `topics/production/akool-workflow.md` — 从角色设定图、动态分镜、图生视频、口型与配音，到剪辑、遮幅、AKOOL 标志、混音和导出的十步流程，按 11 月 20 日截止倒排的 14 天日程，以及"AKOOL 使用"的留证方法。
 - `20261106-exhibit-47-whitebox-previs` — **《第 47 号证物》白模预演（Blender）：6 个场景、23 个机位、遮挡检测与 9 条发现** — `topics/production/exhibit-47-whitebox-previs.md` — 按 AKOOL 场景图用 Blender 搭的全方块白模：6 个场景各一套（附与场景图对齐的参考机位），每个镜头摆好人物、按 89 秒分镜表的时间码让摄影机走一遍，用射线检测核对谁在画面里、谁被挡住；记录每个镜头的机位、动作时间、可见性结果，以及由此发现并已改进提示词的 9 个问题。
 - `20261107-exhibit-47-keyframes` — **《第 47 号证物》关键帧：v1（AKOOL 白模引导）与 v2（LibTV 人物 + AKOOL 场景，画面自带证物画质）** — `topics/production/exhibit-47-keyframes.md` — 现行是 v2，共 30 张：有人的镜头 23 张在 LibTV 生成（中文提示词，参考 v3 设定图和白模），场景和道具 7 张在 AKOOL 生成；执法记录仪、监控、红外和旧录像的画质直接生成在画面里，只有屏幕文字留到后期。笔记里有每张的做法和取舍、45 次生成的日志，以及 v1、v2 各 10 条教训。
+- `20261107-exhibit-47-video-clips` — **《第 47 号证物》AKOOL 图生视频 v1：29 条片段、模型价格对比和无声粗剪 v0** — `topics/production/exhibit-47-video-clips.md` — 以 v2 关键帧为首帧，在 AKOOL 里生成了 29 条图生视频（391 积分）。实测 5 秒片段的价格：Akool Premium 8 积分、Seedance 1.0 Pro 75、Kling 3.0 Omni 100。主力用 Akool Premium，Kling 只用在 I4。B2 的甩镜分两段生成、在运动模糊里切过去。全部片段按分镜表拼成了 88 秒的无声粗剪 v0。
 - `20261106-exhibit-47-shot-list` — **《第 47 号证物》90 秒档分镜表（逐镜头时间码）** — `topics/production/exhibit-47-shot-list.md` — 主方案参赛版分镜（v2，审片后修订），总长 88 秒：时间码、提示词编号、字卡、台词和声音；"只配发 12 台 + 第 47 号证物遗失"的不可能证据链；两只手同一道疤的线索；第十三人 4 次出场（第 4 次是身份线索）；预告刻意不交代的内容；以及 30 秒前导版和 9:16 竖屏版的改法。
 - `20261106-submission-checklist` — **提交检查清单** — `topics/production/submission-checklist.md` — 发布和提交前逐项勾选：时长、原创性、AKOOL 标志、版权素材、平台发布与话题标签、提交表单说明、评分自查。
 - `20261106-untomorrow-shot-list` — **《明日不来》75 秒分镜表（逐镜头时间码）** — `topics/production/untomorrow-shot-list.md` — 参赛主版本的 27 个镜头，每个镜头都有时间码、时长、提示词编号、字卡、声音和台词，以及 30 秒社交前导版和 9:16 竖屏版的改法。

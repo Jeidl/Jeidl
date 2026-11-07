@@ -4,7 +4,7 @@ title: 《第 47 号证物》关键帧：v1（AKOOL 白模引导）与 v2（LibT
 tags: [production, akool, libtv, visual, prompt]
 created: 2026-11-07
 updated: 2026-11-07
-related: [20261106-exhibit-47-whitebox-previs, 20261106-exhibit-47-shot-prompts, 20261106-exhibit-47-character-bible, 20261106-exhibit-47-scene-images, 20261106-akool-workflow, 20261106-exhibit-47-shot-list, 20261106-submission-checklist, 20261106-reference-sheet-reverse-prompts]
+related: [20261106-exhibit-47-whitebox-previs, 20261106-exhibit-47-shot-prompts, 20261106-exhibit-47-character-bible, 20261106-exhibit-47-scene-images, 20261106-akool-workflow, 20261106-exhibit-47-shot-list, 20261106-submission-checklist, 20261106-reference-sheet-reverse-prompts, 20261107-exhibit-47-video-clips]
 summary: v1 用 AKOOL 图生图把白模灰模帧变成真实画面，30 张，53 次生成，总结了 10 条教训。v2 是现行版本：按真人实拍标准重做，人物镜头在 LibTV 用中文提示词加 v3 设定图生成（23 张），场景和道具镜头留在 AKOOL（7 张）；执法记录仪、监控、红外、旧录像的画质直接生成在画面里，只有屏幕文字留到后期。一共 32 次 LibTV 生成和 13 次 AKOOL 生成（39 积分），本地只修了 1 处。记录了每张的做法、取舍和 10 条新教训。
 ---
 
@@ -229,13 +229,9 @@ POLICE, SWAT, lettering, printed words, words on clothing, grey blocks, 3D rende
 
 LibTV 项目"EXHIBIT 47 第47号证物"里，每张图都对应一个节点，节点名以"关键帧"开头，可以在画布上直接查看。
 
-## 下一步：图生视频
+## 下一步：图生视频（已完成 v1）
 
-1. 先查 AKOOL 图生视频模型（`account_models`，类型 1501）：哪些模型支持尾帧（`supportedLastFrame`）、可选时长和分辨率。之前这个接口返回过 1009，如果仍不可用，就在网页端做并截图留证。
-2. **首帧用 v2**。LibTV 的原图链接是公开的，可以直接当图生视频的首帧链接；C2 首帧是本地修过的，要先用 `file_upload` 传到 AKOOL。
-3. 图生视频提示词用 [镜头提示词库](../prompts/exhibit-47-shot-prompts.md) 里的动作描述，**只写动作和镜头运动**，画面内容已经在首帧里了。画质已经在首帧里，提示词里只需要再写一句"保持执法记录仪 / 监控画质"，不要写 police。
-4. 有首尾帧的镜头：B2（首帧 → 第十三人，中间是甩镜）、B8（首帧 → 倒影，镜头转向门板）、I4（低头 → 抬眼）。
-5. I2 用 S1 I2 做口型同步源图，台词 "There were thirteen of us."。
+图生视频 v1 已经做完：29 条片段，拼成了 88 秒无声粗剪，见 [图生视频](exhibit-47-video-clips.md)。原来计划的 B8 首尾帧改成了两段：首帧一段、倒影一段，剪辑时接起来。
 
 ## 相关笔记
 
@@ -243,5 +239,6 @@ LibTV 项目"EXHIBIT 47 第47号证物"里，每张图都对应一个节点，�
 - [镜头提示词库](../prompts/exhibit-47-shot-prompts.md)：动作描述和后期叠字规范。
 - [人物与道具设定](../concept/exhibit-47-character-bible.md)：诺拉 v2、沃德的手 v2、颜色规则。
 - [场景图](../prompts/exhibit-47-scene-images.md)：E1 直接复用的场景图。
+- [图生视频](exhibit-47-video-clips.md)：以这些关键帧为首帧做出的片段和粗剪。
 - [AKOOL 制作流程](akool-workflow.md)：这一步在流程里的位置和留证。
 - [提交检查清单](submission-checklist.md)：`keyframes.json` 就是 AKOOL 制作日志。

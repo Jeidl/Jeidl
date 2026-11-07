@@ -5,6 +5,7 @@
 - [《第 47 号证物》90 秒档分镜表](exhibit-47-shot-list.md)：**主方案**，v2 实际 88 秒。逐镜头时间码、不可能证据链、两只手的同一道疤、第十三人的 4 次出场、30 秒版和竖屏版。
 - [《第 47 号证物》白模预演](exhibit-47-whitebox-previs.md)：按场景图搭的 Blender 方块白模、89 秒动态预演、每个镜头的机位和动作时间、遮挡检测和 9 条发现。
 - [《第 47 号证物》关键帧 v1 / v2](exhibit-47-keyframes.md)：现行是 v2，共 30 张。有人的镜头在 LibTV 用中文提示词加 v3 设定图生成，场景和道具在 AKOOL 生成，执法记录仪、监控和旧录像的画质直接生成在画面里。笔记里有每张的做法和取舍、45 次生成的日志，以及 v1、v2 各 10 条教训。
+- [《第 47 号证物》AKOOL 图生视频 v1](exhibit-47-video-clips.md)：29 条片段、实测的模型价格（Akool Premium 8 积分 / Seedance Pro 75 / Kling 100）、每条的取舍、B2 两段拼接甩镜、10 条教训，以及按分镜表拼成的 88 秒无声粗剪 v0。
 - [《明日不来》75 秒分镜表](untomorrow-shot-list.md)：备选方案的分镜。
 - [AKOOL 制作流程与 14 天排期](akool-workflow.md)：十步流程、日程、留证方法。
 - [提交检查清单](submission-checklist.md)：发布和提交前逐项勾选。

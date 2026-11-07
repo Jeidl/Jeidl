@@ -24,6 +24,29 @@ summary: 主方案预告的全部提示词：六种"证物画面"风格块（执
 - **设定图和镜头各用一套风格，不能混**。设定图统一用 SHEET-STYLE（灰色影棚、柔光、无调色，见 [人物与道具设定](../concept/exhibit-47-character-bible.md)），只负责"人长什么样"。镜头用下面的 S-* 块，负责"画面是什么风格"。所以镜头提示词里不要写 studio、grey backdrop 这类设定图的词；设定图里也不要写 S-* 块里的词。
 - **台词建议后期配**：用 AKOOL 配音生成，再叠到画面上。只有 I2 需要口型同步。
 
+## 整体视觉标准：S-LIVE 真人实拍（2026-11-07 起，所有镜头的底层）
+
+用户定的标准（原文要点）：**真人演员实拍的电影画面**。人物是现实中真实存在的普通演员，在真实搭建的布景或真实地点中拍摄。
+
+- **人物**：真实人体比例、自然的面部不对称、符合年龄的皮肤纹理（适量毛孔、细小绒毛、轻微肤色差异、自然眼下阴影）；眼睛湿润但不过亮；头发有真实发根、碎发和成束关系。不能像蜡、塑料或磨皮美容照，也不要为了"真实"过度加皱纹、毛孔和污渍。
+- **服装与道具**：真实的织物纹理、厚度、重量和受力褶皱；道具有符合材质的反光和适度使用痕迹；有自然接触阴影，人确实坐在椅子上、手确实按在桌上，不悬浮、不穿插。
+- **场景**：真实建筑空间和可信的尺寸；墙、地面、家具、金属各有各的材质；细节服务于场景用途，不乱堆脏污、烟雾和装饰。
+- **光线**：来自场景里可以解释的光源（窗、顶灯、台灯、手电）；人和环境是同一套光，阴影方向和色温一致；保留柔和的面部明暗、自然反射光和暗部细节，不要像单独打光后贴进背景。
+- **摄影**：真实镜头的透视、景深和焦点，主体关键部位清晰，前后景按距离自然虚化；自然曝光、克制调色、保留肤色层次和高光过渡。电影感来自构图、光线和表演，不靠过度锐化、强滤镜或全画面模糊。
+- **排除**：插画、动漫、游戏立绘、游戏过场动画、三维角色渲染、数字人、塑料皮肤、蜡像感、美颜磨皮、商业精修、夸张轮廓光、过度 HDR、过度锐化。
+
+**S-LIVE**（英文块，放在每条图像提示词里：第一句放开头，其余放在场景描述之后）
+```text
+Live-action feature film still, photographed with real actors on a real location or practical built set. Ordinary real people: natural facial asymmetry, age-appropriate skin with visible pores, fine vellus hair, slight tone variation and natural under-eye shadows; eyes moist but not glossy; hair with real roots, flyaways and natural clumping; never waxy, plastic or retouched, and no exaggerated wrinkles, pores or grime. Clothes with real fabric texture, weight and tension folds; props with material-true reflections and light wear; natural contact shadows, nothing floating or intersecting. Believable architecture and scale, each surface its own material. Light only from motivated sources in the scene; people and set share the same light, shadow direction and colour temperature; soft facial modelling, natural bounce light, detail kept in the shadows. Real lens perspective and depth of field, key features in sharp focus. Natural exposure, restrained grade, smooth highlight roll-off.
+```
+
+**NEG-LIVE**（负面词，和各镜头的负面词合并）
+```text
+illustration, anime, game character art, video game cutscene, 3D render, CGI, digital human, plastic skin, waxy skin, beauty filter, skin smoothing, airbrushed retouching, glamour lighting, exaggerated rim light, HDR, oversharpened, strong color filter, crushed blacks, underexposed, floating objects, extra fingers, distorted hands, text, lettering, watermark, logo
+```
+
+**和证物风格块的分工**：生成画面时只保留下面 S-* 块里的**机位和镜头**（胸前高度、广角、监控高角、固定机位），画面要按 S-LIVE 拍成干净的实拍素材，光线自然曝光。S-* 块里的**画质退化**（鱼眼畸变、噪点、压缩块、红外单色、低帧率、自动曝光抽动）一律在后期统一加，和叠字一样。这样 AI 不用去模仿"劣化的画面"，也不会出现一片漆黑或游戏感的夜视画面。
+
 ## 风格块（每条提示词开头粘贴一个）
 
 **S-BCAM 执法记录仪**

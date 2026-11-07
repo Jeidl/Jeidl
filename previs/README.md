@@ -27,22 +27,27 @@ Headless (Blender 4.2+ or `pip install bpy`):
 Colour code: environment clay, Nora cyan, the thirteenth orange, Brandt yellow,
 Ward purple, Leo green, officers grey, burn scar pink, evidence red.
 
-## Video clips v1 (AKOOL image-to-video)
+## Video clips and rough cut v1 (AKOOL)
 
-`clips/` holds the first pass of image-to-video, made in AKOOL from the v2 keyframes:
-29 generations (391 credits). Most shots use Akool Premium (8 credits per 5 s clip);
-I4 uses Kling 3.0 Omni with first and last frames (100 credits). The clips are
-assembled on the shot-list timeline into a silent 88 s rough cut.
+`clips/` holds all image-to-video work, done in AKOOL from the v2 keyframes: 46 clips,
+856 credits. Round one used Akool Premium (8 credits per 5 s clip); round two upgraded
+the key shots with Seedance 1.0 Pro Fast (25 credits) and Seedance 1.0 Lite (50, first
+and last frame); I4 uses Kling 3.0 Omni (100). I2 is lip-synced with AKOOL Talking Photo.
+`audio/voice/` has every dialogue line (V1-V12) from AKOOL text-to-speech. The selected
+takes and the dialogue are assembled on the shot-list timeline into rough cut v1.
 
 | File | What it is |
 |---|---|
-| `clips/clips_v1.json` | Log of all 29 generations: model, resolution, length, credits, first/last frame URLs, prompt, negative prompt, AKOOL id, video URL, verdict, and whether the take is used in the cut. |
+| `clips/clips_v2.json` | Log of all 46 videos: round, model, credits, first/last frame, audio, prompt, negative prompt, AKOOL id, video URL, verdict, and `used_in_cut_v1`. |
+| `clips/clips_v1.json` | Round-one log (29 Akool Premium / Kling / Seedance Pro generations), kept for reference. |
 | `clips/strips/` | Six frames from each clip. |
-| `clips/roughcut_v0_540p.mp4` | Silent rough cut v0 (placeholder cards, no grade, no sound). |
-| `clips/tools/fetch_clips.py` | Downloads the clips in the log (`--all` for every take). |
-| `clips/tools/roughcut.py` | Rebuilds the rough cut: `python3 roughcut.py OUT.mp4 CLIP_DIR [W H]`. |
+| `clips/roughcut_v1_540p.mp4` | Rough cut v1 with the dialogue track (placeholder cards, no grade, no music or effects). |
+| `clips/roughcut_v0_540p.mp4` | Silent rough cut v0 (round one only). |
+| `clips/tools/fetch_clips.py` | Downloads the clips the cut uses (`--all` for every take). |
+| `clips/tools/roughcut.py` | Rebuilds rough cut v1: `python3 roughcut.py OUT.mp4 CLIP_DIR [W H]`. |
+| `audio/voice/*.mp3`, `audio/voice_lines.json` | The dialogue lines, with voice, speed and AKOOL task id per line. |
 
-The 1920x1080 originals stay on AKOOL's CDN. Notes and lessons:
+The 1080p originals stay on AKOOL's CDN. Notes, casting and lessons:
 `knowledge-base/topics/production/exhibit-47-video-clips.md`.
 
 ## Keyframes v2 (current)

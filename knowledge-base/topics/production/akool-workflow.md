@@ -31,9 +31,9 @@ summary: 从角色设定图、动态分镜、图生视频、口型与配音，�
 | 关键帧 v2 · 人物镜头（23 张，画面自带证物画质） | LibTV（Seedream 5.5，中文提示词 + v3 设定图 + 白模） | 已完成（2026-11-07），32 次生成，见 [关键帧](exhibit-47-keyframes.md) |
 | 关键帧 v2 · 场景和道具（7 张） | **AKOOL** 图像生成（flux-krea / flux-kontext） | 已完成（2026-11-07）：13 次生成，39 积分 |
 | 关键帧 v1（已被 v2 取代，保留作对照） | **AKOOL** 图像生成（flux-kontext-dev） | 已完成（2026-11-07）：30 张选用帧，53 次生成，159 积分，见 [关键帧](exhibit-47-keyframes.md) |
-| 图生视频（全部镜头） | **AKOOL** 图生视频（主力 Akool Premium；I4 用 Kling 3.0 Omni） | v1 已完成（2026-11-07）：29 次生成，391 积分，拼成了 88 秒无声粗剪 v0，见 [图生视频](exhibit-47-video-clips.md) |
-| 配音 V1–V12 | **AKOOL** 配音 | 待做 |
-| 口型同步（I2） | **AKOOL** 口型同步 | 待做 |
+| 图生视频（全部镜头） | **AKOOL** 图生视频（首轮 Akool Premium；第二轮 Seedance 1.0 Pro Fast / Lite；I4 用 Kling 3.0 Omni） | 已完成（2026-11-07）：46 条，856 积分，拼成带对白的 88 秒粗剪 v1，见 [图生视频](exhibit-47-video-clips.md) |
+| 配音 V1–V12 | **AKOOL** 配音（`audio_tts`） | 已完成（2026-11-07）：21 句，共约 1.4 积分，选角见 [图生视频](exhibit-47-video-clips.md) |
+| 口型同步（I2） | **AKOOL** Talking Photo | 已完成（2026-11-07）：1080p，3.1 秒，15 积分 |
 | 剪辑、字卡、叠字、混音 | 剪辑软件 | 待做 |
 
 **AKOOL 接口状态（2026-11-06）**：

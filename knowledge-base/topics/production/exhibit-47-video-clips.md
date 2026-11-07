@@ -1,16 +1,18 @@
 ---
 id: 20261107-exhibit-47-video-clips
-title: 《第 47 号证物》AKOOL 图生视频 v1：29 条片段、模型价格对比和无声粗剪 v0
+title: 《第 47 号证物》AKOOL 图生视频：Akool Premium 首轮、Seedance 升级、配音和口型同步，粗剪 v1
 tags: [production, akool, video, prompt]
 created: 2026-11-07
 updated: 2026-11-07
 related: [20261107-exhibit-47-keyframes, 20261106-exhibit-47-shot-prompts, 20261106-exhibit-47-shot-list, 20261106-akool-workflow, 20261106-submission-checklist, 20261106-exhibit-47-whitebox-previs, 20261106-editing-rhythm]
-summary: 以 v2 关键帧为首帧，在 AKOOL 里生成了 29 条图生视频（391 积分）。实测 5 秒片段的价格：Akool Premium 8 积分、Seedance 1.0 Pro 75、Kling 3.0 Omni 100。所以主力用 Akool Premium，Kling 只用在 I4 这种需要首尾帧都准的镜头上。B2 的甩镜改为分两段生成、在运动模糊里切过去。全部片段按分镜表拼成了 88 秒的无声粗剪 v0。笔记里有每条的取舍、10 条教训和下一步。
+summary: 全部在 AKOOL 里完成。首轮用 Akool Premium（8 积分/条）做了 29 条，拼成无声粗剪 v0。第二轮按用户要求改用 Seedance，用的是性价比最高的 1.0 Pro Fast（25 积分/条），升级了 13 个镜头，其中 9 条胜出；C2 开场用 Seedance Lite 首尾帧。之后用 AKOOL 配音生成了全部 V1–V12 台词（共约 1.4 积分），用 Talking Photo 给 I2 做了口型同步（15 积分），拼成带对白的粗剪 v1。共 46 条视频，856 积分。笔记记录了价格、每条取舍和 15 条教训。
 ---
 
-# 《第 47 号证物》AKOOL 图生视频 v1：29 条片段、模型价格对比和无声粗剪 v0
+# 《第 47 号证物》AKOOL 图生视频：Akool Premium 首轮、Seedance 升级、配音和口型同步，粗剪 v1
 
-> Summary: 以 v2 关键帧为首帧，在 AKOOL 里生成了 29 条图生视频（391 积分）。实测 5 秒片段的价格：Akool Premium 8 积分、Seedance 1.0 Pro 75、Kling 3.0 Omni 100。所以主力用 Akool Premium，Kling 只用在 I4 这种需要首尾帧都准的镜头上。B2 的甩镜改为分两段生成、在运动模糊里切过去。全部片段按分镜表拼成了 88 秒的无声粗剪 v0。笔记里有每条的取舍、10 条教训和下一步。
+> Summary: 全部在 AKOOL 里完成。首轮用 Akool Premium（8 积分/条）做了 29 条，拼成无声粗剪 v0。第二轮按用户要求改用 Seedance，用的是性价比最高的 1.0 Pro Fast（25 积分/条），升级了 13 个镜头，其中 9 条胜出；C2 开场用 Seedance Lite 首尾帧。之后用 AKOOL 配音生成了全部 V1–V12 台词（共约 1.4 积分），用 Talking Photo 给 I2 做了口型同步（15 积分），拼成带对白的粗剪 v1。共 46 条视频，856 积分。笔记记录了价格、每条取舍和 15 条教训。
+>
+> **现行版本是粗剪 v1**（`previs/clips/roughcut_v1_540p.mp4`，日志 `clips_v2.json`）。下文先写首轮（v0），后面的“第二轮”一节写 Seedance 升级、配音和口型同步。
 
 ## 背景
 
@@ -26,9 +28,11 @@ summary: 以 v2 关键帧为首帧，在 AKOOL 里生成了 29 条图生视频�
 | **Akool Premium**（AkoolImage2VideoHDV1） | **8** | 1080p | 不支持 | 大部分镜头都可用，40–90 秒出片。**主力** |
 | Seedance 1.0 Pro | 75 | 1080p | 支持 | B2 没有落到尾帧：结尾的第十三人换了衣服，身后还多了人 |
 | Kling 3.0 Omni | 100 | 只有 720p | 支持 | I4 首尾帧都很准，表情变化细腻 |
-| Akool Basic、Seedance Lite、Hailuo 2.3、Sora 2 / 2 Pro | 没测 | — | Seedance Lite 支持 | 先不花这个钱 |
+| **Seedance 1.0 Pro Fast** | **25** | 1080p | 不支持 | 第二轮主力。动作戏明显更好（B1、B4、B5），但会乱加东西（B3 挂肉、B10 换制服） |
+| Seedance 1.0 Lite | 50 | 1080p | 支持 | C2 开场很好，但同样没有落到尾帧；B8 倒影没有改善 |
+| Akool Basic、Hailuo 2.3、Sora 2 / 2 Pro | 没测 | — | — | 先不花这个钱 |
 
-有尾帧的三个模型里，经 AKOOL 调用时只有 Kling 真正停在了尾帧上。
+有尾帧的三个模型里（Seedance Pro、Seedance Lite、Kling），经 AKOOL 调用时只有 Kling 真正停在了尾帧上。
 
 ## 做法
 
@@ -42,7 +46,7 @@ summary: 以 v2 关键帧为首帧，在 AKOOL 里生成了 29 条图生视频�
 
 **B2 甩镜不用首尾帧**：首帧（队员下楼）和第十三人帧各生成一段，两段共 16 积分。第二段开头自带甩镜的运动模糊，剪辑时在模糊里切过去，看不出接缝。比 Seedance 首尾帧（75 积分、还失败了）便宜，也更稳。
 
-## 片段表
+## 首轮片段表（Akool Premium，粗剪 v0）
 
 | 镜头 | 模型 | 结果 | 粗剪用 |
 |---|---|---|---|
@@ -89,7 +93,42 @@ summary: 以 v2 关键帧为首帧，在 AKOOL 里生成了 29 条图生视频�
 
 文件是 `previs/clips/roughcut_v0_540p.mp4`，可以用 `tools/roughcut.py` 重新生成。它只用来看节奏和衔接，还没有调色、叠字和声音。
 
-## 10 条教训
+## 第二轮：Seedance 升级、配音和口型同步（2026-11-07）
+
+用户要求改用 AKOOL 里的 Seedance，因为画质更好。开始时只剩 579 积分，所以先测了价格：Pro Fast 25、Lite 50、Pro 75。之后用 **Pro Fast** 重做了最重要、在屏幕上停留最久的镜头。
+
+| 镜头 | Seedance 结果 | 粗剪 v1 用哪条 |
+|---|---|---|
+| B5 枪口火光 | 火光一阵接一阵，队员推进，镜头前冲；比 Akool 版只闪一次好得多 | **Seedance** |
+| B1 破门 | 大锤连砸两下，门被砸开，队员冲进雾里 | **Seedance** |
+| B4 布兰特 | 布兰特一路冲到镜头前嘶吼 | **Seedance** |
+| O2 三年前 | 胸前红灯一个个熄灭，正是剧本要的动作 | **Seedance** |
+| C3 监控 | 车边人员动作更多 | **Seedance** |
+| I1、I3、B2 第一段 | 和 Akool 版差不多，画面更稳 | **Seedance** |
+| X1、B6 | 慌乱和喷气更有力 | **Seedance** |
+| B2 第二段 | 开头没有甩镜模糊 | Akool 版开头 0.5 秒的甩镜，接 Seedance 的静止段 |
+| D1 | 她又走回冷库门口，方向错 | Akool |
+| B3 | 穿过门帘后钩子上挂满带血的肉；冷库是废弃的，应该是空钩子 | Akool |
+| B10 | 闪光后光线变成白天，队员换成土黄色制服 | Akool |
+| B8 倒影（Lite） | 和 Akool 版几乎一样 | Akool |
+| **C2 开场（Lite 首尾帧）** | 先在 LibTV 用抓人帧的同一个木箱间做了空房间首帧，再从空房间做到抓人帧：诺拉从门口踉跄着冲进毒气，很好；但结尾没有停在抓人帧上 | 进门 2.4 秒 → 2 帧监控丢帧 → Akool 抓人那条 |
+
+**配音（AKOOL 配音，`audio_tts`）**：V1–V12 全部生成，每句只要 0.02–0.12 积分。选角按配音表的设定。台词试听文件所在的域名被网络策略挡住了，所以诺拉的声音是先让 4 个候选声音各念一遍台词，再测音高和语速选出来的。
+
+| 角色 | 台词代号 | AKOOL 声音 | 说明 |
+|---|---|---|---|
+| 诺拉 | V1、V7 | Gentle Young Lady（en-IE） | 欧洲口音，0.85 倍速时最慢最沉；音高中位约 198 Hz |
+| 沃德 | V2、V3、V4、V8、V11 | Majestic Brother（en-US，标签"平静、舒缓"） | **五处同一个声音**，这是留给观众的听觉线索 |
+| 布兰特 | V5 | Dominant Brother（en-US） | 嘶吼要靠后期加失真和音量，配音念不出来 |
+| 报数组员 | V6 | Steady Big Brother / Serious Big Brother | 两个不同的声音轮流 |
+| 雷耶斯 | V9、V10 | Intellectual Young Man（en-NZ） | V9 后期加无线电滤波 |
+| 接线员 | V12 | Efficient Lady（en-US） | 后期加电话音质 |
+
+**口型同步**：I2 用 AKOOL Talking Photo，S1 I2 关键帧加 V1 音频，1080p，3.1 秒，15 积分。说话和嘴型自然、头部只有轻微动作，可以直接用。输出是 1136×640、25 fps，剪辑时放大。
+
+**粗剪 v1**：画面换成上表选定的片段。对白按分镜表的时间码铺在轨道上，电话和无线电台词加了带通滤波，V3 加了"耳语"处理，蒙太奇里放了 I2 的口型片段。还没有音乐和音效。
+
+## 15 条教训
 
 1. **先测价格再铺量**：同样 5 秒，Akool Premium 8 积分，Seedance 1.0 Pro 75，Kling 3.0 Omni 100。先各跑一条，看 `deduction_credit`，再定主力模型。
 2. **经 AKOOL 调用的 Seedance Pro 不保证落到尾帧**；Kling 3.0 Omni 落得准。首尾帧镜头只给 Kling，或者改成两段拼接。
@@ -101,25 +140,39 @@ summary: 以 v2 关键帧为首帧，在 AKOOL 里生成了 29 条图生视频�
 8. **关键帧里的画质在视频里会变弱**（O2 的偏黄和噪点变轻）。调色时统一补一层颗粒和压缩感，不用重新生成。
 9. **主体单一、动作明确的镜头效果最好**（B4、B7、B10、C2 抓人）；"同时发生好几件事"的镜头（B5 连续枪口火光）只能做出一部分。
 10. **LibTV 原图链接可以直接当首帧**，省掉转存和上传；但本地修过的图要用 `file_upload` 传到 AKOOL。
+11. **Seedance 里性价比最高的是 Pro Fast（25 积分）**，比 Lite（50）便宜，动作表现也更好。Lite 只在需要尾帧时才考虑，而它同样落不到尾帧。
+12. **Seedance 会加首帧里没有的东西**：B3 的空钩子挂上了带血的肉，B10 闪光后换成白天和土黄色制服。负面词要写明 carcasses、meat、daylight、tan uniform，生成后逐条检查。
+13. **Seedance 也会把方向演反**（D1 又走回了冷库），方向关键的镜头要写清楚"背对什么、朝哪里走"，并且准备好 Akool 版作后备。
+14. **同一个镜头不同模型的片段可以拼**：B2 用 Seedance 的下楼、Akool 的甩镜模糊和 Seedance 的静止段；C2 用 Lite 的进门、2 帧丢帧和 Akool 的抓人。监控画面的丢帧正好遮住跳切。
+15. **配音很便宜、口型同步也便宜**（TTS 每句约 0.1 积分，Talking Photo 每 5 秒 15 积分），积分应该优先留给视频生成。
 
-## 下一步
+## 下一步（首轮时写的，部分已完成）
 
-1. **I2 口型同步和配音**：用 AKOOL 配音生成诺拉的 "There were thirteen of us."，再用口型同步（或 talking photo）贴到 S1 I2 上。V1–V12 的配音也在 AKOOL 里做。
-2. **C2 的开头**：两种做法。一是在 LibTV 里，用抓人帧的同一个木箱间生成一张"空房间、气体刚涌进来"的首帧，再用 Akool Premium 生成（约 8 积分）。二是用 Kling 3.0 Omni，从这张空房间帧做首尾帧到抓人帧（100 积分）。
+1. ~~**I2 口型同步和配音**~~（已完成，见上文第二轮）：用 AKOOL 配音生成诺拉的 "There were thirteen of us."，再用口型同步（或 talking photo）贴到 S1 I2 上。V1–V12 的配音也在 AKOOL 里做。
+2. ~~**C2 的开头**~~（已完成：LibTV 空房间首帧 + Seedance Lite）：两种做法。一是在 LibTV 里，用抓人帧的同一个木箱间生成一张"空房间、气体刚涌进来"的首帧，再用 Akool Premium 生成（约 8 积分）。二是用 Kling 3.0 Omni，从这张空房间帧做首尾帧到抓人帧（100 积分）。
 3. **重拍候选**（每条 8 积分）：B5（要更多连续火光）、B8 倒影（更像镜面）、O2（更旧的画质）。
 4. **监控墙素材池 P1–P6** 还没有单独生成，现在的监控墙借用了其他镜头。
 5. **剪辑**：AKOOL 官方标志、正式字卡和叠字（编号、时间戳、REC、标签文字）、调色、颗粒、声音设计和混音，按 [AKOOL 制作流程](akool-workflow.md) 的第 6–9 步来。
-6. **积分**：剩 579。上面 1–4 全做完约需 50–150 积分，用不用 Kling 决定是哪一头。
+6. **积分**：第二轮结束后剩约 112。
+
+**第二轮之后的下一步**：
+1. **剪辑定稿**：换上 AKOOL 官方标志；正式字卡和叠字（编号、时间戳、REC、标签文字）；把 Seedance 片段和 Akool 片段调成同一套颜色和颗粒。
+2. **声音**：音乐（SC1/SC2、BRAAAM）、音效（FX1–FX12）、布兰特嘶吼的失真、V3 真正的耳语（可以重新配，或者在后期压低、加气声）。
+3. **重拍候选**（Seedance Pro Fast，每条 25 积分）：B3（负面词写明 carcasses）、B10（写明 daylight、tan uniform）。剩下的积分够 3–4 条。
+4. **监控墙素材池 P1–P6**：现在借用其他镜头，可以继续借用。
 
 ## 文件
 
 `previs/clips/`：
 
-- `clips_v1.json`：29 次生成的完整日志。每条记了模型、分辨率、时长、积分、首帧和尾帧链接、提示词、负面词、AKOOL 任务号、视频链接、取舍，以及是否用在粗剪里（`selected`）。提交时它就是"如何使用 AKOOL"的制作日志。
+- `clips_v2.json`（**现行**）：46 条视频的完整日志，包括首轮和第二轮的 Seedance、Talking Photo。`used_in_cut_v1` 标出粗剪 v1（含监控墙）用到的片段。
+- `roughcut_v1_540p.mp4`：粗剪 v1，带对白轨。
+- `../audio/voice/` 和 `../audio/voice_lines.json`：全部配音文件，以及每句的声音、语速和 AKOOL 任务号。
+- `clips_v1.json`：首轮 29 次生成的完整日志（保留作对照）。每条记了模型、分辨率、时长、积分、首帧和尾帧链接、提示词、负面词、AKOOL 任务号、视频链接、取舍，以及是否用在粗剪里（`selected`）。提交时它就是"如何使用 AKOOL"的制作日志。
 - `strips/`：每条片段的 6 帧缩略图。
 - `roughcut_v0_540p.mp4`：无声粗剪 v0。
-- `tools/fetch_clips.py`：按日志把片段下载到本地。
-- `tools/roughcut.py`：重新拼粗剪。
+- `tools/fetch_clips.py`：按 `clips_v2.json` 把粗剪要用的片段下载到本地。
+- `tools/roughcut.py`：重新拼粗剪 v1（含对白轨）。
 
 视频原片（1920×1080，24 fps）都在 AKOOL 的 CDN 上，链接见日志，仓库里不存原片。
 

@@ -42,8 +42,8 @@ summary: 发布和提交前逐项勾选：时长、原创性、AKOOL 标志、�
 - [ ] 选择 **Coming Never** 赛道
 - [ ] "如何使用 AKOOL"的说明，建议结构：
   1. 角色设定：**如实写工具**。目前三张设定图是 LibTV 生成、用 LibTV 视觉模型核对的（见 [学习记录](../prompts/reference-sheet-reverse-prompts.md)）；如果订阅后在 AKOOL 里重做了，就写 AKOOL
-  2. 画面：**如实写工具**。现行关键帧是 v2：有人的镜头 23 张在 LibTV 生成，场景和道具 7 张在 AKOOL 生成（13 次，39 积分）；C2 首帧在本地擦掉了 AKOOL 自己加的字框。制作日志是 `previs/keyframes/v2/keyframes_v2.json`，见 [关键帧](exhibit-47-keyframes.md)。更早的 v1（53 次 AKOOL 生成）可以作为探索过程一并说明。图生视频全部在 AKOOL 里做：29 次生成（391 积分），主力是 Akool Premium，I4 用 Kling 3.0 Omni，B2 首尾帧试过 Seedance 1.0 Pro。日志是 `previs/clips/clips_v1.json`，见 [图生视频](exhibit-47-video-clips.md)。⚠️ 关键帧里 AKOOL 的比重降低了，所以**图生视频、口型同步、配音都要在 AKOOL 里做**，并且每一步截图，才能撑住 15% 的"Use of AKOOL"
-  3. 对白：AKOOL 口型同步 / 配音
+  2. 画面：**如实写工具**。现行关键帧是 v2：有人的镜头 23 张在 LibTV 生成，场景和道具 7 张在 AKOOL 生成（13 次，39 积分）；C2 首帧在本地擦掉了 AKOOL 自己加的字框。制作日志是 `previs/keyframes/v2/keyframes_v2.json`，见 [关键帧](exhibit-47-keyframes.md)。更早的 v1（53 次 AKOOL 生成）可以作为探索过程一并说明。图生视频全部在 AKOOL 里做：46 条（856 积分）。首轮用 Akool Premium，第二轮用 Seedance 1.0 Pro Fast / Lite 升级，I4 用 Kling 3.0 Omni。日志是 `previs/clips/clips_v2.json`，见 [图生视频](exhibit-47-video-clips.md)。⚠️ 关键帧里 AKOOL 的比重降低了，所以**图生视频、口型同步、配音都要在 AKOOL 里做**，并且每一步截图，才能撑住 15% 的"Use of AKOOL"
+  3. 对白：全部台词用 AKOOL 配音生成（`previs/audio/voice_lines.json`），I2 用 AKOOL Talking Photo 做口型同步
   4. 其他工具：剪辑软件、音乐工具（如实列出）
 - [ ] 准备好补充材料（截图、制作日志），以备主办方索取
 

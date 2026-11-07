@@ -1,17 +1,17 @@
-"""Download the AKOOL clips listed in ../clips_v1.json.
+"""Download the AKOOL clips listed in ../clips_v2.json.
 
-    python3 fetch_clips.py OUT_DIR            # selected takes only (what roughcut.py needs)
+    python3 fetch_clips.py OUT_DIR            # takes used in rough cut v1 (what roughcut.py needs)
     python3 fetch_clips.py OUT_DIR --all      # every take
 
 Each clip is saved as OUT_DIR/<name>.mp4 (e.g. 02_D1__akp.mp4)."""
 import json, os, sys, urllib.request
 
 here = os.path.dirname(os.path.abspath(__file__))
-log = json.load(open(os.path.join(here, "..", "clips_v1.json"), encoding="utf-8"))
+log = json.load(open(os.path.join(here, "..", "clips_v2.json"), encoding="utf-8"))
 out = sys.argv[1]
 os.makedirs(out, exist_ok=True)
 for c in log["clips"]:
-    if not (c["selected"] or "--all" in sys.argv):
+    if not (c["used_in_cut_v1"] or "--all" in sys.argv):
         continue
     dst = os.path.join(out, c["name"] + ".mp4")
     if os.path.exists(dst):

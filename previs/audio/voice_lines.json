@@ -1,0 +1,200 @@
+{
+ "note": "AKOOL text-to-speech (audio_tts), 2026-11-07. Same voice for Ward lines V2, V3, V4, V8, V11 by design. Effects (phone, radio, whisper) are added in the edit.",
+ "lines": {
+  "V1_nora_thirteen": {
+   "voice": "Gentle Young Lady (en-IE)",
+   "voice_id": "6889b64b662160e2caad5e1b",
+   "speed": 0.85,
+   "text": "There were thirteen of us.",
+   "url": "https://d2qf6ukcym4kn9.cloudfront.net/1794063247515-880f5def-b252-4561-874a-a298f83f2fc5-5186.mp3",
+   "file": "V1_nora_thirteen.mp3",
+   "akool_tts_id": "6aef3b8e97abb75cf09b453f"
+  },
+  "V1_alt_whispering": {
+   "voice": "Whispering girl (en-US)",
+   "voice_id": "6889b76b662160e2caad6008",
+   "speed": 0.85,
+   "text": "There were thirteen of us.",
+   "url": "https://d2qf6ukcym4kn9.cloudfront.net/1794063261991-cdc4b118-626a-4711-a4cf-bec789c3f388-8897.mp3",
+   "file": "V1_alt_whispering.mp3",
+   "akool_tts_id": "6aef3b9897abb75cf09b4557"
+  },
+  "V1_alt_gb_gentle_sister": {
+   "voice": "Gentle Sister (en-GB)",
+   "voice_id": "6889b655662160e2caad5e2c",
+   "speed": 0.85,
+   "text": "There were thirteen of us.",
+   "url": "https://d2qf6ukcym4kn9.cloudfront.net/1794063258543-ef5486d9-9424-4217-98b4-05c07b14a7d7-9762.mp3",
+   "file": "V1_alt_gb_gentle_sister.mp3",
+   "akool_tts_id": "6aef3b9951e26737e1bab390"
+  },
+  "V1_alt_us_calm_lady": {
+   "voice": "Calm Lady (en-US)",
+   "voice_id": "6889b66a662160e2caad5e53",
+   "speed": 0.85,
+   "text": "There were thirteen of us.",
+   "url": "https://d2qf6ukcym4kn9.cloudfront.net/1794063258551-7053bc0d-31bc-45f3-8f95-d4d13628a231-0182.mp3",
+   "file": "V1_alt_us_calm_lady.mp3",
+   "akool_tts_id": "6aef3b9997abb75cf09b4563"
+  },
+  "V2_ward_twelve_officers": {
+   "voice": "Majestic Brother (en-US)",
+   "voice_id": "6889b674662160e2caad5e63",
+   "speed": 0.9,
+   "text": "Your unit had twelve officers, Kade.",
+   "url": "https://d2qf6ukcym4kn9.cloudfront.net/1794063311678-5bd5eb71-2be1-4362-9724-82f23398fc5e-7979.mp3",
+   "file": "V2_ward_twelve_officers.mp3",
+   "akool_tts_id": "6aef3bce51e26737e1bab5b6"
+  },
+  "V3_ward_safe_whisper": {
+   "voice": "Majestic Brother (en-US)",
+   "voice_id": "6889b674662160e2caad5e63",
+   "speed": 0.8,
+   "text": "You're safe now, Kade.",
+   "note": "make it a whisper in post",
+   "url": "https://d2qf6ukcym4kn9.cloudfront.net/1794063312193-dc29f00c-f610-4c8a-a26b-c4a21cf9de5c-0923.mp3",
+   "file": "V3_ward_safe_whisper.mp3",
+   "akool_tts_id": "6aef3bcf97abb75cf09b4778"
+  },
+  "V4_ward_safe": {
+   "voice": "Majestic Brother (en-US)",
+   "voice_id": "6889b674662160e2caad5e63",
+   "speed": 0.9,
+   "text": "You're safe now, Kade.",
+   "url": "https://d2qf6ukcym4kn9.cloudfront.net/1794063312426-932926f0-7658-446f-87d1-2d7377a33048-9888.mp3",
+   "file": "V4_ward_safe.mp3",
+   "akool_tts_id": "6aef3bcf51e26737e1bab5c3"
+  },
+  "V8_thirteenth_twelve": {
+   "voice": "Majestic Brother (en-US)",
+   "voice_id": "6889b674662160e2caad5e63",
+   "speed": 0.8,
+   "text": "Twelve.",
+   "url": "https://d2qf6ukcym4kn9.cloudfront.net/1794063315001-21a13c14-3764-4811-b7ed-14094014f727-4747.mp3",
+   "file": "V8_thirteenth_twelve.mp3",
+   "akool_tts_id": "6aef3bd097abb75cf09b4785"
+  },
+  "V11_caller_northgate": {
+   "voice": "Majestic Brother (en-US)",
+   "voice_id": "6889b674662160e2caad5e63",
+   "speed": 0.85,
+   "text": "Northgate. Same as last time.",
+   "note": "phone band-pass in post",
+   "url": "https://d2qf6ukcym4kn9.cloudfront.net/1794063313291-7c827439-98c3-457e-ace0-3a8487d5e9e6-1633.mp3",
+   "file": "V11_caller_northgate.mp3",
+   "akool_tts_id": "6aef3bd051e26737e1bab5d9"
+  },
+  "V11_caller_seven_twelve": {
+   "voice": "Majestic Brother (en-US)",
+   "voice_id": "6889b674662160e2caad5e63",
+   "speed": 0.85,
+   "text": "Seven-Twelve.",
+   "note": "phone band-pass in post",
+   "url": "https://d2qf6ukcym4kn9.cloudfront.net/1794063313837-f70fef41-8ed5-489c-a51e-ec05d9e1b342-3836.mp3",
+   "file": "V11_caller_seven_twelve.mp3",
+   "akool_tts_id": "6aef3bd097abb75cf09b479a"
+  },
+  "V5_brandt_count_off": {
+   "voice": "Dominant Brother (en-US)",
+   "voice_id": "6889b662662160e2caad5e43",
+   "speed": 1.0,
+   "text": "Count off.",
+   "url": "https://d2qf6ukcym4kn9.cloudfront.net/1794063314099-cff69086-0fb2-46a2-b1a6-2625f82722d8-2945.mp3",
+   "file": "V5_brandt_count_off.mp3",
+   "akool_tts_id": "6aef3bd151e26737e1bab5ea"
+  },
+  "V5_brandt_who": {
+   "voice": "Dominant Brother (en-US)",
+   "voice_id": "6889b662662160e2caad5e43",
+   "speed": 1.0,
+   "text": "Who said that?",
+   "url": "https://d2qf6ukcym4kn9.cloudfront.net/1794063314393-8dc4c1ec-f9c0-4465-9aec-36fc56ec4f9e-0528.mp3",
+   "file": "V5_brandt_who.mp3",
+   "akool_tts_id": "6aef3bd197abb75cf09b47a9"
+  },
+  "V5_brandt_masks": {
+   "voice": "Dominant Brother (en-US)",
+   "voice_id": "6889b662662160e2caad5e43",
+   "speed": 1.1,
+   "text": "Masks off! Now!",
+   "url": "https://d2qf6ukcym4kn9.cloudfront.net/1794063314994-eb3b0bef-4a50-4a4c-b3f3-0ade4832ab23-8188.mp3",
+   "file": "V5_brandt_masks.mp3",
+   "akool_tts_id": "6aef3bd251e26737e1bab5fc"
+  },
+  "V5_brandt_buried": {
+   "voice": "Dominant Brother (en-US)",
+   "voice_id": "6889b662662160e2caad5e43",
+   "speed": 1.1,
+   "text": "We buried you!",
+   "url": "https://d2qf6ukcym4kn9.cloudfront.net/1794063315306-cb38c43f-a60b-44d2-bb1b-be9c4d2c3f9e-7304.mp3",
+   "file": "V5_brandt_buried.mp3",
+   "akool_tts_id": "6aef3bd297abb75cf09b47bd"
+  },
+  "V6_count_ten": {
+   "voice": "Steady Big Brother (en-US)",
+   "voice_id": "6889b675662160e2caad5e64",
+   "speed": 1.0,
+   "text": "Ten.",
+   "url": "https://d2qf6ukcym4kn9.cloudfront.net/1794063315754-8a8271a4-4cd5-4b06-ac8e-0cabc95f649a-8187.mp3",
+   "file": "V6_count_ten.mp3",
+   "akool_tts_id": "6aef3bd251e26737e1bab60e"
+  },
+  "V6_count_eleven": {
+   "voice": "Serious Big Brother (en-US)",
+   "voice_id": "6889b677662160e2caad5e67",
+   "speed": 1.0,
+   "text": "Eleven.",
+   "url": "https://d2qf6ukcym4kn9.cloudfront.net/1794063315999-27e2bd0a-1699-4a21-a60d-fb9bb9338284-5495.mp3",
+   "file": "V6_count_eleven.mp3",
+   "akool_tts_id": "6aef3bd397abb75cf09b47d2"
+  },
+  "V7_nora_twelve": {
+   "voice": "Gentle Young Lady (en-IE)",
+   "voice_id": "6889b64b662160e2caad5e1b",
+   "speed": 0.85,
+   "text": "Twelve.",
+   "url": "https://d2qf6ukcym4kn9.cloudfront.net/1794063316544-32d449c5-7744-45cb-b28d-3091d1c4b63d-8328.mp3",
+   "file": "V7_nora_twelve.mp3",
+   "akool_tts_id": "6aef3bd351e26737e1bab625"
+  },
+  "V9_reyes_still_recording": {
+   "voice": "Intellectual Young Man (en-NZ)",
+   "voice_id": "6889b672662160e2caad5e5f",
+   "speed": 0.9,
+   "text": "Seven-Twelve. Still recording.",
+   "note": "phone band-pass, distortion, dropouts in post",
+   "url": "https://d2qf6ukcym4kn9.cloudfront.net/1794063316932-2160e907-c852-4684-93cf-cc7c32bedce8-6194.mp3",
+   "file": "V9_reyes_still_recording.mp3",
+   "akool_tts_id": "6aef3bd397abb75cf09b47e5"
+  },
+  "V10_reyes_mine_stays_on": {
+   "voice": "Intellectual Young Man (en-NZ)",
+   "voice_id": "6889b672662160e2caad5e5f",
+   "speed": 0.9,
+   "text": "No. Mine stays on.",
+   "url": "https://d2qf6ukcym4kn9.cloudfront.net/1794063317288-7cee4bfb-1cd0-4ddb-a5f6-81b62e3e3c24-6102.mp3",
+   "file": "V10_reyes_mine_stays_on.mp3",
+   "akool_tts_id": "6aef3bd451e26737e1bab635"
+  },
+  "V12_dispatch_emergency": {
+   "voice": "Efficient Lady (en-US)",
+   "voice_id": "6889b66b662160e2caad5e55",
+   "speed": 1.0,
+   "text": "911, what's your emergency?",
+   "note": "phone quality in post",
+   "url": "https://d2qf6ukcym4kn9.cloudfront.net/1794063317574-785314b6-d891-4766-b628-d2489f17181e-1039.mp3",
+   "file": "V12_dispatch_emergency.mp3",
+   "akool_tts_id": "6aef3bd497abb75cf09b47f7"
+  },
+  "V12_dispatch_who": {
+   "voice": "Efficient Lady (en-US)",
+   "voice_id": "6889b66b662160e2caad5e55",
+   "speed": 1.0,
+   "text": "Sir, who is this?",
+   "note": "phone quality in post",
+   "url": "https://d2qf6ukcym4kn9.cloudfront.net/1794063318095-01f051b9-9ab2-4e0c-9fb6-f4f8383ff159-8264.mp3",
+   "file": "V12_dispatch_who.mp3",
+   "akool_tts_id": "6aef3bd551e26737e1bab645"
+  }
+ }
+}

@@ -333,6 +333,8 @@ A 6-second cinematic riser: accelerating taiko and metallic percussion, distorte
 
 **关键**：V2、V3、V4、V8、V11 必须用同一个声音模型生成。这是给仔细的观众留的听觉线索。
 
+**已选定的 AKOOL 声音（2026-11-07）**：诺拉用 Gentle Young Lady（en-IE），沃德用 Majestic Brother（en-US），布兰特用 Dominant Brother，报数用 Steady Big Brother 和 Serious Big Brother，雷耶斯用 Intellectual Young Man（en-NZ），接线员用 Efficient Lady。文件和参数见 `previs/audio/voice_lines.json`，选角理由见 [图生视频](../production/exhibit-47-video-clips.md)。
+
 ## 相关笔记
 
 - [关键帧 v1 / v2](../production/exhibit-47-keyframes.md)：按本页提示词做出的 30 张关键帧和图生图写法。

@@ -3,8 +3,8 @@ id: 20261106-akool-workflow
 title: AKOOL 制作流程与 14 天排期
 tags: [production, akool]
 created: 2026-11-06
-updated: 2026-11-06
-related: [20261106-reference-sheet-reverse-prompts, 20261106-exhibit-47-scene-images, 20261106-exhibit-47-whitebox-previs, 20261106-challenge-rules, 20261106-character-bible, 20261106-prompt-formula, 20261106-untomorrow-shot-list, 20261106-submission-checklist, 20261106-editing-rhythm, 20261106-black-screen-text-cards, 20261106-music-sfx-prompts, 20261106-sound-design, 20261106-exhibit-47-character-bible, 20261106-exhibit-47-shot-prompts, 20261106-exhibit-47-shot-list]
+updated: 2026-11-07
+related: [20261106-reference-sheet-reverse-prompts, 20261106-exhibit-47-scene-images, 20261106-exhibit-47-whitebox-previs, 20261106-challenge-rules, 20261106-character-bible, 20261106-prompt-formula, 20261106-untomorrow-shot-list, 20261106-submission-checklist, 20261106-editing-rhythm, 20261106-black-screen-text-cards, 20261106-music-sfx-prompts, 20261106-sound-design, 20261106-exhibit-47-character-bible, 20261106-exhibit-47-shot-prompts, 20261106-exhibit-47-shot-list, 20261107-exhibit-47-keyframes]
 summary: 从角色设定图、动态分镜、图生视频、口型与配音，到剪辑、遮幅、AKOOL 标志、混音和导出的十步流程，按 11 月 20 日截止倒排的 14 天日程，以及"AKOOL 使用"的留证方法。
 ---
 
@@ -28,7 +28,7 @@ summary: 从角色设定图、动态分镜、图生视频、口型与配音，�
 | 图片转提示词、设定图核对 | LibTV 视觉模型（GVLM 3.1、Qwen 3 VL Flash） | 已完成，见 [学习记录](../prompts/reference-sheet-reverse-prompts.md) |
 | 场景图（6 个场景的环境参考） | **AKOOL** 图像生成（flux-krea-dev） | 已完成：8 张，24 积分，见 [场景图](../prompts/exhibit-47-scene-images.md) |
 | 白模预演（构图、遮挡、动作时机） | Blender 5.2（Python 模块 bpy） | v1 已完成，见 [白模预演](exhibit-47-whitebox-previs.md) |
-| 关键帧（以设定图为源图的图生图） | **AKOOL** 图像生成 | 待做 |
+| 关键帧（白模引导帧 / 设定图为源图的图生图） | **AKOOL** 图像生成（flux-kontext-dev） | v1 已完成（2026-11-07）：30 张选用帧，53 次生成，159 积分，见 [关键帧](exhibit-47-keyframes.md) |
 | 图生视频（全部镜头） | **AKOOL** 视频生成器 | 待做 |
 | 配音 V1–V12 | **AKOOL** 配音 | 待做 |
 | 口型同步（I2） | **AKOOL** 口型同步 | 待做 |
@@ -40,7 +40,7 @@ summary: 从角色设定图、动态分镜、图生视频、口型与配音，�
 - 订阅后：**图像生成可用**（场景图就是这样做的）。查询积分 `account_credit` 和查询模型 `account_models` 仍返回 `1009 Your current subscription plan does not support this API feature`。
 - ⚠️ **图生视频接口还没测**。选视频模型要先查模型列表，而这个接口不在当前套餐里；如果视频接口也不可用，图生视频就在 AKOOL 网页端做，并且每一步截图。
 
-AKOOL 的图生图只能接一张源图（`source_image`，相似度 `similar` 0–1）。做关键帧时用**单张设定图**做源图：诺拉的镜头用诺拉 v2，第十三人的镜头用第十三人 v2.1。
+AKOOL 的图生图只能接一张源图（`source_image`，相似度 `similar` 0–1）。实际做法（2026-11-07）：大部分镜头用**白模同一时间点的灰模帧**做源图（相似度 0.45–0.5），诺拉近景用诺拉 v2 设定图（0.55–0.6），沃德的手用 AKOOL 底图加设定图合成。原因和 10 条教训见 [关键帧](exhibit-47-keyframes.md)。
 
 ## 十步流程
 

@@ -11,6 +11,7 @@ AKOOL AI Film Challenge「Coming Never」赛道参赛项目《第 47 号证物 E
 | 直接开始生成画面 | [人物与道具设定](topics/concept/exhibit-47-character-bible.md) → [《第 47 号证物》镜头提示词库](topics/prompts/exhibit-47-shot-prompts.md) |
 | 看设定图是怎么核对、锁定细节的 | [设定图的图片转提示词学习记录](topics/prompts/reference-sheet-reverse-prompts.md) |
 | 看场景长什么样、镜头怎么摆 | [场景图](topics/prompts/exhibit-47-scene-images.md) → [白模预演](topics/production/exhibit-47-whitebox-previs.md)（含 89 秒动态预演） |
+| 看每个镜头的关键帧（AKOOL） | [AKOOL 关键帧 v1](topics/production/exhibit-47-keyframes.md)（30 张选用帧、任务号、10 条教训） |
 | 知道每一秒放什么 | [《第 47 号证物》90 秒档分镜表](topics/production/exhibit-47-shot-list.md)（v2，实际 88 秒） |
 | 安排两周的工作 | [AKOOL 制作流程与 14 天排期](topics/production/akool-workflow.md) |
 | 提交前自查 | [提交检查清单](topics/production/submission-checklist.md) |
@@ -105,6 +106,7 @@ AKOOL AI Film Challenge「Coming Never」赛道参赛项目《第 47 号证物 E
 ### 制作方案 production
 - `20261106-akool-workflow` — **AKOOL 制作流程与 14 天排期** — `topics/production/akool-workflow.md` — 从角色设定图、动态分镜、图生视频、口型与配音，到剪辑、遮幅、AKOOL 标志、混音和导出的十步流程，按 11 月 20 日截止倒排的 14 天日程，以及"AKOOL 使用"的留证方法。
 - `20261106-exhibit-47-whitebox-previs` — **《第 47 号证物》白模预演（Blender）：6 个场景、23 个机位、遮挡检测与 9 条发现** — `topics/production/exhibit-47-whitebox-previs.md` — 按 AKOOL 场景图用 Blender 搭的全方块白模：6 个场景各一套（附与场景图对齐的参考机位），每个镜头摆好人物、按 89 秒分镜表的时间码让摄影机走一遍，用射线检测核对谁在画面里、谁被挡住；记录每个镜头的机位、动作时间、可见性结果，以及由此发现并已改进提示词的 9 个问题。
+- `20261107-exhibit-47-keyframes` — **《第 47 号证物》AKOOL 关键帧 v1：白模引导图生图、30 张选用帧与 10 条教训** — `topics/production/exhibit-47-keyframes.md` — 用 AKOOL 图生图（flux-kontext-dev）把白模同一时间点的灰模帧变成真实画面，诺拉近景改用设定图做源图，手部疤痕用 AKOOL 桌面底图加设定图手部合成；24 个镜头共选出 30 张关键帧（含首尾帧和插入镜头），记录每张的 AKOOL 任务号、相似度、问题和后期要修的地方，以及 53 次生成（159 积分）里总结出的 10 条教训。
 - `20261106-exhibit-47-shot-list` — **《第 47 号证物》90 秒档分镜表（逐镜头时间码）** — `topics/production/exhibit-47-shot-list.md` — 主方案参赛版分镜（v2，审片后修订），总长 88 秒：时间码、提示词编号、字卡、台词和声音；"只配发 12 台 + 第 47 号证物遗失"的不可能证据链；两只手同一道疤的线索；第十三人 4 次出场（第 4 次是身份线索）；预告刻意不交代的内容；以及 30 秒前导版和 9:16 竖屏版的改法。
 - `20261106-submission-checklist` — **提交检查清单** — `topics/production/submission-checklist.md` — 发布和提交前逐项勾选：时长、原创性、AKOOL 标志、版权素材、平台发布与话题标签、提交表单说明、评分自查。
 - `20261106-untomorrow-shot-list` — **《明日不来》75 秒分镜表（逐镜头时间码）** — `topics/production/untomorrow-shot-list.md` — 参赛主版本的 27 个镜头，每个镜头都有时间码、时长、提示词编号、字卡、声音和台词，以及 30 秒社交前导版和 9:16 竖屏版的改法。

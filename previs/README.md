@@ -26,3 +26,22 @@ Headless (Blender 4.2+ or `pip install bpy`):
 
 Colour code: environment clay, Nora cyan, the thirteenth orange, Brandt yellow,
 Ward purple, Leo green, officers grey, burn scar pink, evidence red.
+
+## Keyframes (AKOOL, v1)
+
+`keyframes/` holds the keyframes generated from the whitebox: each shot's guide frame
+(the whitebox at the same timecode, text hidden) went into AKOOL image-to-image
+(flux-kontext-dev) with a prompt that maps every colour block to the real thing.
+Notes, per-frame table and lessons:
+`knowledge-base/topics/production/exhibit-47-keyframes.md`.
+
+| File | What it is |
+|---|---|
+| `keyframes/frames/` | The 30 selected keyframes (1280x720 copies; full-size originals are on AKOOL's CDN). |
+| `keyframes/contact_sheet.jpg` | Guide frame next to keyframe for every selected frame. |
+| `keyframes/keyframes.json` | Production log: all 53 attempts with prompt, negative prompt, source, similarity, AKOOL id, result URL and verdict. |
+| `keyframes/tools/render_guides.py` | Renders clean guide frames (1280x720, text objects hidden) from the `.blend`. |
+| `keyframes/tools/run_guides.py` | Same, through `pip install bpy` instead of the blender binary. |
+| `keyframes/tools/comp_i3.py` | Composites the approved Ward hand sheet onto the AKOOL table plate for shot I3. |
+
+    blender -b previs/exhibit47_whitebox.blend -P previs/keyframes/tools/render_guides.py -- /tmp/guides 02:3.0 10:23.2

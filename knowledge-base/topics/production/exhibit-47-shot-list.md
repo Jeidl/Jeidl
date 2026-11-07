@@ -3,8 +3,8 @@ id: 20261106-exhibit-47-shot-list
 title: 《第 47 号证物》90 秒档分镜表（逐镜头时间码）
 tags: [production, editing, prompt]
 created: 2026-11-06
-updated: 2026-11-06
-related: [20261106-shutter-island, 20261106-exhibit-47-whitebox-previs, 20261106-submission-checklist, 20261106-exhibit-47-story, 20261106-exhibit-47-character-bible, 20261106-exhibit-47-shot-prompts, 20261106-meta-endings, 20261106-trailer-structure, 20261106-black-screen-text-cards, 20261106-sound-design, 20261106-editing-rhythm, 20261106-withholding-mystery, 20261106-akool-workflow, 20261106-untomorrow-shot-list, 20261106-inception, 20261106-the-dark-knight, 20261106-a-quiet-place, 20261106-longlegs-teasers, 20261106-got-crypts-of-winterfell]
+updated: 2026-11-07
+related: [20261106-shutter-island, 20261106-exhibit-47-whitebox-previs, 20261106-submission-checklist, 20261106-exhibit-47-story, 20261106-exhibit-47-character-bible, 20261106-exhibit-47-shot-prompts, 20261106-meta-endings, 20261106-trailer-structure, 20261106-black-screen-text-cards, 20261106-sound-design, 20261106-editing-rhythm, 20261106-withholding-mystery, 20261106-akool-workflow, 20261106-untomorrow-shot-list, 20261106-inception, 20261106-the-dark-knight, 20261106-a-quiet-place, 20261106-longlegs-teasers, 20261106-got-crypts-of-winterfell, 20261107-exhibit-47-keyframes]
 summary: 主方案参赛版分镜（v2，审片后修订），总长 88 秒：时间码、提示词编号、字卡、台词和声音；"只配发 12 台 + 第 47 号证物遗失"的不可能证据链；两只手同一道疤的线索；第十三人 4 次出场（第 4 次是身份线索）；预告刻意不交代的内容；以及 30 秒前导版和 9:16 竖屏版的改法。
 ---
 
@@ -174,5 +174,6 @@ v2 删掉了原来的 26–28 三张说明卡（"本片所有画面均为证物"
 - [人物与道具设定](../concept/exhibit-47-character-bible.md)、[镜头提示词库](../prompts/exhibit-47-shot-prompts.md)：本表的画面和声音来源。
 - [元结尾字卡库](../techniques/meta-endings.md)、[预告片结构](../techniques/trailer-structure.md)、[黑屏与字卡](../techniques/black-screen-text-cards.md)、[声音设计](../techniques/sound-design.md)、[剪辑节奏](../techniques/editing-rhythm.md)、[留白与悬念营销](../techniques/withholding-mystery.md)：设计依据。
 - [AKOOL 制作流程](akool-workflow.md)：怎么把这张表做出来。
+- [AKOOL 关键帧 v1](exhibit-47-keyframes.md)：本表每个镜头的关键帧（第十三人 4 次出场的核对表在那里）。
 - [《明日不来》分镜表](untomorrow-shot-list.md)：备选方案的分镜。
 - 技法来源：[盗梦空间](../trailers/inception.md)（11）、[黑暗骑士](../trailers/the-dark-knight.md)（13）、[寂静之地](../trailers/a-quiet-place.md)（20、23）、[长腿](../trailers/longlegs-teasers.md)（16 闪帧、重看彩蛋）、[临冬城墓穴](../trailers/got-crypts-of-winterfell.md)（16 合法误导）。

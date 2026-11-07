@@ -3,8 +3,8 @@ id: 20261106-exhibit-47-shot-prompts
 title: 《第 47 号证物》镜头提示词库（按证物画面类型分组）
 tags: [prompt, visual, sound, action]
 created: 2026-11-06
-updated: 2026-11-06
-related: [20261106-exhibit-47-character-bible, 20261106-reference-sheet-reverse-prompts, 20261106-exhibit-47-scene-images, 20261106-exhibit-47-whitebox-previs, 20261106-exhibit-47-shot-list, 20261106-exhibit-47-story, 20261106-prompt-formula, 20261106-style-anchor, 20261106-music-sfx-prompts, 20261106-sound-design, 20261106-black-screen-text-cards, 20261106-cloverfield-teaser, 20261106-civil-war]
+updated: 2026-11-07
+related: [20261106-exhibit-47-character-bible, 20261106-reference-sheet-reverse-prompts, 20261106-exhibit-47-scene-images, 20261106-exhibit-47-whitebox-previs, 20261106-exhibit-47-shot-list, 20261106-exhibit-47-story, 20261106-prompt-formula, 20261106-style-anchor, 20261106-music-sfx-prompts, 20261106-sound-design, 20261106-black-screen-text-cards, 20261106-cloverfield-teaser, 20261106-civil-war, 20261107-exhibit-47-keyframes]
 summary: 主方案预告的全部提示词：六种"证物画面"风格块（执法记录仪 / 监控 / 无人机 / 审讯室 / 旧录像 / 第 47 号证物视角）、23 个编号镜头、监控墙素材池、后期叠字规范，以及配乐、音效和配音提示词。
 ---
 
@@ -20,6 +20,7 @@ summary: 主方案预告的全部提示词：六种"证物画面"风格块（执
 - 提示词结构沿用 [提示词公式](prompt-formula.md)；风格锚换成下面的证物风格块，**不再使用 STYLE-A**。
 - **做关键帧时的参考图**：[场景图](exhibit-47-scene-images.md)（空间）+ 设定图（人）+ [白模](../production/exhibit-47-whitebox-previs.md)里同一时间点的画面（构图和遮挡）。D1、C3、B8、C2、O1、I2、I4、E1 的提示词已按白模的发现改过，原因见白模笔记的"发现"一节。
 - 所有屏幕文字（时间戳、编号、SIGNAL LOST、证物标签）**一律后期叠加**，见本页"后期叠字规范"。
+- ⚠️ **做 AKOOL 关键帧和图生视频时，提示词里不要出现 "police"**：写了 police tactical officer，模型会在背心上印 POLICE。改写成 tactical officer，加 `Blank surfaces only, no printing on any clothing`，负面词加 `POLICE, SWAT, lettering`。本页的提示词是给文生视频用的原文，图生图时的写法和 30 张关键帧见 [AKOOL 关键帧 v1](../production/exhibit-47-keyframes.md)。
 - **设定图和镜头各用一套风格，不能混**。设定图统一用 SHEET-STYLE（灰色影棚、柔光、无调色，见 [人物与道具设定](../concept/exhibit-47-character-bible.md)），只负责"人长什么样"。镜头用下面的 S-* 块，负责"画面是什么风格"。所以镜头提示词里不要写 studio、grey backdrop 这类设定图的词；设定图里也不要写 S-* 块里的词。
 - **台词建议后期配**：用 AKOOL 配音生成，再叠到画面上。只有 I2 需要口型同步。
 
@@ -288,6 +289,7 @@ A 6-second cinematic riser: accelerating taiko and metallic percussion, distorte
 
 ## 相关笔记
 
+- [AKOOL 关键帧 v1](../production/exhibit-47-keyframes.md)：按本页提示词做出的 30 张关键帧和图生图写法。
 - [人物与道具设定](../concept/exhibit-47-character-bible.md)：所有占位符的原文。
 - [设定图的图片转提示词学习记录](reference-sheet-reverse-prompts.md)：手套和疤的细节是怎么锁定的。
 - [分镜表](../production/exhibit-47-shot-list.md)：每个编号用在哪一秒。

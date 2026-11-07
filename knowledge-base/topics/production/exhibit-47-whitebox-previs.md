@@ -3,8 +3,8 @@ id: 20261106-exhibit-47-whitebox-previs
 title: 《第 47 号证物》白模预演（Blender）：6 个场景、23 个机位、遮挡检测与 9 条发现
 tags: [production, visual, editing]
 created: 2026-11-06
-updated: 2026-11-06
-related: [20261106-longlegs-teasers, 20261106-shutter-island, 20261106-the-dark-knight, 20261106-cloverfield-teaser, 20261106-exhibit-47-scene-images, 20261106-exhibit-47-shot-list, 20261106-exhibit-47-shot-prompts, 20261106-exhibit-47-character-bible, 20261106-akool-workflow, 20261106-editing-rhythm]
+updated: 2026-11-07
+related: [20261106-longlegs-teasers, 20261106-shutter-island, 20261106-the-dark-knight, 20261106-cloverfield-teaser, 20261106-exhibit-47-scene-images, 20261106-exhibit-47-shot-list, 20261106-exhibit-47-shot-prompts, 20261106-exhibit-47-character-bible, 20261106-akool-workflow, 20261106-editing-rhythm, 20261107-exhibit-47-keyframes]
 summary: 按 AKOOL 场景图用 Blender 搭的全方块白模：6 个场景各一套（附与场景图对齐的参考机位），每个镜头摆好人物、按 89 秒分镜表的时间码让摄影机走一遍，用射线检测核对谁在画面里、谁被挡住；记录每个镜头的机位、动作时间、可见性结果，以及由此发现并已改进提示词的 9 个问题。
 ---
 
@@ -161,7 +161,7 @@ python3 previs/compose_animatic.py previs/out/meta.json previs/out/frames previs
 
 ## 下一步
 
-1. **用白模帧做关键帧**：在 AKOOL 图生图里，每个镜头取白模同一时间点的一帧作构图参考（低相似度），配合场景图和设定图生成关键帧。
+1. ~~**用白模帧做关键帧**~~：已完成（2026-11-07），白模帧当图生图源图、相似度 0.45–0.5 最稳，见 [AKOOL 关键帧 v1](exhibit-47-keyframes.md)。渲染引导帧的脚本是 `previs/keyframes/tools/render_guides.py`。
 2. **检查第十三人**：生成的成片仍要按"橙色只出现 4 次"的标准人工核对。
 3. **剪辑节奏**：动态预演里每个镜头的时长和分镜表一致，可以直接配临时音乐，检查节奏和字卡停留时间。
 
@@ -172,4 +172,5 @@ python3 previs/compose_animatic.py previs/out/meta.json previs/out/frames previs
 - [镜头提示词库](../prompts/exhibit-47-shot-prompts.md)：按本页发现改过的提示词。
 - [人物与道具设定](../concept/exhibit-47-character-bible.md)：人物和颜色规则。
 - [AKOOL 制作流程](akool-workflow.md)：白模在流程里的位置。
+- [AKOOL 关键帧 v1](exhibit-47-keyframes.md)：以白模帧为源图生成的 30 张关键帧。
 - [剪辑节奏](../techniques/editing-rhythm.md)：动态预演用来检查节奏。

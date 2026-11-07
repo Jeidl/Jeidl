@@ -27,28 +27,42 @@ Headless (Blender 4.2+ or `pip install bpy`):
 Colour code: environment clay, Nora cyan, the thirteenth orange, Brandt yellow,
 Ward purple, Leo green, officers grey, burn scar pink, evidence red.
 
-## Video clips and rough cut v1 (AKOOL)
+## Video clips and rough cut v2 (AKOOL video, LibTV sound)
 
-`clips/` holds all image-to-video work, done in AKOOL from the v2 keyframes: 46 clips,
-856 credits. Round one used Akool Premium (8 credits per 5 s clip); round two upgraded
+`clips/` holds all image-to-video work, done in AKOOL from the v2 keyframes: 57 clips,
+1035 credits. Round one used Akool Premium (8 credits per 5 s clip); round two upgraded
 the key shots with Seedance 1.0 Pro Fast (25 credits) and Seedance 1.0 Lite (50, first
-and last frame); I4 uses Kling 3.0 Omni (100). I2 is lip-synced with AKOOL Talking Photo.
-`audio/voice/` has every dialogue line (V1-V12) from AKOOL text-to-speech. The selected
-takes and the dialogue are assembled on the shot-list timeline into rough cut v1.
+and last frame); round three re-made the remaining shots with Pro Fast, eight at 720p
+(13 credits) and three at 1080p. I4 uses Kling 3.0 Omni (100). I2 is lip-synced with AKOOL
+Talking Photo. `audio/voice/` has every dialogue line (V1-V12) from AKOOL text-to-speech.
+AKOOL has no music or sound-effect generation, so the music bed and the 18 effects in
+`audio/music/` and `audio/sfx/` come from LibTV (ElevenMusic V3, Seed Audio 1.0).
+
+Rough cut v2 is built in two steps:
+
+```
+python3 clips/tools/fetch_clips.py /tmp/clips
+python3 clips/tools/roughcut.py /tmp/cut.mp4 /tmp/clips          # picture + dialogue, 1280x720
+python3 clips/tools/soundmix.py /tmp/cut.mp4 /tmp/cut_sound.mp4 /tmp/clips
+```
 
 | File | What it is |
 |---|---|
-| `clips/clips_v2.json` | Log of all 46 videos: round, model, credits, first/last frame, audio, prompt, negative prompt, AKOOL id, video URL, verdict, and `used_in_cut_v1`. |
+| `clips/roughcut_v2_540p.mp4` | **Current.** Rough cut v2 with dialogue, music and effects (-13.8 LUFS; placeholder cards, no grade). |
+| `clips/clips_v2.json` | Log of all 57 videos: round, model, credits, first/last frame, audio, prompt, negative prompt, AKOOL id, video URL, verdict, `used_in_cut_v1` and `used_in_cut_v2`. |
 | `clips/clips_v1.json` | Round-one log (29 Akool Premium / Kling / Seedance Pro generations), kept for reference. |
 | `clips/strips/` | Six frames from each clip. |
-| `clips/roughcut_v1_540p.mp4` | Rough cut v1 with the dialogue track (placeholder cards, no grade, no music or effects). |
+| `clips/roughcut_v1_540p.mp4` | Rough cut v1, dialogue only (its dialogue sits about 3 s early; fixed in v2). |
 | `clips/roughcut_v0_540p.mp4` | Silent rough cut v0 (round one only). |
-| `clips/tools/fetch_clips.py` | Downloads the clips the cut uses (`--all` for every take). |
-| `clips/tools/roughcut.py` | Rebuilds rough cut v1: `python3 roughcut.py OUT.mp4 CLIP_DIR [W H]`. |
+| `clips/tools/fetch_clips.py` | Downloads the clips cut v2 uses (`--v1` for cut v1, `--all` for every take). |
+| `clips/tools/roughcut.py` | Rebuilds the picture and a dialogue-only track: `python3 roughcut.py OUT.mp4 CLIP_DIR [W H]`. |
+| `clips/tools/soundmix.py` | Mixes dialogue, music, effects and room tone onto a cut: `python3 soundmix.py IN.mp4 OUT.mp4 [CLIP_DIR]`. |
 | `audio/voice/*.mp3`, `audio/voice_lines.json` | The dialogue lines, with voice, speed and AKOOL task id per line. |
+| `audio/sfx/*.mp3`, `audio/music/SC1_music_bed.mp3`, `audio/sfx_music.json` | Effects (peak-normalised to -1 dBFS) and the music bed, with prompts and LibTV node and task ids. |
 
-The 1080p originals stay on AKOOL's CDN. Notes, casting and lessons:
-`knowledge-base/topics/production/exhibit-47-video-clips.md`.
+The originals stay on AKOOL's CDN. Notes, casting and lessons:
+`knowledge-base/topics/production/exhibit-47-video-clips.md`; sound:
+`knowledge-base/topics/production/exhibit-47-sound-mix.md`.
 
 ## Keyframes v2 (current)
 

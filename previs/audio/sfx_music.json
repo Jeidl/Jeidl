@@ -1,0 +1,293 @@
+{
+ "project": "a0b767d88e814826ae8fe60f2620ff24",
+ "note": "Music and sound effects for rough cut v2, generated in LibTV (AKOOL has no music or SFX generation). Every SFX prompt starts with \"Sound effect only, no voice, no speech, no music\"; all 18 were checked by spectrogram for speech.",
+ "items": [
+  {
+   "file": "music/SC1_music_bed.mp3",
+   "tool": "LibTV",
+   "model": "ElevenMusic V3",
+   "node_name": "配乐 SC1 底层脉动（120 秒）",
+   "node": "a-vC4wVc5xAs",
+   "task": "20261107232103747647598",
+   "params": {
+    "duration": 120000,
+    "count": 1
+   },
+   "prompt": "Instrumental cinematic thriller underscore for a found-footage trailer, no vocals, no melody. Built from an industrial freezer compressor hum: a slow sub-bass pulse at 50 BPM, low bowed double bass, faint radio static woven into the rhythm, distant metallic creaks. Cold, oppressive, restrained. Structure: 0:00-0:27 sparse and quiet, just the pulse and the hum; 0:27-0:46 tension rises, a ticking clock-like metallic pulse and low string drones join; 0:46-1:04 dense and urgent, heavier percussion hits and dissonant strings; 1:04-1:10 everything accelerates and rises to a peak; 1:10 sudden dead stop to silence; 1:12-1:28 only a faint cold drone and very soft sub pulse, fading to nothing.",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/audio/954813f0058b4034bf1236badbfac475/a1d999b680138aeed76043d4da1d0b3488336f033302b73d20b266ffd699c3ce.mp3",
+   "seconds": 138.06,
+   "note": "asked for 120 s, delivered 138 s; re-cut into four pieces in tools/soundmix.py (quiet gaps found at 32.2-35.8 s and 102.4-104.0 s)"
+  },
+  {
+   "file": "sfx/FX10_breath.mp3",
+   "tool": "LibTV",
+   "model": "Seed Audio 1.0",
+   "node_name": "音效 FX10 面罩呼吸",
+   "node": "a-3ZX9ja3eCs",
+   "task": "20261107232403928217598",
+   "params": {
+    "count": 1
+   },
+   "prompt": "Sound effect only, no words, no music: very close, calm, slow breathing through a fabric balaclava in freezing air, muffled inhales and exhales, perfectly steady. About 4 seconds.",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/audio/954813f0058b4034bf1236badbfac475/d4aea0e4b0ef3d5eed8284f1eb94fe75914f6e9155b997461d143b632484799e.wav",
+   "seconds": 4.06,
+   "normalised": "peak to -1 dBFS (+30.8 dB)"
+  },
+  {
+   "file": "sfx/FX11_pen.mp3",
+   "tool": "LibTV",
+   "model": "Seed Audio 1.0",
+   "node_name": "音效 FX11 转笔",
+   "node": "a-gNJdO3E2A1",
+   "task": "20261107232403103467598",
+   "params": {
+    "count": 1
+   },
+   "prompt": "Sound effect only, no voice, no speech, no music: a plastic ballpoint pen slowly rolling and tapping on a metal table in a quiet room, a few soft clicks and rolls. About 3 seconds.",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/audio/954813f0058b4034bf1236badbfac475/d8054c58497a199728ece6eab8806cce5eab31e7c7ae6d4fe814a81b3152f712.wav",
+   "seconds": 3.05,
+   "normalised": "peak to -1 dBFS (+19.3 dB)"
+  },
+  {
+   "file": "sfx/FX12a_impact.mp3",
+   "tool": "LibTV",
+   "model": "Seed Audio 1.0",
+   "node_name": "音效 FX12a 低频冲击",
+   "node": "a-sNIz3GcJAV",
+   "task": "20261107232403647727598",
+   "params": {
+    "count": 1
+   },
+   "prompt": "Sound effect only, no voice, no speech: a single deep cinematic trailer impact hit, a heavy boom with sub-bass and a long dark reverb tail. About 3 seconds.",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/audio/954813f0058b4034bf1236badbfac475/db4f70d830a6bbe2b75e6ffd54963514269656489673d3dd91cd98241cf21030.wav",
+   "seconds": 4.56,
+   "normalised": "peak to -1 dBFS (-0.6 dB)"
+  },
+  {
+   "file": "sfx/FX12b_braaam.mp3",
+   "tool": "LibTV",
+   "model": "Seed Audio 1.0",
+   "node_name": "音效 FX12b BRAAAM",
+   "node": "a-HdtQlibKPo",
+   "task": "20261107232403628967598",
+   "params": {
+    "count": 1
+   },
+   "prompt": "Sound effect only, no voice, no speech: a huge low brass BRAAAM trailer horn blast, distorted and menacing, with a long rumbling tail. About 4 seconds.",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/audio/954813f0058b4034bf1236badbfac475/d82eae733379c6d1187963ca396659dc798387eb14ba0cc56169208fb8b5fe7e.wav",
+   "seconds": 5.57,
+   "normalised": "peak to -1 dBFS (-0.7 dB)"
+  },
+  {
+   "file": "sfx/FX1_beep.mp3",
+   "tool": "LibTV",
+   "model": "Seed Audio 1.0",
+   "node_name": "音效 FX1 记录仪提示音",
+   "node": "a-qgst9zBtfm",
+   "task": "20261107232303988827598",
+   "params": {
+    "count": 1
+   },
+   "prompt": "Sound effect only, no voice, no speech, no music: a single short electronic beep from a body-worn police camera starting to record, clean and quiet, then silence. About 1 second.",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/audio/954813f0058b4034bf1236badbfac475/b2d89751cf93eaaa78f9a5d6d3f983cc429a4b6593b60713d4e81feb65e63d3d.wav",
+   "seconds": 1.56,
+   "normalised": "peak to -1 dBFS (+23.3 dB)"
+  },
+  {
+   "file": "sfx/FX2_dropout.mp3",
+   "tool": "LibTV",
+   "model": "Seed Audio 1.0",
+   "node_name": "音效 FX2 信号中断",
+   "node": "a-4V7h6ASxGO",
+   "task": "20261107232303047297598",
+   "params": {
+    "count": 1
+   },
+   "prompt": "Sound effect only, no voice, no speech, no music: a digital video signal drop-out — a short electronic glitch stutter, a falling tone, then a soft burst of white static that cuts off. About 1.5 seconds.",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/audio/954813f0058b4034bf1236badbfac475/3524e927f0e211749ea44288bd109c0ff0a3982483ad8342cfe1621103a476f6.wav",
+   "seconds": 1.56,
+   "normalised": "peak to -1 dBFS (+17.8 dB)"
+  },
+  {
+   "file": "sfx/FX3_radio.mp3",
+   "tool": "LibTV",
+   "model": "Seed Audio 1.0",
+   "node_name": "音效 FX3 无线电",
+   "node": "a-RriUlfNGNO",
+   "task": "20261107232303246417598",
+   "params": {
+    "count": 1
+   },
+   "prompt": "Sound effect only, no voice, no speech, no music: a police two-way radio squelch click followed by a short crackling burst of static, then a second squelch click. About 1.5 seconds.",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/audio/954813f0058b4034bf1236badbfac475/8fca72fbc94dab3fc643b9db8fe942a4ecf9c013ecfd0d666d94c0e3d615e014.wav",
+   "seconds": 1.56,
+   "normalised": "peak to -1 dBFS (+7.5 dB)"
+  },
+  {
+   "file": "sfx/FX4_compressor.mp3",
+   "tool": "LibTV",
+   "model": "Seed Audio 1.0",
+   "node_name": "音效 FX4 冷库压缩机（底噪）",
+   "node": "a-2PsN0dmefR",
+   "task": "20261107232303136747598",
+   "params": {
+    "count": 1
+   },
+   "prompt": "Sound effect only, no voice, no speech, no music: a low, steady industrial freezer compressor hum in a large empty concrete building, deep 50 Hz drone with faint mechanical rattle and occasional distant metallic creaks, constant level, seamless. About 10 seconds.",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/audio/954813f0058b4034bf1236badbfac475/c0cdfa35e2c51d70ecdae9de553a032de5ff5f1c7d10400080bde88db6942fc3.wav",
+   "seconds": 10.06,
+   "normalised": "peak to -1 dBFS (+7.1 dB)"
+  },
+  {
+   "file": "sfx/FX5_curtain.mp3",
+   "tool": "LibTV",
+   "model": "Seed Audio 1.0",
+   "node_name": "音效 FX5 塑料门帘",
+   "node": "a-SYrImlGd8g",
+   "task": "20261107232303191597598",
+   "params": {
+    "count": 1
+   },
+   "prompt": "Sound effect only, no voice, no speech, no music: someone pushes through heavy frozen plastic strip curtains in a cold room — thick plastic strips brushing, slapping and swinging back, crackle of frost. About 3 seconds.",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/audio/954813f0058b4034bf1236badbfac475/b6268a9533c300a32a5ac4907973a61f7132bc783549c5941d15573916a3308a.wav",
+   "seconds": 3.05,
+   "normalised": "peak to -1 dBFS (+7.6 dB)"
+  },
+  {
+   "file": "sfx/FX6_door_breach.mp3",
+   "tool": "LibTV",
+   "model": "Seed Audio 1.0",
+   "node_name": "音效 FX6 破门（测试）",
+   "node": "a-Wf3mH1piam",
+   "task": "20261107232103556347598",
+   "params": {
+    "count": 1
+   },
+   "prompt": "Sound effect only, no voice, no speech, no music: a heavy frozen steel door is smashed open with a sledgehammer — two hard metallic bangs, then the door bursts open with a screech of frozen hinges and a deep metallic boom echoing in a concrete hall. About 4 seconds.",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/audio/954813f0058b4034bf1236badbfac475/135e6ce98623191fe6e78c0fc4456aa2bc7a57d90b16440b24f25cdbd0aca203.wav",
+   "seconds": 4.06,
+   "normalised": "peak to -1 dBFS (+0.6 dB)"
+  },
+  {
+   "file": "sfx/FX7_gunshots.mp3",
+   "tool": "LibTV",
+   "model": "Seed Audio 1.0",
+   "node_name": "音效 FX7 冷库枪声",
+   "node": "a-VQjpeQYDbL",
+   "task": "20261107232303122347598",
+   "params": {
+    "count": 1
+   },
+   "prompt": "Sound effect only, no voice, no speech, no music: rapid rifle gunshots fired inside a huge cold concrete freezer hall — loud sharp cracks with long metallic echoes, several bursts, brass shell casings ringing as they bounce on ice. About 4 seconds.",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/audio/954813f0058b4034bf1236badbfac475/e720eeff56cd84cb3d5742480e16c65966640e5e47ee37ee2d7db4439e4a79a5.wav",
+   "seconds": 4.06,
+   "normalised": "peak to -1 dBFS (+3.2 dB)"
+  },
+  {
+   "file": "sfx/FX8_gas_alarm.mp3",
+   "tool": "LibTV",
+   "model": "Seed Audio 1.0",
+   "node_name": "音效 FX8 氨气喷出加警报",
+   "node": "a-GlbVjBb3yu",
+   "task": "20261107232303226647598",
+   "params": {
+    "count": 1
+   },
+   "prompt": "Sound effect only, no voice, no speech, no music: a refrigeration pipe bursts — a sharp metal pop, then a violent high-pressure gas hiss blasting continuously, and a shrill industrial alarm siren starts wailing behind it. About 4 seconds.",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/audio/954813f0058b4034bf1236badbfac475/1efcf11d90693eb7e534eb72f82c1ba1869f9b8fab418b4d28c893cd50479fc9.wav",
+   "seconds": 4.06,
+   "normalised": "peak to -1 dBFS (+2.7 dB)"
+  },
+  {
+   "file": "sfx/FX9_steps.mp3",
+   "tool": "LibTV",
+   "model": "Seed Audio 1.0",
+   "node_name": "音效 FX9 冰面脚步",
+   "node": "a-a4MOIek5f6",
+   "task": "20261107232303367947598",
+   "params": {
+    "count": 1
+   },
+   "prompt": "Sound effect only, no voice, no speech, no music: slow heavy combat boots walking on ice and frost in a quiet cold concrete hall, crunching steps with a faint echo. About 4 seconds.",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/audio/954813f0058b4034bf1236badbfac475/414820b9f66eeb70b4b9e284d991fbc6c00e2645cdae159f81e5b655a5e774c0.wav",
+   "seconds": 4.06,
+   "normalised": "peak to -1 dBFS (+20.0 dB)"
+  },
+  {
+   "file": "sfx/FX_flashbang_ring.mp3",
+   "tool": "LibTV",
+   "model": "Seed Audio 1.0",
+   "node_name": "音效 闪光弹耳鸣 v2",
+   "node": "a-QRfbLUnjJo",
+   "task": null,
+   "params": {
+    "count": 1
+   },
+   "prompt": "Sound effect only, no voice, no speech, no music: a flashbang grenade detonates with a deafening bang that collapses into a high-pitched tinnitus ringing, with all other sound muffled. About 3 seconds.",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/audio/954813f0058b4034bf1236badbfac475/d064d3689745160dcb8ae9861441d4a9ab98b30dade270d14dc6a0e81e97c61e.wav",
+   "seconds": 3.05,
+   "normalised": "peak to -1 dBFS (+1.9 dB)",
+   "note": "first submission (a-JOx7Jti84J) was rejected by the concurrency limit; this is the re-run"
+  },
+  {
+   "file": "sfx/FX_flashlight_drop.mp3",
+   "tool": "LibTV",
+   "model": "Seed Audio 1.0",
+   "node_name": "音效 手电落地",
+   "node": "a-Ot3sHb4J4p",
+   "task": "20261107232403732587598",
+   "params": {
+    "count": 1
+   },
+   "prompt": "Sound effect only, no voice, no speech, no music: a heavy metal flashlight falls onto an icy concrete floor, clatters and rolls to a stop. About 2 seconds.",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/audio/954813f0058b4034bf1236badbfac475/1888bbf14cd34293cf9351bcd369ee527a0f07b10b94f00c7ab4ddbb0622ce5a.wav",
+   "seconds": 2.06,
+   "normalised": "peak to -1 dBFS (+2.5 dB)"
+  },
+  {
+   "file": "sfx/FX_whoosh.mp3",
+   "tool": "LibTV",
+   "model": "Seed Audio 1.0",
+   "node_name": "音效 甩镜呼啸",
+   "node": "a-rYD7TCGzQc",
+   "task": "20261107232403911947598",
+   "params": {
+    "count": 1
+   },
+   "prompt": "Sound effect only, no voice, no speech, no music: a fast camera whip-pan whoosh with fabric rustle, short and sharp. About 1 second.",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/audio/954813f0058b4034bf1236badbfac475/24c2687b1779436a33f8301edd32e98ad958a84b4fd4ec0c2aecd3da737e9a2b.wav",
+   "seconds": 1.56,
+   "normalised": "peak to -1 dBFS (+1.1 dB)"
+  },
+  {
+   "file": "sfx/FX_wind_drone.mp3",
+   "tool": "LibTV",
+   "model": "Seed Audio 1.0",
+   "node_name": "音效 雪地风声加无人机",
+   "node": "a-qlyHnuUIrs",
+   "task": "20261107232403226677598",
+   "params": {
+    "count": 1
+   },
+   "prompt": "Sound effect only, no voice, no speech, no music: cold winter wind blowing across an empty snowy yard at dawn, with the faint high whine of a drone's rotors hovering above. Steady. About 6 seconds.",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/audio/954813f0058b4034bf1236badbfac475/36568cfa6b92badb6b5725515152cf40449efb8c73b9f8eb69691f46e3848f4f.wav",
+   "seconds": 6.05,
+   "normalised": "peak to -1 dBFS (+8.5 dB)"
+  },
+  {
+   "file": "sfx/SC2_riser.mp3",
+   "tool": "LibTV",
+   "model": "Seed Audio 1.0",
+   "node_name": "音效 SC2 升调（蒙太奇）",
+   "node": "a-tp5VGrvJTu",
+   "task": "20261107232403186737598",
+   "params": {
+    "count": 1
+   },
+   "prompt": "Sound effect only, no voice, no speech: a cinematic trailer riser — accelerating taiko and metallic percussion, distorted radio static and a rising dissonant string cluster, building louder and faster to a peak and then stopping dead to total silence. About 6 seconds.",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/audio/954813f0058b4034bf1236badbfac475/f535930583c015671a226c9a5189fff413d32d19875650b8e0d711af9d19f11f.wav",
+   "seconds": 6.05,
+   "normalised": "peak to -1 dBFS (-0.7 dB)"
+  }
+ ]
+}

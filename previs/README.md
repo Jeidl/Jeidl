@@ -27,6 +27,27 @@ Headless (Blender 4.2+ or `pip install bpy`):
 Colour code: environment clay, Nora cyan, the thirteenth orange, Brandt yellow,
 Ward purple, Leo green, officers grey, burn scar pink, evidence red.
 
+## Keyframes v2 (current)
+
+`keyframes/v2/` is the current set: 30 frames, redone to the live-action
+standard with the evidence-camera look (body-cam fisheye and compression, CCTV
+infrared, old-camera colour cast) generated into the image itself. Only
+on-screen text (timestamps, IDs, REC, tag text) is left for the edit.
+
+- Shots with people (23): LibTV, Chinese prompts, with the whitebox guide frame
+  for composition and the v3 character sheets for faces, gear and the scarred hand.
+- Environments and props (7): AKOOL (flux-krea text-to-image, flux-kontext edits).
+
+| File | What it is |
+|---|---|
+| `keyframes/v2/frames/` | The 30 selected frames (1280x720 copies; full-size source URLs are in the log). |
+| `keyframes/v2/contact_sheet.jpg` | All 30, labelled with the tool that made each one. |
+| `keyframes/v2/keyframes_v2.json` | `selected` (30 frames) and `attempts` (all 45 generations: prompt, references or source image, LibTV node and task id or AKOOL id, result URL, verdict). |
+| `keyframes/tools/paint_out_box.py` | Paints a rectangle out of a frame with mirrored texture; used once, for the text box AKOOL drew on `21_C2_start`. |
+
+Notes, per-frame table and lessons: the v2 section of
+`knowledge-base/topics/production/exhibit-47-keyframes.md`.
+
 ## Keyframes (AKOOL, v1)
 
 `keyframes/` holds the keyframes generated from the whitebox: each shot's guide frame

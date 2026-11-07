@@ -1,0 +1,1106 @@
+{
+ "selected": [
+  {
+   "frame": "02_D1",
+   "tool": "LibTV",
+   "file": "frames/02_D1.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006686813_f37d0dea61c44493ad58c39578b96d83.png",
+   "take": "v2",
+   "note": "walking INTO the shutter, footprints in front of her; daylight not dawn",
+   "fix": "edit fixed direction, footprints behind her, blue dawn"
+  },
+  {
+   "frame": "04_C3",
+   "tool": "AKOOL",
+   "file": "frames/04_C3.jpg",
+   "source_url": "https://d2qf6ukcym4kn9.cloudfront.net/1794047130812-b78acd69-7e8e-48c4-bb14-bcf3c75be09c-1580.jpeg",
+   "take": "v1",
+   "note": "CCTV night, strong barrel distortion, snow, vans beyond fence, yard untouched",
+   "fix": ""
+  },
+  {
+   "frame": "05_B1",
+   "tool": "LibTV",
+   "file": "frames/05_B1.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006691808_e1c72668b9934eb088397f86403ce355.png",
+   "take": "v2",
+   "note": "real breach, fisheye + flashlight bloom; compression lighter than B4",
+   "fix": "texture edit: stronger fisheye and bloom"
+  },
+  {
+   "frame": "07_I1",
+   "tool": "LibTV",
+   "file": "frames/07_I1.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006675811_0e84c8013318424d90459912cc463ecc.png",
+   "take": "v1",
+   "note": "CCTV high angle, flat fluorescent; Nora matches; reflection in glass reads as an observer",
+   "fix": ""
+  },
+  {
+   "frame": "09_E1",
+   "tool": "AKOOL",
+   "file": "frames/09_E1.jpg",
+   "source_url": "https://d2qf6ukcym4kn9.cloudfront.net/1794047521863-c25e6f0c-b838-40a7-9483-fe941af249d7-2020.jpeg",
+   "take": "v2",
+   "note": "garbled writing on white labels",
+   "fix": "labels blank after kontext edit; faint marks on a background box"
+  },
+  {
+   "frame": "10_B2_start",
+   "tool": "LibTV",
+   "file": "frames/10_B2_start.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006675884_836b11b1070e4cf9bea0359872259eb9.png",
+   "take": "v1",
+   "note": "IR grey-green, frost, blank vest",
+   "fix": ""
+  },
+  {
+   "frame": "10_B2_reveal",
+   "tool": "LibTV",
+   "file": "frames/10_B2_reveal.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006675954_4551c28223e84cda9c5e4b79ec469f64.png",
+   "take": "v1",
+   "note": "13th fully masked, goggles, record light on chest",
+   "fix": ""
+  },
+  {
+   "frame": "13_B3",
+   "tool": "LibTV",
+   "file": "frames/13_B3.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006686887_99c48433db7644b394950be77038dc2f.png",
+   "take": "v2",
+   "note": "operators face the camera and aim weapon lights at it",
+   "fix": "curtain pushed aside, two operators walk away into the hall, lights forward"
+  },
+  {
+   "frame": "15_B4",
+   "tool": "LibTV",
+   "file": "frames/15_B4.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006670688_0002ab29422f479893e747c35888d6a9.png",
+   "take": "v2",
+   "note": "body-cam texture strong; helmet fixed",
+   "fix": ""
+  },
+  {
+   "frame": "17_O2",
+   "tool": "LibTV",
+   "file": "frames/17_O2.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006691751_d5c37ec5129f46ca9a4692848f60b8eb.png",
+   "take": "v2",
+   "note": "content and guide match (4th from left reaches for camera); too clean for old 720p cam",
+   "fix": "texture edit: yellow-green cast, noise, glitch lines; content kept"
+  },
+  {
+   "frame": "18_E3_register",
+   "tool": "AKOOL",
+   "file": "frames/18_E3_register.jpg",
+   "source_url": "https://d2qf6ukcym4kn9.cloudfront.net/1794047522630-e4494973-0635-4d29-9964-11f95ce62fbc-2043.jpeg",
+   "take": "v2",
+   "note": "handwriting at top of left page",
+   "fix": "page blank after edit; paper slightly smeared"
+  },
+  {
+   "frame": "18_E3_tag",
+   "tool": "AKOOL",
+   "file": "frames/18_E3_tag.jpg",
+   "source_url": "https://d2qf6ukcym4kn9.cloudfront.net/1794047523349-10816b9a-1902-409d-b372-fdcfd62ff9a1-0942.jpeg",
+   "take": "v2",
+   "note": "tiny print on camera body",
+   "fix": "camera unmarked after edit; looks a bit cleaner/less scuffed; red glow moved to the lower edge"
+  },
+  {
+   "frame": "19a_B5",
+   "tool": "LibTV",
+   "file": "frames/19a_B5.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006676230_ee1f2251edcc4d7682402c0629ab430a.png",
+   "take": "v1",
+   "note": "real silhouettes, orange muzzle flash, fog",
+   "fix": ""
+  },
+  {
+   "frame": "19b_B9",
+   "tool": "LibTV",
+   "file": "frames/19b_B9.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006676325_a9427254783445638138962352e85a35.png",
+   "take": "v1",
+   "note": "figure pushing through the curtain with a flashlight; fisheye",
+   "fix": ""
+  },
+  {
+   "frame": "19c_C1",
+   "tool": "LibTV",
+   "file": "frames/19c_C1.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006676425_f0bbbff98f044d7e9fc3b9f53941b642.png",
+   "take": "v1",
+   "note": "high CCTV view, small figures, muzzle flashes, fog",
+   "fix": ""
+  },
+  {
+   "frame": "19d_B10",
+   "tool": "LibTV",
+   "file": "frames/19d_B10.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006678559_14c4409cc3c8401eb09e889aac2b2e19.png",
+   "take": "v1",
+   "note": "flashbang white-out, two silhouettes",
+   "fix": ""
+  },
+  {
+   "frame": "19e_B6",
+   "tool": "LibTV",
+   "file": "frames/19e_B6.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006689759_2f94f398d2194b579ed41a1d0bf8101b.png",
+   "take": "libtv-v1",
+   "note": "rifle turned into a strange helmeted machine; no fisheye",
+   "fix": "pipe jet, operator staggering in fog, strong fisheye vignette"
+  },
+  {
+   "frame": "19g_B7",
+   "tool": "LibTV",
+   "file": "frames/19g_B7.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006678681_1cbfbee42fac408bbdd310295847d7e1.png",
+   "take": "v1",
+   "note": "Brandt screaming, under-lit, sweat and spit, body-cam red light; very real",
+   "fix": ""
+  },
+  {
+   "frame": "19h_X1",
+   "tool": "LibTV",
+   "file": "frames/19h_X1.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006678772_2088d19427c846d287249248674542fa.png",
+   "take": "v1",
+   "note": "gas-filled hall, panic around a level camera",
+   "fix": ""
+  },
+  {
+   "frame": "19i_B8_start",
+   "tool": "AKOOL",
+   "file": "frames/19i_B8_start.jpg",
+   "source_url": "https://d2qf6ukcym4kn9.cloudfront.net/1794047520888-2822e853-ae80-45b5-8de8-abe931fcc127-0508.jpeg",
+   "take": "v2",
+   "note": "dark figure at right edge; hinged door, not mirror panel",
+   "fix": "empty hall, steel door panel on right, fisheye"
+  },
+  {
+   "frame": "19i_B8_reflection",
+   "tool": "LibTV",
+   "file": "frames/19i_B8_reflection.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006678856_3c42da939f474665abd90c7a47df9b2c.png",
+   "take": "v1",
+   "note": "brushed-steel panel with swirl; 13th fully masked, red light at lens height",
+   "fix": ""
+  },
+  {
+   "frame": "21_C2_start",
+   "tool": "AKOOL",
+   "file": "frames/21_C2_start.jpg",
+   "source_url": "https://d2qf6ukcym4kn9.cloudfront.net/1794047163435-8baa034d-9bd4-4177-bd01-3b9efb3f7894-8579.jpeg",
+   "take": "v1",
+   "note": "OSD text box top-left",
+   "fix": "",
+   "post_fix": "AKOOL added an on-screen text box top-left; painted out locally with mirrored wall texture (the AKOOL edit that removed it also lost the IR noise, so v1 + paint-out was kept)"
+  },
+  {
+   "frame": "21_C2_grab",
+   "tool": "LibTV",
+   "file": "frames/21_C2_grab.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006695044_5b202e406ae14e74ac616a68e5263924.png",
+   "take": "v2",
+   "note": "grabbing forearm shows bare skin",
+   "fix": "edit: whole arm in a black sleeve down to the glove"
+  },
+  {
+   "frame": "21_C2_glove_insert",
+   "tool": "LibTV",
+   "file": "frames/21_C2_glove_insert.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006696517_c4e98d290cd14310b94e8feba3fb965f.png",
+   "take": "v2",
+   "note": "bare hairy forearm; hole shows a flat pale patch, not the scar",
+   "fix": "edit: black sleeve to the wrist strap; diagonal raised scar visible in the hole"
+  },
+  {
+   "frame": "24_E2",
+   "tool": "AKOOL",
+   "file": "frames/24_E2.jpg",
+   "source_url": "https://d2qf6ukcym4kn9.cloudfront.net/1794047161998-751309d4-788d-4d30-af50-19f5c68356fa-2949.jpeg",
+   "take": "v1",
+   "note": "hanging bag, red tag, red light, grain",
+   "fix": ""
+  },
+  {
+   "frame": "25a_I3",
+   "tool": "LibTV",
+   "file": "frames/25a_I3.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006696990_124801adfcf440a787d38def59be70cb.png",
+   "take": "v2",
+   "note": "very real hand, correct finger proportions; scar is a short horizontal one near the wrist, not the master's diagonal",
+   "fix": "edit: long diagonal raised shiny scar matching the hand master; fingers unchanged"
+  },
+  {
+   "frame": "25b_I4_start",
+   "tool": "LibTV",
+   "file": "frames/25b_I4_start.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006697373_5794e038d89747eca42695d1bc20f7de.png",
+   "take": "v1",
+   "note": "edit of the I4 end frame: head lowered, eyes on the table; same face, light and glass",
+   "fix": ""
+  },
+  {
+   "frame": "25b_I4_end",
+   "tool": "LibTV",
+   "file": "frames/25b_I4_end.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006679108_adc4c59e566342088a8137a78b018bdb.png",
+   "take": "v1",
+   "note": "same person as I2, grey eyes, cold look past the lens; faint shape in the glass",
+   "fix": ""
+  },
+  {
+   "frame": "S1_I2",
+   "tool": "LibTV",
+   "file": "frames/S1_I2.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006679174_93c894894fa549ad8a2e849c90486afc.png",
+   "take": "v1",
+   "note": "pores, under-eye shadows, lips parted; good lip-sync source",
+   "fix": ""
+  },
+  {
+   "frame": "S2_O1",
+   "tool": "LibTV",
+   "file": "frames/S2_O1.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006696455_0c5bb58bafae4daf83dd33ed8e8a52fd.png",
+   "take": "v2",
+   "note": "became first-person hands pressed on a crate",
+   "fix": "text-only, no guide: a boy's raised hands, palms to camera, grey hoodie sleeves, freezer ceiling"
+  }
+ ],
+ "attempts": [
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 15 B4 布兰特（LibTV v1）",
+   "key": "exhibit47-kf-15-b4-libtv-v1-20261107",
+   "node": "i-ANb5dO7r1I",
+   "task_id": "20261107181503898797598",
+   "refs": [
+    "i-2f88I2hBox",
+    "i-p1NfLIjZ1z",
+    "i-wJRp6J96fF"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "参考图：{{Node i-2f88I2hBox}} 是这个镜头的构图（灰色白模：机位、人物的位置和大小照它，不要照它的灰色方块质感）；{{Node i-p1NfLIjZ1z}} 是布兰特的长相和装备；{{Node i-wJRp6J96fF}} 是特勤组统一的装备样式（头盔、背心、臂章）。\n画面：执法记录仪画面，由另一名队员胸前佩戴的执法记录仪拍摄。废弃冷库的冷冻大厅，深夜，一排排空的肉钩挂在顶上的轨道上，结霜的钢板墙。白模中间黄色的人是布兰特：45岁，浓密胡茬，眼睛布满血丝，黑色头套扯到下巴下面露出整张脸，对着镜头大吼，嘴里呼出白气。两侧灰色的人是两名特勤队员，戴头套和护目镜，举着装了战术手电的步枪，手电光柱交叉、晃进镜头。\n画面质感：超广角镜头，画面边缘有明显的桶形鱼眼畸变；1080p压缩视频，暗部有明显的数字噪点和轻微压缩块；自动曝光被手电晃得忽明忽暗，轻微运动模糊和晃动；光线只来自手电、枪灯和远处一盏昏暗的应急灯，暗部保留细节。\n真人实拍：人物是现实中真实存在的普通演员，真实人体比例，自然的面部不对称，皮肤保留毛孔和细小绒毛，不磨皮，不像蜡和塑料；装备织物有真实的纹理、厚度和受力褶皱；人和环境是同一套光，阴影方向一致。\n排除：插画、动漫、游戏画面、游戏过场动画、三维渲染、数字人、塑料皮肤、蜡像感、美颜磨皮、夸张轮廓光、过度HDR、海报式对称构图；画面中不要出现任何文字、时间戳、编号、警徽、POLICE字样、标志和水印。",
+   "time": "2026-11-07T10:15:18.028Z",
+   "result_url": null,
+   "frame": "15_B4",
+   "verdict": "rejected: weak body-cam texture, beanie instead of a helmet"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 15 B4 布兰特（LibTV v2·加强记录仪质感）",
+   "key": "exhibit47-kf-15-b4-libtv-v2-20261107",
+   "node": "i-Z8wt8C1INC",
+   "task_id": "20261107181703432907598",
+   "refs": [
+    "i-2f88I2hBox",
+    "i-p1NfLIjZ1z",
+    "i-wJRp6J96fF"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "这是一张真实执法记录仪录像的截图，不是电影剧照：由一名队员胸前佩戴的执法记录仪拍摄，超广角镜头，画面边缘明显向外弯曲的桶形鱼眼畸变，四角发暗；低码率1080p压缩视频，暗部满是数字噪点和块状压缩痕迹，细节被压缩糊掉一些；自动曝光被手电晃得过曝发白，手电光斑有光晕；走动中的晃动和运动模糊，画面略微倾斜。\n参考图：{{Node i-2f88I2hBox}} 是构图（灰色白模：机位、人物的位置和大小照它，不要照它的灰色方块质感）；{{Node i-p1NfLIjZ1z}} 是布兰特的长相和装备；{{Node i-wJRp6J96fF}} 是特勤组统一的装备样式。\n画面内容：废弃冷库的冷冻大厅，深夜，空的肉钩挂在顶上的轨道上，结霜的钢板墙，地上有薄雪。中间是布兰特：45岁，浓密胡茬，眼睛布满血丝，头戴黑色哑光防弹头盔，黑色头套从脸上扯下来堆在下巴和脖子上，露出整张脸，正对着镜头大吼，呼出白气。两侧是两名特勤队员，戴头盔、头套和护目镜，举着装了战术手电的步枪，光柱交叉、直晃进镜头。光线只来自手电、枪灯和远处一盏昏暗的应急灯。\n真人实拍：人物是现实中真实存在的普通演员，真实人体比例，自然的面部不对称，皮肤有毛孔和细小绒毛，不磨皮，不像蜡和塑料；装备织物有真实的纹理、厚度和褶皱。\n排除：电影剧照的干净画质、插画、动漫、游戏画面、游戏过场动画、三维渲染、数字人、塑料皮肤、美颜磨皮、夸张轮廓光、过度HDR、海报式构图；画面中不要出现任何文字、时间戳、编号、警徽、POLICE字样、标志和水印。",
+   "time": "2026-11-07T10:17:40.406Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006670688_0002ab29422f479893e747c35888d6a9.png",
+   "frame": "15_B4",
+   "verdict": "selected"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 02 D1 无人机（LibTV）",
+   "key": "exhibit47-kf2-02-d1-20261107",
+   "node": "i-gywcvonS8K",
+   "task_id": "20261107182103340627598",
+   "refs": [
+    "i-YT2Y8ZA3n2",
+    "i-njSJDbbUQp"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "这是一张真实无人机航拍视频的截图，不是电影剧照：高空俯视，黎明阴天的平光，轻微数字噪点和压缩，画面稳定，色彩平淡。\n参考图：{{Node i-YT2Y8ZA3n2}} 是构图（灰色白模：机位、建筑和人物的位置和大小照它，不要照它的灰色方块质感）；{{Node i-njSJDbbUQp}} 是诺拉的身材和发型。\n画面内容：俯视一座废弃的港口冷库，屋顶积雪，结霜的水泥外墙，一个敞开的卷帘门装卸口；门外是一大片完全没有被踩过的新雪，没有车辙。白模里那个很小的青色人影是诺拉：穿结霜的黑色战术服，一只手拎着头盔，独自从门口走出来，背对冷库往画面下方走，身后只留下一行脚印。右侧是生锈的红色波纹铁皮棚。画面里没有其他人，没有车。\n真人实拍：真实建筑和尺度，雪、水泥、锈铁各有各的材质；光线统一。\n排除：电影剧照的干净画质、插画、三维渲染、游戏画面、过度HDR；画面中不要出现任何文字、时间戳、标志和水印。",
+   "time": "2026-11-07T10:20:16.785Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006675662_3aab82ee123d47edaff939cd93fd9c9c.png",
+   "frame": "02_D1",
+   "verdict": "replaced: walking INTO the shutter, footprints in front of her; daylight not dawn"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 05 B1 破门（LibTV）",
+   "key": "exhibit47-kf2-05-b1-20261107",
+   "node": "i-SiAjGohd49",
+   "task_id": "20261107182103789317598",
+   "refs": [
+    "i-nR0M5CyYUn",
+    "i-p1NfLIjZ1z"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "这是一张真实执法记录仪录像的截图，不是电影剧照：由队员胸前佩戴的执法记录仪拍摄，超广角镜头，画面边缘明显向外弯曲的桶形鱼眼畸变，四角发暗；低码率1080p压缩视频，暗部满是数字噪点和块状压缩痕迹，细节被压缩糊掉一些；自动曝光被手电晃得过曝发白，手电光斑有光晕；走动中的晃动和运动模糊，画面略微倾斜。\n参考图：{{Node i-nR0M5CyYUn}} 是构图（灰色白模：机位、人物的位置和大小照它，不要照它的灰色方块质感）；{{Node i-p1NfLIjZ1z}} 只参考特勤组的装备样式，不参考脸。\n画面内容：深夜，废弃冷库装卸口外一扇结霜的钢门前，地上有积雪。白模里的两个人是两名特勤队员，背对镜头，全身黑色战术装备，黑色哑光头盔，背心背后是空白的黑色布面、没有任何字；前面那名双手抡起黑色破门锤砸向钢门，门缝里冒出白色冷雾。光线来自镜头这边的手电，冷白光束打在门上，呼出的白气。\n真人实拍：人物是现实中真实存在的演员，真实人体比例，装备织物有真实的纹理、厚度和褶皱，人和环境是同一套光。\n排除：电影剧照的干净画质、插画、动漫、游戏画面、游戏过场动画、三维渲染、过度HDR、海报式构图；画面中不要出现任何文字、时间戳、编号、警徽、POLICE字样、标志和水印。",
+   "time": "2026-11-07T10:20:24.137Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006675729_09c5cbbe5861493f84fffc37b5daf7da.png",
+   "frame": "05_B1",
+   "verdict": "replaced: real breach, fisheye + flashlight bloom; compression lighter than B4"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 07 I1 审讯室全景（LibTV）",
+   "key": "exhibit47-kf2-07-i1-20261107",
+   "node": "i-SRaGtTQxa3",
+   "task_id": "20261107182103043187598",
+   "refs": [
+    "i-eKUoaAwTdn",
+    "i-njSJDbbUQp",
+    "i-MD7YKluRZe"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "这是一张审讯室监控系统录像的截图，不是电影剧照：高处墙角固定机位的数字摄像头，轻微广角畸变，画面带数字噪点和压缩，色彩偏冷偏淡，清晰度一般；光线只来自天花板的日光灯，平而冷。\n参考图：{{Node i-eKUoaAwTdn}} 是构图（灰色白模：机位、桌椅和人物的位置和大小照它，不要照它的灰色方块质感）；{{Node i-njSJDbbUQp}} 和 {{Node i-MD7YKluRZe}} 是诺拉的长相、发型和衣服。\n画面内容：一间空荡的审讯室。白模里青色的人是诺拉：26岁，深棕色短发两侧铲青，灰色宽松卫衣，手腕戴白色医院腕带，一个人坐在灰色金属桌的一侧，一动不动地盯着对面的空椅子；她确实坐在椅子上，双手放在桌面上。左墙是一面长长的深色单向玻璃，后墙是一扇灰色钢门。房间里没有别人。\n真人实拍：人物是现实中真实存在的普通演员，真实人体比例，皮肤不磨皮，卫衣有真实的针织纹理和褶皱；人、桌椅和房间是同一套光，有自然的接触阴影。\n排除：电影剧照的干净画质、插画、动漫、游戏画面、三维渲染、数字人、塑料皮肤、美颜磨皮、过度HDR；画面中不要出现任何文字、时间戳、标志和水印。",
+   "time": "2026-11-07T10:20:31.387Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006675811_0e84c8013318424d90459912cc463ecc.png",
+   "frame": "07_I1",
+   "verdict": "selected"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 10 B2 楼梯首帧（LibTV）",
+   "key": "exhibit47-kf2-10-b2a-20261107",
+   "node": "i-5UrcVSvGn3",
+   "task_id": "20261107182103593737598",
+   "refs": [
+    "i-ezmakWd2Cv",
+    "i-p1NfLIjZ1z"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "这是一张真实执法记录仪录像的截图，不是电影剧照：胸前执法记录仪的夜间红外模式，整个画面是单色的灰绿色；超广角镜头，画面边缘明显向外弯曲的桶形鱼眼畸变，四角发暗；低码率压缩视频，噪点很重，块状压缩痕迹明显；红外补光让近处的东西偏亮、远处迅速变黑；轻微晃动。\n参考图：{{Node i-ezmakWd2Cv}} 是构图（灰色白模：机位、人物的位置和大小照它，不要照它的灰色方块质感）；{{Node i-p1NfLIjZ1z}} 只参考特勤组的装备样式，不参考脸。\n画面内容：狭窄的水泥楼梯间，一片漆黑，墙上有霜，金属栏杆结霜，左墙高处一扇小窗。白模里的人是一名特勤队员的背影，站在比镜头低两级的台阶上：黑色哑光头盔，背心背后是空白的黑色布面、没有任何字，手里的步枪朝下；楼梯继续向下延伸进黑暗。\n真人实拍：人物是真实的演员，真实人体比例，装备织物有真实的纹理和褶皱，水泥和金属各有各的材质。\n排除：电影剧照的干净画质、插画、游戏画面、三维渲染、过度HDR；画面中不要出现任何文字、时间戳、编号、警徽、POLICE字样、标志和水印。",
+   "time": "2026-11-07T10:20:38.788Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006675884_836b11b1070e4cf9bea0359872259eb9.png",
+   "frame": "10_B2_start",
+   "verdict": "selected"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 10 B2 第十三人 #1（LibTV）",
+   "key": "exhibit47-kf2-10-b2b-20261107",
+   "node": "i-UyWpRUxqKX",
+   "task_id": "20261107182103180307598",
+   "refs": [
+    "i-3joGD0LOMB",
+    "i-wJRp6J96fF"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "这是一张真实执法记录仪录像的截图，不是电影剧照：胸前执法记录仪的夜间红外模式，整个画面是单色的灰绿色；超广角镜头，画面边缘明显向外弯曲的桶形鱼眼畸变，四角发暗；低码率压缩视频，噪点很重，块状压缩痕迹明显；红外补光让近处的东西偏亮、远处迅速变黑；镜头刚甩过来，带一点运动模糊。\n参考图：{{Node i-3joGD0LOMB}} 是构图（灰色白模：机位、人物的位置和大小照它，不要照它的灰色方块质感）；{{Node i-wJRp6J96fF}} 是第十三人的样子和装备。\n画面内容：狭窄的水泥楼梯间顶部平台，两侧是结霜的墙和栏杆。白模里橙色的人是第十三人：站在队伍的最后面，一动不动，正对镜头，双臂自然下垂，没有举枪；空白的黑色哑光头盔，黑色头套和深色护目镜完全遮住脸，看不到任何皮肤和眼睛；胸前左侧的小型执法记录仪亮着一颗录制灯，在红外画面里是一个小亮点。他半隐在黑暗里。\n真人实拍：真实的演员穿着真实的装备，真实人体比例，织物有真实的纹理和褶皱，不像游戏角色或玩具兵。\n排除：电影剧照的干净画质、插画、游戏画面、三维渲染、过度HDR、海报式构图；画面中不要出现任何文字、时间戳、编号、警徽、POLICE字样、标志和水印。",
+   "time": "2026-11-07T10:20:46.038Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006675954_4551c28223e84cda9c5e4b79ec469f64.png",
+   "frame": "10_B2_reveal",
+   "verdict": "selected"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 13 B3 门帘（LibTV）",
+   "key": "exhibit47-kf2-13-b3-20261107",
+   "node": "i-mtzo7bhn61",
+   "task_id": "20261107182103529807598",
+   "refs": [
+    "i-VGoLJ23M3k",
+    "i-p1NfLIjZ1z"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "这是一张真实执法记录仪录像的截图，不是电影剧照：由队员胸前佩戴的执法记录仪拍摄，超广角镜头，画面边缘明显向外弯曲的桶形鱼眼畸变，四角发暗；低码率1080p压缩视频，暗部满是数字噪点和块状压缩痕迹；自动曝光被手电晃得过曝发白，手电光斑有光晕；走动中的晃动和运动模糊。\n参考图：{{Node i-VGoLJ23M3k}} 是构图（灰色白模：机位和门帘、人物的位置照它，不要照它的灰色方块质感）；{{Node i-p1NfLIjZ1z}} 只参考特勤组的装备样式，不参考脸。\n画面内容：镜头正穿过挂着的厚塑料门帘，结霜的半透明塑料条贴在镜头前、从画面两侧被推开；门帘后面是废弃冷库漆黑的冷冻大厅，一排排空肉钩挂在轨道上，结霜的钢墙，地面有冷雾；前方两三名特勤队员（全身黑色装备、头盔、头套）举枪，枪灯左右扫动。\n真人实拍：真实的演员和真实的布景，塑料、钢、霜各有各的材质，光线统一。\n排除：电影剧照的干净画质、插画、游戏画面、三维渲染、过度HDR；画面中不要出现任何文字、时间戳、编号、警徽、POLICE字样、标志和水印。",
+   "time": "2026-11-07T10:20:53.188Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006676045_8bfcd686f722455bbcb3bf303040ee7d.png",
+   "frame": "13_B3",
+   "verdict": "replaced: operators face the camera and aim weapon lights at it"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 17 O2 三年前关记录仪（LibTV）",
+   "key": "exhibit47-kf2-17-o2-20261107",
+   "node": "i-Zs3ddopY2a",
+   "task_id": "20261107182103838407598",
+   "refs": [
+    "i-rHFUzfYi5i",
+    "i-p1NfLIjZ1z"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "这是一张三年前老款执法记录仪录像的截图，不是电影剧照：720p低清，偏黄的色偏，噪点重，明显的块状压缩，画面上有一两条数字花屏横纹，手电照明，轻微晃动，广角镜头带桶形畸变。\n参考图：{{Node i-rHFUzfYi5i}} 是构图（灰色白模：机位和六个人的位置、大小照它，不要照它的灰色方块质感）；{{Node i-p1NfLIjZ1z}} 只参考特勤组的装备样式，不参考脸。\n画面内容：三年前，同一座冷库的冷冻大厅，顶上一排排肉钩轨道。白模里的六个人是六名特勤队员：旧款黑色战术装备，头盔，头套拉到下巴，脸隐在头盔的阴影里；站成松散的一排，半侧身背对镜头；每人胸前都有一台小型执法记录仪，亮着很小的红色录制灯；右数第二个人正抬手去按掉自己胸前的记录仪。\n真人实拍：真实的演员，真实人体比例，装备织物有真实的纹理和褶皱，光线统一。\n排除：电影剧照的干净画质、插画、游戏画面、三维渲染、过度HDR、红色发光的眼睛；画面中不要出现任何文字、时间戳、编号、警徽、POLICE字样、标志和水印。",
+   "time": "2026-11-07T10:21:00.139Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006676131_cbabfe6d67da49aea8ba6be0bf90908d.png",
+   "frame": "17_O2",
+   "verdict": "replaced: content and guide match (4th from left reaches for camera); too clean for old 720p cam"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 19a B5 枪口火光（LibTV）",
+   "key": "exhibit47-kf2-19a-b5-20261107",
+   "node": "i-ZDZPJ12DKt",
+   "task_id": "20261107182103684357598",
+   "refs": [
+    "i-cQqvtRQEvW"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "这是一张真实执法记录仪录像的截图，不是电影剧照：胸前执法记录仪拍摄，超广角镜头，画面边缘明显向外弯曲的桶形鱼眼畸变，四角发暗；低码率压缩视频，暗部满是数字噪点和块状压缩痕迹；强光处过曝发白、带光晕。\n参考图：{{Node i-cQqvtRQEvW}} 是构图（灰色白模：机位和三个人的位置、大小照它，不要照它的灰色方块质感）。\n画面内容：废弃冷库的冷冻大厅一片漆黑，唯一的光来自前方一支步枪的枪口火光，橙白色的一瞬照亮了走廊：白模里的三个人是三名特勤队员的黑色剪影，人体比例正常（圆形头盔、肩膀、背心、步枪），两侧挂着一排排肉钩，冷雾被照成橙色，结霜的墙反光，远处全黑。没有血。\n真人实拍：真实的演员和布景，剪影是真实的人，不是方块人。\n排除：电影剧照的干净画质、方块人、积木人、插画、游戏画面、三维渲染；画面中不要出现任何文字、时间戳、标志和水印。",
+   "time": "2026-11-07T10:21:06.339Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006676230_ee1f2251edcc4d7682402c0629ab430a.png",
+   "frame": "19a_B5",
+   "verdict": "selected"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 19b B9 门帘人影（LibTV）",
+   "key": "exhibit47-kf2-19b-b9-20261107",
+   "node": "i-IK2LkVTMsR",
+   "task_id": "20261107182103983917598",
+   "refs": [
+    "i-UBVbe7bVh4"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "这是一张真实执法记录仪录像的截图，不是电影剧照：胸前执法记录仪拍摄，超广角镜头，画面边缘明显向外弯曲的桶形鱼眼畸变，四角发暗；低码率压缩视频，暗部满是数字噪点和块状压缩痕迹；强光处过曝、带光晕；轻微晃动。\n参考图：{{Node i-UBVbe7bVh4}} 是构图（灰色白模：机位和门帘的位置照它，不要照它的灰色方块质感）。\n画面内容：近乎全黑的冷冻大厅。镜头正对一整面挂着的厚塑料门帘，结霜、半透明的塑料条；门帘另一侧，一个模糊的人影拿着很亮的手电在移动，光透过塑料条晕开，人影的轮廓被塑料条切成几段。紧张，安静。没有血。\n真人实拍：真实的塑料门帘、霜和手电光，材质可信。\n排除：电影剧照的干净画质、插画、游戏画面、三维渲染；画面中不要出现任何文字、时间戳、标志和水印。",
+   "time": "2026-11-07T10:21:12.142Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006676325_a9427254783445638138962352e85a35.png",
+   "frame": "19b_B9",
+   "verdict": "selected"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 19c C1 监控互射（LibTV）",
+   "key": "exhibit47-kf2-19c-c1-20261107",
+   "node": "i-0LDbVeZr1X",
+   "task_id": "20261107182103786937598",
+   "refs": [
+    "i-MyVeHbIRVN"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "这是一张真实监控录像的截图，不是电影剧照：固定在高处墙角的监控摄像头拍摄，广角镜头带明显的桶形畸变；单色红外夜视，灰白色调；画质低，噪点重，块状压缩痕迹明显，细节糊；画面完全静止。\n参考图：{{Node i-MyVeHbIRVN}} 是构图（灰色白模：机位、走道栏杆、柱子和人物的位置照它，不要照它的灰色方块质感）。\n画面内容：废弃冷库冷冻大厅的高处俯视：近乎全黑，一排排挂着的肉钩，柱子，前景是钢走道栏杆；大厅里几处同时爆出枪口火光，短暂照亮在肉钩之间互相射击的小小人影；冷雾翻滚。没有血。\n真人实拍：真实的建筑和尺度，人影是真实的人。\n排除：电影剧照的干净画质、插画、游戏画面、三维渲染；画面中不要出现任何文字、时间戳、编号、标志和水印。",
+   "time": "2026-11-07T10:21:17.466Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006676425_f0bbbff98f044d7e9fc3b9f53941b642.png",
+   "frame": "19c_C1",
+   "verdict": "selected"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 19d B10 闪光弹（LibTV）",
+   "key": "exhibit47-kf2-19d-b10-20261107",
+   "node": "i-JiKjkl3SfK",
+   "task_id": "20261107182303333397598",
+   "refs": [
+    "i-TnhrmpuyQ8",
+    "i-p1NfLIjZ1z"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "这是一张真实执法记录仪录像的截图，不是电影剧照：胸前执法记录仪拍摄，超广角镜头，画面边缘明显向外弯曲的桶形鱼眼畸变，四角发暗；低码率压缩视频，暗部满是数字噪点和块状压缩痕迹；传感器被强光打到过曝，高光溢出成一片白，边缘有光晕；轻微晃动。\n参考图：{{Node i-TnhrmpuyQ8}} 是构图（灰色白模：机位和两个人的位置、大小照它，不要照它的灰色方块质感）；{{Node i-p1NfLIjZ1z}} 只参考特勤组的装备样式，不参考脸。\n画面内容：废弃冷库的冷冻大厅，两侧是肉钩和结霜的钢墙。前方几米处一枚闪光弹刚刚爆开，刺眼的白光把画面中央完全烧白；白模里的两个人是两名特勤队员，人体比例正常，全身黑色装备、头盔，背对白光变成黑色剪影，正转身躲开；冷雾被照成白色。\n真人实拍：真实的演员和布景，剪影是真实的人，不是方块人。\n排除：电影剧照的干净画质、方块人、插画、游戏画面、三维渲染、火焰、爆炸碎片；画面中不要出现任何文字、时间戳、标志和水印。",
+   "time": "2026-11-07T10:22:13.041Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006678559_14c4409cc3c8401eb09e889aac2b2e19.png",
+   "frame": "19d_B10",
+   "verdict": "selected"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 19g B7 我们埋了你（LibTV）",
+   "key": "exhibit47-kf2-19g-b7-20261107",
+   "node": "i-exhCYIElXd",
+   "task_id": "20261107182303234997598",
+   "refs": [
+    "i-4vkBssZ3UD",
+    "i-p1NfLIjZ1z"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "这是一张真实执法记录仪录像的截图，不是电影剧照：胸前执法记录仪从略低的角度拍摄，超广角镜头，画面边缘明显向外弯曲的桶形鱼眼畸变，四角发暗；低码率1080p压缩视频，暗部满是数字噪点和块状压缩痕迹；剧烈晃动和运动模糊，画面倾斜。\n参考图：{{Node i-4vkBssZ3UD}} 是构图（灰色白模：机位和人物的位置、大小照它，不要照它的灰色方块质感）；{{Node i-p1NfLIjZ1z}} 是布兰特的长相和装备。\n画面内容：白模里黄色的人是布兰特：45岁，浓密胡茬，眼睛布满血丝，戴黑色哑光头盔，黑色头套扯到下巴下面露出整张脸，被下方一支晃动的手电从下往上照亮，惊恐地朝镜头后方的黑暗嘶吼，唾沫和白气喷出；胸前一台小型执法记录仪亮着红色小灯。背后是废弃冷库冷冻大厅结霜的顶梁和肉钩轨道，其余全黑。\n真人实拍：人物是现实中真实存在的普通演员，真实人体比例，自然的面部不对称，皮肤有毛孔、汗和细小绒毛，不磨皮，不像蜡和塑料；装备织物有真实的纹理和褶皱。\n排除：电影剧照的干净画质、插画、游戏画面、三维渲染、数字人、塑料皮肤、美颜磨皮、过度HDR、海报式构图、血；画面中不要出现任何文字、时间戳、编号、警徽、POLICE字样、标志和水印。",
+   "time": "2026-11-07T10:22:20.691Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006678681_1cbfbee42fac408bbdd310295847d7e1.png",
+   "frame": "19g_B7",
+   "verdict": "selected"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 19h X1 平静穿过毒雾（LibTV）",
+   "key": "exhibit47-kf2-19h-x1-20261107",
+   "node": "i-aVZyoVuI5S",
+   "task_id": "20261107182303220017598",
+   "refs": [
+    "i-ujNgHpSBsr",
+    "i-p1NfLIjZ1z"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "这是一张真实执法记录仪录像的截图，不是电影剧照：胸前执法记录仪拍摄，超广角镜头，画面边缘明显向外弯曲的桶形鱼眼畸变，四角发暗；低码率1080p压缩视频，暗部满是数字噪点和块状压缩痕迹，手电光斑过曝带光晕。这台记录仪的画面异常平稳，水平端正，没有晃动（佩戴者在平静地走）。\n参考图：{{Node i-ujNgHpSBsr}} 是构图（灰色白模：机位和人物的位置、大小照它，不要照它的灰色方块质感）；{{Node i-p1NfLIjZ1z}} 只参考特勤组的装备样式，不参考脸。\n画面内容：废弃冷库的冷冻大厅灌满了浓浓的白色氨气雾，结霜的顶梁和肉钩轨道隐在雾里；手电光柱从四面八方切过雾气。周围的特勤队员陷入慌乱：左边一人朝雾里盲射，中间一人踉跄着弯腰咳嗽，另一人举着枪灯转身；他们全身黑色装备、头盔、头套和护目镜，人体比例正常。\n真人实拍：真实的演员和布景，雾、霜、钢各有各的质感，人和环境是同一套光。\n排除：电影剧照的干净画质、方块人、插画、游戏画面、三维渲染、白墙、过度HDR、血；画面中不要出现任何文字、时间戳、编号、警徽、POLICE字样、标志和水印。",
+   "time": "2026-11-07T10:22:28.090Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006678772_2088d19427c846d287249248674542fa.png",
+   "frame": "19h_X1",
+   "verdict": "selected"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 19i B8 镜面倒影 第十三人 #2（LibTV）",
+   "key": "exhibit47-kf2-19i-b8-20261107",
+   "node": "i-Kt2WkjMMXT",
+   "task_id": "20261107182303373857598",
+   "refs": [
+    "i-0DnGZWFrgx",
+    "i-wJRp6J96fF"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "这是一张真实执法记录仪录像的截图，不是电影剧照：胸前执法记录仪拍摄，超广角镜头，画面边缘明显向外弯曲的桶形鱼眼畸变，四角发暗；低码率压缩视频，暗部有数字噪点和块状压缩痕迹，手电光斑过曝带光晕。\n参考图：{{Node i-0DnGZWFrgx}} 是构图（灰色白模：机位、门框和倒影人物的位置、大小照它，不要照它的灰色方块质感）；{{Node i-wJRp6J96fF}} 是第十三人的样子和装备。\n画面内容：镜头正对废弃冷库里一间小冷冻间的门：厚重的深色钢门框，门框里是一整块镜面抛光的不锈钢推拉门板，带一根粗把手，表面有细微的拉丝纹和霜。镜面里清楚地映出镜头背后的冷冻大厅（肉钩轨道、柱子），以及正对镜面站着的佩戴者本人——第十三人：空白的黑色哑光头盔，黑色头套和深色护目镜完全遮住脸，胸前左侧的小型执法记录仪亮着一颗红色录制灯，红灯正好在镜头的高度。他一动不动，双臂下垂，没有举枪。倒影被他自己肩上手电打到镜面又反射回来的光照亮，能看清。画面里只有他这一个倒影。\n真人实拍：真实的钢、镜面和装备材质，反射符合真实光学。\n排除：电影剧照的干净画质、玻璃门、透过门看到的人、两个人、插画、游戏画面、三维渲染；门板和画面中不要出现任何文字、字母、数字、警徽、标志和水印。",
+   "time": "2026-11-07T10:22:36.290Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006678856_3c42da939f474665abd90c7a47df9b2c.png",
+   "frame": "19i_B8_reflection",
+   "verdict": "selected"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 21 C2 抓背心 第十三人 #3（LibTV）",
+   "key": "exhibit47-kf2-21-c2-grab-20261107",
+   "node": "i-R5XXMe1oYf",
+   "task_id": "20261107182303835117598",
+   "refs": [
+    "i-0i1mIWw7sU",
+    "i-njSJDbbUQp",
+    "i-oNdWbdYl6b"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "这是一张真实监控录像的截图，不是电影剧照：固定在小冷冻间高处墙角的监控摄像头拍摄，广角镜头带明显的桶形畸变；单色红外夜视，灰白色调；画质低，噪点重，块状压缩痕迹明显；画面静止。\n参考图：{{Node i-0i1mIWw7sU}} 是构图（灰色白模：机位、箱子、门口和人物的位置、大小照它，不要照它的灰色方块质感）；{{Node i-njSJDbbUQp}} 是诺拉的身材和发型；{{Node i-oNdWbdYl6b}} 第4格是那只戴手套的手。\n画面内容：废弃冷库里的一间小冷冻间，堆着结霜的木板箱和托盘，白色气体沿地面从右边敞开的门口飘进来，门口是厚重的钢门框。白模里青色的人是诺拉：穿黑色战术服和背心，戴头盔，黑色头套拉到下巴下面，半瞎地踉跄着。白模里橙色的横条是一只男人的右臂：黑色袖子，从高箱堆后面的暗缝里横着伸出来，戴黑色半指战术手套（和参考图第4格同一只），手背朝上对着镜头，手套手背的破洞里露出那道疤，正抓住她背心的肩带、把她定住。这个人的其他部分完全藏在箱子后面的阴影里。\n真人实拍：真实的演员和布景，真实人体比例，手的比例正常；木箱、钢、霜各有各的材质。\n排除：电影剧照的干净画质、插画、游戏画面、三维渲染、露出那个男人的脸、两个完整的人、掐脖子、扭打；画面中不要出现任何文字、时间戳、编号、标志和水印。",
+   "time": "2026-11-07T10:22:44.790Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006678933_74bbc4e6e12e448bb7c09bb7a660cd7a.png",
+   "frame": "21_C2_grab",
+   "verdict": "replaced: grabbing forearm shows bare skin"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 21 C2 手套特写（LibTV）",
+   "key": "exhibit47-kf2-21-c2-glove-20261107",
+   "node": "i-KeMrIvh9wy",
+   "task_id": "20261107182303875507598",
+   "refs": [
+    "i-oNdWbdYl6b"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "这是一张真实监控录像放大后的截图，不是电影剧照：单色红外夜视，灰白色调，放大后画质粗糙，噪点很重，块状压缩痕迹明显，边缘有点糊。\n参考图：{{Node i-oNdWbdYl6b}} 第4格是这只手：沃德戴黑色哑光半指战术手套的右手，宽魔术贴腕带，手套手背的椭圆形破洞里露出同一道斜向、微微隆起发亮的烧伤疤；手指比例和参考图一致，中指最长。\n画面内容：这只手从画面左侧伸进来，手背朝上对着镜头，正紧紧抓着一件黑色战术背心的肩带；背景是小冷冻间的黑暗、结霜的木箱和地面飘的白雾。疤在红外画面里偏亮，能看清形状。\n真人实拍：真实的手、手套织物和背心尼龙材质，正常的五根手指，不变形。\n排除：电影剧照的干净画质、插画、三维渲染、多余的手指、两只手；画面中不要出现任何文字、时间戳、标志和水印。",
+   "time": "2026-11-07T10:22:51.439Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006679009_5a97650538b64f03a7703162c5fad2e7.png",
+   "frame": "21_C2_glove_insert",
+   "verdict": "replaced: bare hairy forearm; hole shows a flat pale patch, not the scar"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 25a I3 沃德的手 第十三人 #4（LibTV）",
+   "key": "exhibit47-kf2-25a-i3-20261107",
+   "node": "i-tLWdqLyANF",
+   "task_id": "20261107182303783697598",
+   "refs": [
+    "i-oNdWbdYl6b"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "这是一张审讯室监控系统录像的截图，不是电影剧照：固定机位的数字摄像头从桌子上方斜着往下拍，轻微广角畸变，画面带数字噪点和压缩，色彩偏冷偏淡，清晰度一般；光线只来自天花板的日光灯，平而冷。\n参考图：{{Node i-oNdWbdYl6b}} 第1格和第2格是这只手：沃德的右手，炭灰色西装袖口，银色钢带手表，手背上那道从手腕一侧斜向中指方向的粉白色隆起烧伤疤；手指修长、比例正常，中指最长。\n画面内容：审讯室划痕累累的灰色金属桌面近景。这只手从画面上方伸进来，手背朝上平放在桌面上，手掌和指尖确实压着桌面，有自然的接触阴影，手指正搭在一支廉价黑色圆珠笔上；只拍到手、手表和西装袖口，看不到脸。日光灯在发亮的疤上留下一点高光。\n真人实拍：真实的皮肤纹理，有毛孔、细汗毛和轻微色斑，不磨皮、不像蜡；西装袖口有真实的毛呢纹理；手、桌面和房间是同一套光。\n排除：电影剧照的干净画质、插画、三维渲染、多余的手指、手指变形、红色胎记、手套、贴图感；画面中不要出现任何文字、时间戳、标志和水印。",
+   "time": "2026-11-07T10:22:58.939Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006679062_c7802ad3f3284e4693d696ba84311eeb.png",
+   "frame": "25a_I3",
+   "verdict": "replaced: very real hand, correct finger proportions; scar is a short horizontal one near the wrist, not the master's diagonal"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 25b I4 诺拉抬眼·尾帧（LibTV）",
+   "key": "exhibit47-kf2-25b-i4-end-20261107",
+   "node": "i-xcFecs3yV2",
+   "task_id": "20261107182303162507598",
+   "refs": [
+    "i-MD7YKluRZe"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "这是一张审讯室监控系统录像的截图，不是电影剧照：固定机位的数字摄像头近景，画面带数字噪点和轻微压缩，色彩偏冷偏淡；光线只来自天花板的日光灯，从她前上方照下来，平而冷，脸上有柔和的明暗。\n参考图：{{Node i-MD7YKluRZe}} 是诺拉的长相：26岁欧洲女性，深棕色短发两侧铲青、顶部略长的碎发，灰色眼睛，浅肤色，下巴一道细淡的旧疤，灰色宽松卫衣。必须是同一个人。\n画面内容：诺拉的头肩特写，摄像头在她左前方略高处。画面里只有她一个人。她刚刚从桌面上抬起眼睛，直视坐在对面的那个男人（就在镜头旁边）：冰冷、平静地认出了他，下颌绷紧，没有眼泪。头发还有点湿，眼下有疲惫的阴影。背后是失焦的深色单向玻璃，只映出黑暗。\n真人实拍：现实中真实存在的普通演员，自然的面部不对称，皮肤有毛孔、细小绒毛、轻微肤色差异和脸颊的冻红，不磨皮，不像蜡和塑料；眼睛湿润但不过亮；头发有真实发根和碎发；卫衣有真实的针织纹理。\n排除：电影剧照的干净画质、商业人像、插画、三维渲染、数字人、塑料皮肤、美颜磨皮、夸张轮廓光、第二个人、肩后的人、电视机、长发、新鲜伤口和血；画面中不要出现任何文字、时间戳、标志和水印。",
+   "time": "2026-11-07T10:23:06.890Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006679108_adc4c59e566342088a8137a78b018bdb.png",
+   "frame": "25b_I4_end",
+   "verdict": "selected"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 S1 I2 我们是十三个人（LibTV）",
+   "key": "exhibit47-kf2-s1-i2-20261107",
+   "node": "i-TpNCTtEPrA",
+   "task_id": "20261107182303298927598",
+   "refs": [
+    "i-MD7YKluRZe"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "这是一张审讯室监控系统录像的截图，不是电影剧照：固定机位的数字摄像头近景，画面带数字噪点和轻微压缩，色彩偏冷偏淡；光线只来自天花板的日光灯，平而冷，脸上有柔和的明暗。\n参考图：{{Node i-MD7YKluRZe}} 是诺拉的长相：26岁欧洲女性，深棕色短发两侧铲青、顶部略长的碎发，灰色眼睛，浅肤色，下巴一道细淡的旧疤，灰色宽松卫衣。必须是同一个人。\n画面内容：诺拉的头肩特写，摄像头在她正前方、和眼睛差不多高。画面里只有她一个人。她看向镜头旁边坐着的调查官，疲惫但确定，嘴唇微张，正在轻声说话。背后是失焦的深色单向玻璃，只映出黑暗。\n真人实拍：现实中真实存在的普通演员，自然的面部不对称，皮肤有毛孔、细小绒毛、轻微肤色差异和自然眼下阴影，不磨皮，不像蜡和塑料；眼睛湿润但不过亮；头发有真实发根和碎发；卫衣有真实的针织纹理。\n排除：电影剧照的干净画质、商业人像、插画、三维渲染、数字人、塑料皮肤、美颜磨皮、夸张轮廓光、第二个人、肩后的人、电视机、长发、微笑；画面中不要出现任何文字、时间戳、标志和水印。",
+   "time": "2026-11-07T10:23:13.789Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006679174_93c894894fa549ad8a2e849c90486afc.png",
+   "frame": "S1_I2",
+   "verdict": "selected"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 S2 O1 举起的双手（LibTV）",
+   "key": "exhibit47-kf2-s2-o1-20261107",
+   "node": "i-JkVZNEl9pW",
+   "task_id": "20261107182303543947598",
+   "refs": [
+    "i-EClT2qbX3x"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "这是一张三年前老款执法记录仪录像的截图，不是电影剧照：720p低清，偏黄的色偏，噪点重，明显的块状压缩，画面上有一两条数字花屏横纹，广角镜头带桶形畸变，轻微晃动。\n参考图：{{Node i-EClT2qbX3x}} 是构图（灰色白模：机位和两只手的位置照它，不要照它的灰色方块质感）。\n画面内容：镜头从约一米外往上拍一双高高举起投降的手：一个少年的手，手指细瘦、张开、在发抖，深灰色连帽衫的袖子滑到手腕下；被一束刺眼的手电光照着；背后是结霜的木箱和冷库昏暗的顶梁。只拍到手和袖子，脸在画面下沿以外的黑暗里。\n真人实拍：真实的手，正常的五根手指，皮肤有真实纹理，袖子有真实的棉质纹理。\n排除：电影剧照的干净画质、插画、三维渲染、脸、枪、血、多余的手指、手指变形；画面中不要出现任何文字、时间戳、标志和水印。",
+   "time": "2026-11-07T10:23:19.586Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006679258_59993db317b24ecf90495ccc49a12617.png",
+   "frame": "S2_O1",
+   "verdict": "replaced: became first-person hands pressed on a crate"
+  },
+  {
+   "tool": "AKOOL",
+   "model": "wavespeed-ai/flux-krea-dev-lora",
+   "id": "6aeefc7497abb75cf098215e",
+   "source_image": null,
+   "similar": null,
+   "prompt": "Frame grab from a real security camera recording, not a film still: a fixed camera mounted high on the facade of an abandoned harbour cold-storage plant at night, about five metres up, wide-angle lens with strong barrel distortion, monochrome infrared night vision in grey-white tones, low resolution, heavy digital noise and blocky compression, smeared fine detail, static frame. The camera looks down across a wide, empty yard of fresh untouched snow that fills the lower half of the frame; about twenty metres away a chain-link fence with a rusted sliding gate runs across the whole width of the frame. Just beyond the gate two dark unmarked vans have stopped with their headlights on, the headlights blooming white in the infrared image, and a few tactical officers in plain black gear are stepping out. Snow falls through the frame. Real location, believable scale, real materials. No footprints or tyre tracks inside the fence.",
+   "negative_prompt": "film still, clean cinematic image, color image, daylight, footprints in the yard, tyre tracks in the yard, illustration, 3D render, CGI, video game, HDR, text, timestamp, letters, numbers, POLICE, logo, watermark",
+   "time": "2026-11-07T10:24:26.061Z",
+   "result_url": "https://d2qf6ukcym4kn9.cloudfront.net/1794047130812-b78acd69-7e8e-48c4-bb14-bcf3c75be09c-1580.jpeg",
+   "frame": "04_C3",
+   "verdict": "selected"
+  },
+  {
+   "tool": "AKOOL",
+   "model": "wavespeed-ai/flux-krea-dev-lora",
+   "id": "6aeefc7497abb75cf0982168",
+   "source_image": null,
+   "similar": null,
+   "prompt": "Frame grab from real police body-worn camera footage, not a film still: chest-mounted ultra-wide lens with strong barrel fisheye distortion and dark vignetted corners, low-bitrate 1080p compressed video with heavy digital noise and blocky compression artifacts in the shadows, the flashlight hotspot blown out with halation, slight motion blur and tilt as the wearer walks. A dark abandoned freezer hall at night lit only by the wearer's flashlight: frosted columns and empty meat-hook rails on the left; on the right, the door of a small freezer room, a heavy dark steel frame holding a mirror-polished stainless-steel sliding door panel with a thick handle, its brushed surface faintly reflecting the flashlight beam and the dark hall behind the camera. No person is reflected yet. Real location, real materials, believable scale.",
+   "negative_prompt": "film still, clean cinematic image, person in reflection, people, glass door, pitch black image, illustration, 3D render, CGI, video game, HDR, text, timestamp, letters, numbers, POLICE, logo, watermark",
+   "time": "2026-11-07T10:24:29.717Z",
+   "result_url": "https://d2qf6ukcym4kn9.cloudfront.net/1794047160906-9e8667d2-ef11-4b71-a40a-e2187f1f9b82-1644.jpeg",
+   "frame": "19i_B8_start",
+   "verdict": "replaced: dark figure at right edge; hinged door, not mirror panel"
+  },
+  {
+   "tool": "AKOOL",
+   "model": "wavespeed-ai/flux-kontext-dev",
+   "id": "6aeefc7451e26737e1b78f8b",
+   "source_image": "https://d2qf6ukcym4kn9.cloudfront.net/1793955151109-8224f77d-e40a-4cec-ae45-d3d64dbbfb9b-4528.jpeg",
+   "similar": 0.75,
+   "prompt": "Keep this image exactly the same: the same evidence room, the same long steel table, the same row of evidence bags with the body cameras, the same faded red tag on the nearest bag, the same framing and light. Change only the look of the image so it becomes a frame grab from a forensic documentation video camera, not a film still: slight wide-angle distortion, mild digital noise and compression in the shadows, cold flat white LED light, neutral muted colour, average video sharpness. Nothing written anywhere.",
+   "negative_prompt": "different scene, extra bags, text, letters, numbers, watermark, logo, HDR, illustration, CGI",
+   "time": "2026-11-07T10:24:33.504Z",
+   "result_url": "https://d2qf6ukcym4kn9.cloudfront.net/1794047131969-c09fa3ed-aa0f-4b08-86e1-9033b5fbd4d8-0866.jpeg",
+   "frame": "09_E1",
+   "verdict": "replaced: garbled writing on white labels"
+  },
+  {
+   "tool": "AKOOL",
+   "model": "wavespeed-ai/flux-kontext-dev",
+   "id": "6aeefc7597abb75cf0982172",
+   "source_image": "https://d2qf6ukcym4kn9.cloudfront.net/1794027602823-ffcc5336-eae6-4ab3-8cfe-938ab0fee107-7166.jpeg",
+   "similar": 0.75,
+   "prompt": "Keep this image exactly the same: the same open black ring binder on the steel table, the same blank ruled pages, the same framing and light. Change only the look so it becomes a frame grab from a forensic documentation video camera looking down at the table, not a film still: slight wide-angle distortion, mild digital noise and compression, cold flat white LED light, slightly cooler and more muted colour, average video sharpness, a little wear on the binder and the pages. Nothing readable on the pages; nothing written anywhere.",
+   "negative_prompt": "readable text, words, letters, numbers, red ink, different scene, watermark, logo, HDR, illustration, CGI",
+   "time": "2026-11-07T10:24:37.153Z",
+   "result_url": "https://d2qf6ukcym4kn9.cloudfront.net/1794047190831-02ab2f34-3bdb-4eb7-9261-8eace4c82724-3638.jpeg",
+   "frame": "18_E3_register",
+   "verdict": "replaced: handwriting at top of left page"
+  },
+  {
+   "tool": "AKOOL",
+   "model": "wavespeed-ai/flux-kontext-dev",
+   "id": "6aeefc7551e26737e1b78f95",
+   "source_image": "https://d2qf6ukcym4kn9.cloudfront.net/1794027603606-68e2738d-9bff-4aa5-86d5-df1bb17f3197-2116.jpeg",
+   "similar": 0.75,
+   "prompt": "Keep this image exactly the same: the same evidence bag with the scuffed black body camera and its red light, the same faded red tag with white string, the binder edge, the framing and the light. Change only the look so it becomes a frame grab from a forensic documentation video camera, not a film still: slight wide-angle distortion, mild digital noise and compression in the shadows, cold flat white LED light, muted colour except the red tag and red light, average video sharpness. Nothing written on the tag; nothing written anywhere.",
+   "negative_prompt": "writing on tag, letters, numbers, different scene, watermark, logo, HDR, illustration, CGI",
+   "time": "2026-11-07T10:24:40.653Z",
+   "result_url": "https://d2qf6ukcym4kn9.cloudfront.net/1794047132844-449c07c0-a9ef-4bbe-bdac-0e959af310e7-6522.jpeg",
+   "frame": "18_E3_tag",
+   "verdict": "replaced: tiny print on camera body"
+  },
+  {
+   "tool": "AKOOL",
+   "model": "wavespeed-ai/flux-kontext-dev",
+   "id": "6aeefc7551e26737e1b78f9f",
+   "source_image": "https://d2qf6ukcym4kn9.cloudfront.net/1794029253671-82aa4355-355d-4d46-9ef2-3aae31ee11bf-9641.jpeg",
+   "similar": 0.75,
+   "prompt": "Keep this image exactly the same: the same evidence bag hanging with the scuffed black body camera inside, its tiny red light, the same faded blank red cardboard tag on white string, the framing and the light. Change only the look so it becomes a frame grab from a forensic documentation video camera, not a film still: mild digital noise and compression in the shadows, slightly softer video sharpness, cold flat LED light, muted colour except the red tag and red light. Nothing written on the tag; nothing written anywhere.",
+   "negative_prompt": "writing on tag, letters, numbers, different scene, watermark, logo, HDR, illustration, CGI",
+   "time": "2026-11-07T10:24:44.353Z",
+   "result_url": "https://d2qf6ukcym4kn9.cloudfront.net/1794047161998-751309d4-788d-4d30-af50-19f5c68356fa-2949.jpeg",
+   "frame": "24_E2",
+   "verdict": "selected"
+  },
+  {
+   "tool": "AKOOL",
+   "model": "wavespeed-ai/flux-kontext-dev",
+   "id": "6aeefc7697abb75cf098217e",
+   "source_image": "https://d2qf6ukcym4kn9.cloudfront.net/1794027840848-fe4f5cdf-7dda-4061-91de-818013330e0c-5347.jpeg",
+   "similar": 0.7,
+   "prompt": "Keep this image the same: the dark freezer-hall ceiling, the frosted pipe with the jet of white gas, the flashlight beam and the rifle barrel at the bottom edge, the framing. Change only the look so it becomes a frame grab from real police body-worn camera footage, not a film still: chest-mounted ultra-wide lens with strong barrel fisheye distortion and dark vignetted corners, low-bitrate compressed video with heavy digital noise and blocky compression artifacts in the shadows, the flashlight hotspot blown out with halation, motion blur and a tilted horizon. Keep some detail in the shadows. Nothing written anywhere.",
+   "negative_prompt": "clean film still, different scene, fire, flames, text, letters, numbers, POLICE, watermark, logo, HDR, illustration, CGI",
+   "time": "2026-11-07T10:24:48.353Z",
+   "result_url": "https://d2qf6ukcym4kn9.cloudfront.net/1794047162779-f76dc457-db6c-4798-be42-a6d1e5307a26-2688.jpeg",
+   "frame": "19e_B6",
+   "verdict": "rejected: rifle turned into a strange helmeted machine; no fisheye (redone in LibTV)"
+  },
+  {
+   "tool": "AKOOL",
+   "model": "wavespeed-ai/flux-kontext-dev",
+   "id": "6aeefc7697abb75cf0982188",
+   "source_image": "https://d2qf6ukcym4kn9.cloudfront.net/1794028172256-ff134b98-03ba-43ff-b372-b1603162e1ef-4545.jpeg",
+   "similar": 0.7,
+   "prompt": "Keep this image the same: the small dark freezer room, the stacks of frosted wooden crates and pallets, the open doorway on the right, the gas creeping along the floor, the framing. Change only the look so it becomes a frame grab from a real security camera recording, not a film still: fixed camera high in the corner, wide-angle lens with clear barrel distortion, monochrome infrared night vision in grey-white tones, low resolution, heavy digital noise and blocky compression, smeared fine detail. The room is empty. Nothing written anywhere.",
+   "negative_prompt": "clean film still, people, different scene, color image, text, letters, numbers, timestamp, watermark, logo, HDR, illustration, CGI",
+   "time": "2026-11-07T10:24:51.877Z",
+   "result_url": "https://d2qf6ukcym4kn9.cloudfront.net/1794047163435-8baa034d-9bd4-4177-bd01-3b9efb3f7894-8579.jpeg",
+   "frame": "21_C2_start",
+   "verdict": "selected after local paint-out of an on-screen text box"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 02 D1 走出冷库 v2（编辑）",
+   "key": "kf3-02-D1-v2-edit-20261107",
+   "node": "i-mlmQfYuiwY",
+   "task_id": "20261107182903666357598",
+   "refs": [
+    "i-gywcvonS8K"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "编辑参考图 {{Node i-gywcvonS8K}}，只改下面三处，其他全部不变（无人机正上方俯拍的机位、仓库、敞开的卷帘门、右边红色铁皮棚、人物的大小、她身上结霜的黑色战术装备和手里拎着的头盔）：\n1. 人物的朝向反过来：她刚从敞开的卷帘门里走出来，正背对仓库、朝画面下方慢慢走远；从正上方能看到她的头顶和肩膀，脸朝画面下方。\n2. 脚印：只有一行脚印，从卷帘门门口一直延伸到她脚下，留在她身后；她前方（画面下方）和其他地方的雪地完全平整、没有任何脚印和车辙。\n3. 时间改成清晨天刚亮：冷蓝色的天光，没有直射阳光，雪面偏蓝灰，阴影很淡。\n画质：这是一张真实无人机航拍视频的截图，不是电影剧照，轻微的视频压缩和噪点。\n画面中不要出现任何文字、时间戳、标志和水印。",
+   "time": "2026-11-07T10:29:26.126Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006686813_f37d0dea61c44493ad58c39578b96d83.png",
+   "frame": "02_D1",
+   "verdict": "selected"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 13 B3 门帘 v2（LibTV）",
+   "key": "kf3-13-B3-v2-20261107",
+   "node": "i-sw50XHVbk4",
+   "task_id": "20261107182903884177598",
+   "refs": [
+    "i-VGoLJ23M3k",
+    "i-p1NfLIjZ1z"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "这是一张真实执法记录仪录像的截图，不是电影剧照：由队员胸前佩戴的执法记录仪拍摄，超广角镜头，画面边缘明显向外弯曲的桶形鱼眼畸变，四角发暗；低码率1080p压缩视频，暗部满是数字噪点和块状压缩痕迹，细节被压缩糊掉一些；自动曝光被枪灯晃得局部过曝发白，光斑有光晕；走动中的晃动和运动模糊，画面略微倾斜。\n参考图：{{Node i-VGoLJ23M3k}} 是构图（灰色白模：机位和门帘、通道的位置照它，不要照它的灰色方块质感）；{{Node i-p1NfLIjZ1z}} 只参考特勤组的装备样式，不参考脸。\n画面内容：拍摄者正跟在队伍后面穿过挂着的厚塑料门帘，结霜的半透明塑料条贴在镜头前、从画面两侧被推开。门帘后面是废弃冷库漆黑的冷冻大厅，一排排空肉钩挂在轨道上，结霜的钢墙，地面有冷雾。前方两名特勤队员背对镜头、朝大厅深处前进：我们只看到他们的后背、头盔后部和背心背后空白的黑色布面；他们的枪口和枪灯都朝前方的黑暗照去，光柱打在远处的肉钩和雾上，没有任何光朝镜头照来，没有人看镜头。\n真人实拍：真实的演员和真实的布景，塑料、钢、霜各有各的材质，光线统一。\n排除：电影剧照的干净画质、插画、游戏画面、三维渲染、过度HDR、面朝镜头的人；画面中不要出现任何文字、时间戳、编号、警徽、POLICE字样、标志和水印。",
+   "time": "2026-11-07T10:29:33.983Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006686887_99c48433db7644b394950be77038dc2f.png",
+   "frame": "13_B3",
+   "verdict": "selected"
+  },
+  {
+   "tool": "AKOOL",
+   "model": "wavespeed-ai/flux-kontext-dev",
+   "id": "6aeefe0197abb75cf0982e8a",
+   "source_image": "https://d2qf6ukcym4kn9.cloudfront.net/1794047131969-c09fa3ed-aa0f-4b08-86e1-9033b5fbd4d8-0866.jpeg",
+   "similar": 0.85,
+   "prompt": "Remove the writing from the two small white labels on the nearest evidence bag so both labels are completely blank white. Remove any printed marks from the other bags too. Keep everything else in the image exactly the same: the room, the steel table, the bags and cameras, the red tag, the framing, the light, the noise.",
+   "negative_prompt": "text, letters, numbers, handwriting, printed marks, barcode, different scene, watermark, logo",
+   "time": "2026-11-07T10:31:16.565Z",
+   "result_url": "https://d2qf6ukcym4kn9.cloudfront.net/1794047521863-c25e6f0c-b838-40a7-9483-fe941af249d7-2020.jpeg",
+   "frame": "09_E1",
+   "verdict": "selected"
+  },
+  {
+   "tool": "AKOOL",
+   "model": "wavespeed-ai/flux-kontext-dev",
+   "id": "6aeefe0151e26737e1b79c7f",
+   "source_image": "https://d2qf6ukcym4kn9.cloudfront.net/1794047190831-02ab2f34-3bdb-4eb7-9261-8eace4c82724-3638.jpeg",
+   "similar": 0.85,
+   "prompt": "Remove the handwriting at the top of the left page so the whole page is blank ruled paper with only the printed lines. Keep everything else exactly the same: the open black ring binder, the rings, both pages, the steel table, the framing, the light, the noise.",
+   "negative_prompt": "text, letters, numbers, handwriting, ink, different scene, watermark, logo",
+   "time": "2026-11-07T10:31:19.118Z",
+   "result_url": "https://d2qf6ukcym4kn9.cloudfront.net/1794047522630-e4494973-0635-4d29-9964-11f95ce62fbc-2043.jpeg",
+   "frame": "18_E3_register",
+   "verdict": "selected"
+  },
+  {
+   "tool": "AKOOL",
+   "model": "wavespeed-ai/flux-kontext-dev",
+   "id": "6aeefe0197abb75cf0982e95",
+   "source_image": "https://d2qf6ukcym4kn9.cloudfront.net/1794047132844-449c07c0-a9ef-4bbe-bdac-0e959af310e7-6522.jpeg",
+   "similar": 0.85,
+   "prompt": "Remove the tiny printed text and logo marks from the black body camera so its plastic body is plain and unmarked. Keep everything else exactly the same: the evidence bag, the camera shape and lens, the red recording light, the faded red tag with white string, the binder edge, the table, the framing, the light.",
+   "negative_prompt": "text, letters, numbers, logo, brand name, different scene, watermark",
+   "time": "2026-11-07T10:31:21.868Z",
+   "result_url": "https://d2qf6ukcym4kn9.cloudfront.net/1794047523349-10816b9a-1902-409d-b372-fdcfd62ff9a1-0942.jpeg",
+   "frame": "18_E3_tag",
+   "verdict": "selected"
+  },
+  {
+   "tool": "AKOOL",
+   "model": "wavespeed-ai/flux-kontext-dev",
+   "id": "6aeefe0151e26737e1b79c89",
+   "source_image": "https://d2qf6ukcym4kn9.cloudfront.net/1794047163435-8baa034d-9bd4-4177-bd01-3b9efb3f7894-8579.jpeg",
+   "similar": 0.85,
+   "prompt": "Remove the white on-screen text box in the top-left corner and fill that area with the same dark wall and noise as around it. Keep everything else exactly the same: the empty freezer room, the stacks of wooden pallets, the open doorway on the right, the monochrome infrared look, the barrel distortion, the noise and compression, the framing.",
+   "negative_prompt": "text, letters, numbers, timestamp, on-screen display, overlay, box, people, different scene, watermark, logo",
+   "time": "2026-11-07T10:31:24.769Z",
+   "result_url": "https://d2qf6ukcym4kn9.cloudfront.net/1794047550919-c3d27ec2-d9ef-4f97-84b2-a42d3671e08c-8887.jpeg",
+   "frame": "21_C2_start",
+   "verdict": "not used: text removed but IR noise lost and pallet marks appeared"
+  },
+  {
+   "tool": "AKOOL",
+   "model": "wavespeed-ai/flux-krea-dev-lora",
+   "id": "6aeefe0297abb75cf0982ea0",
+   "source_image": null,
+   "similar": null,
+   "prompt": "Frame grab from real body-worn camera footage, not a film still: chest-mounted ultra-wide lens with strong barrel fisheye distortion and dark vignetted corners, low-bitrate 1080p compressed video with heavy digital noise and blocky compression artifacts in the shadows, the flashlight hotspot blown out with halation, slight motion blur and tilt as the wearer walks. An empty, dark abandoned freezer hall at night lit only by the flashlight from the camera: on the left, frosted concrete columns and empty meat-hook rails fading into black; on the right, close to the camera, a row of small freezer-room doors, the nearest one a heavy dark steel frame holding a mirror-polished stainless-steel door panel with a thick vertical handle. The polished panel shows only a blurred streak of flashlight and dark smeared shapes of the hall; nobody is in the hall and nobody is reflected. Real location, real materials, believable scale.",
+   "negative_prompt": "people, person, figure, silhouette, reflection of a person, film still, clean cinematic image, pitch black image, illustration, 3D render, CGI, video game, HDR, text, timestamp, letters, numbers, POLICE, logo, watermark",
+   "time": "2026-11-07T10:31:28.648Z",
+   "result_url": "https://d2qf6ukcym4kn9.cloudfront.net/1794047520888-2822e853-ae80-45b5-8de8-abe931fcc127-0508.jpeg",
+   "frame": "19i_B8_start",
+   "verdict": "selected"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 19e B6 管道爆裂（LibTV）",
+   "key": "kf3-19e-B6-v1-20261107",
+   "node": "i-30xuHb3nWE",
+   "task_id": "20261107183103360957598",
+   "refs": [
+    "i-5KoQEoneEV",
+    "i-p1NfLIjZ1z"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "这是一张真实执法记录仪录像的截图，不是电影剧照：由队员胸前佩戴的执法记录仪拍摄，超广角镜头，画面边缘明显向外弯曲的桶形鱼眼畸变，四角发暗；低码率1080p压缩视频，暗部满是数字噪点和块状压缩痕迹，细节被压缩糊掉一些；手电光斑过曝发白、带光晕；剧烈晃动和运动模糊，画面倾斜。\n参考图：{{Node i-5KoQEoneEV}} 是构图（灰色白模：机位、管道和人物的位置照它，不要照它的灰色方块质感）；{{Node i-p1NfLIjZ1z}} 只参考特勤组的装备样式，不参考脸。\n画面内容：废弃冷库漆黑的冷冻大厅，天花板上一根结满白霜的制冷管道被子弹打穿，一股高压白色气体从破口猛烈地向下喷出，在手电光里翻滚，迅速灌满走廊；前方一名特勤队员（黑色哑光头盔、黑色头套、黑色战术装备）被气流冲得向后踉跄，一只手挡在脸前，正在咳嗽；两侧是空肉钩轨道和结霜的墙。没有血。\n真人实拍：真实的演员和真实的布景，人体比例真实，装备织物有真实的纹理和褶皱；霜、钢、气体各有各的质感，光线只来自手电。\n排除：电影剧照的干净画质、插画、游戏画面、三维渲染、过度HDR、火焰；画面中不要出现任何文字、时间戳、编号、警徽、POLICE字样、标志和水印。",
+   "time": "2026-11-07T10:31:45.418Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006689759_2f94f398d2194b579ed41a1d0bf8101b.png",
+   "frame": "19e_B6",
+   "verdict": "selected"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 17 O2 v2（加老记录仪画质）",
+   "key": "kf3-17-O2-v2-texture-20261107",
+   "node": "i-2op1p7gaYM",
+   "task_id": "20261107183303529327598",
+   "refs": [
+    "i-Zs3ddopY2a"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "编辑参考图 {{Node i-Zs3ddopY2a}}：画面内容、构图、六个人的位置、动作和装备、冷冻大厅全部保持不变，只改画质，让它变成一张三年前老款执法记录仪录像的截图，不是电影剧照：\n- 720p 低清视频放大后的软和糊，细节明显损失；\n- 整体偏黄绿的老旧色偏，白平衡不准，暗部发灰；\n- 很重的彩色噪点，暗部和平坦的墙面上有明显的块状压缩痕迹；\n- 保留并加强那一条数字花屏横纹，再加一条较细的；\n- 广角镜头的桶形畸变更明显，四角发暗；\n- 光线变成以胸前手电为主：画面中央偏亮，四周迅速变暗。\n画面中不要出现任何文字、时间戳、编号、标志和水印。",
+   "time": "2026-11-07T10:33:15.584Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006691751_d5c37ec5129f46ca9a4692848f60b8eb.png",
+   "frame": "17_O2",
+   "verdict": "selected"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 05 B1 v2（加记录仪画质）",
+   "key": "kf3-05-B1-v2-texture-20261107",
+   "node": "i-yScDog5jYE",
+   "task_id": "20261107183303532587598",
+   "refs": [
+    "i-SiAjGohd49"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "编辑参考图 {{Node i-SiAjGohd49}}：画面内容、构图、两名队员的位置和动作、铁门和雪地全部保持不变，只改画质，让它变成一张真实执法记录仪录像的截图，不是电影剧照：\n- 胸前超广角镜头，画面边缘明显向外弯曲的桶形鱼眼畸变，四角发暗；\n- 低码率1080p压缩视频：暗部满是数字噪点和块状压缩痕迹，细节被压缩糊掉一些，黑色装备上的纹理变糊；\n- 门缝里的强光过曝成一片白，光晕更大；\n- 大锤砸下时的运动模糊，画面略微倾斜。\n画面中不要出现任何文字、时间戳、编号、警徽、POLICE字样、标志和水印。",
+   "time": "2026-11-07T10:33:20.793Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006691808_e1c72668b9934eb088397f86403ce355.png",
+   "frame": "05_B1",
+   "verdict": "selected"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 21 C2 抓背心 v2（袖子修正）",
+   "key": "kf3-21-C2-grab-v2-sleeve-20261107",
+   "node": "i-LXQY0NeoTd",
+   "task_id": "20261107183603543807598",
+   "refs": [
+    "i-R5XXMe1oYf"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "编辑参考图 {{Node i-R5XXMe1oYf}}，只改一处：从左边箱子缝里伸出来、抓住诺拉背心肩带的那条手臂，前臂现在露出了皮肤，改成整条手臂都穿着黑色战术服的长袖，袖口一直包到黑色半指手套的腕口，看不到任何手臂皮肤；手套、抓握的动作和位置都不变。\n其他全部不变：监控机位、灰白的红外画面、噪点、箱子、门口、地上的白色气体、诺拉的姿势和装备。画面中不要出现任何文字、时间戳、编号、标志和水印。",
+   "time": "2026-11-07T10:35:57.358Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006695044_5b202e406ae14e74ac616a68e5263924.png",
+   "frame": "21_C2_grab",
+   "verdict": "selected"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 S2 O1 举起的双手 v2（LibTV）",
+   "key": "kf3-S2-O1-v2-20261107",
+   "node": "i-NnNGVWqbCj",
+   "task_id": "20261107183703619187598",
+   "refs": [],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "这是一张三年前老款执法记录仪录像的截图，不是电影剧照：720p低清，偏黄的色偏，噪点很重，明显的块状压缩，画面上有一两条数字花屏横纹；广角镜头带桶形畸变；手电照明，中央亮、四周迅速变黑。\n画面内容：记录仪挂在一名队员胸前，镜头微微仰拍。镜头前方大约一米处，站着一个少年，他把双手高高举过头顶投降：两只张开的手在画面中上部，手掌朝向镜头，手指细瘦、张开、在发抖；深灰色连帽衫的袖子滑到手腕下面，露出细瘦的小臂。刺眼的手电光正打在这双手上。少年的头和脸在画面下沿以外，看不见；画面里只有举起的双手、袖子和小臂。背景是冷库昏暗结霜的顶梁和一排空肉钩，远处全黑。\n真人实拍：真实的手，正常的五根手指，手掌有真实的掌纹和皮肤纹理，袖子有真实的棉质纹理。\n排除：电影剧照的干净画质、插画、三维渲染、第一人称视角、拍摄者自己的手、按在箱子上的手、脸、枪、血、多余的手指、手指变形；画面中不要出现任何文字、时间戳、标志和水印。",
+   "time": "2026-11-07T10:37:06.091Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006696455_0c5bb58bafae4daf83dd33ed8e8a52fd.png",
+   "frame": "S2_O1",
+   "verdict": "selected"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 21 C2 手套特写 v2（袖子和疤）",
+   "key": "kf3-21-C2-glove-v2-20261107",
+   "node": "i-FYIMo5qBdJ",
+   "task_id": "20261107183703245767598",
+   "refs": [
+    "i-KeMrIvh9wy",
+    "i-oNdWbdYl6b"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "编辑参考图 {{Node i-KeMrIvh9wy}}，只改两处，其他全部不变（构图、灰白的红外监控画质、噪点、手套、抓住背心肩带的动作、背心和背景）：\n1. 手臂现在露出了皮肤和汗毛，改成穿着黑色战术服的长袖，袖口一直包到手套的魔术贴腕带，看不到任何手臂皮肤。\n2. 手套手背的椭圆形破洞里，现在只是一块平的浅色皮肤，改成和 {{Node i-oNdWbdYl6b}} 第4格同样的那道疤：一道斜向、微微隆起、表面发亮的烧伤疤，在红外画面里偏亮，能清楚看出它的形状。\n画面中不要出现任何文字、时间戳、编号、标志和水印。",
+   "time": "2026-11-07T10:37:11.646Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006696517_c4e98d290cd14310b94e8feba3fb965f.png",
+   "frame": "21_C2_glove_insert",
+   "verdict": "selected"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 25a I3 沃德的手 v2（疤对齐设定图）",
+   "key": "kf3-25a-I3-v2-scar-20261107",
+   "node": "i-fG9Q3BJM9u",
+   "task_id": "20261107183703647217598",
+   "refs": [
+    "i-tLWdqLyANF",
+    "i-oNdWbdYl6b"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "编辑参考图 {{Node i-tLWdqLyANF}}，只改手背上的疤，其他全部不变（手的姿势、五根手指的形状和比例、圆珠笔、手表、西装袖口、金属桌面、光线、机位和画质）：\n现在的疤是手腕附近一道横着的短疤，改成和 {{Node i-oNdWbdYl6b}} 第1格、第2格完全一样的那道疤：从手背靠近手腕的一侧开始，斜着朝中指根部的方向延伸，长度约为手背的一半多；粉白色，微微隆起，表面比周围皮肤更光滑、发亮，边缘不规则，是多年前的旧烧伤疤，没有红肿、没有血。日光灯在疤上留下一点高光。\n画面中不要出现任何文字、时间戳、标志和水印。",
+   "time": "2026-11-07T10:37:41.916Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006696990_124801adfcf440a787d38def59be70cb.png",
+   "frame": "25a_I3",
+   "verdict": "selected"
+  },
+  {
+   "tool": "LibTV",
+   "model": "doubao-seedream-5-5",
+   "name": "关键帧 25b I4 诺拉低头·首帧（编辑）",
+   "key": "kf3-25b-I4-start-edit-20261107",
+   "node": "i-0PYcDmE3oq",
+   "task_id": "20261107183803151067598",
+   "refs": [
+    "i-xcFecs3yV2"
+   ],
+   "params": {
+    "ratio": "16:9",
+    "count": 1
+   },
+   "prompt": "编辑参考图 {{Node i-xcFecs3yV2}}，只改她的头和眼睛，其他全部不变（同一个人、同一张脸、发型、卫衣、机位、构图、背后的单向玻璃、日光灯光线和画质）：\n她的头微微低下，视线垂向面前的桌面，眼皮半垂，还没有抬眼；表情平静、疲惫，嘴唇闭着。下巴和脸的角度只比参考图低一点点，脸仍然清楚可见。\n画面里只有她一个人。画面中不要出现任何文字、时间戳、标志和水印。",
+   "time": "2026-11-07T10:37:52.412Z",
+   "result_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1006697373_5794e038d89747eca42695d1bc20f7de.png",
+   "frame": "25b_I4_start",
+   "verdict": "selected"
+  }
+ ]
+}

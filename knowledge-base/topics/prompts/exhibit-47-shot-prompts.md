@@ -20,7 +20,7 @@ summary: 主方案预告的全部提示词：六种"证物画面"风格块（执
 - 提示词结构沿用 [提示词公式](prompt-formula.md)；风格锚换成下面的证物风格块，**不再使用 STYLE-A**。
 - **做关键帧时的参考图**：[场景图](exhibit-47-scene-images.md)（空间）+ 设定图（人）+ [白模](../production/exhibit-47-whitebox-previs.md)里同一时间点的画面（构图和遮挡）。D1、C3、B8、C2、O1、I2、I4、E1 的提示词已按白模的发现改过，原因见白模笔记的"发现"一节。
 - 所有屏幕文字（时间戳、编号、SIGNAL LOST、证物标签）**一律后期叠加**，见本页"后期叠字规范"。
-- ⚠️ **做 AKOOL 关键帧和图生视频时，提示词里不要出现 "police"**：写了 police tactical officer，模型会在背心上印 POLICE。改写成 tactical officer，加 `Blank surfaces only, no printing on any clothing`，负面词加 `POLICE, SWAT, lettering`。本页的提示词是给文生视频用的原文，图生图时的写法和 30 张关键帧见 [AKOOL 关键帧 v1](../production/exhibit-47-keyframes.md)。
+- ⚠️ **做 AKOOL 关键帧和图生视频时，提示词里不要出现 "police"**：写了 police tactical officer，模型会在背心上印 POLICE。改写成 tactical officer，加 `Blank surfaces only, no printing on any clothing`，负面词加 `POLICE, SWAT, lettering`。本页的提示词是给文生视频用的原文，图生图时的写法和 30 张关键帧见 [关键帧 v1 / v2](../production/exhibit-47-keyframes.md)。
 - **设定图和镜头各用一套风格，不能混**。设定图统一用 SHEET-STYLE（灰色影棚、柔光、无调色，见 [人物与道具设定](../concept/exhibit-47-character-bible.md)），只负责"人长什么样"。镜头用下面的 S-* 块，负责"画面是什么风格"。所以镜头提示词里不要写 studio、grey backdrop 这类设定图的词；设定图里也不要写 S-* 块里的词。
 - **台词建议后期配**：用 AKOOL 配音生成，再叠到画面上。只有 I2 需要口型同步。
 
@@ -45,7 +45,30 @@ Live-action feature film still, photographed with real actors on a real location
 illustration, anime, game character art, video game cutscene, 3D render, CGI, digital human, plastic skin, waxy skin, beauty filter, skin smoothing, airbrushed retouching, glamour lighting, exaggerated rim light, HDR, oversharpened, strong color filter, crushed blacks, underexposed, floating objects, extra fingers, distorted hands, text, lettering, watermark, logo
 ```
 
-**和证物风格块的分工**：生成画面时只保留下面 S-* 块里的**机位和镜头**（胸前高度、广角、监控高角、固定机位），画面要按 S-LIVE 拍成干净的实拍素材，光线自然曝光。S-* 块里的**画质退化**（鱼眼畸变、噪点、压缩块、红外单色、低帧率、自动曝光抽动）一律在后期统一加，和叠字一样。这样 AI 不用去模仿"劣化的画面"，也不会出现一片漆黑或游戏感的夜视画面。
+**和证物风格块的分工**（2026-11-07 改）：画质**由生成的画面自己带**，不再留给后期。鱼眼畸变、噪点、压缩块、红外单色、过曝光晕、晃动这些，都写进提示词，和 S-LIVE 的真实感要求一起生成。**只有屏幕文字**（时间戳、编号、REC、证物标签上的字）仍然后期叠加，生成时一律排除。
+
+> 最早的做法是"生成干净的实拍画面，画质退化全部后期加"。用户要求画面本身就带这些质感，所以改了。下面的中文画质块是 v2 关键帧实际用的写法，结果见 [关键帧](../production/exhibit-47-keyframes.md) 的"v2"一节。
+
+### 中文画质块（v2：人物镜头在 LibTV，用中文提示词）
+
+**提示词顺序**：画质块 → 参考图 → 画面内容 → 真人实拍 → 排除。画质块必须放在**最前面**，并且写"**不是电影剧照**"；放在后面时，模型会默认拍成干净的电影画面。
+
+| 块 | 用于 | 写法 |
+|---|---|---|
+| 执法记录仪 · 彩色 | B1、B3、B4、B5、B6、B7、B8、B9、B10、X1 | 这是一张真实执法记录仪录像的截图，不是电影剧照：由队员胸前佩戴的执法记录仪拍摄，超广角镜头，画面边缘明显向外弯曲的桶形鱼眼畸变，四角发暗；低码率1080p压缩视频，暗部满是数字噪点和块状压缩痕迹，细节被压缩糊掉一些；自动曝光被手电晃得过曝发白，手电光斑有光晕；走动中的晃动和运动模糊，画面略微倾斜。 |
+| 执法记录仪 · 红外 | B2 | ……胸前执法记录仪的夜间红外模式，整个画面是单色的灰绿色；……红外补光让近处的东西偏亮、远处迅速变黑…… |
+| 监控 | C1、C2、C3 | 这是一张真实监控录像的截图，不是电影剧照：固定在高处墙角的监控摄像头拍摄，广角镜头带明显的桶形畸变；单色红外夜视，灰白色调；画质低，噪点重，块状压缩痕迹明显，细节糊；画面完全静止。 |
+| 审讯室 | I1–I4 | 这是一张审讯室监控系统录像的截图，不是电影剧照：固定机位的数字摄像头……数字噪点和压缩，色彩偏冷偏淡，清晰度一般；光线只来自天花板的日光灯，平而冷。 |
+| 旧录像 | O1、O2 | 这是一张三年前老款执法记录仪录像的截图，不是电影剧照：720p低清，偏黄的色偏，噪点重，明显的块状压缩，画面上有一两条数字花屏横纹…… |
+| 无人机 | D1 | 这是一张真实无人机航拍视频的截图，不是电影剧照，轻微的视频压缩和噪点。 |
+
+**参考图写法**：`{{Node 白模}} 是构图（灰色白模：机位、人物的位置和大小照它，不要照它的灰色方块质感）`；人物设定图写"是诺拉的长相、发型和衣服"；特勤组统一借布兰特设定图，写"只参考特勤组的装备样式，不参考脸"。
+
+**真人实拍块**（中文，接在画面内容后面）：人物是现实中真实存在的普通演员，真实人体比例，自然的面部不对称，皮肤有毛孔和细小绒毛，不磨皮，不像蜡和塑料；装备织物有真实的纹理和褶皱；人和环境是同一套光，有自然的接触阴影。
+
+**排除块**：电影剧照的干净画质、插画、动漫、游戏画面、游戏过场动画、三维渲染、数字人、塑料皮肤、美颜磨皮、夸张轮廓光、过度HDR、海报式构图；画面中不要出现任何文字、时间戳、编号、警徽、POLICE字样、标志和水印。
+
+**只加画质不改内容**（内容对、画质太干净时）：`编辑参考图 {{Node 原图}}：画面内容、构图、人物的位置、动作和装备全部保持不变，只改画质，让它变成一张……的截图，不是电影剧照：`，后面逐条列出要加的畸变、噪点、压缩、色偏。B1、O2 就是这样补的。
 
 ## 风格块（每条提示词开头粘贴一个）
 
@@ -312,7 +335,7 @@ A 6-second cinematic riser: accelerating taiko and metallic percussion, distorte
 
 ## 相关笔记
 
-- [AKOOL 关键帧 v1](../production/exhibit-47-keyframes.md)：按本页提示词做出的 30 张关键帧和图生图写法。
+- [关键帧 v1 / v2](../production/exhibit-47-keyframes.md)：按本页提示词做出的 30 张关键帧和图生图写法。
 - [人物与道具设定](../concept/exhibit-47-character-bible.md)：所有占位符的原文。
 - [设定图的图片转提示词学习记录](reference-sheet-reverse-prompts.md)：手套和疤的细节是怎么锁定的。
 - [分镜表](../production/exhibit-47-shot-list.md)：每个编号用在哪一秒。

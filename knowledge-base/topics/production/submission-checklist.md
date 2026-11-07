@@ -42,7 +42,7 @@ summary: 发布和提交前逐项勾选：时长、原创性、AKOOL 标志、�
 - [ ] 选择 **Coming Never** 赛道
 - [ ] "如何使用 AKOOL"的说明，建议结构：
   1. 角色设定：**如实写工具**。目前三张设定图是 LibTV 生成、用 LibTV 视觉模型核对的（见 [学习记录](../prompts/reference-sheet-reverse-prompts.md)）；如果订阅后在 AKOOL 里重做了，就写 AKOOL
-  2. 画面：关键帧由 AKOOL 图像生成完成（白模引导帧 → 图生图，53 次生成、30 张选用，制作日志是 `previs/keyframes/keyframes.json`，见 [关键帧](exhibit-47-keyframes.md)）；AKOOL 视频生成器用 [模型名] 完成约 25 个镜头的图生视频。⚠️ 如实写明 I3 沃德的手是 AKOOL 底图 + LibTV 设定图的手合成的
+  2. 画面：**如实写工具**。现行关键帧是 v2：有人的镜头 23 张在 LibTV 生成，场景和道具 7 张在 AKOOL 生成（13 次，39 积分）；C2 首帧在本地擦掉了 AKOOL 自己加的字框。制作日志是 `previs/keyframes/v2/keyframes_v2.json`，见 [关键帧](exhibit-47-keyframes.md)。更早的 v1（53 次 AKOOL 生成）可以作为探索过程一并说明。AKOOL 视频生成器用 [模型名] 完成约 25 个镜头的图生视频。⚠️ 关键帧里 AKOOL 的比重降低了，所以**图生视频、口型同步、配音都要在 AKOOL 里做**，并且每一步截图，才能撑住 15% 的"Use of AKOOL"
   3. 对白：AKOOL 口型同步 / 配音
   4. 其他工具：剪辑软件、音乐工具（如实列出）
 - [ ] 准备好补充材料（截图、制作日志），以备主办方索取
@@ -61,6 +61,6 @@ summary: 发布和提交前逐项勾选：时长、原创性、AKOOL 标志、�
 
 - [赛事规则](../brief/challenge-rules.md)：每一条的出处。
 - [AKOOL 制作流程](akool-workflow.md)：留证方法和排期。
-- [AKOOL 关键帧 v1](exhibit-47-keyframes.md)：关键帧的制作日志和任务号。
+- [关键帧 v1 / v2](exhibit-47-keyframes.md)：关键帧的制作日志和任务号。
 - [《第 47 号证物》分镜表](exhibit-47-shot-list.md)：主方案的时长与重看彩蛋。
 - [留白与悬念营销](../techniques/withholding-mystery.md)：发布文案。

@@ -174,6 +174,6 @@ v2 删掉了原来的 26–28 三张说明卡（"本片所有画面均为证物"
 - [人物与道具设定](../concept/exhibit-47-character-bible.md)、[镜头提示词库](../prompts/exhibit-47-shot-prompts.md)：本表的画面和声音来源。
 - [元结尾字卡库](../techniques/meta-endings.md)、[预告片结构](../techniques/trailer-structure.md)、[黑屏与字卡](../techniques/black-screen-text-cards.md)、[声音设计](../techniques/sound-design.md)、[剪辑节奏](../techniques/editing-rhythm.md)、[留白与悬念营销](../techniques/withholding-mystery.md)：设计依据。
 - [AKOOL 制作流程](akool-workflow.md)：怎么把这张表做出来。
-- [AKOOL 关键帧 v1](exhibit-47-keyframes.md)：本表每个镜头的关键帧（第十三人 4 次出场的核对表在那里）。
+- [关键帧 v1 / v2](exhibit-47-keyframes.md)：本表每个镜头的关键帧（第十三人 4 次出场的核对表在那里）。
 - [《明日不来》分镜表](untomorrow-shot-list.md)：备选方案的分镜。
 - 技法来源：[盗梦空间](../trailers/inception.md)（11）、[黑暗骑士](../trailers/the-dark-knight.md)（13）、[寂静之地](../trailers/a-quiet-place.md)（20、23）、[长腿](../trailers/longlegs-teasers.md)（16 闪帧、重看彩蛋）、[临冬城墓穴](../trailers/got-crypts-of-winterfell.md)（16 合法误导）。

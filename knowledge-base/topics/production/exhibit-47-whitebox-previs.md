@@ -161,7 +161,7 @@ python3 previs/compose_animatic.py previs/out/meta.json previs/out/frames previs
 
 ## 下一步
 
-1. ~~**用白模帧做关键帧**~~：已完成（2026-11-07），白模帧当图生图源图、相似度 0.45–0.5 最稳，见 [AKOOL 关键帧 v1](exhibit-47-keyframes.md)。渲染引导帧的脚本是 `previs/keyframes/tools/render_guides.py`。
+1. ~~**用白模帧做关键帧**~~：已完成（2026-11-07），白模帧当图生图源图、相似度 0.45–0.5 最稳，见 [关键帧 v1 / v2](exhibit-47-keyframes.md)。渲染引导帧的脚本是 `previs/keyframes/tools/render_guides.py`。
 2. **检查第十三人**：生成的成片仍要按"橙色只出现 4 次"的标准人工核对。
 3. **剪辑节奏**：动态预演里每个镜头的时长和分镜表一致，可以直接配临时音乐，检查节奏和字卡停留时间。
 
@@ -172,5 +172,5 @@ python3 previs/compose_animatic.py previs/out/meta.json previs/out/frames previs
 - [镜头提示词库](../prompts/exhibit-47-shot-prompts.md)：按本页发现改过的提示词。
 - [人物与道具设定](../concept/exhibit-47-character-bible.md)：人物和颜色规则。
 - [AKOOL 制作流程](akool-workflow.md)：白模在流程里的位置。
-- [AKOOL 关键帧 v1](exhibit-47-keyframes.md)：以白模帧为源图生成的 30 张关键帧。
+- [关键帧 v1 / v2](exhibit-47-keyframes.md)：以白模帧为源图生成的 30 张关键帧。
 - [剪辑节奏](../techniques/editing-rhythm.md)：动态预演用来检查节奏。

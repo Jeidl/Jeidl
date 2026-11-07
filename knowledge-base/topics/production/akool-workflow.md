@@ -28,7 +28,9 @@ summary: 从角色设定图、动态分镜、图生视频、口型与配音，�
 | 图片转提示词、设定图核对 | LibTV 视觉模型（GVLM 3.1、Qwen 3 VL Flash） | 已完成，见 [学习记录](../prompts/reference-sheet-reverse-prompts.md) |
 | 场景图（6 个场景的环境参考） | **AKOOL** 图像生成（flux-krea-dev） | 已完成：8 张，24 积分，见 [场景图](../prompts/exhibit-47-scene-images.md) |
 | 白模预演（构图、遮挡、动作时机） | Blender 5.2（Python 模块 bpy） | v1 已完成，见 [白模预演](exhibit-47-whitebox-previs.md) |
-| 关键帧（白模引导帧 / 设定图为源图的图生图） | **AKOOL** 图像生成（flux-kontext-dev） | v1 已完成（2026-11-07）：30 张选用帧，53 次生成，159 积分，见 [关键帧](exhibit-47-keyframes.md) |
+| 关键帧 v2 · 人物镜头（23 张，画面自带证物画质） | LibTV（Seedream 5.5，中文提示词 + v3 设定图 + 白模） | 已完成（2026-11-07），32 次生成，见 [关键帧](exhibit-47-keyframes.md) |
+| 关键帧 v2 · 场景和道具（7 张） | **AKOOL** 图像生成（flux-krea / flux-kontext） | 已完成（2026-11-07）：13 次生成，39 积分 |
+| 关键帧 v1（已被 v2 取代，保留作对照） | **AKOOL** 图像生成（flux-kontext-dev） | 已完成（2026-11-07）：30 张选用帧，53 次生成，159 积分，见 [关键帧](exhibit-47-keyframes.md) |
 | 图生视频（全部镜头） | **AKOOL** 视频生成器 | 待做 |
 | 配音 V1–V12 | **AKOOL** 配音 | 待做 |
 | 口型同步（I2） | **AKOOL** 口型同步 | 待做 |

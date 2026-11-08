@@ -4,7 +4,7 @@ title: 武侠预告制作工作流
 tags: [workflow]
 created: 2026-11-08
 updated: 2026-11-08
-related: [20261108-trailer-breakdown-method, 20261108-qc-checklist, 20261108-timeline-120s, 20261108-storyboard-template, 20261108-music-structure, 20261108-release-cadence]
+related: [20261108-trailer-breakdown-method, 20261108-qc-checklist, 20261108-timeline-120s, 20261108-storyboard-template, 20261108-music-structure, 20261108-release-cadence, 20261108-scene-to-trailer-adaptation]
 summary: 从拿到粗剪到交付多版本的 12 步流程：素材日志、定位、音乐先行、纸面时间轴、台词骨架、粗剪、卡点、变速、声音、调色字幕、衍生版本、质检。
 ---
 
@@ -32,6 +32,7 @@ summary: 从拿到粗剪到交付多版本的 12 步流程：素材日志、定�
 ## Related
 - [拉片方法](trailer-breakdown-method.md) — 第 1 步之前，先拆解 2–3 支参考预告。
 - [质检清单](qc-checklist.md) — 第 12 步。
+- [从文字打斗场景改编预告](scene-to-trailer-adaptation.md) — 只有剧本或小说、还没有成片素材时的替代流程。
 - [120 秒时间轴模板](../structure/timeline-120s.md) — 第 4 步。
 - [分镜表模板](../shots/storyboard-template.md) — 第 4 步的执行文件。
 - [预告配乐结构](../sound/music-structure.md) — 第 3 步。

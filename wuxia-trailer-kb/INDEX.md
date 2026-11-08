@@ -1,6 +1,6 @@
 # 武侠电影预告片知识库 — 索引
 
-武侠风格电影预告片的**剪辑、分镜、时机、秒数、风格**知识库。共 9 个主题、42 篇原子笔记，每篇只讲一个主题，用 `id` 互相引用。
+武侠风格电影预告片的**剪辑、分镜、时机、秒数、风格**知识库。共 9 个主题、43 篇原子笔记，每篇只讲一个主题，用 `id` 互相引用。
 
 ## 快速入口
 | 我想…… | 打开 |
@@ -11,6 +11,7 @@
 | 打斗怎么剪才有"武侠味" | `topics/editing/pause-burst-pause.md`、`topics/editing/hong-kong-constructive-editing.md` |
 | 选配乐、做声音 | `topics/sound/music-structure.md`、`topics/sound/sound-design-palette.md` |
 | 用 AI 生成预告素材 | `topics/workflow/ai-video-prompting.md` |
+| 把小说 / 剧本打斗场景改成预告 | `topics/workflow/scene-to-trailer-adaptation.md`（实例：`projects/ink-pool-duel/`） |
 
 ## 使用方法（给 AI 代理和读者）
 1. 先读本索引，按描述挑 1–3 篇笔记打开，不要全量扫描。
@@ -87,6 +88,7 @@
 - `20261108-ai-video-prompting` — **用本知识库驱动 AI 视频生成** — `topics/workflow/ai-video-prompting.md` — 把分镜表转成 AI 视频生成提示词的公式（景别 + 主体 + 动作 + 环境 + 光线 + 运镜 + 速度 + 质感 + 时长），中英文示例，"停"镜与"爆"镜的生成策略和原创性提醒。
 - `20261108-production-workflow` — **武侠预告制作工作流** — `topics/workflow/production-workflow.md` — 从拿到粗剪到交付多版本的 12 步流程：素材日志、定位、音乐先行、纸面时间轴、台词骨架、粗剪、卡点、变速、声音、调色字幕、衍生版本、质检。
 - `20261108-qc-checklist` — **武侠预告质检清单** — `topics/workflow/qc-checklist.md` — 交付前逐项检查的清单：结构与时长、节奏可读性、声音混音、画面调色、字幕卡与片名、版权合规、多版本规格。
+- `20261108-scene-to-trailer-adaptation` — **从文字打斗场景改编预告** — `topics/workflow/scene-to-trailer-adaptation.md` — 把一段小说式的武侠打斗文字改编成预告分镜的七步法：拆节拍、标停/爆、找贯穿线、定剧透边界、套时间轴、从文字提取声音、写色彩脚本；附《墨池》实例。
 - `20261108-trailer-breakdown-method` — **拉片方法：如何拆解一支预告并补充本知识库** — `topics/workflow/trailer-breakdown-method.md` — 逐镜拆解（拉片）一支武侠预告的步骤、记录表字段和应计算的指标（各幕平均镜长、每分钟剪辑数、hit 数、静默数、慢镜数、字幕卡时长），以及把结果存为新案例笔记的方法。
 
 ### reference — 参考

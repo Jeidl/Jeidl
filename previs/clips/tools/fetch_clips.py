@@ -1,6 +1,7 @@
 """Download the AKOOL clips listed in ../clips_v2.json.
 
-    python3 fetch_clips.py OUT_DIR            # takes used in rough cut v2 (what roughcut.py needs)
+    python3 fetch_clips.py OUT_DIR            # takes used in rough cut v3 (what roughcut.py needs)
+    python3 fetch_clips.py OUT_DIR --v2       # takes used in rough cut v2
     python3 fetch_clips.py OUT_DIR --v1       # takes used in rough cut v1
     python3 fetch_clips.py OUT_DIR --all      # every take
 
@@ -12,7 +13,8 @@ log = json.load(open(os.path.join(here, "..", "clips_v2.json"), encoding="utf-8"
 out = sys.argv[1]
 os.makedirs(out, exist_ok=True)
 for c in log["clips"]:
-    used = c["used_in_cut_v1"] if "--v1" in sys.argv else c["used_in_cut_v2"]
+    cut = "v1" if "--v1" in sys.argv else "v2" if "--v2" in sys.argv else "v3"
+    used = c["used_in_cut_" + cut]
     if not (used or "--all" in sys.argv):
         continue
     dst = os.path.join(out, c["name"] + ".mp4")

@@ -3,8 +3,8 @@ id: 20261107-exhibit-47-video-clips
 title: 《第 47 号证物》AKOOL 图生视频：Akool Premium 首轮、Seedance 升级、配音和口型同步，粗剪 v1 和 v2
 tags: [production, akool, video, prompt]
 created: 2026-11-07
-updated: 2026-11-07
-related: [20261107-exhibit-47-sound-mix, 20261107-exhibit-47-keyframes, 20261106-exhibit-47-shot-prompts, 20261106-exhibit-47-shot-list, 20261106-akool-workflow, 20261106-submission-checklist, 20261106-exhibit-47-whitebox-previs, 20261106-editing-rhythm]
+updated: 2026-11-08
+related: [20261108-exhibit-47-review-2, 20261107-exhibit-47-sound-mix, 20261107-exhibit-47-keyframes, 20261106-exhibit-47-shot-prompts, 20261106-exhibit-47-shot-list, 20261106-akool-workflow, 20261106-submission-checklist, 20261106-exhibit-47-whitebox-previs, 20261106-editing-rhythm]
 summary: 全部在 AKOOL 里完成。首轮用 Akool Premium（8 积分/条）做了 29 条，拼成无声粗剪 v0。第二轮改用 Seedance 1.0 Pro Fast（25 积分/条）升级了 13 个镜头，其中 9 条胜出；C2 开场用 Seedance Lite 首尾帧；V1–V12 用 AKOOL 配音，I2 用 Talking Photo 做口型同步，拼成粗剪 v1。第三轮把剩下的镜头也用 Pro Fast 重做：8 条 720p（13 积分/条）里 6 条胜出，积分补充后又做了 3 条 1080p，胜出 1 条。加上 LibTV 生成的音乐和音效，拼成带完整声音的粗剪 v2。共 57 条视频，1035 积分。笔记记录了价格、每条取舍和 19 条教训。
 ---
 
@@ -12,7 +12,7 @@ summary: 全部在 AKOOL 里完成。首轮用 Akool Premium（8 积分/条）�
 
 > Summary: 全部在 AKOOL 里完成。首轮用 Akool Premium（8 积分/条）做了 29 条，拼成无声粗剪 v0。第二轮改用 Seedance 1.0 Pro Fast（25 积分/条）升级了 13 个镜头，其中 9 条胜出；C2 开场用 Seedance Lite 首尾帧；V1–V12 用 AKOOL 配音，I2 用 Talking Photo 做口型同步，拼成粗剪 v1。第三轮把剩下的镜头也用 Pro Fast 重做：8 条 720p（13 积分/条）里 6 条胜出，积分补充后又做了 3 条 1080p，胜出 1 条。加上 LibTV 生成的音乐和音效，拼成带完整声音的粗剪 v2。共 57 条视频，1035 积分。笔记记录了价格、每条取舍和 19 条教训。
 >
-> **现行版本是粗剪 v2**（`previs/clips/roughcut_v2_540p.mp4`，日志 `clips_v2.json`，声音见 [音乐、音效和混音](exhibit-47-sound-mix.md)）。下文先写首轮（v0），然后是“第二轮”（Seedance 升级、配音、口型同步，粗剪 v1）和“第三轮”（剩下的镜头改用 Pro Fast，粗剪 v2）。
+> **现行版本是粗剪 v3**（`previs/clips/roughcut_v3_540p.mp4`，第二次审片后的修改见 [审片对照](exhibit-47-review-2.md)；声音见 [音乐、音效和混音](exhibit-47-sound-mix.md)）。下文按时间顺序写首轮（v0）、第二轮（v1）、第三轮（v2）和第四轮（v3）。
 
 ## 背景
 
@@ -149,6 +149,10 @@ summary: 全部在 AKOOL 里完成。首轮用 Akool Premium（8 积分/条）�
 
 **粗剪 v2**：画面换成上表的选择；在 LibTV 生成了 18 个音效和配乐 SC1，用 `tools/soundmix.py` 混成对白、音乐、音效、底噪四轨（响度 -13.8 LUFS，两处全静音），详见 [音乐、音效和混音](exhibit-47-sound-mix.md)。混音时发现**粗剪 v1 的对白整体提前了约 3 秒**（ffmpeg 去静音滤镜丢了时间戳），v2 已修正。
 
+## 第四轮：第二次审片后的补拍（2026-11-08）
+
+审片的核心意见是"关键证据观众没看懂"。这一轮只补了故事必需的 4 条（175 积分）：C2 冷冻间从同一张空房间帧生成进门和抓人，保证是同一个监控机位；第一次 Kling 首尾帧的路径不对（她跑向门口、像中枪），改用 Pro Fast 写明"往左拽进箱子后面"后成功；B4 换成克制版布兰特。另有一张 LibTV 关键帧：诺拉自己的记录仪往下拍到手套破口里的疤。逐条对照、证据链设定和复听检查表见 [第二次审片对照](exhibit-47-review-2.md)。
+
 ## 19 条教训
 
 1. **先测价格再铺量**：同样 5 秒，Akool Premium 8 积分，Seedance 1.0 Pro 75，Kling 3.0 Omni 100。先各跑一条，看 `deduction_credit`，再定主力模型。
@@ -195,23 +199,27 @@ summary: 全部在 AKOOL 里完成。首轮用 Akool Premium（8 积分/条）�
 
 `previs/clips/`：
 
-- `clips_v2.json`（**现行**）：57 条视频的完整日志，包括三轮生成和 Talking Photo。`used_in_cut_v1`、`used_in_cut_v2` 分别标出两版粗剪（含监控墙）用到的片段。
-- `roughcut_v2_540p.mp4`（**现行**）：粗剪 v2，带对白、音乐和音效。
+- `clips_v2.json`（**现行**）：61 条视频的完整日志，包括四轮生成和 Talking Photo。`used_in_cut_v1`、`used_in_cut_v2`、`used_in_cut_v3` 分别标出三版粗剪（含监控墙）用到的片段。
+- `roughcut_v3_540p.mp4`（**现行**）：粗剪 v3，85.2 秒，证据文字可读、按画面帧定位的声音。`roughcut_v3.timeline.json`（每段的起点、素材、入点、枪口闪光）和 `roughcut_v3.cues.json`（每个声音落点）。
+- `roughcut_v2_540p.mp4`：粗剪 v2，带对白、音乐和音效。
 - `roughcut_v1_540p.mp4`：粗剪 v1，只有对白轨（对白整体提前约 3 秒，见第三轮）。
 - `../audio/sfx/`、`../audio/music/`、`../audio/sfx_music.json`：LibTV 生成的音效和配乐，见 [音乐、音效和混音](exhibit-47-sound-mix.md)。
 - `../audio/voice/` 和 `../audio/voice_lines.json`：全部配音文件，以及每句的声音、语速和 AKOOL 任务号。
 - `clips_v1.json`：首轮 29 次生成的完整日志（保留作对照）。每条记了模型、分辨率、时长、积分、首帧和尾帧链接、提示词、负面词、AKOOL 任务号、视频链接、取舍，以及是否用在粗剪里（`selected`）。提交时它就是"如何使用 AKOOL"的制作日志。
 - `strips/`：每条片段的 6 帧缩略图。
 - `roughcut_v0_540p.mp4`：无声粗剪 v0。
-- `tools/fetch_clips.py`：按 `clips_v2.json` 把粗剪 v2 要用的片段下载到本地（`--v1` 下载 v1 的，`--all` 下载全部）。
-- `tools/roughcut.py`：重新拼粗剪 v2 的画面和对白轨。
-- `tools/soundmix.py`：把对白、音乐、音效、底噪混到粗剪上。
+- `tools/fetch_clips.py`：按 `clips_v2.json` 把粗剪 v3 要用的片段下载到本地（`--v2`、`--v1` 下载旧版的，`--all` 下载全部）。
+- `tools/roughcut.py`：拼粗剪 v3 的画面，并写出时间线文件。
+- `tools/overlays.py`、`tools/track_plane.py`：登记簿和标签上的字、各设备屏显；标签的逐帧跟踪（`overlays/24_E2__sdfast720.track.json`）。
+- `tools/soundmix.py`：按时间线把对白、音乐、音效、底噪混到粗剪上。
+- `tools/breakdown.py`：给任何视频（参考预告或本片）出带时间码的镜头表、黑场、静音和重击。
 
 视频原片（1920×1080 或 1248×704，24 fps）都在 AKOOL 的 CDN 上，链接见日志，仓库里不存原片。
 
 ## 相关笔记
 
-- [音乐、音效和混音](exhibit-47-sound-mix.md)：粗剪 v2 的声音。
+- [第二次审片对照](exhibit-47-review-2.md)：粗剪 v3 逐条回应审片意见。
+- [音乐、音效和混音](exhibit-47-sound-mix.md)：粗剪的声音。
 - [关键帧 v2](exhibit-47-keyframes.md)：这些片段的首帧。
 - [镜头提示词库](../prompts/exhibit-47-shot-prompts.md)：每个镜头的完整描述和后期叠字规范。
 - [分镜表](exhibit-47-shot-list.md)：粗剪用的时间码。

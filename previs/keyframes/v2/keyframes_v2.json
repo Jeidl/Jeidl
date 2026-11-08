@@ -270,6 +270,21 @@
    "take": "v2",
    "note": "became first-person hands pressed on a crate",
    "fix": "text-only, no guide: a boy's raised hands, palms to camera, grey hoodie sleeves, freezer ceiling"
+  },
+  {
+   "frame": "21_C2_pov_scar",
+   "tool": "LibTV",
+   "file": "frames/21_C2_pov_scar.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1007063599_8b0060fd7bc748ac94c6392160327ef8.png",
+   "take": "v3 (second review)",
+   "node": "i-zGj0fDfDeW",
+   "refs": [
+    "i-FYIMo5qBdJ (glove v2)",
+    "i-fG9Q3BJM9u (I3 v2 scar)",
+    "i-oNdWbdYl6b (hand master)"
+   ],
+   "note": "Nora's own body cam looking down: Ward's gloved right hand on her vest strap, the torn glove showing the same diagonal raised scar as I3 (wrist toward the index knuckle). Used as a still with a jolt, so the scar cannot morph.",
+   "fix": ""
   }
  ],
  "attempts": [

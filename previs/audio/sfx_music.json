@@ -288,6 +288,33 @@
    "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/audio/954813f0058b4034bf1236badbfac475/f535930583c015671a226c9a5189fff413d32d19875650b8e0d711af9d19f11f.wav",
    "seconds": 6.05,
    "normalised": "peak to -1 dBFS (-0.7 dB)"
+  },
+  {
+   "file": "sfx/FX7_shot_a.mp3",
+   "derived_from": "sfx/FX7_gunshots.mp3",
+   "trim": [
+    0.625,
+    1.205
+   ],
+   "note": "single shot cut from the burst (onset 20 ms in), so rough cut v3 can put one shot on each detected muzzle flash"
+  },
+  {
+   "file": "sfx/FX7_shot_b.mp3",
+   "derived_from": "sfx/FX7_gunshots.mp3",
+   "trim": [
+    1.245,
+    1.785
+   ],
+   "note": "single shot cut from the burst (onset 20 ms in), so rough cut v3 can put one shot on each detected muzzle flash"
+  },
+  {
+   "file": "sfx/FX7_shot_c.mp3",
+   "derived_from": "sfx/FX7_gunshots.mp3",
+   "trim": [
+    2.495,
+    3.095
+   ],
+   "note": "single shot cut from the burst (onset 20 ms in), so rough cut v3 can put one shot on each detected muzzle flash"
   }
  ]
 }

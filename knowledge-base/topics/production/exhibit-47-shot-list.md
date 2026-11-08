@@ -3,7 +3,7 @@ id: 20261106-exhibit-47-shot-list
 title: 《第 47 号证物》90 秒档分镜表（逐镜头时间码）
 tags: [production, editing, prompt]
 created: 2026-11-06
-updated: 2026-11-07
+updated: 2026-11-08
 related: [20261106-shutter-island, 20261106-exhibit-47-whitebox-previs, 20261106-submission-checklist, 20261106-exhibit-47-story, 20261106-exhibit-47-character-bible, 20261106-exhibit-47-shot-prompts, 20261106-meta-endings, 20261106-trailer-structure, 20261106-black-screen-text-cards, 20261106-sound-design, 20261106-editing-rhythm, 20261106-withholding-mystery, 20261106-akool-workflow, 20261106-untomorrow-shot-list, 20261106-inception, 20261106-the-dark-knight, 20261106-a-quiet-place, 20261106-longlegs-teasers, 20261106-got-crypts-of-winterfell, 20261107-exhibit-47-keyframes, 20261107-exhibit-47-video-clips]
 summary: 主方案参赛版分镜（v2，审片后修订），总长 88 秒：时间码、提示词编号、字卡、台词和声音；"只配发 12 台 + 第 47 号证物遗失"的不可能证据链；两只手同一道疤的线索；第十三人 4 次出场（第 4 次是身份线索）；预告刻意不交代的内容；以及 30 秒前导版和 9:16 竖屏版的改法。
 ---
@@ -13,6 +13,8 @@ summary: 主方案参赛版分镜（v2，审片后修订），总长 88 秒：�
 > Summary: 主方案参赛版分镜（v2，审片后修订），总长 88 秒：时间码、提示词编号、字卡、台词和声音；"只配发 12 台 + 第 47 号证物遗失"的不可能证据链；两只手同一道疤的线索；第十三人 4 次出场（第 4 次是身份线索）；预告刻意不交代的内容；以及 30 秒前导版和 9:16 竖屏版的改法。
 
 ## 读表说明
+
+- **粗剪 v3（2026-11-08，第二次审片后）的顺序和时长已经和本表不同**：开头改为 车到 → 破门 → 1 CAME OUT → 俯拍，11.6 秒就出现 13 CAMERAS；登记簿和标签的字、监控墙 FEED 编号、第 13 路画面都已做出。以 [第二次审片对照](exhibit-47-review-2.md) 和 `previs/clips/roughcut_v3.timeline.json` 为准。
 
 - **v2（2026-11-06 审片后）**：第十三台摄像机改成"不可能存在"（只配发了 12 台 + 三年前登记为证物、后来遗失）；两只手的疤做成同一条线索；蒙太奇改成"证物复查"；片名移到诺拉抬眼之后；删掉 3 张说明卡。修改原因见 [白模预演](exhibit-47-whitebox-previs.md) 的"v2"一节。
 - **为什么是 88 秒**：规则上限是 90 秒，导出时帧数取整或平台转码都可能多出几帧。留 2 秒余量，避免因超时被拒。

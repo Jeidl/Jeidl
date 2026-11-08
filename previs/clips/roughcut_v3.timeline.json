@@ -1,0 +1,585 @@
+{
+ "fps": 24,
+ "size": [
+  1280,
+  720
+ ],
+ "duration": 85.16666666666667,
+ "segments": [
+  {
+   "id": "LOGO",
+   "start": 0.0,
+   "frames": 36,
+   "dur": 1.5,
+   "kind": "card",
+   "text": "AKOOL"
+  },
+  {
+   "id": "C3",
+   "start": 1.5,
+   "frames": 72,
+   "dur": 3.0,
+   "clip": "04_C3__sdfast",
+   "src_in": 0.6
+  },
+  {
+   "id": "CARD12",
+   "start": 4.5,
+   "frames": 29,
+   "dur": 1.2083,
+   "kind": "card",
+   "text": "12 OFFICERS WENT IN."
+  },
+  {
+   "id": "B1",
+   "start": 5.7083,
+   "frames": 29,
+   "dur": 1.2083,
+   "note": "swing, hit at +0.56 s, door gives",
+   "clip": "05_B1__sdfast",
+   "src_in": 1.65
+  },
+  {
+   "id": "B1F",
+   "start": 6.9167,
+   "frames": 2,
+   "dur": 0.0833,
+   "note": "flare over the cut past the second swing"
+  },
+  {
+   "id": "B1b",
+   "start": 7.0,
+   "frames": 22,
+   "dur": 0.9167,
+   "note": "team goes in",
+   "clip": "05_B1__sdfast",
+   "src_in": 3.7
+  },
+  {
+   "id": "CARD1",
+   "start": 7.9167,
+   "frames": 29,
+   "dur": 1.2083,
+   "kind": "card",
+   "text": "1 CAME OUT."
+  },
+  {
+   "id": "D1",
+   "start": 9.125,
+   "frames": 60,
+   "dur": 2.5,
+   "note": "07:40, the survivor walks out",
+   "clip": "02_D1__akp",
+   "src_in": 0.0
+  },
+  {
+   "id": "CARD13",
+   "start": 11.625,
+   "frames": 36,
+   "dur": 1.5,
+   "kind": "card",
+   "text": "13 CAMERAS WERE RECOVERED."
+  },
+  {
+   "id": "E1",
+   "start": 13.125,
+   "frames": 60,
+   "dur": 2.5,
+   "clip": "09_E1__sdfast720",
+   "src_in": 1.5
+  },
+  {
+   "id": "I1",
+   "start": 15.625,
+   "frames": 60,
+   "dur": 2.5,
+   "clip": "07_I1__sdfast",
+   "src_in": 0.2
+  },
+  {
+   "id": "B2",
+   "start": 18.125,
+   "frames": 58,
+   "dur": 2.4167,
+   "note": "descent, count off",
+   "clip": "10_B2a__sdfast",
+   "src_in": 0.4
+  },
+  {
+   "id": "B2w",
+   "start": 20.5417,
+   "frames": 12,
+   "dur": 0.5,
+   "note": "whip to the back of the line",
+   "clip": "10_B2b__akp",
+   "src_in": 0.0
+  },
+  {
+   "id": "B2h",
+   "start": 21.0417,
+   "frames": 26,
+   "dur": 1.0833,
+   "note": "the 13th, red light on",
+   "clip": "10_B2b__sdfast",
+   "src_in": 0.3
+  },
+  {
+   "id": "BLACK1",
+   "start": 22.125,
+   "frames": 12,
+   "dur": 0.5
+  },
+  {
+   "id": "GRID1",
+   "start": 22.625,
+   "frames": 72,
+   "dur": 3.0,
+   "kind": "wall",
+   "note": "FEED 03 and 09 die"
+  },
+  {
+   "id": "B3",
+   "start": 25.625,
+   "frames": 72,
+   "dur": 3.0,
+   "clip": "13_B3__akp",
+   "src_in": 0.3
+  },
+  {
+   "id": "CARD_ONLY12",
+   "start": 28.625,
+   "frames": 48,
+   "dur": 2.0,
+   "kind": "card",
+   "text": "ONLY 12 CAMERAS WERE ISSUED."
+  },
+  {
+   "id": "B4",
+   "start": 30.625,
+   "frames": 60,
+   "dur": 2.5,
+   "note": "restrained: suspicion, low voice",
+   "clip": "15_B4_quiet__sdfast",
+   "src_in": 1.2
+  },
+  {
+   "id": "CARD_DEAD",
+   "start": 33.125,
+   "frames": 45,
+   "dur": 1.875,
+   "kind": "card",
+   "text": "ONE CAMERA BELONGED / TO A DEAD MAN."
+  },
+  {
+   "id": "O1F",
+   "start": 35.0,
+   "frames": 3,
+   "dur": 0.125,
+   "clip": "S2_O1__akp",
+   "src_in": 1.0
+  },
+  {
+   "id": "O2",
+   "start": 35.125,
+   "frames": 60,
+   "dur": 2.5,
+   "note": "2023: they switch their cameras off",
+   "clip": "17_O2__sdfast",
+   "src_in": 1.5
+  },
+  {
+   "id": "E3REG",
+   "start": 37.625,
+   "frames": 89,
+   "dur": 3.7083,
+   "stamp_at": 1.0,
+   "clip": "18_E3_register__sdfast",
+   "src_in": 0.5
+  },
+  {
+   "id": "E3TAG",
+   "start": 41.3333,
+   "frames": 31,
+   "dur": 1.2917,
+   "note": "EXHIBIT 47 readable",
+   "clip": "24_E2__sdfast720",
+   "src_in": 2.2
+  },
+  {
+   "id": "B5",
+   "start": 42.625,
+   "frames": 24,
+   "dur": 1.0,
+   "clip": "19a_B5__sdfast",
+   "src_in": 0.6,
+   "flashes": [
+    0.167,
+    0.625,
+    0.833
+   ]
+  },
+  {
+   "id": "B9",
+   "start": 43.625,
+   "frames": 24,
+   "dur": 1.0,
+   "note": "hit at +0.5 s, flashlight lands +0.7 s",
+   "clip": "19b_B9__sdfast720",
+   "src_in": 1.4,
+   "flashes": []
+  },
+  {
+   "id": "C1",
+   "start": 44.625,
+   "frames": 24,
+   "dur": 1.0,
+   "clip": "19c_C1__sdfast720",
+   "src_in": 3.0,
+   "flashes": [
+    0.667
+   ]
+  },
+  {
+   "id": "B10",
+   "start": 45.625,
+   "frames": 24,
+   "dur": 1.0,
+   "clip": "19d_B10__akp",
+   "src_in": 0.4
+  },
+  {
+   "id": "B6",
+   "start": 46.625,
+   "frames": 30,
+   "dur": 1.25,
+   "note": "pipe bursts: the way back is gas",
+   "clip": "19e_B6__sdfast",
+   "src_in": 0.5
+  },
+  {
+   "id": "GRID2",
+   "start": 47.875,
+   "frames": 24,
+   "dur": 1.0,
+   "kind": "wall",
+   "note": "FEED 04, 07, 11 die"
+  },
+  {
+   "id": "B7",
+   "start": 48.875,
+   "frames": 36,
+   "dur": 1.5,
+   "note": "Brandt loses it",
+   "clip": "19g_B7__sdfast720",
+   "src_in": 1.0
+  },
+  {
+   "id": "X1",
+   "start": 50.375,
+   "frames": 36,
+   "dur": 1.5,
+   "note": "the 13th: AX-118, calm",
+   "clip": "19h_X1__sdfast",
+   "src_in": 1.0
+  },
+  {
+   "id": "B8s",
+   "start": 51.875,
+   "frames": 17,
+   "dur": 0.7083,
+   "clip": "19i_B8_start__akp",
+   "src_in": 2.8
+  },
+  {
+   "id": "B8r",
+   "start": 52.5833,
+   "frames": 19,
+   "dur": 0.7917,
+   "note": "his own reflection: the red light is where the lens is",
+   "clip": "19i_B8_reflection__sdfast720",
+   "src_in": 1.0
+  },
+  {
+   "id": "GRID3",
+   "start": 53.375,
+   "frames": 24,
+   "dur": 1.0,
+   "kind": "wall",
+   "note": "FEED 12 (Nora) dies last"
+  },
+  {
+   "id": "DEAD",
+   "start": 54.375,
+   "frames": 36,
+   "dur": 1.5,
+   "kind": "silence"
+  },
+  {
+   "id": "FEED13",
+   "start": 55.875,
+   "frames": 54,
+   "dur": 2.25,
+   "kind": "wall",
+   "note": "a thirteenth feed, still recording"
+  },
+  {
+   "id": "C2e",
+   "start": 58.125,
+   "frames": 38,
+   "dur": 1.5833,
+   "clip": "21_C2_enter__sdfast",
+   "src_in": 1.6
+  },
+  {
+   "id": "C2d",
+   "start": 59.7083,
+   "frames": 2,
+   "dur": 0.0833,
+   "note": "CCTV dropout"
+  },
+  {
+   "id": "C2g",
+   "start": 59.7917,
+   "frames": 12,
+   "dur": 0.5,
+   "note": "the hand takes her vest strap",
+   "clip": "21_C2_pull__sdfast",
+   "src_in": 0.0
+  },
+  {
+   "id": "C2i",
+   "start": 60.2917,
+   "frames": 17,
+   "dur": 0.7083,
+   "note": "Nora's own camera sees the scar"
+  },
+  {
+   "id": "C2p",
+   "start": 61.0,
+   "frames": 58,
+   "dur": 2.4167,
+   "note": "sparks +0.3, yanked left +0.7, gone +1.5",
+   "clip": "21_C2_pull__sdfast",
+   "src_in": 0.5
+  },
+  {
+   "id": "M_I2",
+   "start": 63.4167,
+   "frames": 36,
+   "dur": 1.5,
+   "note": "\"There were thirteen of us.\" (the audio runs on)",
+   "clip": "S1_I2__talk",
+   "src_in": 0.2
+  },
+  {
+   "id": "M_w1",
+   "start": 64.9167,
+   "frames": 2,
+   "dur": 0.0833
+  },
+  {
+   "id": "M_O1",
+   "start": 65.0,
+   "frames": 10,
+   "dur": 0.4167,
+   "clip": "S2_O1__akp",
+   "src_in": 0.5
+  },
+  {
+   "id": "M_b1",
+   "start": 65.4167,
+   "frames": 2,
+   "dur": 0.0833
+  },
+  {
+   "id": "M_scar",
+   "start": 65.5,
+   "frames": 6,
+   "dur": 0.25
+  },
+  {
+   "id": "M_b2",
+   "start": 65.75,
+   "frames": 2,
+   "dur": 0.0833
+  },
+  {
+   "id": "M_B2",
+   "start": 65.8333,
+   "frames": 12,
+   "dur": 0.5,
+   "clip": "10_B2a__akp",
+   "src_in": 1.0
+  },
+  {
+   "id": "M_w2",
+   "start": 66.3333,
+   "frames": 2,
+   "dur": 0.0833
+  },
+  {
+   "id": "M_tag",
+   "start": 66.4167,
+   "frames": 6,
+   "dur": 0.25
+  },
+  {
+   "id": "M_O2",
+   "start": 66.6667,
+   "frames": 10,
+   "dur": 0.4167,
+   "clip": "17_O2__sdfast",
+   "src_in": 2.5
+  },
+  {
+   "id": "M_refl",
+   "start": 67.0833,
+   "frames": 4,
+   "dur": 0.1667
+  },
+  {
+   "id": "M_B7",
+   "start": 67.25,
+   "frames": 10,
+   "dur": 0.4167,
+   "clip": "19g_B7__sdfast720",
+   "src_in": 2.0
+  },
+  {
+   "id": "M_w3",
+   "start": 67.6667,
+   "frames": 2,
+   "dur": 0.0833
+  },
+  {
+   "id": "M_f13",
+   "start": 67.75,
+   "frames": 4,
+   "dur": 0.1667
+  },
+  {
+   "id": "M_B5",
+   "start": 67.9167,
+   "frames": 8,
+   "dur": 0.3333,
+   "clip": "19a_B5__sdfast",
+   "src_in": 1.0
+  },
+  {
+   "id": "M_s2",
+   "start": 68.25,
+   "frames": 2,
+   "dur": 0.0833
+  },
+  {
+   "id": "M_t2",
+   "start": 68.3333,
+   "frames": 2,
+   "dur": 0.0833
+  },
+  {
+   "id": "M_f2",
+   "start": 68.4167,
+   "frames": 2,
+   "dur": 0.0833
+  },
+  {
+   "id": "M_end",
+   "start": 68.5,
+   "frames": 4,
+   "dur": 0.1667,
+   "note": "the riser stops dead here"
+  },
+  {
+   "id": "BLACK2",
+   "start": 68.6667,
+   "frames": 24,
+   "dur": 1.0,
+   "kind": "silence"
+  },
+  {
+   "id": "I3",
+   "start": 69.6667,
+   "frames": 60,
+   "dur": 2.5,
+   "clip": "25a_I3__sdfast",
+   "src_in": 0.3
+  },
+  {
+   "id": "I4",
+   "start": 72.1667,
+   "frames": 96,
+   "dur": 4.0,
+   "note": "looks at the hand, eyes rise, recognition",
+   "clip": "25b_I4__kling",
+   "src_in": 0.6
+  },
+  {
+   "id": "TITLE",
+   "start": 76.1667,
+   "frames": 72,
+   "dur": 3.0,
+   "title_at": 0.6,
+   "clip": "24_E2__sdfast720",
+   "src_in": 1.6
+  },
+  {
+   "id": "CN",
+   "start": 79.1667,
+   "frames": 60,
+   "dur": 2.5,
+   "kind": "card",
+   "text": "COMING NEVER"
+  },
+  {
+   "id": "DOT0",
+   "start": 81.6667,
+   "frames": 11,
+   "dur": 0.4583,
+   "kind": "card",
+   "text": ""
+  },
+  {
+   "id": "DOT0x",
+   "start": 82.125,
+   "frames": 8,
+   "dur": 0.3333
+  },
+  {
+   "id": "DOT1",
+   "start": 82.4583,
+   "frames": 11,
+   "dur": 0.4583,
+   "kind": "card",
+   "text": ""
+  },
+  {
+   "id": "DOT1x",
+   "start": 82.9167,
+   "frames": 8,
+   "dur": 0.3333
+  },
+  {
+   "id": "DOT2",
+   "start": 83.25,
+   "frames": 11,
+   "dur": 0.4583,
+   "kind": "card",
+   "text": ""
+  },
+  {
+   "id": "DOT2x",
+   "start": 83.7083,
+   "frames": 8,
+   "dur": 0.3333
+  },
+  {
+   "id": "DOTHOLD",
+   "start": 84.0417,
+   "frames": 27,
+   "dur": 1.125,
+   "kind": "card",
+   "text": ""
+  }
+ ]
+}

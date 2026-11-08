@@ -3,14 +3,16 @@ id: 20261107-exhibit-47-sound-mix
 title: 《第 47 号证物》音乐、音效和混音（粗剪 v2）
 tags: [production, sound, music, libtv]
 created: 2026-11-07
-updated: 2026-11-07
-related: [20261107-exhibit-47-video-clips, 20261106-sound-design, 20261106-music-sfx-prompts, 20261106-exhibit-47-shot-list, 20261106-submission-checklist, 20261106-akool-workflow]
+updated: 2026-11-08
+related: [20261108-exhibit-47-review-2, 20261107-exhibit-47-video-clips, 20261106-sound-design, 20261106-music-sfx-prompts, 20261106-exhibit-47-shot-list, 20261106-submission-checklist, 20261106-akool-workflow]
 summary: AKOOL 没有音乐和音效生成，所以 18 个音效用 LibTV Seed Audio 1.0 生成，配乐 SC1 用 LibTV ElevenMusic V3 生成。配乐按预告结构剪成 4 段；音效按分镜表的声音栏放了 49 处；对白、音乐、音效、底噪四轨用脚本混成 88 秒，响度 -13.8 LUFS，真峰值 -1.4 dBTP，两处全静音准确落在黑场上。笔记记录了提示词、电平问题、对齐方法和 10 条教训。
 ---
 
 # 《第 47 号证物》音乐、音效和混音（粗剪 v2）
 
 > Summary: AKOOL 没有音乐和音效生成，所以 18 个音效用 LibTV Seed Audio 1.0 生成，配乐 SC1 用 LibTV ElevenMusic V3 生成。配乐按预告结构剪成 4 段；音效按分镜表的声音栏放了 49 处；对白、音乐、音效、底噪四轨用脚本混成 88 秒，响度 -13.8 LUFS，真峰值 -1.4 dBTP，两处全静音准确落在黑场上。笔记记录了提示词、电平问题、对齐方法和 10 条教训。
+>
+> **粗剪 v3 起**，所有落点改为按画面帧定位（`roughcut.py` 写出时间线，`soundmix.py` 用 `at('段落', src=素材时间)` 写落点），实测同步误差在 5 毫秒以内；新增两句布兰特台词和 3 发单发枪声。见 [第二次审片对照](exhibit-47-review-2.md)。下面音效表里的时间是 v2 的。
 >
 > ⚠️ **还没有人耳试听过**。下面的检查全部是电平、频谱和时间码测量，定稿前必须有人戴耳机完整听一遍。
 

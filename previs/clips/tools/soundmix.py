@@ -1,4 +1,4 @@
-"""Mix dialogue, music and sound effects onto rough cut v3, placed on the picture's own frames.
+"""Mix dialogue, music and sound effects onto rough cut v4, placed on the picture's own frames.
 
     python3 soundmix.py CUT.mp4 OUT.mp4 [CLIP_DIR]
 
@@ -39,9 +39,12 @@ def end(sid):
     return S[sid]['start'] + S[sid]['dur']
 
 
-SILENT = [(at('DEAD'), end('DEAD')), (at('BLACK2'), end('BLACK2'))]   # total silence
+# total silence: all of DEAD (the wall is on screen, so it cannot read as a stopped player);
+# only the first half of BLACK2, then the interview room's hum comes in under the black (sound first)
+SILENT = [(at('DEAD'), end('DEAD')), (at('BLACK2'), at('BLACK2', 0.5))]
 HIT = {'FX12a_impact': 0.45, 'FX_whoosh': 0.5, 'FX6_door_breach': 0.19, 'FX12b_braaam': 0.13, 'SC2_riser': 0.0,
-       'FX4_compressor': 0.0, 'FX_wind_drone': 0.0, 'FX7_shot_a': 0.02, 'FX7_shot_b': 0.02, 'FX7_shot_c': 0.02}
+       'FX4_compressor': 0.0, 'FX_wind_drone': 0.0, 'FX7_shot_a': 0.02, 'FX7_shot_b': 0.02, 'FX7_shot_c': 0.02,
+       'FX11_pen': 0.0, 'FX9_steps': 0.0, 'FX8_gas_alarm': 0.0}
 
 PHONE = 'highpass=f=350,lowpass=f=3200,acrusher=bits=8:mix=0.25,atempo=1.1,volume=1.4'
 RADIO = 'highpass=f=500,lowpass=f=2800,acrusher=bits=6:mix=0.4,volume=1.5'
@@ -57,18 +60,20 @@ DIALOGUE = [
     # the call starts under the AKOOL card (sound first) and ends before the hammer comes down
     (0.55, 'V11_caller_northgate', PHONE), (at('C3', 2.25), 'V12_dispatch_who', PHONE),
     (at('CARD12', 0.35), 'V11_caller_seven_twelve', PHONE),
-    (at('D1', 0.3), 'V1_nora_thirteen', 'volume=1.3'),                       # over the survivor walking out
-    (at('I1', 0.1), 'V2_ward_twelve_officers', ROOM),
+    (at('D1', 0.3), 'V1_nora_thirteen', 'volume=1.3'),            # over the survivor walking out
+    (at('I1', 0.1), 'V2_ward_twelve_officers', ROOM),             # the interviewer the OSD names
     # Nora's camera: count off, she says twelve, a pause, the swing back, a second twelve
     (at('B2', 0.2), 'V5_brandt_count_off', ''), (at('B2', 0.9), 'V6_count_ten', ''),
     (at('B2', 1.4), 'V6_count_eleven', ''), (at('B2', 1.85), 'V7_nora_twelve', ''),
     (at('B2h', 0.12), 'V8_thirteenth_twelve', 'volume=0.9'), (at('B2h', 0.62), 'V5_brandt_who', ''),
     (at('B3', 0.3), 'V9_reyes_still_recording', RADIO),
-    (at('B4', 0.15), 'V5_brandt_masks_quiet', 'volume=0.85'),       # held back: suspicion, not a shout
+    # only "Masks off." (the file's first 0.85 s), on the two bursts of mouth movement at +0.46-1.17 s
+    (at('B4', 0.44), 'V5_brandt_masks_quiet', 'asetpts=N/SR/TB,atrim=0:0.85,atempo=1.15,volume=0.85'),
     (at('O2', 0.05), 'V10_reyes_mine_stays_on', OLD_TAPE + ',volume=1.4'),
-    (at('E3TAG', 0.75), 'V5_brandt_fall_back', SHOUT_RADIO + ',volume=1.5'),         # the firefight's goal: get out
+    (at('E3TAG', 0.0), 'V5_brandt_fall_back', SHOUT_RADIO + ',volume=1.5'),     # the goal: back to the stairs
+    (at('B6', 0.45), 'V6_officer_cut_off', SHOUT_RADIO + ',volume=1.4'),       # the goal blocked
     (at('B7', 0.15), 'V5_brandt_buried', 'acrusher=bits=9:mix=0.4,volume=1.4'),
-    (at('C2i', 0.0), 'V3_ward_safe_whisper', 'highpass=f=400,volume=2.2'),
+    (at('C2z', 0.0), 'V3_ward_safe_whisper', 'highpass=f=400,volume=2.2'),    # while she looks at the hand
     (at('I3', 0.5), 'V4_ward_safe', ROOM),
     (at('DOTHOLD', 0.2), 'V8_thirteenth_twelve', 'highpass=f=500,volume=1.6'),
 ]
@@ -76,16 +81,21 @@ LIP = at('M_I2') if 'M_I2' in S else None        # I2 lip-sync audio runs its wh
 
 # (time, file, gain, extra filter) -- effects
 shots = ['FX7_shot_a', 'FX7_shot_b', 'FX7_shot_c']
-GUNS = [(at('B5', t), shots[k % 3], 0.7, '') for k, t in enumerate(S['B5'].get('flashes', []))]
+GUNS = [(at('B5', t), shots[k % 3], 0.6, '') for k, t in enumerate(S['B5'].get('flashes', []))]
 GUNS += [(at('C1', t), shots[(k + 1) % 3], 0.5, DISTANT) for k, t in enumerate(S['C1'].get('flashes', []))]
-EFFECTS = GUNS + [
+# I3: the pen only sounds when the fingers actually roll it (motion measured in the clip)
+PEN = [(0.0, 'atrim=0:0.35'), (0.75, 'atrim=0.5:0.8'), (1.75, 'atrim=1.0:1.6')]
+EFFECTS = GUNS + [(at('I3', o), 'FX11_pen', 0.7, f) for o, f in PEN if o < S['I3']['dur'] - 0.2] + [
     (0.3, 'FX3_radio', 0.45, ''),
     (at('CARD12', 1.15), 'FX2_dropout', 0.35, 'atrim=0:0.25'),       # the caller hangs up
     (at('B1', src=2.21), 'FX6_door_breach', 1.0, 'atrim=0.8:4'),     # from the second bang (0.99 s in the file): the hit we see, then the door gives
+    (at('B1', src=2.30), 'FX8_gas_alarm', 0.3, 'atrim=0.3:1.3,lowpass=f=4000,afade=t=out:st=0.7:d=0.3'),  # freezer air rushing out
+    (at('B1b', 0.05), 'FX9_steps', 0.5, 'atrim=0:0.9'),                                                  # the team going in
     (at('CARD1'), 'FX12a_impact', 0.55, ''),
     (at('D1'), 'FX_wind_drone', 0.35, 'afade=t=in:d=0.3,afade=t=out:st=2.1:d=0.4'),
     (at('CARD13', 0.05), 'FX1_beep', 0.5, ''),
-    (at('B2', -0.3), 'FX1_beep', 0.4, ''),                          # Nora's camera starts recording
+    (at('B2', -0.3), 'FX1_beep', 0.4, ''),                          # Nora's camera starts recording: the beep means REC
+    (at('B2', 0.0), 'FX9_steps', 0.22, 'atrim=0:2.4,lowpass=f=3000'),  # boots on the stairs
     (at('B2w', 0.25), 'FX_whoosh', 0.5, ''),
     (at('B2h', 0.1), 'FX10_breath', 0.3, ''),
     (at('BLACK1', 0.25), 'FX12b_braaam', 1.0, ''),
@@ -94,35 +104,35 @@ EFFECTS = GUNS + [
     (at('CARD_DEAD'), 'FX12a_impact', 0.6, 'afade=t=out:st=1.4:d=0.4'), (at('O1F'), 'FX2_dropout', 0.5, ''),
     (at('O2'), 'FX2_dropout', 0.3, 'atrim=0:0.4'),                   # tape starting
     (at('E3REG'), 'FX12a_impact', 0.35, 'lowpass=f=900'),
-    (at('E3REG', S['E3REG'].get('stamp_at', 1.0)), 'FX12a_impact', 0.7, 'atrim=0:0.5,lowpass=f=1500,afade=t=out:st=0.35:d=0.15'),  # LOST
-    (at('E3TAG', -0.02), 'FX_whoosh', 0.6, ''), (at('E3TAG', 0.35), 'FX1_beep', 0.3, ''),
-    (at('B9', 0.35), 'FX7_shot_b', 0.7, ''), (at('B9', 0.75), 'FX_flashlight_drop', 0.8, ''),
+    (at('E3TAG', -0.02), 'FX_whoosh', 0.6, ''),
+    (at('B9', 0.35), 'FX7_shot_b', 0.6, ''), (at('B9', 0.75), 'FX_flashlight_drop', 0.8, ''),
     (at('B10'), 'FX_flashbang_ring', 0.9, ''),
-    (at('B6'), 'FX8_gas_alarm', 0.9, 'afade=t=out:st=2.5:d=1'),     # the pipe bursts: the way back is gas
+    (at('B6'), 'FX8_gas_alarm', 0.9, 'afade=t=out:st=2.5:d=1'),     # the pipe bursts: the way to the stairs is gas
     (at('GRID2', 0.2), 'FX2_dropout', 0.55, ''), (at('GRID2', 0.5), 'FX2_dropout', 0.5, ''),
     (at('GRID2', 0.8), 'FX2_dropout', 0.5, ''),
     (at('X1'), 'FX10_breath', 0.7, ''), (at('X1'), 'FX7_gunshots', 0.22, 'lowpass=f=1200'),
-    (at('B8s'), 'FX9_steps', 0.6, 'afade=t=out:st=0.6:d=0.2'),
-    (at('B8r', 0.05), 'FX12a_impact', 0.45, 'lowpass=f=600'),       # the reveal: his own reflection
+    (at('B8s'), 'FX9_steps', 0.6, 'atrim=0:0.8,afade=t=out:st=0.6:d=0.2'),
+    (at('B8r', 0.5), 'FX12a_impact', 0.3, 'lowpass=f=500'),         # after the reflection has been seen, not before
     (at('GRID3', 0.6), 'FX2_dropout', 0.7, ''),
-    (at('FEED13', 2 / 24), 'FX1_beep', 0.35, ''), (at('FEED13', 0.3), 'FX10_breath', 0.25, ''),
+    (at('FEED13', 2 / 24), 'FX1_beep', 0.35, ''),                   # a camera that is recording
+    (at('FEED13', 0.3), 'FX10_breath', 0.25, ''),
     (at('C2e'), 'FX8_gas_alarm', 0.3, 'lowpass=f=3000,afade=t=in:d=0.5,afade=t=out:st=3:d=1.5'),
     (at('C2d'), 'FX2_dropout', 0.45, 'atrim=0:0.3'),
-    (at('C2g', 0.03), 'FX5_curtain', 0.5, 'atrim=0.3:0.7,lowpass=f=2500'),        # strap grabbed
-    (at('C2i'), 'FX12a_impact', 0.35, 'atrim=0:0.4,lowpass=f=400'),              # her camera knocked
-    (at('C2p', src=0.8), 'FX7_shot_c', 0.6, DISTANT),                            # sparks where she stood
-    (at('C2p', src=1.1), 'FX9_steps', 0.5, 'atrim=0:0.5,' + DISTANT),            # feet dragged
-    (at('C2p', src=1.5), 'FX12a_impact', 0.4, 'atrim=0:0.5,lowpass=f=500'),      # behind the crates
-    (at('M_w1'), 'FX12a_impact', 0.35, 'atrim=0:1.2'), (at('M_w3'), 'FX12a_impact', 0.7, 'atrim=0:1.2'),
-    (at('I3', 0.1), 'FX11_pen', 0.7, ''),
+    (at('C2g', 0.05), 'FX5_curtain', 0.5, 'atrim=0.3:0.7,lowpass=f=2500'),             # strap grabbed, pulled tight
+    (at('C2p', 9 / 24), 'FX7_shot_c', 0.6, DISTANT),                                     # sparks where she stood
+    (at('C2p', src=2.0), 'FX9_steps', 0.5, 'atrim=0:0.7,' + DISTANT),                     # off balance, feet scraping
+    (at('C2p', src=2.6), 'FX12a_impact', 0.35, 'atrim=0:0.5,lowpass=f=500'),             # dragged in behind the crates
+    (at('M_w1'), 'FX12a_impact', 0.35, 'atrim=0:1.2'), (at('M_b2'), 'FX12a_impact', 0.6, 'atrim=0:1.2'),
+    (at('BLACK2', 0.5), 'FX4_compressor', 0.12, 'highpass=f=100,lowpass=f=500,atrim=0:9,afade=t=in:d=0.5,afade=t=out:st=7.5:d=1.5'),  # interview-room hum
     (at('TITLE', S['TITLE'].get('title_at', 0.6)), 'FX12a_impact', 1.0, ''),     # the one ending hit
     (at('TITLE', S['TITLE'].get('title_at', 0.6)), 'FX1_beep', 0.5, ''),
-] + [(at(f'DOT{k}'), 'FX1_beep', 0.22, '') for k in range(3)] + [(at('DOTHOLD'), 'FX1_beep', 0.3, '')]
+    (at('DOT0'), 'FX1_beep', 0.3, ''),                                             # REC, as on Nora's camera; the blinks are silent
+]
 
 # riser and music peak end exactly where the montage cuts to black
 M0, M1 = at('M_I2'), at('M_end')
 L = round(M1 - M0, 3)
-EFFECTS.append((M0, 'SC2_riser', 0.8, f'atrim={6.0 - L:.3f}:6.0,asetpts=PTS-STARTPTS,afade=t=out:st={L - 0.06:.3f}:d=0.06'))
+EFFECTS.append((M0, 'SC2_riser', 0.65, f'atrim={6.0 - L:.3f}:6.0,asetpts=PTS-STARTPTS,afade=t=out:st={L - 0.06:.3f}:d=0.06'))
 
 # (timeline start, source start, length, gain) -- SC1 cut to this picture
 pulse_a = at('DEAD') - at('GRID1')

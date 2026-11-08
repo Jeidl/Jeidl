@@ -8,6 +8,7 @@
 - [《第 47 号证物》AKOOL 图生视频](exhibit-47-video-clips.md)：首轮 Akool Premium 29 条，第二轮 Seedance 1.0 Pro Fast / Lite 升级，第三轮剩下的镜头也用 Pro Fast（含 720p，13 积分/条）重做，加上 V1–V12 配音和 I2 口型同步，拼成带完整声音的 88 秒粗剪 v2。笔记里有实测价格（Akool Premium 8 / Pro Fast 720p 13 / Pro Fast 25 / Lite 50 / Pro 75 / Kling 100 积分）、每条取舍、声音选角和 19 条教训。
 - [《第 47 号证物》音乐、音效和混音](exhibit-47-sound-mix.md)：LibTV 生成的配乐和 18 个音效、49 处放置时间表、四轨混音参数和测量结果、10 条教训。
 - [《第 47 号证物》第二次审片对照](exhibit-47-review-2.md)：粗剪 v3 逐条回应审片意见（证据文字、屏显、监控墙、冷冻间、声音按帧定位），复听检查表和参考预告学习任务。
+- [《第 47 号证物》第三次审片](exhibit-47-review-3.md)：逐镜复核 v3（确定错误 / 创作选择），粗剪 v4 的四项优先修改、结尾 A/B、试映问题。
 - [《明日不来》75 秒分镜表](untomorrow-shot-list.md)：备选方案的分镜。
 - [AKOOL 制作流程与 14 天排期](akool-workflow.md)：十步流程、日程、留证方法。
 - [提交检查清单](submission-checklist.md)：发布和提交前逐项勾选。

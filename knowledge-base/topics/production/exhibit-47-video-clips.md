@@ -4,7 +4,7 @@ title: 《第 47 号证物》AKOOL 图生视频：Akool Premium 首轮、Seedanc
 tags: [production, akool, video, prompt]
 created: 2026-11-07
 updated: 2026-11-08
-related: [20261108-exhibit-47-review-2, 20261107-exhibit-47-sound-mix, 20261107-exhibit-47-keyframes, 20261106-exhibit-47-shot-prompts, 20261106-exhibit-47-shot-list, 20261106-akool-workflow, 20261106-submission-checklist, 20261106-exhibit-47-whitebox-previs, 20261106-editing-rhythm]
+related: [20261108-exhibit-47-review-3, 20261108-exhibit-47-review-2, 20261107-exhibit-47-sound-mix, 20261107-exhibit-47-keyframes, 20261106-exhibit-47-shot-prompts, 20261106-exhibit-47-shot-list, 20261106-akool-workflow, 20261106-submission-checklist, 20261106-exhibit-47-whitebox-previs, 20261106-editing-rhythm]
 summary: 全部在 AKOOL 里完成。首轮用 Akool Premium（8 积分/条）做了 29 条，拼成无声粗剪 v0。第二轮改用 Seedance 1.0 Pro Fast（25 积分/条）升级了 13 个镜头，其中 9 条胜出；C2 开场用 Seedance Lite 首尾帧；V1–V12 用 AKOOL 配音，I2 用 Talking Photo 做口型同步，拼成粗剪 v1。第三轮把剩下的镜头也用 Pro Fast 重做：8 条 720p（13 积分/条）里 6 条胜出，积分补充后又做了 3 条 1080p，胜出 1 条。加上 LibTV 生成的音乐和音效，拼成带完整声音的粗剪 v2。共 57 条视频，1035 积分。笔记记录了价格、每条取舍和 19 条教训。
 ---
 
@@ -12,7 +12,7 @@ summary: 全部在 AKOOL 里完成。首轮用 Akool Premium（8 积分/条）�
 
 > Summary: 全部在 AKOOL 里完成。首轮用 Akool Premium（8 积分/条）做了 29 条，拼成无声粗剪 v0。第二轮改用 Seedance 1.0 Pro Fast（25 积分/条）升级了 13 个镜头，其中 9 条胜出；C2 开场用 Seedance Lite 首尾帧；V1–V12 用 AKOOL 配音，I2 用 Talking Photo 做口型同步，拼成粗剪 v1。第三轮把剩下的镜头也用 Pro Fast 重做：8 条 720p（13 积分/条）里 6 条胜出，积分补充后又做了 3 条 1080p，胜出 1 条。加上 LibTV 生成的音乐和音效，拼成带完整声音的粗剪 v2。共 57 条视频，1035 积分。笔记记录了价格、每条取舍和 19 条教训。
 >
-> **现行版本是粗剪 v3**（`previs/clips/roughcut_v3_540p.mp4`，第二次审片后的修改见 [审片对照](exhibit-47-review-2.md)；声音见 [音乐、音效和混音](exhibit-47-sound-mix.md)）。下文按时间顺序写首轮（v0）、第二轮（v1）、第三轮（v2）和第四轮（v3）。
+> **现行版本是粗剪 v4**（`previs/clips/roughcut_v4_540p.mp4`，第三次审片的逐镜复核和修改见 [第三次审片](exhibit-47-review-3.md)；v3 见 [第二次审片对照](exhibit-47-review-2.md)；声音见 [音乐、音效和混音](exhibit-47-sound-mix.md)）。下文按时间顺序写首轮（v0）到第五轮（v4）。
 
 ## 背景
 
@@ -153,6 +153,10 @@ summary: 全部在 AKOOL 里完成。首轮用 Akool Premium（8 积分/条）�
 
 审片的核心意见是"关键证据观众没看懂"。这一轮只补了故事必需的 4 条（175 积分）：C2 冷冻间从同一张空房间帧生成进门和抓人，保证是同一个监控机位；第一次 Kling 首尾帧的路径不对（她跑向门口、像中枪），改用 Pro Fast 写明"往左拽进箱子后面"后成功；B4 换成克制版布兰特。另有一张 LibTV 关键帧：诺拉自己的记录仪往下拍到手套破口里的疤。逐条对照、证据链设定和复听检查表见 [第二次审片对照](exhibit-47-review-2.md)。
 
+## 第五轮：第三次审片后的补拍（2026-11-08）
+
+只补了 3 条（63 积分）：冷冻间拖拽去掉火花重新生成（原来那条从 0.7 秒起整个房间被重画，监控机位像换了场景），一次出 2 条用 A 条；第 13 路的新画面（旧记录仪藏在箱子缝里看着冷冻间的门）。疤的镜头改为 CAM 11 回放放大的静帧，疤从 I3 描下来合成。见 [第三次审片](exhibit-47-review-3.md)。
+
 ## 19 条教训
 
 1. **先测价格再铺量**：同样 5 秒，Akool Premium 8 积分，Seedance 1.0 Pro 75，Kling 3.0 Omni 100。先各跑一条，看 `deduction_credit`，再定主力模型。
@@ -199,8 +203,9 @@ summary: 全部在 AKOOL 里完成。首轮用 Akool Premium（8 积分/条）�
 
 `previs/clips/`：
 
-- `clips_v2.json`（**现行**）：61 条视频的完整日志，包括四轮生成和 Talking Photo。`used_in_cut_v1`、`used_in_cut_v2`、`used_in_cut_v3` 分别标出三版粗剪（含监控墙）用到的片段。
-- `roughcut_v3_540p.mp4`（**现行**）：粗剪 v3，85.2 秒，证据文字可读、按画面帧定位的声音。`roughcut_v3.timeline.json`（每段的起点、素材、入点、枪口闪光）和 `roughcut_v3.cues.json`（每个声音落点）。
+- `clips_v2.json`（**现行**）：64 条视频的完整日志，包括五轮生成和 Talking Photo。`used_in_cut_v1` 到 `used_in_cut_v4` 分别标出各版粗剪（含监控墙）用到的片段。
+- `roughcut_v4_540p.mp4`（**现行**）：粗剪 v4，85.6 秒；`roughcut_v4_endings_540p.mp4` 是结尾 A、B 对比；`roughcut_v4.timeline.json`、`roughcut_v4.cues.json`；`review3_v3_vs_v4.jpg` 是同一位置的前后对比。
+- `roughcut_v3_540p.mp4`：粗剪 v3，85.2 秒，证据文字可读、按画面帧定位的声音。`roughcut_v3.timeline.json`（每段的起点、素材、入点、枪口闪光）和 `roughcut_v3.cues.json`（每个声音落点）。
 - `roughcut_v2_540p.mp4`：粗剪 v2，带对白、音乐和音效。
 - `roughcut_v1_540p.mp4`：粗剪 v1，只有对白轨（对白整体提前约 3 秒，见第三轮）。
 - `../audio/sfx/`、`../audio/music/`、`../audio/sfx_music.json`：LibTV 生成的音效和配乐，见 [音乐、音效和混音](exhibit-47-sound-mix.md)。
@@ -208,7 +213,8 @@ summary: 全部在 AKOOL 里完成。首轮用 Akool Premium（8 积分/条）�
 - `clips_v1.json`：首轮 29 次生成的完整日志（保留作对照）。每条记了模型、分辨率、时长、积分、首帧和尾帧链接、提示词、负面词、AKOOL 任务号、视频链接、取舍，以及是否用在粗剪里（`selected`）。提交时它就是"如何使用 AKOOL"的制作日志。
 - `strips/`：每条片段的 6 帧缩略图。
 - `roughcut_v0_540p.mp4`：无声粗剪 v0。
-- `tools/fetch_clips.py`：按 `clips_v2.json` 把粗剪 v3 要用的片段下载到本地（`--v2`、`--v1` 下载旧版的，`--all` 下载全部）。
+- `tools/fetch_clips.py`：按 `clips_v2.json` 把粗剪 v4 要用的片段下载到本地（`--v3`、`--v2`、`--v1` 下载旧版的，`--all` 下载全部）。
+- `../keyframes/tools/scar_composite.py`：把 I3 的疤合成进 CAM 11 回放放大的那一帧。
 - `tools/roughcut.py`：拼粗剪 v3 的画面，并写出时间线文件。
 - `tools/overlays.py`、`tools/track_plane.py`：登记簿和标签上的字、各设备屏显；标签的逐帧跟踪（`overlays/24_E2__sdfast720.track.json`）。
 - `tools/soundmix.py`：按时间线把对白、音乐、音效、底噪混到粗剪上。
@@ -218,6 +224,7 @@ summary: 全部在 AKOOL 里完成。首轮用 Akool Premium（8 积分/条）�
 
 ## 相关笔记
 
+- [第三次审片](exhibit-47-review-3.md)：逐镜复核 v3，粗剪 v4。
 - [第二次审片对照](exhibit-47-review-2.md)：粗剪 v3 逐条回应审片意见。
 - [音乐、音效和混音](exhibit-47-sound-mix.md)：粗剪的声音。
 - [关键帧 v2](exhibit-47-keyframes.md)：这些片段的首帧。

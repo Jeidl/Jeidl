@@ -283,7 +283,28 @@
     "i-fG9Q3BJM9u (I3 v2 scar)",
     "i-oNdWbdYl6b (hand master)"
    ],
-   "note": "Nora's own body cam looking down: Ward's gloved right hand on her vest strap, the torn glove showing the same diagonal raised scar as I3 (wrist toward the index knuckle). Used as a still with a jolt, so the scar cannot morph.",
+   "note": "Nora's own body cam looking down: Ward's gloved right hand on her vest strap, the torn glove showing the same diagonal raised scar as I3 (wrist toward the index knuckle). Used as a still with a jolt, so the scar cannot morph. Third review: dropped, a chest-mounted camera cannot look down at its own chest; replaced by 21_C2_cam11_zoom.",
+   "fix": ""
+  },
+  {
+   "frame": "21_C2_cam11_zoom",
+   "tool": "LibTV + composite",
+   "file": "frames/21_C2_cam11_zoom.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1007518794_392e751524564d5e9a73b2e05486f5b6.png",
+   "generated_file": "frames/21_C2_cam11_zoom_generated.jpg",
+   "take": "v4 (third review)",
+   "node": "i-D1IdSQ2K1M",
+   "note": "CAM 11 played back at 4x: the hand from the crate gap on Nora's vest strap, Nora turned to look at it. Replaces the chest-cam POV (a chest camera cannot look down at its own chest). The generated glove had a round 'window' and a short scar, so ../tools/scar_composite.py fills it, cuts a ragged rip along the scar and lays I3's own skin and traced scar under it (turned 180 degrees: same wrist-to-index-knuckle '/' as in I3).",
+   "fix": ""
+  },
+  {
+   "frame": "S3_feed13",
+   "tool": "LibTV",
+   "file": "frames/S3_feed13.jpg",
+   "source_url": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/954813f0058b4034bf1236badbfac475/1007518858_4d6ba63055824c77b9db794793d129f6.png",
+   "take": "v4 (third review)",
+   "node": "i-ylDB6621wa",
+   "note": "The old AX-118 camera hidden between the crates of cold room 4, watching the door: the first frame of FEED 13.",
    "fix": ""
   }
  ],

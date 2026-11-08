@@ -204,7 +204,7 @@
    "url": "https://d2qf6ukcym4kn9.cloudfront.net/1794069268229-8978fdbb-dc3b-437f-bbd8-edead5b71b8a-3689.mp3",
    "file": "V5_brandt_masks_quiet.mp3",
    "akool_tts_id": "6aef531351e26737e1bb7be6",
-   "note": "rough cut v3: the first Brandt beat is held back (suspicion), so the shout is saved for \"We buried you!\""
+   "note": "rough cut v3: the first Brandt beat is held back (suspicion), so the shout is saved for \"We buried you!\"; v4 uses only \"Masks off.\" (0.2-1.1 s of the file), placed on the two bursts of mouth movement in B4"
   },
   "V5_brandt_fall_back": {
    "voice": "Dominant Brother (en-US)",
@@ -215,6 +215,16 @@
    "file": "V5_brandt_fall_back.mp3",
    "akool_tts_id": "6aef531397abb75cf09c0e75",
    "note": "rough cut v3: gives the firefight a goal (retreat to the stairs) before the gas cuts the corridor off"
+  },
+  "V6_officer_cut_off": {
+   "voice": "Steady Big Brother (en-US)",
+   "voice_id": "6889b675662160e2caad5e64",
+   "speed": 1.15,
+   "text": "We're cut off! The stairs are gone!",
+   "url": "https://d2qf6ukcym4kn9.cloudfront.net/1794122031055-75f72ce5-9390-4c07-ba5d-9213ff755fcc-7887.mp3",
+   "file": "V6_officer_cut_off.mp3",
+   "akool_tts_id": "6af0212d51e26737e1c335fc",
+   "note": "rough cut v4 (third review): the retreat goal is blocked, said right after the pipe bursts"
   }
  }
 }

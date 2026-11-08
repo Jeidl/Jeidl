@@ -166,6 +166,15 @@ def clock(ep, fmt='%Y-%m-%d %T'):
     return '%{pts\\:gmtime\\:' + str(ep) + '\\:' + fmt + '}'
 
 
+# what each kind of device looks like, so the source reads without the corner labels
+LOOK = {
+    'bwc': 'vignette=PI/5',                                                  # Team 7 AX-220: clean, wide, dark corners
+    'old': ('scale=iw/2:-2,scale=iw*2:-2,colorbalance=rs=.06:gs=.02:bs=-.07,'   # AX-118: half resolution, amber, grain
+            'noise=alls=10:allf=t,vignette=PI/4'),
+    'cctv': 'fps=12,fps=24',                                                 # fixed cameras record at 12 fps
+}
+
+
 def osd(kind, H, ep=None, unit='', cam='', alpha=1.0):
     """drawtext chain for one source type. Sizes scale with frame height H."""
     s = max(12, int(H * 0.030)); m = int(H * 0.035)
@@ -183,8 +192,11 @@ def osd(kind, H, ep=None, unit='', cam='', alpha=1.0):
         return ','.join([_dt(cam, m, m, s, 'white' + a), _dt(clock(ep), f'w-tw-{m}', m, s, 'white' + a)])
     if kind == 'drone':
         return ','.join([_dt('AIR-1  ALT 61M', m, m, s, 'white' + a), _dt(clock(ep, '%T'), f'w-tw-{m}', m, s, 'white' + a)])
-    if kind == 'room':
-        return ','.join([_dt(cam, m, m, int(s * 0.85), 'white' + a), _dt(clock(ep), f'w-tw-{m}', m, int(s * 0.85), 'white' + a)])
+    if kind == 'room':      # the interview-room recorder names who is in the room
+        ss = int(s * 0.85)
+        return ','.join([_dt(cam, m, m, ss, 'white' + a), _dt(clock(ep), f'w-tw-{m}', m, ss, 'white' + a),
+                         _dt('SUBJECT  N. KADE (7-12)', m, m + int(ss * 1.5), ss, 'white' + a),
+                         _dt('INTERVIEWER  INSP. E. WARD', m, m + int(ss * 3.0), ss, 'white' + a)])
     if kind == 'archive':    # old footage pulled from the file: banner + the old unit OSD
         bs = int(s * 0.95)
         return ','.join([f"drawbox=x=0:y={m - 6}:w=iw:h={bs + 14}:color=black@0.55:t=fill",
